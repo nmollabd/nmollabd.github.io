@@ -1,0 +1,960 @@
+@media only screen and (max-width: 1199px) {
+	h1, .h1 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	.entry-title {
+	    margin-bottom: 35px !important; 
+	}
+
+	.container {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+
+	/***********************************
+	HEADER STYLE
+	***********************************/
+
+	.header {
+
+		.container {
+			padding-right: 40px;
+			padding-left: 40px;
+		}
+
+		.navbar {
+
+			.navbar-collapse {
+
+				.navbar-nav {
+
+					&:not(.navbar-nav--right) {
+
+						> li {
+
+							&:nth-child(1) {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/***********************************
+	HERO-SECTION STYLES
+	***********************************/
+	.hero-section {
+
+		.right-img {
+
+			.slider-object {
+			    right: 0px;
+			}
+
+			.media {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	.service {
+
+		&__item {
+		    margin-bottom: 20px;
+		    height: calc(100% - 20px);
+
+		    .text {
+
+		     	.title {
+				    margin-bottom: 10px;
+				}
+
+				.description {
+				    margin-bottom: 10px;
+				}
+		    }
+		}
+	}
+
+	.testimonial-section {
+		padding-top: 70px;
+		padding-bottom: 150px;
+	}
+
+	.author-section {
+
+		.author-content {
+			padding: 20px 30px;
+		}
+	}
+
+	.about-section {
+		padding: 70px 0;
+	}
+
+	.project {
+		padding: 70px 0;
+	}
+
+	/***********************************
+	ABOUT STYLES
+	***********************************/
+	.about-me {
+		padding: 70px 0;
+	}
+
+	.awards {
+		padding: 70px 0;
+	}
+
+	.about {
+		padding-bottom: 70px;
+	}
+
+	/***********************************
+	FOOTER STYLES
+	***********************************/
+
+	.footer {
+		padding: 70px 0;
+	}
+
+}/* 1199 */
+
+@media only screen and (max-width: 991px) {
+	h1, .h1 {
+		font-size: 38px;
+		line-height: 48px;
+	}
+
+	h2, .h2 {
+		font-size: 34px;
+		line-height: 44px;
+	}
+
+  	.container, .container-fluid {
+    	padding-right: 30px;
+    	padding-left: 30px;
+  	}
+
+  	.btn {
+  		padding: 12px 30px 12px;
+  	}
+
+	.entry-title {
+	    margin-bottom: 30px !important; 
+	}
+  	/***********************************
+  	HEADER STYLE
+  	***********************************/
+
+	.header {
+
+		.container {
+			padding-right: 30px;
+			padding-left: 30px;
+		}
+
+		.navbar {
+			padding: 30px 0;
+
+			.navbar-header {
+
+				.navbar-brand {
+
+					svg, img {
+						max-width: 170px;
+					}
+				}
+			}
+
+			.navbar-collapse {
+
+				.navbar-nav {
+
+					li {
+
+						&:not(:first-child) {
+							margin-left: 25px;
+						}
+					}
+
+					&:not(.navbar-nav--right) {
+
+						> li {
+
+							&:nth-child(2) {
+								display: none;
+							}
+						}
+					}
+
+					&.navbar-nav--right {
+
+						li {
+
+							&.btn-menu {
+
+								a {
+									padding: 8px 30px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.header-gutter {
+		height: 100px;
+		min-height: 100px;
+	}
+
+	/***********************************
+	HERO-SECTION STYLES
+	***********************************/
+	.hero-section {
+		padding-top: 60px;
+
+		.title {
+			margin-bottom: 25px;
+		}
+	}
+
+	.service {
+
+		&__item {
+
+			.icon-wrapper {
+			    max-width: 70px;
+			    margin-bottom: 10px;
+			}
+
+		    .text {
+
+		     	.title {
+				    margin-bottom: 8px;
+				}
+
+				.description {
+				    margin-bottom: 8px;
+				}
+		    }
+		}
+	}
+
+	.testimonial-section {
+		padding-top: 60px;
+		padding-bottom: 120px;
+
+		.slider-area {
+
+			.single-slide {
+
+				.description {
+				    margin-bottom: 20px;
+				}
+			}
+		}
+	}
+
+	.author-section {
+
+		.author-content {
+			padding: 30px 50px;
+		}
+	}
+
+	.about-section {
+		padding: 60px 0;
+
+		.right-content {
+
+			.title {
+			    margin-bottom: 30px;
+			}
+		}
+	}
+
+	.project {
+		padding: 60px 0;
+	}
+
+	/***********************************
+	ABOUT STYLES
+	***********************************/
+	.about-me {
+		padding: 60px 0;
+	}
+	
+	.awards {
+		padding: 60px 0;
+
+		&__item {
+
+			.content {
+
+				span {
+					margin-bottom: 0;
+				}
+
+				.title {
+				    margin-bottom: 10px;
+				}
+			}
+		}
+	}
+
+	.about {
+		padding: 60px 0;
+
+		&__content {
+
+			.title {
+				margin-bottom: 10px;
+			}
+
+			.sub-title {
+			    margin-bottom: 20px;
+			}
+		}
+	}
+
+	/***********************************
+	FOOTER STYLES
+	***********************************/
+
+	.footer {
+		padding: 60px 0;
+
+		.description {
+			margin-bottom: 15px;
+		}
+	}
+
+}/* 991 */
+
+@media only screen and (max-width: 767px) {
+	h1, .h1 {
+		font-size: 42px;
+		line-height: 52px;
+	}
+
+	h2, .h2 {
+		font-size: 36px;
+		line-height: 44px;
+	}
+
+	h3, .h3 {
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+	h4, .h4 {
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	h5, .h5 {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+  	.container, .container-fluid {
+    	padding-right: 20px;
+    	padding-left: 20px;
+  	}
+
+  	.btn {
+  		font-size: 14px;
+  		line-height: 22px;
+  		padding: 10px 25px 10px;
+
+  		&.btn-border {
+		    padding: 8px 18px 8px;
+		}
+  	}
+
+	.entry-title {
+	    margin-bottom: 25px !important; 
+	}
+  	/***********************************
+  	HEADER STYLE
+  	***********************************/
+
+	.header {
+
+		.container {
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+
+		.navbar {
+			padding: 25px 0;
+
+			.navbar-header {
+
+				.navbar-brand {
+
+					svg, img {
+						max-width: 160px;
+					}
+				}
+			}
+
+			.navbar-collapse {
+
+				.navbar-nav {
+
+					li {
+
+						&:not(:first-child) {
+							margin-left: 22px;
+						}
+					}
+
+					&:not(.navbar-nav--right) {
+
+						> li {
+
+							&:nth-child(3) {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.top-bar {
+			display: none;
+		} 
+	}
+
+	.header-gutter {
+		height: 90px;
+		min-height: 90px;
+	}
+
+	/***********************************
+	HERO-SECTION STYLES
+	***********************************/
+	.hero-section {
+		padding-top: 50px;
+
+		.title {
+			margin-bottom: 20px;
+		}
+
+		.slick-dots {
+			display: none !important;
+		}
+
+		.right-img {
+
+			.media {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.service {
+
+		&__item {
+
+			.icon-wrapper {
+			    max-width: 50px;
+			    margin-bottom: 8px;
+			}
+
+		    .text {
+
+		     	.title {
+				    margin-bottom: 5px;
+				}
+
+				.description {
+				    margin-bottom: 5px;
+				}
+		    }
+		}
+	}
+
+	.testimonial-section {
+		padding-top: 50px;
+
+		.slider-area {
+
+			.single-slide {
+
+				.description {
+				    margin-bottom: 15px;
+				}
+
+				.slide-bottom {
+
+					img {
+					    width: 60px;
+					}
+				}
+			}
+		}
+	}
+
+	.author-section {
+
+		.author-content {
+			padding: 30px;
+
+			.img-container {
+
+				.media {
+					max-width: 400px;
+					margin-left: auto;
+					margin-right: auto;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+
+	.about-section {
+		padding: 50px 0;
+
+		.right-content {
+
+			.title {
+			    margin-bottom: 30px;
+			}
+		}
+
+		.left-content {
+
+			.media-content {
+
+				.media {
+				    margin-bottom: 50px;
+				    justify-content: center;
+				}
+
+				.bottom-media {
+					right: 0;
+				}
+			}
+		}
+	}
+
+	.project {
+		padding: 50px 0;
+	}
+
+	/***********************************
+	ABOUT STYLES
+	***********************************/
+	.about-me {
+		padding: 50px 0;
+	}
+	
+	.awards {
+		padding: 50px 0;
+
+		&__item {
+
+			.content {
+
+				.title {
+				    margin-bottom: 5px;
+				}
+			}
+		}
+	}
+
+	.about {
+		padding-top: 0;
+		padding-bottom: 50px;
+
+		&__content {
+
+			.sub-title {
+			    margin-bottom: 10px;
+			}
+
+			&__btn {
+				text-align: center;
+			}
+		}
+
+		&__media {
+			max-width: 500px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 30px;
+		}
+	}
+
+	/***********************************
+	FOOTER STYLES
+	***********************************/
+
+	.footer {
+		padding: 50px 0;
+
+		.footer-widget {
+
+			.title {
+			    margin-bottom: 20px;
+			}
+		}
+	}
+}/* 767 */
+
+@media only screen and (max-width: 680px) {
+	h1, .h1 {
+		font-size: 36px;
+		line-height: 44px;
+	}
+}
+/* 680 */
+
+@media only screen and (max-width: 575px) {
+	h1, .h1 {
+		font-size: 34px;
+		line-height: 38px;
+	}
+
+	h2, .h2 {
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+	h3, .h3 {
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	h4, .h4 {
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	h5, .h5 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+  	.container, .container-fluid {
+    	padding-right: 15px;
+    	padding-left: 15px;
+  	}
+
+  	p {
+	    margin: 0 0 20px !important;
+	}
+
+	/***********************************
+	HEADER STYLE
+	***********************************/
+
+	.header {
+
+		.container {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+
+		.navbar {
+			padding: 20px 0;
+
+			.navbar-header {
+
+				.navbar-brand {
+
+					svg, img {
+						max-width: 140px;
+					}
+				}
+			}
+
+			.navbar-collapse {
+
+				.navbar-nav {
+
+					&:not(.navbar-nav--right) {
+
+						> li {
+
+							&:nth-child(4), &:nth-child(5) {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.header-gutter {
+		height: 80px;
+		min-height: 80px;
+	}
+
+	/***********************************
+	BREADCRUMB STYLE
+	***********************************/
+
+	.breadcrumb-wrapper {
+
+		.breadcrumb {
+		    font-size: 14px;
+		    line-height: 22px;
+		}
+	}
+
+	/***********************************
+	HERO-SECTION STYLES
+	***********************************/
+	.hero-section {
+		padding: 40px 0;
+
+		.title {
+			margin-bottom: 15px;
+		}
+	}
+
+	.service {
+		padding: 40px 0;
+	}
+
+	.testimonial-section {
+		padding-top: 40px;
+
+		.slider-area {
+
+			.single-slide {
+
+				.slide-bottom {
+
+					img {
+					    width: 40px;
+					}
+				}
+			}
+		}
+	}
+
+
+	.about-section {
+		padding: 40px 0;
+
+		.right-content {
+
+			.title {
+			    margin-bottom: 20px;
+			}
+		}
+
+		.left-content {
+
+			.media-content {
+
+				.bottom-media {
+					right: -40px;
+				}
+			}
+		}
+	}
+
+	.project {
+		padding: 40px 0;
+	}
+
+
+	.author-section {
+
+		.author-content {
+
+			.img-container {
+
+				.media {
+					max-width: 350px;
+				}
+			}
+		}
+	}
+
+	/***********************************
+	ABOUT STYLES
+	***********************************/
+	.about-me {
+		padding: 40px 0;
+	}
+	
+	.awards {
+		padding: 40px 0;
+
+		&__item {
+
+			.content {
+
+				.title {
+				    margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.about {
+		padding-bottom: 40px;
+
+		&__media {
+			max-width: 400px;
+		}
+	}
+
+	/***********************************
+	FOOTER STYLES
+	***********************************/
+
+	.footer {
+		padding: 40px 0;
+
+		.footer-widget {
+
+			.title {
+			    margin-bottom: 20px;
+			}
+		}
+	}
+}/* 575 */
+
+@media only screen and (max-width: 480px) {
+  	/***********************************
+  	HEADER STYLE
+  	***********************************/
+
+	.header {
+
+		.navbar {
+			padding: 15px 0;
+
+			.navbar-collapse {
+
+				.navbar-nav {
+
+					&.navbar-nav--right {
+
+						li {
+
+							&.btn-menu {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.header-gutter {
+		height: 58px;
+		min-height: 58px;
+	}
+
+	/***********************************
+	BREADCRUMB STYLE
+	***********************************/
+
+	.breadcrumb-wrapper {
+
+		.breadcrumb {
+		    font-size: 12px;
+		    line-height: 20px;
+		    padding-bottom: 5px;
+		}
+	}
+
+	.about-section {
+
+		.left-content {
+
+			.media-content {
+
+				.bottom-media {
+					right: -70px;
+				}
+			}
+		}
+	}
+
+	.about {
+
+		&__media {
+			max-width: 300px;
+		}
+
+		&__content {
+
+			.personal-info {
+
+				&:after {
+					content: none;
+				}
+
+				.row {
+
+					[class^=col] {
+					    flex: 0 0 100%;
+					    max-width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	.author-section {
+
+		.author-content {
+
+			.img-container {
+
+				.media {
+					max-width: 300px;
+				}
+			}
+
+			.right-content {
+
+				.sign-button {
+
+					.media {
+					    width: 100px;
+					    margin-left: 20px;
+					}
+				}
+			}
+		}
+	}
+
+}/* 480 */
+
+@media only screen and (max-width: 420px) {
+	/***********************************
+	HOME PAGE STYLES
+	***********************************/
+	
+}
+/* 420 */
+
+@media only screen and (max-width: 375px) {
+	/***********************************
+	HOME PAGE STYLES
+	***********************************/
+	
+}
+/* 375 */
