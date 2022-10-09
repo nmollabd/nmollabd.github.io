@@ -74,6 +74,7 @@ section {
 	position: relative;
 	padding: 12px 44px 12px;
 	background-color: #6930c3;
+	text-transform: capitalize;
 	@include border-radius(500px);
 	@include transition(all 0.3s ease);
 

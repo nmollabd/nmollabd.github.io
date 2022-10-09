@@ -149,7 +149,7 @@ HEADER STYLES
                             min-width: 180px;
                             visibility: hidden;
                             background: $secondary;
-                            @include border-radius(0);
+                            @include border-radius(5px);
                             @include transition(all 0.5s ease);
                             box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.06);
 
@@ -165,7 +165,10 @@ HEADER STYLES
 
                             li {
                                 padding-bottom: 5px;
-                                border-bottom: 1px solid $white;
+
+                                &:not(:last-child) {
+                                    border-bottom: 1px solid $white;
+                                }
 
                                 &:not(:last-child) {
                                     margin-bottom: 10px;
@@ -484,6 +487,14 @@ HEADER STYLES
                                 }
                             }
                         }
+                    }
+                }
+
+                &.cuurent-menu-item, &:focus, &:focus {
+                    border-bottom: 2px solid $success;
+
+                    > a {
+                        color: $success;
                     }
                 }
             }
