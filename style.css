@@ -3199,6 +3199,9 @@ FOOTER STYLE
   }
   .hero-section .right-img .media {
     margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .service__item .icon-wrapper {
