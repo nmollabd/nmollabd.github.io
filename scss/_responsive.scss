@@ -117,6 +117,17 @@
 	}
 
 	/***********************************
+	CONTACT STYLES
+	***********************************/
+	.project-service {
+		padding-bottom: 70px;
+	}
+
+	.contact-form {
+		padding: 70px 0;
+	}
+
+	/***********************************
 	FOOTER STYLES
 	***********************************/
 
@@ -324,6 +335,17 @@
 			    margin-bottom: 20px;
 			}
 		}
+	}
+
+	/***********************************
+	CONTACT STYLES
+	***********************************/
+	.project-service {
+		padding: 60px 0;
+	}
+
+	.contact-form {
+		padding: 60px 0;
 	}
 
 	/***********************************
@@ -599,6 +621,60 @@
 	}
 
 	/***********************************
+	CONTACT STYLES
+	***********************************/
+	.project-service {
+		padding: 50px 0;
+
+		.media {
+			margin-bottom: 30px;
+			justify-content: center;
+		}
+
+		&__content {
+
+			.title {
+			    margin-bottom: 15px;
+			}
+
+			&__eddtor {
+			    max-width: 100%;
+			}
+		}
+	}
+
+	.contact-form {
+		padding: 50px 0;
+
+		.address {
+			margin-bottom: 30px;
+		}
+
+		.form {
+
+			.btn {
+			    margin-top: 10px;
+			}
+		}
+
+		&__content {
+
+			.contact {
+
+				.icon {
+					margin-right: 25px;
+
+					span {
+					    width: 70px;
+					    height: 70px;
+					    font-size: 40px;
+					}
+				}
+			}
+		}
+	}
+
+	/***********************************
 	FOOTER STYLES
 	***********************************/
 
@@ -818,6 +894,48 @@
 	}
 
 	/***********************************
+	CONTACT STYLES
+	***********************************/
+	.project-service {
+		padding: 40px 0;
+
+		.media {
+			margin-bottom: 20px;
+		}
+
+		&__content {
+
+			.title {
+			    margin-bottom: 10px;
+			}
+		}
+	}
+
+	.contact-form {
+		padding: 40px 0;
+
+		.address {
+			margin-bottom: 20px;
+		}
+
+		&__content {
+
+			.contact {
+
+				.icon {
+					margin-right: 20px;
+
+					span {
+					    width: 60px;
+					    height: 60px;
+					    font-size: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	/***********************************
 	FOOTER STYLES
 	***********************************/
 
@@ -834,6 +952,36 @@
 }/* 575 */
 
 @media only screen and (max-width: 480px) {
+
+	h1, .h1 {
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+	h2, .h2 {
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	h3, .h3 {
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	h4, .h4 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	h5, .h5 {
+		font-size: 15px;
+		line-height: 23px;
+	}
+
+	h6, .h6 {
+		font-size: 14px;
+		line-height: 22px;
+	}
   	/***********************************
   	HEADER STYLE
   	***********************************/
@@ -935,6 +1083,35 @@
 					.media {
 					    width: 100px;
 					    margin-left: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	.contact-form {
+
+		&__content {
+
+			.contact {
+
+				.icon {
+					margin-right: 10px;
+
+					span {
+					    width: 50px;
+					    height: 50px;
+					    font-size: 25px;
+					}
+				}
+
+				.phone-number {
+
+					span {
+
+						&:after {
+							display: none;
+						}
 					}
 				}
 			}
