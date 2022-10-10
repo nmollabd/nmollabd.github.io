@@ -1290,6 +1290,16 @@
 
 		.applications-featured {
 			min-height: 200px;
+
+			&.popup-video {
+
+				&:before {
+				    top: 45%;
+				    width: 40px;
+				    height: 40px;
+				    font-size: 20px;
+				}
+			}
 		}
 	}
 

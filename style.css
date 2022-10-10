@@ -3683,6 +3683,12 @@ FOOTER STYLE
   .blog .applications-featured {
     min-height: 200px;
   }
+  .blog .applications-featured.popup-video:before {
+    top: 45%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
 }
 /* 480 */
 @media only screen and (max-width: 420px) {
