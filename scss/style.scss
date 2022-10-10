@@ -1110,6 +1110,7 @@ ABOUT STYLE
 				    a {
 				    	color: $black;
 				    	font-family: $oswald;
+				    	text-transform: lowercase;
 				    	@include transition(all 0.3s ease);
 
 				    	&:any-link {

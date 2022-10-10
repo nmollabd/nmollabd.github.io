@@ -1874,6 +1874,7 @@ ABOUT STYLE
 .about__content .personal-info ul li a {
   color: #292E31;
   font-family: "Oswald", sans-serif;
+  text-transform: lowercase;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
