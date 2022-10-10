@@ -2132,6 +2132,10 @@ ABOUT STYLE
 .blog__main--post .blog-content__top {
   margin-top: 20px;
 }
+.blog__main--post .blog-content__top .blog-date {
+  margin: 0;
+  margin-bottom: 15px;
+}
 .blog__main--post .blog-content__top .blog-date li {
   display: inline-block;
 }
@@ -2239,7 +2243,7 @@ ABOUT STYLE
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 40px 136px 36px 40px;
+  padding: 40px 30px 30px;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
@@ -2389,22 +2393,10 @@ ABOUT STYLE
   position: relative;
   text-align: center;
   padding: 20px 40px 30px;
-  background-color: #FFFFFF;
   -webkit-box-shadow: 0px 15px 30px 0px rgba(47, 109, 255, 0.1);
           box-shadow: 0px 15px 30px 0px rgba(47, 109, 255, 0.1);
-}
-.blog .sidebar .single-widget.author-widget:before {
-  top: 0;
-  left: 0;
-  width: 100%;
-  content: "";
-  z-index: -1;
-  height: 100%;
-  position: absolute;
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-image: url(../images/author-widget-bg.png);
+  background: -webkit-gradient(linear, left bottom, left top, from(#d8edff), to(#e5d5ff));
+  background: linear-gradient(to top, #d8edff 0%, #e5d5ff 100%);
 }
 .blog .sidebar .single-widget.author-widget .text .name {
   margin-bottom: 5px;
@@ -2420,9 +2412,6 @@ ABOUT STYLE
   font-weight: 700;
   font-family: "Oswald", sans-serif;
   letter-spacing: 0.24px;
-}
-.blog .sidebar .single-widget.author-widget .media {
-  margin-bottom: 10px;
 }
 .blog .sidebar .single-widget.author-widget .author-social-link {
   margin-top: 10px;
@@ -2440,6 +2429,7 @@ ABOUT STYLE
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2960,6 +2950,13 @@ FOOTER STYLE
   }
 
   /***********************************
+  BLOG STYLES
+  ***********************************/
+  .blog {
+    padding: 70px 0;
+  }
+
+  /***********************************
   FOOTER STYLES
   ***********************************/
   .footer {
@@ -3099,6 +3096,36 @@ FOOTER STYLE
 
   .contact-form {
     padding: 60px 0;
+  }
+
+  /***********************************
+  BLOG STYLES
+  ***********************************/
+  .blog {
+    padding: 60px 0;
+  }
+  .blog__main--post .blog-thumbnail-slider .media img {
+    height: 300px;
+  }
+  .blog .applications-featured {
+    min-height: 300px;
+  }
+  .blog .sidebar .single-widget.author-widget {
+    padding: 20px;
+  }
+  .blog .sidebar .single-widget.author-widget .author-social-link .social-media li a {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+  }
+  .blog .sidebar .single-widget.author-widget .media {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .blog .sidebar .single-widget .header-search {
+    margin-top: 30px;
   }
 
   /***********************************
@@ -3323,6 +3350,39 @@ FOOTER STYLE
   }
 
   /***********************************
+  BLOG STYLES
+  ***********************************/
+  .blog {
+    padding: 50px 0;
+  }
+  .blog__main--post .blog-thumbnail-slider .media img {
+    height: 250px;
+  }
+  .blog__main--post .blog-content__top {
+    margin-top: 15px;
+  }
+  .blog__main--post .blog-content__top .blog-date {
+    margin-bottom: 10px;
+  }
+  .blog__main--post .blog-content__top .blog-date li:not(:first-child) {
+    margin-left: 10px;
+  }
+  .blog__main--post .blog-content__top .blog-date li a {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.42px;
+  }
+  .blog__main--post .blog-content__top .blog-date li a i {
+    margin-right: 5px;
+  }
+  .blog .applications-featured {
+    min-height: 250px;
+  }
+  .blog .sidebar .single-widget .header-search {
+    margin-top: 20px;
+  }
+
+  /***********************************
   FOOTER STYLES
   ***********************************/
   .footer {
@@ -3494,6 +3554,13 @@ FOOTER STYLE
   }
 
   /***********************************
+  BLOG STYLES
+  ***********************************/
+  .blog {
+    padding: 40px 0;
+  }
+
+  /***********************************
   FOOTER STYLES
   ***********************************/
   .footer {
@@ -3594,6 +3661,26 @@ FOOTER STYLE
   }
   .contact-form__content .contact .phone-number span:after {
     display: none;
+  }
+
+  /***********************************
+  BLOG STYLES
+  ***********************************/
+  .blog__main--post .blog-thumbnail-slider .media {
+    border-radius: 12px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+  }
+  .blog__main--post .blog-thumbnail-slider .media img {
+    height: 200px;
+  }
+  .blog__main .blog-thumbnail-slider .slick-arrow {
+    display: none !important;
+  }
+  .blog .applications-featured {
+    min-height: 200px;
   }
 }
 /* 480 */

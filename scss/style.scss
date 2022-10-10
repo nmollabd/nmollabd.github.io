@@ -1391,6 +1391,8 @@ ABOUT STYLE
 					margin-top: 20px;
 
 					.blog-date {
+						margin: 0;
+						margin-bottom: 15px;
 
 						li {
 							display: inline-block;
@@ -1508,7 +1510,7 @@ ABOUT STYLE
 		min-height: 432px;
 		position: relative;
 		flex-direction: column;
-		padding: 40px 136px 36px 40px;
+		padding: 40px 30px 30px;
 		-webkit-backface-visibility: hidden;
 		-moz-backface-visibility: hidden;
 		-webkit-transform: translate3d(0, 0, 0);
@@ -1656,22 +1658,8 @@ ABOUT STYLE
 			    position: relative;
 			    text-align: center;
 			    padding: 20px 40px 30px;
-			    background-color: $white;
 			    box-shadow: 0px 15px 30px 0px rgb(47 109 255 / 10%);
-
-			    &:before {
-					top: 0;
-					left: 0;
-					width: 100%;
-					content: '';
-					z-index: -1;
-					height: 100%;
-					position: absolute;
-					background-size: cover !important;
-					background-position: center !important;
-					background-repeat: no-repeat !important;
-					background-image: url(../images/author-widget-bg.png);
-			    }
+			    background: linear-gradient(to top, #d8edff 0%, #e5d5ff 100%);
 
 			    .text {
 
@@ -1692,10 +1680,6 @@ ABOUT STYLE
 			    	}
 			    }
 
-			    .media {
-			    	margin-bottom: 10px;
-			    }
-
 			    .author-social-link {
 			    	margin-top: 10px;
 
@@ -1713,6 +1697,7 @@ ABOUT STYLE
 			    				height: 30px;
 			    				color: $white;
 								display: flex;
+								font-size: 15px;
 								align-items: center;
 								background: $primary;
 								justify-content: center;

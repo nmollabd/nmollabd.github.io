@@ -128,6 +128,13 @@
 	}
 
 	/***********************************
+	BLOG STYLES
+	***********************************/
+	.blog {
+		padding: 70px 0;
+	}
+
+	/***********************************
 	FOOTER STYLES
 	***********************************/
 
@@ -346,6 +353,66 @@
 
 	.contact-form {
 		padding: 60px 0;
+	}
+
+	/***********************************
+	BLOG STYLES
+	***********************************/
+	.blog {
+		padding: 60px 0;
+
+		&__main--post {
+
+			.blog-thumbnail-slider {
+
+				.media {
+
+					img {
+					    height: 300px;
+					}
+				}
+			}
+		}
+
+		.applications-featured {
+			min-height: 300px;
+		}
+
+		.sidebar {
+
+			.single-widget {
+
+				&.author-widget {
+				    padding: 20px;
+
+				    .author-social-link {
+
+				    	.social-media {
+
+				    		li {
+
+				    			a {
+								    width: 25px;
+								    height: 25px;
+								    font-size: 12px;
+								}
+				    		}
+				    	}
+				    }
+
+				    .media {
+						max-width: 350px;
+						margin-left: auto;
+						margin-right: auto;
+						margin-bottom: 20px;
+				    }
+				}
+
+				.header-search {
+					margin-top: 30px;
+				}
+			}
+		}
 	}
 
 	/***********************************
@@ -676,6 +743,71 @@
 	}
 
 	/***********************************
+	BLOG STYLES
+	***********************************/
+	.blog {
+		padding: 50px 0;
+
+		&__main {
+
+			&--post {
+
+				.blog-thumbnail-slider {
+
+					.media {
+
+						img {
+						    height: 250px;
+						}
+					}
+				}
+
+				.blog-content {
+
+					&__top {
+						margin-top: 15px;
+
+						.blog-date {
+							margin-bottom: 10px;
+
+							li {
+
+								&:not(:first-child) {
+								    margin-left: 10px;
+								}
+
+								a {
+									font-size: 14px;
+									line-height: 20px;
+									@include letter-spacing(30, 14);
+
+									i {
+										margin-right: 5px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.applications-featured {
+			min-height: 250px;
+		}
+
+		.sidebar {
+
+			.single-widget {
+
+				.header-search {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+
+	/***********************************
 	FOOTER STYLES
 	***********************************/
 
@@ -937,6 +1069,13 @@
 	}
 
 	/***********************************
+	BLOG STYLES
+	***********************************/
+	.blog {
+		padding: 40px 0;
+	}
+
+	/***********************************
 	FOOTER STYLES
 	***********************************/
 
@@ -1116,6 +1255,40 @@
 					}
 				}
 			}
+		}
+	}
+
+	/***********************************
+	BLOG STYLES
+	***********************************/
+	.blog {
+
+		&__main {
+
+			&--post {
+
+				.blog-thumbnail-slider {
+
+					.media {
+						@include border-radius(12px);
+
+						img {
+						    height: 200px;
+						}
+					}
+				}
+			}
+
+			.blog-thumbnail-slider {
+
+				.slick-arrow {
+					display: none !important;
+				}
+			}
+		}
+
+		.applications-featured {
+			min-height: 200px;
 		}
 	}
 
