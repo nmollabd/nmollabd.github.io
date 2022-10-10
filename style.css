@@ -3664,6 +3664,10 @@ FOOTER STYLE
     display: none;
   }
 
+  .testimonial-section .slick-dots {
+    display: none !important;
+  }
+
   /***********************************
   BLOG STYLES
   ***********************************/
