@@ -96,7 +96,7 @@ PRELOADER-INNER STYLE
 			display: inline-block;
 			background-color: $success;
 			@include border-radius(12px);
-			// animation: sk-bouncedelay 1.9s infinite ease-in-out both;
+			animation: sk-bouncedelay 1.9s infinite ease-in-out both;
 	    }
 
 	    .bounce1 {

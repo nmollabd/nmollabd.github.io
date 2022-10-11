@@ -1016,6 +1016,8 @@ PRELOADER-INNER STYLE
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
+  -webkit-animation: sk-bouncedelay 1.9s infinite ease-in-out both;
+          animation: sk-bouncedelay 1.9s infinite ease-in-out both;
 }
 .preloader-inner .spinner .bounce1 {
   -webkit-animation-delay: -0.5s;
