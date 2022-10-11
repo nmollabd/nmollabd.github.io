@@ -36,36 +36,14 @@ $success: #51BC70;
 	@include transition(initial);
 
 	&.mfp-bg {
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1042;
-		overflow: hidden;
-		position: fixed;
-		background: #0b0b0b;
-		opacity: 0.8;
-	}
-
-	.mfp-wrap {
-	    top: 0;
-	    left: 0;
-	    width: 100%;
-	    height: 100%;
-	    z-index: 1043;
-	    position: fixed;
-	    outline: none !important;
+		opacity: 1 !important; 
+		backdrop-filter: blur(10px);
+		--webkit-backdrop-filter: blur(10px); 
+		background-color: rgba(255, 255, 255, 0);
 	}
 
 	.mfp-container {
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		padding: 0 8px;
-		z-index: 9999;
-		text-align: center;
-		position: absolute;
+		padding: 0 15px; 
 
 		.mfp-content {
 			height: 100%;
@@ -258,9 +236,9 @@ $success: #51BC70;
 		.mfp-close {
 			opacity: 1;
 			color: $primary;
-			font-size: 18px;
+			font-size: 40px;
 			cursor: pointer;
-			line-height: 24px;
+			line-height: 44px;
 			padding-bottom: 20px;
 			text-transform: uppercase;
 			font-family: 'glewee';
@@ -269,22 +247,6 @@ $success: #51BC70;
 			&:hover, &:focus {
 				color: $secondary;
 			}
-		}
-	}
-
-	.mfp-close {
-		opacity: 1;
-		color: $primary;
-		font-size: 18px;
-		cursor: pointer;
-		line-height: 44px;
-		padding-bottom: 20px;
-		text-transform: uppercase;
-		font-family: 'glewee';
-		@include transition(all 0.3s ease); 
-
-		&:hover, &:focus {
-			color: $secondary;
 		}
 	}
 }
@@ -1440,116 +1402,6 @@ ABOUT STYLE
 		}
 	}
 
-
-	.applications-featured {
-		width: 100%;
-		display: flex;
-		overflow: hidden;
-		min-height: 432px;
-		position: relative;
-		flex-direction: column;
-		padding: 40px 30px 30px;
-		-webkit-backface-visibility: hidden;
-		-moz-backface-visibility: hidden;
-		-webkit-transform: translate3d(0, 0, 0);
-		-moz-transform: translate3d(0, 0, 0);
-
-		&.popup-video {
-			position: relative;
-
-			&:before {
-			    top: 50%;
-			    left: 50%;
-				width: 60px;
-				height: 60px;
-				content: "";
-				display: flex;
-				color: $white;
-				font-size: 30px;
-				text-indent: 6px;
-				position: absolute;
-				align-items: center;
-				justify-content: center;
-				justify-content: center;
-				font-family: "portfolio";
-				background-color: #6930c3;
-				@include border-radius(500px);
-				@include transition(all 0.5s ease);
-				@include transform(translate(-50%, -50%));
-			}
-		}
-
-		&.has--overlay {
-		  	z-index: 0;
-
-		  	.media {
-
-		  		&:before {
-					top: 0;
-					left: 0;
-					content: "";
-					width: 100%;
-					z-index: 1;
-					height: 100%;
-					position: absolute;
-					background: linear-gradient(rgba(29, 42, 69, 0) 0%, #1d2a45 100%);
-				}
-		  	}
-		}
-
-		.media {
-			top: 0;
-			left: 0;
-			z-index: -1;
-			width: 100%;
-			height: 100%;
-			overflow: hidden;
-			position: absolute;
-
-			img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-				@include transition(all 0.5s ease);
-			}
-		}
-
-		.text {
-			margin-top: auto;
-
-
-			.runtime {
-				color: #98E6D8;
-				font-weight: 300;
-				margin-bottom: 3px;
-				letter-spacing: 2.25px;
-				@include letter-spacing(125, 18);
-			}
-
-			.title {
-				color: $white;
-			}
-		}
-
-		&:any-link {
-
-			&:hover, &:focus {
-
-				&:before {
-					color: $white;
-					background-color: $danger;
-				}
-
-				.media {
-
-					img {
-						@include transform( scale(1.2));
-					}
-				}
-			}
-		}
-	}
-
 	.sidebar {
 
 		.single-widget {
@@ -1760,6 +1612,119 @@ ABOUT STYLE
 	}
 }
 
+/***********************************
+POPUP VIDEO STYLE
+***********************************/
+
+.applications-featured {
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+	min-height: 432px;
+	position: relative;
+	flex-direction: column;
+	padding: 40px 30px 30px;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+
+	&.popup-video {
+		position: relative;
+
+		&:before {
+		    top: 50%;
+		    left: 50%;
+			width: 60px;
+			height: 60px;
+			content: "";
+			display: flex;
+			color: $white;
+			font-size: 30px;
+			text-indent: 6px;
+			position: absolute;
+			align-items: center;
+			justify-content: center;
+			justify-content: center;
+			font-family: "portfolio";
+			background-color: #6930c3;
+			@include border-radius(500px);
+			@include transition(all 0.5s ease);
+			@include transform(translate(-50%, -50%));
+		}
+	}
+
+	&.has--overlay {
+	  	z-index: 0;
+
+	  	.media {
+
+	  		&:before {
+				top: 0;
+				left: 0;
+				content: "";
+				width: 100%;
+				z-index: 1;
+				height: 100%;
+				position: absolute;
+				background: linear-gradient(rgba(29, 42, 69, 0) 0%, #1d2a45 100%);
+			}
+	  	}
+	}
+
+	.media {
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		position: absolute;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			@include transition(all 0.5s ease);
+		}
+	}
+
+	.text {
+		margin-top: auto;
+
+
+		.runtime {
+			color: #98E6D8;
+			font-weight: 300;
+			margin-bottom: 3px;
+			letter-spacing: 2.25px;
+			@include letter-spacing(125, 18);
+		}
+
+		.title {
+			color: $white;
+		}
+	}
+
+	&:any-link {
+
+		&:hover, &:focus {
+
+			&:before {
+				color: $white;
+				background-color: $danger;
+			}
+
+			.media {
+
+				img {
+					@include transform( scale(1.2));
+				}
+			}
+		}
+	}
+}
+
 .blog-Details {
 
 	&__main {
@@ -1964,6 +1929,44 @@ ABOUT STYLE
 				    }
 				}
 			}
+		}
+	}
+}
+
+/***********************************
+SERVICE SINGLE STYLE
+***********************************/
+.platforms {
+	padding: 90px 0;
+
+	.applications-featured {
+	    min-height: 450px;
+
+	    .media {
+	    	@include border-radius(36px);
+	    }
+	}
+
+	&__content {
+
+		.title {
+			margin-bottom: 10px;
+		}
+
+		&--editor {
+
+			p {
+				font-family: $oswald;
+			    margin: 0 0 20px !important;
+
+			    &:last-child {
+			    	margin: 0 !important;
+			    }
+			}
+		}
+
+		.btn {
+			margin-top: 20px;
 		}
 	}
 }
