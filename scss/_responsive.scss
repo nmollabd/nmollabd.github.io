@@ -134,6 +134,19 @@
 		padding: 70px 0;
 	}
 
+	.blog-Details {
+
+		&__main {
+
+			.blog-content {
+
+				.media {
+				    @include border-radius(24px);
+				}
+			}
+		}
+	}
+
 	/***********************************
 	FOOTER STYLES
 	***********************************/
@@ -1260,7 +1273,7 @@
 	}
 
 	.testimonial-section {
-		
+
 		.slick-dots {
 			display: none !important;
 		}

@@ -23,10 +23,10 @@ $success: #51BC70;
 
 // MIXIN
 @import 'mixin';
-@import 'icon';
 @import 'basc';
 @import 'header';
 @import 'grid';
+@import 'out-line';
 
 .text-secondary {
 	color: $secondary !important;
@@ -1349,6 +1349,7 @@ ABOUT STYLE
 		}
 	}
 }
+
 
 .blog {
 	padding: 90px 0;

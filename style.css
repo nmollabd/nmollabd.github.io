@@ -883,6 +883,56 @@ section {
           flex: 1 1 300px !important;
 }
 
+/***********************************
+MOUSE-CURSOR STYLES
+***********************************/
+.mouse-cursor {
+  top: 0;
+  left: 0;
+  position: fixed;
+  visibility: hidden;
+  pointer-events: none;
+  border-radius: 500px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.mouse-cursor.cursor-inner {
+  width: 6px;
+  height: 6px;
+  z-index: 1031;
+  margin-top: -3px;
+  margin-left: -3px;
+  background-color: #CB633D;
+  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.mouse-cursor.cursor-inner.cursor-hover {
+  width: 50px;
+  height: 50px;
+  opacity: 0.3;
+  margin-top: -40px;
+  margin-left: -40px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#d8edff), to(#e5d5ff));
+  background: linear-gradient(to top, #d8edff 0%, #e5d5ff 100%);
+}
+.mouse-cursor.cursor-outer {
+  width: 30px;
+  z-index: 1031;
+  opacity: 0.5;
+  height: 30px;
+  margin-top: -15px;
+  margin-left: -15px;
+  border: 2px solid #CB633D;
+  -webkit-transition: all 0.08s ease-out;
+  transition: all 0.08s ease-out;
+}
+.mouse-cursor.cursor-outer.cursor-hover {
+  opacity: 0;
+}
+
 .text-secondary {
   color: #6930c3 !important;
 }
@@ -2954,6 +3004,14 @@ FOOTER STYLE
   ***********************************/
   .blog {
     padding: 70px 0;
+  }
+
+  .blog-Details__main .blog-content .media {
+    border-radius: 24px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
   }
 
   /***********************************
