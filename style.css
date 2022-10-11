@@ -285,7 +285,7 @@ HEADER STYLES
 
 .header-gutter {
   height: 114px;
-  min-height: 114px;
+  min-height: 114px !important;
 }
 
 .header {
@@ -2814,6 +2814,30 @@ SERVICE SINGLE STYLE
 }
 .platforms__content .btn {
   margin-top: 20px;
+}
+
+.pages {
+  padding: 90px 0;
+}
+.pages .applications-featured {
+  min-height: 550px;
+  padding: 50px 60px;
+}
+.pages .applications-featured:before {
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  background: #CB633D;
+}
+.pages .applications-featured:hover:before, .pages .applications-featured:focus:before {
+  background: #51BC70;
+}
+.pages .applications-featured .media {
+  border-radius: 36px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
 }
 
 /***********************************

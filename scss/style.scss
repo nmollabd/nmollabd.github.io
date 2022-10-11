@@ -1971,6 +1971,33 @@ SERVICE SINGLE STYLE
 	}
 }
 
+.pages {
+	padding: 90px 0;
+
+	.applications-featured {
+	    min-height: 550px;
+	    padding: 50px 60px;
+
+	    &:before {
+		    width: 100px;
+		    height: 100px;
+		    font-size: 50px;
+		    background: $danger;
+		}
+
+		&:hover, &:focus {
+
+			&:before {
+				background: $success;
+			}
+		}
+
+	    .media {
+	    	@include border-radius(36px);
+	    }
+	}
+}
+
 /***********************************
 FOOTER STYLE
 ***********************************/
