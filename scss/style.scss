@@ -335,69 +335,6 @@ select:focus, textarea:hover, textarea:focus {
 
 
 /***********************************
-PRELOADER-INNER STYLE
-***********************************/
-.preloader-inner {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    position: fixed;
-    z-index: 9999999999;
-    align-items: center;
-    justify-content: center;
-    background-color: $white;
-
-    .cancel-preloader {
-        right: 30px;
-        bottom: 30px;
-        position: absolute;
-
-        a {
-            height: 50px;
-            width: 200px;
-            display: block;
-            color: #6930c3;
-            font-weight: 600;
-            line-height: 50px;
-            text-align: center;
-            border-radius: 30px;
-            background-color: $white;
-            text-transform: capitalize;
-            @include transition(all 0.3s ease-in);
-
-            &:hover, &:focus {
-                color: $white;
-                background-color: #221b68;
-            }
-        }
-    }
-
- 	.spinner {
-     	width: 70px;
-     	text-align: center;
-
-     	> div {
-			width: 15px;
-			height: 15px;
-			border-radius: 100%;
-			display: inline-block;
-			background-color: #6930c3;
-			animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-	    }
-
-	    .bounce1 {
-	        animation-delay: -0.32s;
-	    }
-
-	    .bounce2 {
-	        animation-delay: -0.16s;
-	    }
-	}
-}
-
-/***********************************
     BREADCRUMB STYLES
 ***********************************/
 .breadcrumb-wrapper {

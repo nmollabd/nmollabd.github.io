@@ -234,3 +234,18 @@ html {
         transform: scale(1);
     } 
 }
+
+html {
+    overflow-x: hidden;
+    
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #FFFFFF;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $success;
+        @include border-radius(500px);
+    }
+}

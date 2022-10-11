@@ -135,6 +135,13 @@ HEADER STYLES
                                     font-family: "portfolio";
                                 }
                             }
+
+                            &.cuurent-menu-item, &:focus, &:focus {
+
+                                > a {
+                                    color: $success;
+                                }
+                            }
                         }
 
                         .dropdown-menu {
@@ -447,6 +454,13 @@ HEADER STYLES
                                 font-weight: 700;
                                 line-height: 24px;
                                 font-family: $oswald;
+                            }
+
+                            &.cuurent-menu-item, &:focus, &:focus {
+
+                                > a {
+                                    color: $success;
+                                }
                             }
 
                             &.dropdown-back {

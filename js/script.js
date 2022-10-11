@@ -239,7 +239,7 @@
         // jQuery(".progress-bar").ProgressBar(); 
     });
 
-        
+    // myCursor    
     var myCursor    = jQuery('.mouse-cursor');
     
         if(myCursor.length){
@@ -257,5 +257,4 @@
             }), e.style.visibility = "visible", t.style.visibility = "visible"
         }
     }
-
 }(jQuery));
