@@ -1914,6 +1914,10 @@ FOOTER STYLE
     &__logo {
     	max-width: 150px;
     	margin-bottom: 10px;
+
+    	a {
+    		display: block;
+    	}
     }
 
     &__portfolio {

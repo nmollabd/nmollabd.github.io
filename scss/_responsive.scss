@@ -828,48 +828,9 @@
 	FOOTER STYLES
 	***********************************/
 	.footer {
-		padding: 50px 0 40px;
-
-		&__widget {
-			margin-bottom: 40px;
-
-			&-menu {
-				margin-bottom: 23px;
-				margin-left: -10px;
-				margin-right: -10px;
-
-				li {
-					padding-left: 10px;
-					padding-right: 10px;
-
-					a {
-						font-size: 16px;
-					}
-				}
-			}
-		}
-
-		&__widget-nav {
-
-			li {
-
-				&.bold {
-
-					>a {
-						font-size: 16px;
-					}
-				}
-			}
-		}
-
-		.masonry {
-			margin-top: 30px;
-		}
-
-		&__social-media {
-			margin-bottom: 15px;
-		}
+		padding: 50px 0;
 	}
+
 }/* 767 */
 
 @media only screen and (max-width: 680px) {
@@ -1207,50 +1168,11 @@
 	/***********************************
 	FOOTER STYLE
 	***********************************/
+
 	.footer {
-		padding: 40px 0 40px;
-
-		&__logo {
-			margin-bottom: 20px;
-
-			img {
-				max-width: 80px;
-			}
-		}
-
-		&__widget {
-			margin-bottom: 30px;
-
-			&-menu {
-				margin-bottom: 15px;
-				margin-left: -7px;
-				margin-right: -7px;
-
-				li {
-					padding-left: 7px;
-					padding-right: 7px;
-
-					a {
-						font-size: 16px;
-					}
-
-					&.bold {
-
-						> a {
-							font-size: 16px;
-						}
-					}
-				}
-			}
-		}
-		.masonry {
-			margin-top: 20px;
-		}
-
-		&__social-media {
-			margin-bottom: 15px;
-		}
+		padding: 40px 0;
 	}
+
 }/* 575 */
 
 @media only screen and (max-width: 480px) {

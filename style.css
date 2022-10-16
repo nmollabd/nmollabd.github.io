@@ -2832,6 +2832,9 @@ FOOTER STYLE
   max-width: 150px;
   margin-bottom: 10px;
 }
+.footer__logo a {
+  display: block;
+}
 .footer__portfolio p {
   color: #666666;
   font-size: 14px;
@@ -3469,31 +3472,7 @@ FOOTER STYLE
   FOOTER STYLES
   ***********************************/
   .footer {
-    padding: 50px 0 40px;
-  }
-  .footer__widget {
-    margin-bottom: 40px;
-  }
-  .footer__widget-menu {
-    margin-bottom: 23px;
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-  .footer__widget-menu li {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .footer__widget-menu li a {
-    font-size: 16px;
-  }
-  .footer__widget-nav li.bold > a {
-    font-size: 16px;
-  }
-  .footer .masonry {
-    margin-top: 30px;
-  }
-  .footer__social-media {
-    margin-bottom: 15px;
+    padding: 50px 0;
   }
 }
 /* 767 */
@@ -3719,37 +3698,7 @@ FOOTER STYLE
   FOOTER STYLE
   ***********************************/
   .footer {
-    padding: 40px 0 40px;
-  }
-  .footer__logo {
-    margin-bottom: 20px;
-  }
-  .footer__logo img {
-    max-width: 80px;
-  }
-  .footer__widget {
-    margin-bottom: 30px;
-  }
-  .footer__widget-menu {
-    margin-bottom: 15px;
-    margin-left: -7px;
-    margin-right: -7px;
-  }
-  .footer__widget-menu li {
-    padding-left: 7px;
-    padding-right: 7px;
-  }
-  .footer__widget-menu li a {
-    font-size: 16px;
-  }
-  .footer__widget-menu li.bold > a {
-    font-size: 16px;
-  }
-  .footer .masonry {
-    margin-top: 20px;
-  }
-  .footer__social-media {
-    margin-bottom: 15px;
+    padding: 40px 0;
   }
 }
 /* 575 */
