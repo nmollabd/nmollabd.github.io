@@ -1014,6 +1014,7 @@
 	}
 
 	.sticky-contact {
+		right: 15px;
 	    width: 90px;
 	    padding: 8px;
 	    height: 90px;
@@ -1171,6 +1172,10 @@
 
 	.footer {
 		padding: 40px 0;
+
+		&__logo {
+			max-width: 120px;
+		}
 	}
 
 }/* 575 */

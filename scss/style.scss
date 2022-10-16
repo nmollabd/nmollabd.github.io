@@ -574,10 +574,10 @@ BANNER STYLES
 	position: relative;
 
 	.left-vector {
-		position: absolute;
-		width: auto;
 		left: 5px;
 		top: 100px;
+		width: auto;
+		position: absolute;
 	}
 
 	.overlay {
@@ -631,7 +631,7 @@ BANNER STYLES
 				opacity: 0;
 				width: 100%;
 				height: 100%;
-				z-index: 1000;
+				// z-index: 1000;
 				visibility: hidden;
 				text-align: center;
 				position: absolute;
@@ -653,7 +653,7 @@ BANNER STYLES
 				left: 0;
 				width: 100%;
 				padding: 24px;
-				z-index: 1010;
+				// z-index: 1010;
 				bottom: -100px;
 				position: absolute;
 				background-color: #6930c3;
@@ -796,7 +796,7 @@ BANNER STYLES
 .author-section {
 
 	.author-content {
-		z-index: 100;
+		z-index: 9;
 		padding: 30px 90px;
 		position: relative;
 		margin-top: -100px;
