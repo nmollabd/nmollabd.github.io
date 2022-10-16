@@ -1621,6 +1621,7 @@ BANNER STYLES
   margin-bottom: -30px;
 }
 .project--content__item {
+  display: block;
   width: 100%;
   overflow: hidden;
   position: relative;
