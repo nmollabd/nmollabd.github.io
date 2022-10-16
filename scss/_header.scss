@@ -237,14 +237,14 @@ HEADER STYLES
 }
 
 .navbar-toggle {
+    margin: 0;
     border: 0;
     padding: 0;
-    width: 30px;
+    width: 25px;
     display: block;
     border-radius: 0;
     overflow: inherit;
     background: transparent;
-    @include transition(all 0.3s ease);
 
     &:hover {
 
@@ -289,14 +289,14 @@ HEADER STYLES
 
     .icon-bar {
         width: 100%;
-        height: 3px;
+        height: 4px;
         display: block;
-        @include border-radius(0);
-        background-color: $secondary;
-        @include transition(transform 150ms linear 150ms);
+        border-radius: 500px;
+        background-color: #062D65;
+        transition: transform 150ms linear 150ms;
 
         &:not(:last-child) {
-            margin-bottom: 5px;
+            margin-bottom: 4px;
         }
     }
 }
@@ -308,11 +308,11 @@ HEADER STYLES
     display: block;
     z-index: 999999;
     position: fixed;
-    max-width: 400px;
+    max-width: 300px;
     overflow-y: auto;
+    background: #FFF;
     overflow-x: hidden;
-    background: $white;
-    box-shadow: 0px 0px 40px rgb(0 0 0 / 9%);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
 
     &.right {
         left: auto;

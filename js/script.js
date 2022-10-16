@@ -83,7 +83,7 @@
             // $(this).addClass('show');
             $(this).find('.dropdown-menu').show().parents('.dropdown').addClass('show');
 
-            if ( $header.hasClass('white') ) 
+            // if ( $header.hasClass('white') ) 
             {
                 $header.addClass('white-remove');
                 $header.removeClass('white');
