@@ -375,137 +375,41 @@ BEFORE-GRADIENT STYLES
 /***********************************
 HERO-SECTION STYLE
 ***********************************/
-.hero-section {
-	position: relative;
-	padding: 70px 0 50px;
-    background: linear-gradient(to top, #d8edff 0%, #e5d5ff 100%);
+/***********************************
+BANNER STYLES
+***********************************/
+.banner {
+    overflow: hidden;
+    background: #F7F7F7;
+    padding: 200px 0 150px;
 
-	.color-vector-2 {
-		left: auto;
-		right: 6%;
-		top: 2%;
-	}
+	&__content {
+		z-index: 1;
+    	max-width: 482px;
+    	position: relative;
 
-	.color-vector-3 {
-		width: inherit;
-	}
-
-	.hero-slider {
-
-		.slick-active {
-			@include transition(all 0.3s ease-in);
-
-			.slider-top {
-				animation: 1.5s fadeInDown;
-			}
-
-			.title {
-				animation: 1.5s fadeInRight;
-			}
-
-			.slider-btn {
-				animation: 1.5s fadeInUp;
-			}
-
-			.right-img {
-    			animation: 1.5s fadeInRight;
-			}
-		}
-	}
-
-	.slider-top {
-
-		span {
-			font-weight: 700;
-			display: block;
+		.title {
+			color: #062D65;
 			margin-bottom: 15px;
+		}
 
-			&:last-child {
-				margin-bottom: 30;
-				width: 180px;
+		.description {
+			margin-bottom: 20px;
+
+			p {
+				font-family: $oswald;
 			}
 		}
 	}
 
-	.title {
-		padding-right: 65px;
-		margin-bottom: 30px;
-
-		span {
-			color: #6930c3;
-		}
-	}
-
-	.slider-btn {
-
-		a {
-
-			&:before {
-				display: none;
-			}
-
-			&:hover {
-				color: #6930c3;
-				background-color: transparent;
-			}
-
-			&.resume {
-				color: #6930c3;
-				margin-right: 0;
-				background-color: transparent;
-				border: 1px solid #6930c3;
-
-				&:hover {
-					color: #ffffff;
-					background-color: #6930c3;
-				}
-			}
-		}
-	}
-
-	.right-img {
-		position: relative;
-
-		.slider-object {
-		    top: 0;
-		    right: -80px;
-		    width: 120px;
-		    position: absolute;
-		}
-
-		.media {
-			width: 697px;
-			height: auto;
-
-			img {
-				height: auto;
-				max-width: 100%;
-				object-fit: cover;
-			}
-		}
-	}
-
-	.slick-dots {
+	&__media {
 		top: 50%;
-		right: 50px;
-		list-style: none;
+		right: -100px;
 		position: absolute;
-		transform: translateY(-50%);
+		@include transform(translateY(-50%));
 
-		button {
-			border: none;
-			width: 15px;
-			height: 15px;
-			border-radius: 50%;
-			background-color: #221b68;
-			font-size: 0;
-		}
-
-		.slick-active {
-
-			button {
-				background-color: #6930c3;
-			}
+		img {
+			max-width: 850px;
 		}
 	}
 }

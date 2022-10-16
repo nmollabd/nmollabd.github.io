@@ -29,18 +29,48 @@
         }
     });
 
-    //Sticky Header 
-    $(window).on("scroll", function(){
-        var ScrollBarPose = $(window).scrollTop(); 
-        var HeaderHeight = $(".header").height();
-        if( ScrollBarPose > HeaderHeight ) {
-            $(".header").addClass("sticky"); 
+    /*** Sticky header */
+    $(window).scroll(function(){
+        if($("body").scrollTop() > 0 || $("html").scrollTop() > 0) {
+            $(".header").addClass("stop");
+            $(".sidr").addClass("stop");
         } else {
-            $(".header").removeClass("sticky");
+            $(".header").removeClass("stop");
+            $(".sidr").removeClass("stop");
         }
     });
 
-        /*** Hover Nav menu */
+    /*** Sticky header */
+    const body = document.body;
+    const scrollUp = "scroll-up";
+    const scrollDown = "scroll-down";
+    let lastScroll = 100;
+
+    window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll <= 0) 
+        {
+            body.classList.remove(scrollUp);
+            return;
+        }
+
+        if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) 
+        {
+            // down
+            body.classList.remove(scrollUp);
+            body.classList.add(scrollDown);
+        } 
+        else if ( currentScroll < lastScroll && body.classList.contains(scrollDown) ) 
+        {
+            // up
+            body.classList.remove(scrollDown);
+            body.classList.add(scrollUp);
+        }
+
+        lastScroll = currentScroll;
+    });
+
+    /*** Hover Nav menu */
     function navbarHover() {
 
         var screensize = $(window).width(),
@@ -93,15 +123,18 @@
     window.onload = setGutterHeight;
     window.onresize = setGutterHeight;
 
+    $('.scrollDown').click(function() {
+        var target = $('#primary');
+        var space = $(this).data('space');
+
+        if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top - space
+            }, 1e3, "easeInOutExpo");
+        }
+    });
+
     jQuery(document).ready(function() {
-        
-        //Hero Slider
-        $(".hero-slider").slick({
-            autoplay: true, 
-            dots: true, 
-            arrows: false,
-            fade: true,
-        })
 
         //Testimonial Slider 
         $(".testimonial-section .slider-area").slick({
