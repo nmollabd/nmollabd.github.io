@@ -276,8 +276,8 @@ HEADER STYLES
 }
 
 .header-gutter {
-  height: 114px;
-  min-height: 114px !important;
+  height: 88.84px;
+  min-height: 88.84px;
 }
 
 .header {
@@ -325,7 +325,7 @@ HEADER STYLES
   line-height: 20px;
   text-align: center;
   background: #3E9AD8;
-  padding: 10px 18px 12px;
+  padding: 10px 28px 12px;
   border-radius: 500px;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -2934,19 +2934,15 @@ FOOTER STYLE
     padding-right: 40px;
     padding-left: 40px;
   }
-  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(1) {
-    display: none;
-  }
 
   /***********************************
   HERO-SECTION STYLES
   ***********************************/
-  .hero-section .right-img .slider-object {
-    right: 0px;
+  .banner__media {
+    right: -10px;
   }
-  .hero-section .right-img .media {
-    width: 100%;
-    height: auto;
+  .banner__media img {
+    max-width: 750px;
   }
 
   .service__item {
@@ -3017,13 +3013,6 @@ FOOTER STYLE
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
   }
-
-  /***********************************
-  FOOTER STYLES
-  ***********************************/
-  .footer {
-    padding: 80px 0 100px;
-  }
 }
 /* 1199 */
 @media only screen and (max-width: 991px) {
@@ -3053,12 +3042,12 @@ FOOTER STYLE
   /***********************************
   HEADER STYLE
   ***********************************/
+  .header {
+    padding: 18px 0;
+  }
   .header .container {
     padding-right: 30px;
     padding-left: 30px;
-  }
-  .header .navbar {
-    padding: 30px 0;
   }
   .header .navbar .navbar-header .navbar-brand svg, .header .navbar .navbar-header .navbar-brand img {
     max-width: 170px;
@@ -3066,26 +3055,46 @@ FOOTER STYLE
   .header .navbar .navbar-collapse .navbar-nav li:not(:first-child) {
     margin-left: 25px;
   }
-  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(2) {
+  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(1) {
     display: none;
   }
   .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li.btn-menu a {
-    padding: 8px 30px;
+    padding: 8px 25px 10px;
   }
 
   .header-gutter {
-    height: 100px;
-    min-height: 100px;
+    height: 88px;
+    min-height: 88px;
   }
 
   /***********************************
   HERO-SECTION STYLES
   ***********************************/
-  .hero-section {
-    padding-top: 60px;
+  .scrollDown {
+    top: -35px;
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    line-height: 70px;
   }
-  .hero-section .title {
-    margin-bottom: 25px;
+
+  .banner {
+    padding: 170px 0 110px;
+  }
+  .banner__content {
+    max-width: 375px;
+  }
+  .banner__content .title {
+    margin-bottom: 10px;
+  }
+  .banner__content .btn {
+    padding: 9px 30px 10px;
+  }
+  .banner__media {
+    right: 0px;
+  }
+  .banner__media img {
+    max-width: 650px;
   }
 
   .service__item .icon-wrapper {
@@ -3189,13 +3198,6 @@ FOOTER STYLE
   .blog .sidebar .single-widget .header-search {
     margin-top: 30px;
   }
-
-  /***********************************
-  FOOTER STYLES
-  ***********************************/
-  .footer {
-    padding: 50px 0 50px;
-  }
 }
 /* 991 */
 @media only screen and (max-width: 767px) {
@@ -3245,12 +3247,12 @@ FOOTER STYLE
   /***********************************
   HEADER STYLE
   ***********************************/
+  .header {
+    padding: 15px 0;
+  }
   .header .container {
     padding-right: 20px;
     padding-left: 20px;
-  }
-  .header .navbar {
-    padding: 25px 0;
   }
   .header .navbar .navbar-header .navbar-brand svg, .header .navbar .navbar-header .navbar-brand img {
     max-width: 160px;
@@ -3258,35 +3260,57 @@ FOOTER STYLE
   .header .navbar .navbar-collapse .navbar-nav li:not(:first-child) {
     margin-left: 22px;
   }
-  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(3) {
+  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(2), .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(3) {
     display: none;
   }
-  .header .top-bar {
-    display: none;
+  .header.stop {
+    padding: 10px 0;
   }
 
   .header-gutter {
-    height: 90px;
-    min-height: 90px;
+    height: 79px;
+    min-height: 79px;
   }
 
   /***********************************
   HERO-SECTION STYLES
   ***********************************/
-  .hero-section {
-    padding-top: 50px;
+  .scrollDown {
+    top: -30px;
+    width: 60px;
+    height: 60px;
+    font-size: 23px;
+    line-height: 55px;
   }
-  .hero-section .title {
-    margin-bottom: 20px;
+
+  .banner {
+    padding: 115px 0 80px;
   }
-  .hero-section .slick-dots {
-    display: none !important;
+  .banner__content {
+    max-width: 335px;
   }
-  .hero-section .right-img .media {
-    margin-bottom: 30px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .banner__content .title {
+    margin-bottom: 5px;
+  }
+  .banner__content .btn {
+    padding: 8px 25px 8px;
+  }
+  .banner__media {
+    right: -30px;
+  }
+  .banner__media img {
+    max-width: 550px;
+  }
+
+  .sticky-contact {
+    width: 100px;
+    padding: 8px;
+    height: 100px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .sticky-contact i {
+    font-size: 27px;
   }
 
   .service__item .icon-wrapper {
@@ -3478,6 +3502,40 @@ FOOTER STYLE
     font-size: 36px;
     line-height: 44px;
   }
+
+  /***********************************
+  HEADER STYLE
+  ***********************************/
+  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(4) {
+    display: none;
+  }
+
+  /***********************************
+  HERO-SECTION STYLES
+  ***********************************/
+  .scrollDown {
+    top: -25px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  .banner {
+    padding: 90px 0 60px;
+  }
+  .banner__content {
+    max-width: 296px;
+  }
+  .banner__content .btn {
+    padding: 7px 20px 7px;
+  }
+  .banner__media {
+    right: -30px;
+  }
+  .banner__media img {
+    max-width: 450px;
+  }
 }
 /* 680 */
 @media only screen and (max-width: 575px) {
@@ -3522,19 +3580,11 @@ FOOTER STYLE
     padding-right: 15px;
     padding-left: 15px;
   }
-  .header .navbar {
-    padding: 20px 0;
-  }
   .header .navbar .navbar-header .navbar-brand svg, .header .navbar .navbar-header .navbar-brand img {
     max-width: 140px;
   }
-  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(4), .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(5) {
+  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(5) {
     display: none;
-  }
-
-  .header-gutter {
-    height: 80px;
-    min-height: 80px;
   }
 
   /***********************************
@@ -3548,11 +3598,35 @@ FOOTER STYLE
   /***********************************
   HERO-SECTION STYLES
   ***********************************/
-  .hero-section {
-    padding: 40px 0;
+  .banner {
+    padding: 75px 0 60px;
   }
-  .hero-section .title {
-    margin-bottom: 15px;
+  .banner__content {
+    max-width: 100%;
+  }
+  .banner__content .description {
+    max-width: 290px;
+  }
+  .banner__content .btn {
+    padding: 6px 18px 6px;
+  }
+  .banner__media {
+    top: 75%;
+    right: -20px;
+  }
+  .banner__media img {
+    max-width: 380px;
+  }
+
+  .sticky-contact {
+    width: 90px;
+    padding: 8px;
+    height: 90px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .sticky-contact i {
+    font-size: 25px;
   }
 
   .service {
@@ -3713,16 +3787,8 @@ FOOTER STYLE
   /***********************************
   HEADER STYLE
   ***********************************/
-  .header .navbar {
-    padding: 15px 0;
-  }
   .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li.btn-menu {
     display: none;
-  }
-
-  .header-gutter {
-    height: 58px;
-    min-height: 58px;
   }
 
   /***********************************
@@ -3732,6 +3798,38 @@ FOOTER STYLE
     font-size: 12px;
     line-height: 20px;
     padding-bottom: 5px;
+  }
+
+  /***********************************
+  BANNER STYLE
+  ***********************************/
+  .banner {
+    padding: 75px 0 60px;
+  }
+  .banner__content {
+    max-width: 100%;
+  }
+  .banner__content .description {
+    max-width: 251px;
+  }
+  .banner__content .btn {
+    padding: 5px 15px 5px;
+  }
+  .banner__media {
+    top: 85%;
+    right: -10px;
+  }
+  .banner__media img {
+    max-width: 280px;
+  }
+
+  .sticky-contact {
+    width: 80px;
+    height: 80px;
+  }
+  .sticky-contact i {
+    font-size: 22px;
+    margin-bottom: 0;
   }
 
   .about-section .left-content .media-content .bottom-media {
@@ -3806,6 +3904,13 @@ FOOTER STYLE
   /***********************************
   HOME PAGE STYLES
   ***********************************/
+  .sticky-contact {
+    width: 70px;
+    height: 70px;
+  }
+  .sticky-contact i {
+    font-size: 20px;
+  }
 }
 /* 420 */
 @media only screen and (max-width: 375px) {

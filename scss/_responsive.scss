@@ -23,41 +23,18 @@
 			padding-right: 40px;
 			padding-left: 40px;
 		}
-
-		.navbar {
-
-			.navbar-collapse {
-
-				.navbar-nav {
-
-					&:not(.navbar-nav--right) {
-
-						> li {
-
-							&:nth-child(1) {
-								display: none;
-							}
-						}
-					}
-				}
-			}
-		}
 	}
 
 	/***********************************
 	HERO-SECTION STYLES
 	***********************************/
-	.hero-section {
+	.banner {
 
-		.right-img {
+		&__media {
+			right: -10px;
 
-			.slider-object {
-			    right: 0px;
-			}
-
-			.media {
-				width: 100%;
-				height: auto;
+			img {
+			    max-width: 750px;
 			}
 		}
 	}
@@ -147,13 +124,6 @@
 		}
 	}
 
-	/***********************************
-	FOOTER STYLES
-	***********************************/
-	.footer {
-		padding: 80px 0 100px;
-	}
-
 }/* 1199 */
 
 @media only screen and (max-width: 991px) {
@@ -184,6 +154,7 @@
   	***********************************/
 
 	.header {
+		padding: 18px 0;
 
 		.container {
 			padding-right: 30px;
@@ -191,7 +162,6 @@
 		}
 
 		.navbar {
-			padding: 30px 0;
 
 			.navbar-header {
 
@@ -218,7 +188,7 @@
 
 						> li {
 
-							&:nth-child(2) {
+							&:nth-child(1) {
 								display: none;
 							}
 						}
@@ -231,7 +201,7 @@
 							&.btn-menu {
 
 								a {
-									padding: 8px 30px;
+									padding: 8px 25px 10px;
 								}
 							}
 						}
@@ -242,18 +212,42 @@
 	}
 
 	.header-gutter {
-		height: 100px;
-		min-height: 100px;
+		height: 88px;
+		min-height: 88px;
 	}
 
 	/***********************************
 	HERO-SECTION STYLES
 	***********************************/
-	.hero-section {
-		padding-top: 60px;
+	.scrollDown {
+		top: -35px;
+	    width: 70px;
+	    height: 70px;
+	    font-size: 25px;
+	    line-height: 70px;
+	}
 
-		.title {
-			margin-bottom: 25px;
+	.banner {
+		padding: 170px 0 110px;
+
+		&__content {
+			max-width: 375px;
+
+			.title {
+				margin-bottom: 10px;
+			}
+
+			.btn {
+			    padding: 9px 30px 10px;
+			}
+		}
+
+		&__media {
+			right: 0px;
+
+			img {
+			    max-width: 650px;
+			}
 		}
 	}
 
@@ -427,13 +421,6 @@
 		}
 	}
 
-	/***********************************
-	FOOTER STYLES
-	***********************************/
-	.footer {
-		padding: 50px 0 50px;
-	}
-
 }/* 991 */
 
 @media only screen and (max-width: 767px) {
@@ -485,6 +472,7 @@
   	***********************************/
 
 	.header {
+		padding: 15px 0;
 
 		.container {
 			padding-right: 20px;
@@ -492,7 +480,6 @@
 		}
 
 		.navbar {
-			padding: 25px 0;
 
 			.navbar-header {
 
@@ -519,7 +506,7 @@
 
 						> li {
 
-							&:nth-child(3) {
+							&:nth-child(2), &:nth-child(3) {
 								display: none;
 							}
 						}
@@ -528,37 +515,61 @@
 			}
 		}
 
-		.top-bar {
-			display: none;
-		} 
+	    &.stop {
+	        padding: 10px 0;
+	    }
 	}
 
 	.header-gutter {
-		height: 90px;
-		min-height: 90px;
+		height: 79px;
+		min-height: 79px;
 	}
 
 	/***********************************
 	HERO-SECTION STYLES
 	***********************************/
-	.hero-section {
-		padding-top: 50px;
+	.scrollDown {
+		top: -30px;
+	    width: 60px;
+	    height: 60px;
+	    font-size: 23px;
+	    line-height: 55px;
+	}
 
-		.title {
-			margin-bottom: 20px;
-		}
+	.banner {
+	    padding: 115px 0 80px;
 
-		.slick-dots {
-			display: none !important;
-		}
+		&__content {
+			max-width: 335px;
 
-		.right-img {
+			.title {
+				margin-bottom: 5px;
+			}
 
-			.media {
-				margin-bottom: 30px;
-				justify-content: center;
+			.btn {
+			    padding: 8px 25px 8px;
 			}
 		}
+
+		&__media {
+			right: -30px;
+
+			img {
+			    max-width: 550px;
+			}
+		}
+	}
+
+	.sticky-contact {
+	    width: 100px;
+	    padding: 8px;
+	    height: 100px;
+	    font-size: 12px;
+	    line-height: 18px;
+
+	    i {
+	    	font-size: 27px;
+	    }
 	}
 
 	.service {
@@ -813,7 +824,6 @@
 			}
 		}
 	}
-
 	/***********************************
 	FOOTER STYLES
 	***********************************/
@@ -867,6 +877,63 @@
 		font-size: 36px;
 		line-height: 44px;
 	}
+
+  	/***********************************
+  	HEADER STYLE
+  	***********************************/
+
+	.header {
+
+		.navbar {
+
+			.navbar-collapse {
+
+				.navbar-nav {
+
+					&:not(.navbar-nav--right) {
+
+						> li {
+
+							&:nth-child(4) {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/***********************************
+	HERO-SECTION STYLES
+	***********************************/
+	.scrollDown {
+		top: -25px;
+	    width: 50px;
+	    height: 50px;
+	    font-size: 20px;
+	    line-height: 50px;
+	}
+
+	.banner {
+        padding: 90px 0 60px;
+
+		&__content {
+		    max-width: 296px;
+
+			.btn {
+			    padding: 7px 20px 7px;
+			}
+		}
+
+		&__media {
+			right: -30px;
+
+			img {
+			    max-width: 450px;
+			}
+		}
+	}
 }
 /* 680 */
 
@@ -917,7 +984,6 @@
 		}
 
 		.navbar {
-			padding: 20px 0;
 
 			.navbar-header {
 
@@ -937,7 +1003,7 @@
 
 						> li {
 
-							&:nth-child(4), &:nth-child(5) {
+							&:nth-child(5) {
 								display: none;
 							}
 						}
@@ -947,15 +1013,9 @@
 		}
 	}
 
-	.header-gutter {
-		height: 80px;
-		min-height: 80px;
-	}
-
 	/***********************************
 	BREADCRUMB STYLE
 	***********************************/
-
 	.breadcrumb-wrapper {
 
 		.breadcrumb {
@@ -967,12 +1027,41 @@
 	/***********************************
 	HERO-SECTION STYLES
 	***********************************/
-	.hero-section {
-		padding: 40px 0;
+	.banner {
+        padding: 75px 0 60px;
 
-		.title {
-			margin-bottom: 15px;
+		&__content {
+		    max-width: 100%;
+
+		    .description {
+		    	max-width: 290px;
+		    }
+
+			.btn {
+			    padding: 6px 18px 6px;
+			}
 		}
+
+		&__media {
+			top: 75%;
+			right: -20px;
+
+			img {
+			    max-width: 380px;
+			}
+		}
+	}
+
+	.sticky-contact {
+	    width: 90px;
+	    padding: 8px;
+	    height: 90px;
+	    font-size: 10px;
+	    line-height: 16px;
+
+	    i {
+	    	font-size: 25px;
+	    }
 	}
 
 	.service {
@@ -1202,7 +1291,6 @@
 	.header {
 
 		.navbar {
-			padding: 15px 0;
 
 			.navbar-collapse {
 
@@ -1222,15 +1310,9 @@
 		}
 	}
 
-	.header-gutter {
-		height: 58px;
-		min-height: 58px;
-	}
-
 	/***********************************
 	BREADCRUMB STYLE
 	***********************************/
-
 	.breadcrumb-wrapper {
 
 		.breadcrumb {
@@ -1238,6 +1320,44 @@
 		    line-height: 20px;
 		    padding-bottom: 5px;
 		}
+	}
+
+	/***********************************
+	BANNER STYLE
+	***********************************/
+	.banner {
+        padding: 75px 0 60px;
+
+		&__content {
+		    max-width: 100%;
+
+		    .description {
+		    	max-width: 251px;
+		    }
+
+			.btn {
+			    padding: 5px 15px 5px;
+			}
+		}
+
+		&__media {
+			top: 85%;
+			right: -10px;
+
+			img {
+			    max-width: 280px;
+			}
+		}
+	}
+
+	.sticky-contact {
+	    width: 80px;
+	    height: 80px;
+
+	    i {
+	    	font-size: 22px;
+	    	margin-bottom: 0;
+	    }
 	}
 
 	.about-section {
@@ -1388,7 +1508,14 @@
 	/***********************************
 	HOME PAGE STYLES
 	***********************************/
-	
+	.sticky-contact {
+	    width: 70px;
+	    height: 70px;
+
+	    i {
+	    	font-size: 20px;
+	    }
+	}
 }
 /* 420 */
 

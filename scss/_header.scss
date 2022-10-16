@@ -12,8 +12,8 @@ HEADER STYLES
 }
 
 .header-gutter {
-    height: 114px;
-    min-height: 114px !important;
+    height: 88.84px;
+    min-height: 88.84px;
 }
 
 .header {
@@ -69,7 +69,7 @@ HEADER STYLES
                                 line-height: 20px;
                                 text-align: center;
                                 background: #3E9AD8;
-                                padding: 10px 18px 12px;
+                                padding: 10px 28px 12px;
                                 @include border-radius(500px);
                                 @include letter-spacing(35, 14);
                                 box-shadow: 0px 12px 12px rgb(0 0 0 / 16%);
