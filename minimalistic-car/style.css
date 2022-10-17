@@ -74,12 +74,12 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font: 400 16px/26px "Work Sans", sans-serif;
+  font: 400 14px/26px "Open Sans", sans-serif;
 }
 
 h1, .h1 {
-  font-size: 60px;
-  line-height: 70px;
+  font-size: 56px;
+  line-height: 66px;
 }
 
 h2, .h2 {
@@ -108,11 +108,10 @@ h6, .h6 {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #221b68;
-  font-weight: 700;
+  color: #292E31;
+  font-weight: 400;
   margin-bottom: 0;
-  text-transform: capitalize;
-  font-family: "Oswald", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 a:hover, a:focus, button:hover, button:focus {
@@ -193,6 +192,14 @@ section {
 .container {
   width: 100%;
   max-width: 1270px;
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 1575px;
   position: relative;
   padding-left: 50px;
   padding-right: 50px;
@@ -566,7 +573,7 @@ HEADER STYLES
   z-index: 1030;
   position: fixed;
   background: #FFF;
-  padding: 30px 0;
+  padding: 35px 0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -787,195 +794,42 @@ HEADER STYLES
           box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.16);
 }
 
+/***********************************
+BANNER STYLES
+***********************************/
 .banner {
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
   position: relative;
-  padding: 140px 0px;
+  min-height: 970px;
 }
-.banner.overlay {
-  z-index: 0;
-  position: relative !important;
-}
-.banner.overlay:before {
+.banner:before {
   top: 0;
   left: 0;
+  width: 100%;
   content: "";
-  z-index: -1;
-  width: 100%;
   height: 100%;
   position: absolute;
-  background: #212720;
-  background: -webkit-gradient(linear, left top, left bottom, from(#3321b3), color-stop(16.1%, #2a1f97), color-stop(34.5%, #231e7f), color-stop(54%, #1e1d6d), color-stop(74.9%, #1a1d63), to(#1a1d60));
-  background: linear-gradient(#3321b3 0%, #2a1f97 16.1%, #231e7f 34.5%, #1e1d6d 54%, #1a1d63 74.9%, #1a1d60 100%);
+  background: url(../minimalistic-car/images/banner.png) no-repeat center/cover;
 }
-.banner__item {
-  width: 100%;
-  height: 100%;
+.banner__content {
+  margin-top: 440px;
 }
-.banner__item .content {
-  z-index: 2;
-  margin-top: 200px;
-  position: relative;
+.banner__content .media {
+  margin-bottom: 6px;
 }
-.banner__item .content .title {
+.banner__content .title {
   color: #FFFFFF;
-  font-weight: 600;
-  margin-bottom: 40px;
+  font-weight: 300;
+  max-width: 331px;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
 }
-.banner__item .des {
-  max-width: 500px;
+.banner__content .description {
+  max-width: 514px;
+  margin-bottom: 50px;
 }
-.banner__item .des .discription {
-  color: #FFFFFF;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 27px;
-  margin-bottom: 0;
-  font-family: "Work Sans", sans-serif;
-}
-.banner__item .btn {
-  color: #FFFFFF;
-  font-size: 20px;
-  font-weight: 600;
-  margin-top: 45px;
-  line-height: 30px;
-  padding: 12px 40px;
-  background: #f9636b;
-  border-radius: 500px;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.banner__item .btn:hover, .banner__item .btn:focus {
-  background: #b6246e;
-}
-.banner__item .before-media {
-  top: 25px;
-  z-index: -1;
-  width: 100%;
-  right: 0;
-  max-width: 630px;
-  text-align: right;
-  position: absolute;
-}
-.banner .overlay-media {
-  top: 70px;
-  width: 100%;
-  z-index: -1;
-  left: -480px;
-  position: absolute;
-}
-
-.bublish {
-  width: 100%;
-  bottom: -70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-item: center;
-  position: absolute;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-.bublish img {
-  width: 50px;
-  -webkit-animation: bublish 7s linear infinite;
-          animation: bublish 7s linear infinite;
-}
-.bublish img:nth-child(1) {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-.bublish img:nth-child(2) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.bublish img:nth-child(3) {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-.bublish img:nth-child(1) {
-  -webkit-animation-delay: 4.5s;
-          animation-delay: 4.5s;
-}
-.bublish img:nth-child(1) {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-.bublish img:nth-child(1) {
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-}
-.bublish img:nth-child(1) {
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
-}
-
-.footer {
-  display: none;
-  padding: 30px 0;
-  border-top: 1px solid #eee;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(74.9%, #1a1d63), to(#1a1d60));
-  background: linear-gradient(#1a1d63 74.9%, #1a1d60 100%);
-}
-.footer .copyright p {
-  color: #FFFFFF;
-  font-size: 12px;
-  line-height: 18px;
-}
-.footer .copyright p a {
-  color: #FFFFFF;
-  letter-spacing: 0.18px;
-}
-.footer .copyright p a:-webkit-any-link:hover, .footer .copyright p a:-webkit-any-link:focus {
-  color: #3e9ad8;
-}
-.footer .copyright p a:-moz-any-link:hover, .footer .copyright p a:-moz-any-link:focus {
-  color: #3e9ad8;
-}
-.footer .copyright p a:any-link:hover, .footer .copyright p a:any-link:focus {
-  color: #3e9ad8;
-}
-
-@-webkit-keyframes bublish {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateY(-80vh);
-            transform: translateY(-80vh);
-    opacity: 0;
-  }
-}
-
-@keyframes bublish {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateY(-80vh);
-            transform: translateY(-80vh);
-    opacity: 0;
-  }
+.banner__content .description p {
+  color: #ADADAD;
+  font-size: 16px;
+  line-height: 26px;
 }

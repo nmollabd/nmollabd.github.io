@@ -7,12 +7,12 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font: 400 16px/26px 'Work Sans', sans-serif;
+    font: 400 14px/26px 'Open Sans', sans-serif;
 }
 
 h1, .h1 {
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 56px;
+    line-height: 66px;
 }
 
 h2, .h2 {
@@ -41,11 +41,10 @@ h6, .h6 {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    color: #221b68;
-    font-weight: 700;
+    color: $black;
+    font-weight: 400;
     margin-bottom: 0;
-    text-transform: capitalize;
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 a:hover, a:focus, button:hover, button:focus {
@@ -122,6 +121,14 @@ section {
 .container {
     width: 100%;
     max-width: 1270px;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.container-fluid {
+    width: 100%;
+    max-width: 1575px;
     position: relative;
     padding-left: 50px;
     padding-right: 50px;

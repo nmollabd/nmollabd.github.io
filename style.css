@@ -1620,12 +1620,9 @@ BANNER STYLES
   margin-bottom: -30px;
 }
 .project--content__item {
-  display: block;
-  width: 100%;
   overflow: hidden;
   position: relative;
   margin-bottom: 30px;
-  height: calc(100% - 30px);
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
