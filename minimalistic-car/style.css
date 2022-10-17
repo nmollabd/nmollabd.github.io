@@ -69,7 +69,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  color: #000000;
+  color: #747474;
   background: #fff;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -502,6 +502,20 @@ html {
   color: #6930c3;
 }
 
+.sub-title {
+  color: #DE0E0B;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.33px;
+}
+
+.separator {
+  width: 80px;
+  height: 1px;
+  margin-right: 22px;
+  background: #DE0E0B;
+}
+
 input[type=text]:not(.select2-input),
 input[type=number],
 input[type=email],
@@ -611,6 +625,8 @@ HEADER STYLES
   text-transform: uppercase;
   padding: 17px 31.58px 17px;
   letter-spacing: 1.33px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   -webkit-box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.16);
 }
@@ -621,10 +637,14 @@ HEADER STYLES
   background-color: transparent;
 }
 .header.stop {
-  padding: 15px 0;
-  background: #FFF;
+  padding: 25px 0;
+  background: #CC0F20;
   -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.16);
           box-shadow: 0 0 24px rgba(0, 0, 0, 0.16);
+}
+.header.stop .navbar .navbar-collapse .navbar-nav li.btn-menu a {
+  color: #292E31;
+  background: #FFFFFF;
 }
 
 /***********************************
@@ -642,7 +662,7 @@ BANNER STYLES
   content: "";
   height: 100%;
   position: absolute;
-  background: url(../minimalistic-car/images/banner.png) no-repeat center/cover;
+  background: url(../minimalistic-car/images/banner.png) no-repeat center;
 }
 .banner__content {
   margin-top: 440px;
@@ -659,10 +679,67 @@ BANNER STYLES
 }
 .banner__content .description {
   max-width: 514px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .banner__content .description p {
   color: #ADADAD;
   font-size: 16px;
   line-height: 26px;
+}
+.banner__content .order .separator {
+  width: 80px;
+  height: 1px;
+  margin-right: 22px;
+  background: #DE0E0B;
+}
+.banner__content .order .pre-order {
+  color: #DE0E0B;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: 1.33px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.banner__content .order .pre-order:-webkit-any-link:hover, .banner__content .order .pre-order:-webkit-any-link:focus {
+  color: #FFFFFF;
+}
+.banner__content .order .pre-order:-moz-any-link:hover, .banner__content .order .pre-order:-moz-any-link:focus {
+  color: #FFFFFF;
+}
+.banner__content .order .pre-order:any-link:hover, .banner__content .order .pre-order:any-link:focus {
+  color: #FFFFFF;
+}
+
+.mercedes {
+  padding: 90px 0;
+}
+.mercedes__media {
+  position: relative;
+  -webkit-box-shadow: 0px 0px 43px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 43px rgba(0, 0, 0, 0.25);
+}
+.mercedes__media:after {
+  top: 160px;
+  left: -94px;
+  width: 100%;
+  z-index: -1;
+  content: "";
+  height: 100%;
+  position: absolute;
+  background: url(../minimalistic-car/images/car-overlay.svg) no-repeat;
+}
+.mercedes__text .sub-title {
+  margin-bottom: 20px;
+}
+.mercedes__text .title {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.mercedes__text .description {
+  max-width: 527px;
+}
+
+.interior {
+  padding: 95px 0;
 }

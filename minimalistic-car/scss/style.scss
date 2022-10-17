@@ -249,6 +249,20 @@ $success: #51BC70;
 	}
 }
 
+.sub-title {
+	color: #DE0E0B;
+	font-weight: 800;
+	text-transform: uppercase;
+	@include letter-spacing(95, 14);
+}
+
+.separator {
+	width: 80px;
+	height: 1px;
+	margin-right: 22px;
+	background: #DE0E0B;
+}
+
 input[type=text]:not(.select2-input),
 input[type=number],
 input[type=email],
@@ -364,6 +378,7 @@ HEADER STYLES
                             text-transform: uppercase;
                             padding: 17px 31.58px 17px;
                             @include letter-spacing(95, 14);
+                            @include transition(all 0.3s ease);
                             box-shadow: 0px 12px 12px rgb(0 0 0 / 16%);
 
                             &:hover, &:focus {
@@ -381,9 +396,29 @@ HEADER STYLES
     }
 
     &.stop {
-        padding: 15px 0;
-        background: #FFF;
+        padding: 25px 0;
+        background: #CC0F20;
         box-shadow: 0 0 24px rgba(0, 0, 0, 0.16);
+
+        .navbar {
+
+        	.navbar-collapse {
+
+        		.navbar-nav {
+
+        			li {
+
+        				&.btn-menu {
+
+        					a {
+							    color: $black;
+							    background: $white;
+							}
+        				}
+        			}
+        		}
+        	}
+        }
     }
 }
 
@@ -402,7 +437,7 @@ BANNER STYLES
         content: '';
         height: 100%;
         position: absolute;
-        background: url(../minimalistic-car/images/banner.png) no-repeat center / cover;
+        background: url(../minimalistic-car/images/banner.png) no-repeat center;
     }
 
     &__content {
@@ -422,7 +457,7 @@ BANNER STYLES
 
         .description {
             max-width: 514px;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
 
             p {
                 color: #ADADAD;
@@ -430,7 +465,73 @@ BANNER STYLES
                 line-height: 26px;
             }
         }
+
+        .order {
+
+        	.separator {
+				width: 80px;
+				height: 1px;
+				margin-right: 22px;
+				background: #DE0E0B;
+        	}
+
+        	.pre-order {
+        		color: #DE0E0B;
+        		font-size: 14px;
+        		font-weight: 800;
+        		line-height: 20px;
+        		@include letter-spacing(95, 14);
+        		@include transition(all 0.3s ease);
+
+        		&:any-link {
+
+        			&:hover, &:focus {
+        				color: $white;
+        			}
+        		}
+        	}
+        }
     }
+}
+
+.mercedes {
+	padding: 90px 0;
+
+	&__media {
+		position: relative;
+	    box-shadow: 0px 0px 43px rgb(0 0 0 / 25%);
+
+		&:after {
+			top: 160px;
+			left: -94px;
+			width: 100%;
+			z-index: -1;
+			content: '';
+			height: 100%;
+			position: absolute;
+			background: url(../minimalistic-car/images/car-overlay.svg) no-repeat;
+		}
+	}
+
+	&__text {
+
+		.sub-title {
+			margin-bottom: 20px;
+		}
+
+		.title {
+			font-weight: 300;
+			margin-bottom: 30px;
+		}
+
+		.description {
+			max-width: 527px;
+		}
+	}
+}
+
+.interior {
+	padding: 95px 0;
 }
 
 @import'responsive';
