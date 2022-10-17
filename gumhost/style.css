@@ -34,9 +34,7 @@ a:hover, a:focus, button:hover, button:focus {
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1270px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -183,8 +181,8 @@ HEADER STYLES
   transition: all 0.5s ease;
 }
 .header .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
   position: initial;
 }
 .header .navbar {
