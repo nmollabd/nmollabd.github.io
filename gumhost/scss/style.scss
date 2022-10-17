@@ -1,11 +1,297 @@
+/*
+Theme Name: GUMHOST
+Author: GoingClear Interactive
+Author URI: https://nmollabd.github.io/
+Version: 1.0.0
+Text Domain: GUMHOST
+*/
+
+/***********************************
+BASE STYLES
+***********************************/
+$work: 'Work Sans', sans-serif;
+// COLORS
+$danger: #CB633D;
+$primary: #221b68;
+$secondary: #6930c3;
+
+$black: #292E31;
+$white: #FFFFFF;
+$success: #51BC70;
+
+// MIXIN
 @import'mixin';
 @import'grid';
 @import'icon';
-.align-center {
-    height: 100%;
-    display: flex;
-    align-items: center;
+@import'basc';
+
+.text-secondary {
+	color: $secondary !important;
 }
+
+.mfp-move-from-top {
+	@include transition(initial);
+
+	&.mfp-bg {
+		opacity: 1 !important; 
+		backdrop-filter: blur(10px);
+		--webkit-backdrop-filter: blur(10px); 
+		background-color: rgba(255, 255, 255, 0);
+	}
+
+	.mfp-container {
+		padding: 0 15px; 
+
+		.mfp-content {
+			height: 100%;
+			padding: 40px 0;
+			vertical-align: middle; 
+
+			.container {
+				padding: 0;
+			}
+		}
+	}
+  
+  /* start state */
+	.mfp-with-anim {
+		opacity: 0;
+		@include transition(all 0.5s);
+		@include transform(translateY(300px));
+	}
+  
+	&.mfp-bg {
+		opacity: 0;
+		@include transition(all 0.5s);
+	}
+  
+	/* animate in */
+	&.mfp-ready {
+
+		.mfp-with-anim {
+			opacity: 1;
+			@include transform(translateY(0));
+		}
+
+		&.mfp-bg {
+			opacity: 0.8;
+		}
+	}
+  
+	/* animate out */
+	&.mfp-removing {
+
+		.mfp-with-anim {
+		  	transform: translateY(100px);
+		  	opacity: 0;
+		}
+
+		&.mfp-bg {
+		  	opacity: 0;
+		}
+	}
+
+	.mfp-container { 
+		width: 100%;
+
+		.mfp-content {
+			height: auto; 
+
+			.mfp-figure {
+
+				&:after {
+					box-shadow: none;
+					background: transparent;
+				}
+
+				.mfp-close {
+					opacity: 1;
+					color: $primary;
+					font-size: 18px;
+					cursor: pointer;
+					line-height: 24px;
+					padding-bottom: 20px;
+					text-transform: uppercase;
+					@include transition(all 0.3s ease);
+
+					span {
+						font-size: 13px;
+						margin-left: 7px;
+						vertical-align: 1px;
+						display: inline-block;
+					}
+
+					&:hover, &:focus {
+						color: $secondary;
+					}
+				}
+
+				.mfp-bottom-bar {
+
+					.mfp-title {
+						color: red;
+						font-size: 16px;
+						font-weight: 400;
+						line-height: 24px;
+					}
+
+					.mfp-counter {
+						color: red;
+						font-size: 16px;
+						font-weight: 400;
+						line-height: 24px;
+					}
+				}
+			}
+		}
+
+		.mfp-arrow {
+			opacity: 1;
+			width: 90px;
+			height: 90px;
+			font-size: 22px;
+			overflow: hidden;
+			text-align: center;
+			margin: -55px 20px 0;
+			border-radius: 500px;
+			@include transition(all .3s ease);
+			background: linear-gradient(220deg, #ef66c5 0%, #364ddd 49.75%, #00bfe8 100%);
+
+			&:hover {
+				background: $secondary;
+			}
+
+			&:before {
+				border: 0;
+				margin: 0;
+				opacity: 1;
+				color: $white; ;
+				width: auto;
+				height: auto;
+				top: calc(50% - 13px);
+				left: calc(50% - 14.65px);
+				font-family: "glewee";
+				@include transition(all 0.3s);
+			}
+
+			&:after {
+				content: none;
+			}
+
+			&.mfp-arrow-left {
+
+				&:before {
+					content: "";
+				}
+
+				&:hover {
+
+					&:before {
+						color: $primary; 
+					}
+				}
+			}
+
+			&.mfp-arrow-right {
+
+				&:before {
+					content: "";
+				}
+
+				&:hover {
+
+					&:before {
+						color: $primary; 
+					}
+				}
+			}
+		}
+
+		.mfp-bottom-bar {
+			margin-top: -20px;
+			
+			.mfp-title {
+				color: $primary;
+			}
+
+			.mfp-counter {
+				color: $primary;
+			}
+		}
+	}
+
+	.mfp-iframe-scaler {
+		overflow: inherit;
+		vertical-align: middle;
+
+		.mfp-iframe {
+			padding: 0;
+			margin: 0;
+			background: $white;
+		}
+
+		.mfp-close {
+			opacity: 1;
+			color: $primary;
+			font-size: 40px;
+			cursor: pointer;
+			line-height: 44px;
+			padding-bottom: 20px;
+			text-transform: uppercase;
+			font-family: 'glewee';
+			@include transition(all 0.3s ease); 
+
+			&:hover, &:focus {
+				color: $secondary;
+			}
+		}
+	}
+}
+
+input[type=text]:not(.select2-input),
+input[type=number],
+input[type=email],
+input[type=tel],
+input[type=search],
+input[type=password],
+input[type=file],
+select, textarea {
+	appearance: none;
+	width: 100% !important;
+	color: black !important;
+	font-size: 16px !important;
+	font-weight: 400 !important;
+	box-shadow: none !important;
+	line-height: 24px !important;
+	background: #F5F8FA !important;
+	border-radius: 500px !important;
+	padding: 8px 18px 6px !important;
+	@include transition(all 0.3s ease);
+	border: 1px solid #CFD7DD !important;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+}
+input[type=text]:not(.select2-input):hover,
+input[type=text]:not(.select2-input):focus,
+input[type=number]:hover,
+input[type=number]:focus,
+input[type=email]:hover,
+input[type=email]:focus,
+input[type=tel]:hover,
+input[type=tel]:focus,
+input[type=search]:hover,
+input[type=search]:focus,
+input[type=password]:hover,
+input[type=password]:focus,
+input[type=file]:hover,
+input[type=file]:focus,
+select:hover,
+select:focus, textarea:hover, textarea:focus {
+  	outline: 0;
+}
+
 /***********************************
 HEADER STYLES
 ***********************************/
@@ -37,9 +323,9 @@ HEADER STYLES
     @include transition(all 0.5s ease);
 
     .container {
+        position: initial;
         padding-left: 50px;
         padding-right: 50px;
-        position: initial;
     }
 
     .navbar {
