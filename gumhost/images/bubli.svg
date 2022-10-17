@@ -1,0 +1,13 @@
+<svg id="bubli" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1097.509" height="912.168" viewBox="0 0 1097.509 912.168">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.427" y1="1.056" x2="0.592" y2="0.011" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3c5cff" stop-opacity="0.902"/>
+      <stop offset="0.13" stop-color="#4068ff" stop-opacity="0.824"/>
+      <stop offset="0.394" stop-color="#4c89ff" stop-opacity="0.627"/>
+      <stop offset="0.765" stop-color="#5fbcff" stop-opacity="0.314"/>
+      <stop offset="1" stop-color="#6ce0ff" stop-opacity="0.102"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_3" data-name="Path 3" d="M1080.442,871.983c-39.1-186.015-225.067-187.429-262.632-344.653-68.056-284.815-288.53-351.84-547.69-238.5-324.9,142.083-411.178,777.934-32.215,829.987C1106.751,1238.155,1100.578,967.787,1080.442,871.983Z" transform="translate(11.791 -236.52)" opacity="0.35" fill="url(#linear-gradient)"/>
+  <path id="Path_707" data-name="Path 707" d="M1080.442,871.983c-39.1-186.015-225.067-187.429-262.632-344.653-68.056-284.815-288.53-351.84-547.69-238.5-324.9,142.083-411.178,777.934-32.215,829.987C1106.751,1238.155,1100.578,967.787,1080.442,871.983Z" transform="translate(11.791 -236.52)" opacity="0.35" fill="url(#linear-gradient)"/>
+</svg>

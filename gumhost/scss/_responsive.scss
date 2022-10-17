@@ -1,0 +1,451 @@
+@media only screen and (max-width: 1800px) {
+    /***********************************
+        BANNER STYLES
+    ***********************************/
+    .banner {
+
+    	&__item {
+
+    		.content {
+			    margin-top: 180px;
+			}
+    	}
+
+    	.overlay-media {
+		    top: 132px;
+		    left: -252px;
+		}
+    }
+}
+
+@media only screen and (max-width: 1480px) {
+    /***********************************
+        BANNER STYLES
+    ***********************************/
+    .banner {
+
+    	.before-media {
+		}
+
+		.overlay-media {
+		    top: 228px;
+		    left: -163px;
+			max-width: 1000px;
+		}
+    }
+}
+@media only screen and (max-width: 1366px) {
+    /***********************************
+        BANNER STYLES
+    ***********************************/
+    .banner {
+    	padding: 90px 0;
+
+    	&__item {
+
+    		.content {
+			    margin-top: 160px;
+			}
+    	}
+
+    	.before-media {
+    		top: 40px;
+    		right: -125px;
+    		max-width: 570px;
+		}
+
+		.overlay-media {
+		    top: 228px;
+		    left: -163px;
+			max-width: 900px;
+		}
+    }
+}
+@media only screen and (max-width: 1199px) {
+	h1, .h1 {
+	    font-size: 45px;
+	    line-height: 55px;
+	}
+
+    /***********************************
+        BANNER STYLES
+    ***********************************/
+    .banner {
+    	height: 90vh;
+	    padding: 50px 0;
+
+	    .before-media {
+			top: 67px;
+			right: -110px;
+	    	max-width: 500px;
+		}
+
+		.overlay-media {
+		    top: 200px;
+		    left: -176px;
+		    max-width: 800px;
+		}
+	}
+}
+@media only screen and (max-width: 991px) {
+
+	h1, .h1 {
+	    font-size: 40px;
+	    line-height: 50px;
+	}
+
+	.header {
+		padding: 18px 0;
+
+		.container {
+			padding-right: 30px;
+			padding-left: 30px;
+		}
+
+		.navbar {
+
+			.navbar-header {
+
+				.navbar-brand {
+
+					svg, img {
+						max-width: 170px;
+					}
+				}
+			}
+
+			.navbar-collapse {
+
+				.navbar-nav {
+
+					li {
+
+						&:not(:first-child) {
+							margin-left: 25px;
+						}
+					}
+
+					&:not(.navbar-nav--right) {
+
+						> li {
+
+							&:nth-child(1) {
+								display: none;
+							}
+						}
+					}
+
+					&.navbar-nav--right {
+
+						li {
+
+							&.btn-menu {
+
+								a {
+									padding: 8px 25px 10px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+    /***********************************
+        BANNER STYLES
+    ***********************************/
+
+    .banner {
+	    height: 80vh;
+	    padding: 40px 0;
+
+    	.before-media {
+			top: 90px;
+			right: -85px;
+		    max-width: 450px;
+		}
+
+		&__item {
+
+			.content {
+
+				.title {
+				    margin-bottom: 17px;
+				}
+			}
+
+			.des {
+
+				.discription {
+					font-size: 20px;
+				}
+			}
+
+			.btn {
+			    font-size: 22px;
+				margin-top: 36px;
+			    padding: 10px 40px;
+			}
+		}
+    }
+}
+@media only screen and (max-width: 767px) {
+	h1, .h1 {
+	    font-size: 35px;
+	    line-height: 45px;
+	}
+
+	.header {
+		padding: 15px 0;
+
+		.container {
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+
+		.navbar {
+
+			.navbar-header {
+
+				.navbar-brand {
+
+					svg, img {
+						max-width: 160px;
+					}
+				}
+			}
+
+			.navbar-collapse {
+
+				.navbar-nav {
+
+					li {
+
+						&:not(:first-child) {
+							margin-left: 22px;
+						}
+					}
+
+					&:not(.navbar-nav--right) {
+
+						> li {
+
+							&:nth-child(2), &:nth-child(3) {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+
+	    &.stop {
+	        padding: 10px 0;
+	    }
+	}
+
+	.header-gutter {
+		height: 79px;
+		min-height: 79px;
+	}
+    /***********************************
+        BANNER STYLES
+    ***********************************/
+
+    .banner {
+	    height: 70vh;
+	    padding: 40px 0;
+
+    	.before-media {
+			right: -70px;
+		    max-width: 400px;
+		}
+
+		.overlay-media {
+		    top: 171px;
+		    left: -178px;
+		    max-width: 600px;
+		}
+
+		&__item {
+
+			.content {
+				margin-top: 100px;
+
+				.title {
+				    margin-bottom: 15px;
+				}
+			}
+
+			.des {
+				max-width: 400px;
+
+				.discription {
+					font-size: 15px;
+				}
+			}
+
+			.btn {
+			    font-size: 18px;
+				margin-top: 30px;
+			    padding: 9px 40px;
+			}
+		}
+    }
+}
+@media only screen and (max-width: 575px) {
+	h1, .h1 {
+	    font-size: 30px;
+	    line-height: 40px;
+	}
+
+	.header {
+
+		.container {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+
+		.navbar {
+
+			.navbar-header {
+
+				.navbar-brand {
+
+					svg, img {
+						max-width: 140px;
+					}
+				}
+			}
+
+			.navbar-collapse {
+
+				.navbar-nav {
+
+					&:not(.navbar-nav--right) {
+
+						> li {
+
+							&:nth-child(5) {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+    /***********************************
+        BANNER STYLES
+    ***********************************/
+
+    .banner {
+
+    	.before-media {
+    		top: 180px;
+			right: -50px;
+		    max-width: 320px;
+		}
+
+		.overlay-media {
+		    top: 170px;
+		    left: -178px;
+		    max-width: 600px;
+		}
+
+		&__item {
+
+			.content {
+			    margin-top: 75px;
+
+				.title {
+				    margin-bottom: 10px;
+				}
+			}
+
+			.des {
+				max-width: 100%;
+
+				.discription {
+					font-size: 15px;
+				}
+			}
+
+			.btn {
+			    font-size: 18px;
+				margin-top: 20px;
+			    padding: 9px 40px;
+			}
+		}
+    }
+}
+@media only screen and (max-width: 480px) {
+	h1, .h1 {
+	    font-size: 25px;
+	    line-height: 35px;
+	}
+
+    /***********************************
+    BANNER STYLES
+    ***********************************/
+
+	.header {
+
+		.navbar {
+
+			.navbar-collapse {
+
+				.navbar-nav {
+
+					&.navbar-nav--right {
+
+						li {
+
+							&.btn-menu {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+    /***********************************
+    BANNER STYLES
+    ***********************************/
+    .banner {
+
+    	.before-media {
+			top: 200px;
+			right: -40px;
+			max-width: 280px;
+		}
+
+		.overlay-media {
+			top: 282px;
+			left: -169px;
+			max-width: 400px
+		}
+
+		&__item {
+
+			.content {
+			    margin-top: 75px;
+			}
+
+			.des {
+
+				.discription {
+					font-size: 14px;
+				}
+			}
+
+			.btn {
+			    font-size: 15px;
+				margin-top: 15px;
+			    padding: 7px 40px;
+			}
+		}
+    }
+}
