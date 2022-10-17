@@ -407,6 +407,29 @@ HEADER STYLES
         padding: 15px 0;
         background: #FFF;
         box-shadow: 0 0 24px rgba(0, 0, 0, 0.16);
+
+        .navbar-toggle {
+
+        	.icon-bar {
+        		background: #000;
+        	}
+        }
+
+        .navbar {
+
+        	.navbar-collapse {
+
+        		.navbar-nav {
+
+        			> li {
+
+        				> a {
+        					color: #000;
+        				}
+        			}
+        		}
+        	}
+        }
     }
 }
 
@@ -510,7 +533,7 @@ HEADER STYLES
 
         .navbar-header {
             padding: 0;
-            padding-bottom: 30px;
+            padding-bottom: 20px;
             border-bottom: 1px solid #1D2A45;
 
             .navbar-brand {
@@ -540,22 +563,31 @@ HEADER STYLES
                 border-bottom: 1px solid #000;
 
                 > a {
-                    color: #000;
+                    color: $white;
                     display: block;
                     font-size: 16px;
                     font-weight: 700;
                     line-height: 24px;
+                    text-transform: uppercase;
                     @include transition(all 0.5s ease);
-
-                    &.dropdown-toggle {
-
-                        &:after {
-                            display: none;
-                        }
-                    }
 
                     &:hover {
                         color: #03A7D3;
+                    }
+                }
+
+                &.btn-menu {
+
+                    a {
+                        color: #FFF;
+                        font-size: 14px;
+                        line-height: 20px;
+                        text-align: center;
+                        background: #3E9AD8;
+                        border-radius: 500px;
+                        padding: 10px 18px 12px;
+                        @include letter-spacing(-15, 14);
+                        box-shadow: 0px 12px 12px rgb(0 0 0 / 16%);
                     }
                 }
             }
@@ -693,6 +725,34 @@ HEADER STYLES
             animation-delay: 7s;
         }
     }
+}
+
+.footer {
+	display: none;
+	padding: 30px 0;
+	border-top: 1px solid #eee;
+	background: linear-gradient(#1a1d63 74.9%, #1a1d60 100%);
+
+	.copyright {
+
+		p {
+			color: #FFFFFF;
+			font-size: 12px;
+			line-height: 18px;
+
+			a {
+				color: #FFFFFF;
+				@include letter-spacing(15, 12);
+
+				&:any-link {
+
+					&:hover, &:focus {
+						color: #3e9ad8;
+					}
+				}
+			}
+		}
+	}
 }
 
 @keyframes bublish {

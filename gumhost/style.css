@@ -639,6 +639,12 @@ HEADER STYLES
   -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.16);
           box-shadow: 0 0 24px rgba(0, 0, 0, 0.16);
 }
+.header.stop .navbar-toggle .icon-bar {
+  background: #000;
+}
+.header.stop .navbar .navbar-collapse .navbar-nav > li > a {
+  color: #000;
+}
 
 .navbar-toggle {
   margin: 0;
@@ -734,7 +740,7 @@ HEADER STYLES
 }
 .sidr .sidr-inner .navbar-header {
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #1D2A45;
 }
 .sidr .sidr-inner .navbar-header .navbar-brand svg, .sidr .sidr-inner .navbar-header .navbar-brand img {
@@ -756,19 +762,29 @@ HEADER STYLES
   border-bottom: 1px solid #000;
 }
 .sidr .navigation .navbar-nav > li > a {
-  color: #000;
+  color: #FFFFFF;
   display: block;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
+  text-transform: uppercase;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.sidr .navigation .navbar-nav > li > a.dropdown-toggle:after {
-  display: none;
-}
 .sidr .navigation .navbar-nav > li > a:hover {
   color: #03A7D3;
+}
+.sidr .navigation .navbar-nav > li.btn-menu a {
+  color: #FFF;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  background: #3E9AD8;
+  border-radius: 500px;
+  padding: 10px 18px 12px;
+  letter-spacing: -0.21px;
+  -webkit-box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.16);
 }
 
 .banner {
@@ -900,6 +916,32 @@ HEADER STYLES
           animation-delay: 7s;
 }
 
+.footer {
+  display: none;
+  padding: 30px 0;
+  border-top: 1px solid #eee;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(74.9%, #1a1d63), to(#1a1d60));
+  background: linear-gradient(#1a1d63 74.9%, #1a1d60 100%);
+}
+.footer .copyright p {
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 18px;
+}
+.footer .copyright p a {
+  color: #FFFFFF;
+  letter-spacing: 0.18px;
+}
+.footer .copyright p a:-webkit-any-link:hover, .footer .copyright p a:-webkit-any-link:focus {
+  color: #3e9ad8;
+}
+.footer .copyright p a:-moz-any-link:hover, .footer .copyright p a:-moz-any-link:focus {
+  color: #3e9ad8;
+}
+.footer .copyright p a:any-link:hover, .footer .copyright p a:any-link:focus {
+  color: #3e9ad8;
+}
+
 @-webkit-keyframes bublish {
   0% {
     -webkit-transform: translateY(0);
@@ -986,17 +1028,42 @@ HEADER STYLES
     line-height: 55px;
   }
 
+  .container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
   /***********************************
-      BANNER STYLES
+  HEADER STYLES
+  ***********************************/
+  .header .container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav li:not(:first-child) {
+    margin-left: 25px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(1) {
+    display: none;
+  }
+  .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li.btn-menu a {
+    padding: 8px 25px 10px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav > li > a {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  /***********************************
+  BANNER STYLES
   ***********************************/
   .banner {
-    height: 90vh;
     padding: 50px 0;
   }
   .banner .before-media {
     top: 67px;
-    right: -110px;
-    max-width: 500px;
+    right: -20px;
+    max-width: 450px;
   }
   .banner .overlay-media {
     top: 200px;
@@ -1010,37 +1077,46 @@ HEADER STYLES
     line-height: 50px;
   }
 
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  /***********************************
+  HEADER STYLES
+  ***********************************/
   .header {
-    padding: 18px 0;
+    padding: 25px 0;
   }
   .header .container {
     padding-right: 30px;
     padding-left: 30px;
   }
-  .header .navbar .navbar-header .navbar-brand svg, .header .navbar .navbar-header .navbar-brand img {
-    max-width: 170px;
-  }
   .header .navbar .navbar-collapse .navbar-nav li:not(:first-child) {
     margin-left: 25px;
   }
-  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(1) {
+  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(2) {
     display: none;
   }
   .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li.btn-menu a {
     padding: 8px 25px 10px;
   }
 
+  .header-gutter {
+    height: 103px;
+    min-height: 103px;
+  }
+
   /***********************************
-      BANNER STYLES
+  BANNER STYLES
   ***********************************/
   .banner {
-    height: 80vh;
     padding: 40px 0;
   }
   .banner .before-media {
     top: 90px;
-    right: -85px;
-    max-width: 450px;
+    right: 0px;
+    max-width: 400px;
   }
   .banner__item .content .title {
     margin-bottom: 17px;
@@ -1049,9 +1125,9 @@ HEADER STYLES
     font-size: 20px;
   }
   .banner__item .btn {
-    font-size: 22px;
-    margin-top: 36px;
-    padding: 10px 40px;
+    font-size: 18px;
+    margin-top: 40px;
+    padding: 10px 35px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1060,41 +1136,46 @@ HEADER STYLES
     line-height: 45px;
   }
 
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  /***********************************
+  HEADER STYLES
+  ***********************************/
   .header {
-    padding: 15px 0;
+    padding: 18px 0;
   }
   .header .container {
     padding-right: 20px;
     padding-left: 20px;
   }
   .header .navbar .navbar-header .navbar-brand svg, .header .navbar .navbar-header .navbar-brand img {
-    max-width: 160px;
+    max-width: 180px;
   }
   .header .navbar .navbar-collapse .navbar-nav li:not(:first-child) {
-    margin-left: 22px;
+    margin-left: 20px;
   }
-  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(2), .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(3) {
+  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(3), .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(4) {
     display: none;
-  }
-  .header.stop {
-    padding: 10px 0;
   }
 
   .header-gutter {
-    height: 79px;
-    min-height: 79px;
+    height: 80px;
+    min-height: 80px;
   }
 
   /***********************************
-      BANNER STYLES
+  BANNER STYLES
   ***********************************/
   .banner {
-    height: 70vh;
     padding: 40px 0;
   }
   .banner .before-media {
-    right: -70px;
-    max-width: 400px;
+    top: 150px;
+    right: 0px;
+    max-width: 350px;
   }
   .banner .overlay-media {
     top: 171px;
@@ -1102,7 +1183,7 @@ HEADER STYLES
     max-width: 600px;
   }
   .banner__item .content {
-    margin-top: 100px;
+    margin-top: 80px;
   }
   .banner__item .content .title {
     margin-bottom: 15px;
@@ -1125,12 +1206,20 @@ HEADER STYLES
     line-height: 40px;
   }
 
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  /***********************************
+  HEADER STYLES
+  ***********************************/
   .header .container {
     padding-right: 15px;
     padding-left: 15px;
   }
   .header .navbar .navbar-header .navbar-brand svg, .header .navbar .navbar-header .navbar-brand img {
-    max-width: 140px;
+    max-width: 160px;
   }
   .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(5) {
     display: none;
@@ -1139,9 +1228,12 @@ HEADER STYLES
   /***********************************
       BANNER STYLES
   ***********************************/
+  .banner {
+    height: 90vh;
+  }
   .banner .before-media {
-    top: 180px;
-    right: -50px;
+    top: 210px;
+    right: 20px;
     max-width: 320px;
   }
   .banner .overlay-media {
@@ -1166,6 +1258,10 @@ HEADER STYLES
     margin-top: 20px;
     padding: 9px 40px;
   }
+
+  .footer {
+    display: block;
+  }
 }
 @media only screen and (max-width: 480px) {
   h1, .h1 {
@@ -1184,12 +1280,12 @@ HEADER STYLES
   BANNER STYLES
   ***********************************/
   .banner .before-media {
-    top: 200px;
-    right: -40px;
+    top: 290px;
+    right: 10px;
     max-width: 280px;
   }
   .banner .overlay-media {
-    top: 282px;
+    top: 382px;
     left: -169px;
     max-width: 400px;
   }
