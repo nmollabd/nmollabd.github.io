@@ -1,0 +1,511 @@
+@media only screen and (max-width: 1366px) {
+	h1, .h1 {
+
+		&.lg {
+			font-size: 70px;
+			line-height: 80px;
+		}
+	}
+}/* 1366 */
+
+@media only screen and (max-width: 1199px) {
+	h1, .h1 {
+
+		&.lg {
+			font-size: 60px;
+			line-height: 70px;
+		}
+	}
+
+	.container {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+
+	/***********************************
+	HEADER STYLE
+	***********************************/
+	.header {
+		padding: 20px 0;
+
+		.container {
+			padding-right: 40px;
+			padding-left: 40px;
+		}
+
+		.navbar {
+
+			.navbar-header {
+
+				.navbar-brand {
+
+					svg, img {
+						max-width: 170px;
+					}
+				}
+			}
+
+			.navbar-collapse {
+
+				.navbar-nav {
+
+					li {
+
+						&:not(:first-child) {
+							margin-left: 30px;
+						}
+
+						a {
+							font-size: 16px;
+							line-height: 26px;
+							@include letter-spacing(30, 16);
+						}
+
+						&.btn-menu {
+
+							a {
+								font-size: 18px;
+								line-height: 28px;
+								padding: 10px 30px 12px;
+								@include letter-spacing(30, 18);
+							}
+						}
+					}
+
+					&:not(.navbar-nav--right) {
+
+						> li {
+
+							&:nth-child(1) {
+								display: none;
+							}
+						}
+					}
+
+					&.navbar-nav--right {
+
+	                    .mobile-navbar-toggler {
+	                        display: block;
+	                    }
+					}
+				}
+			}
+		}
+	}
+
+	.header-gutter {
+		height: 103px;
+		min-height: 103px;
+	}
+
+}/* 1199 */
+
+@media only screen and (max-width: 991px) {
+	h1, .h1 {
+		font-size: 40px;
+		line-height: 50px;
+
+		&.lg {
+			font-size: 50px;
+			line-height: 60px;
+		}
+	}
+
+	h2, .h2 {
+		font-size: 35px;
+		line-height: 45px;
+	}
+
+	.container {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+	.btn {
+	    font-size: 18px;
+	    line-height: 28px;
+	    padding: 10px 30px 10px;
+
+	    &.btn-border {
+		    padding: 8px 29px 10px;
+		}
+	}
+
+	/***********************************
+	HEADER STYLE
+	***********************************/
+	.header {
+		padding: 18px 0;
+
+		.container {
+			padding-right: 30px;
+			padding-left: 30px;
+		}
+
+		.navbar {
+
+			.navbar-collapse {
+
+				.navbar-nav {
+
+					li {
+
+						&:not(:first-child) {
+							margin-left: 25px;
+						}
+
+						&.btn-menu {
+
+							a {
+								padding: 9px 30px 10px;
+							}
+						}
+					}
+
+					&:not(.navbar-nav--right) {
+
+						> li {
+
+							&:nth-child(2), &:nth-child(3) {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+
+	    &.stop {
+	        padding: 8px 0;
+
+	        .navbar {
+
+	            .navbar-header {
+
+	                .navbar-brand {
+
+	                    img {
+	                        max-width: 150px;
+	                    }
+	                }
+	            }
+	        }
+	    }
+	}
+
+	.header-gutter {
+		height: 99px;
+		min-height: 99px;
+	}
+
+}/* 991 */
+
+@media only screen and (max-width: 767px) {
+	h1, .h1 {
+		font-size: 35px;
+		line-height: 45px;
+
+		&.lg {
+			font-size: 40px;
+			line-height: 50px;
+		}
+	}
+
+	h2, .h2 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	.container {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	.btn {
+	    padding: 8px 25px 8px;
+
+	    &.btn-border {
+		    padding: 7px 24px 7px;
+		}
+	}
+
+	/***********************************
+	HEADER STYLE
+	***********************************/
+	.header {
+		padding: 15px 0;
+
+		.container {
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+
+		.navbar {
+
+			.navbar-header {
+
+                .navbar-brand {
+
+                    img {
+                        max-width: 150px;
+                    }
+                }
+            }
+
+			.navbar-collapse {
+
+				.navbar-nav {
+
+					li {
+
+						&:not(:first-child) {
+							margin-left: 20px;
+						}
+
+						&.btn-menu {
+
+							a {
+								padding: 8px 25px 9px;
+							}
+						}
+					}
+
+					&:not(.navbar-nav--right) {
+
+						> li {
+
+							&:nth-child(4) {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.header-gutter {
+		height: 85.72px;
+		min-height: 85.72px;
+	}
+
+}/* 767 */
+
+@media only screen and (max-width: 575px) {
+	h1, .h1 {
+		font-size: 30px;
+		line-height: 40px;
+
+		&.lg {
+			font-size: 35px;
+			line-height: 45px;
+		}
+	}
+
+	h2, .h2 {
+		font-size: 25px;
+		line-height: 35px;
+	}
+
+	h3, .h3 {
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	.container {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	.btn {
+	    font-size: 16px;
+	    line-height: 26px;
+	    padding: 7px 22px 7px;
+
+	    &.btn-border {
+		    padding: 6px 21px 6px;
+		}
+	}
+
+	body {
+	    font: 400 14px/24px "Poppins", sans-serif;
+	}
+
+	/***********************************
+	HEADER STYLE
+	***********************************/
+	.header {
+		padding: 12px 0;
+
+		.container {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+
+		.navbar {
+
+			.navbar-header {
+
+                .navbar-brand {
+
+                    img {
+                        max-width: 130px;
+                    }
+                }
+            }
+
+			.navbar-collapse {
+
+				.navbar-nav {
+
+					li {
+
+						&.btn-menu {
+
+							a {
+								font-size: 16px;
+								line-height: 26px;
+								padding: 7px 22px 8px;
+								@include letter-spacing(30, 16);
+							}
+						}
+					}
+
+					&:not(.navbar-nav--right) {
+
+						> li {
+
+							&:nth-child(5) {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+
+	    &.stop {
+
+	        .navbar {
+
+	            .navbar-header {
+
+	                .navbar-brand {
+
+	                    img {
+	                        max-width: 120px;
+	                    }
+	                }
+	            }
+	        }
+	    }
+	}
+
+	.header-gutter {
+		height: 72.28px;
+		min-height: 72.28px;
+	}
+
+}/* 575 */
+
+@media only screen and (max-width: 480px) {
+	h1, .h1 {
+		font-size: 25px;
+		line-height: 35px;
+
+		&.lg {
+			font-size: 30px;
+			line-height: 40px;
+		}
+	}
+
+	h2, .h2 {
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	h3, .h3 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	h4, .h4 {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	h5, .h5 {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	h6, .h6 {
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.btn {
+	    padding: 6px 20px 6px;
+
+	    &.btn-border {
+		    padding: 5px 19px 5px;
+		}
+	}
+
+	/***********************************
+	HEADER STYLE
+	***********************************/
+	.header {
+
+		.navbar {
+
+			.navbar-header {
+
+                .navbar-brand {
+
+                    img {
+                        max-width: 120px;
+                    }
+                }
+            }
+
+			.navbar-collapse {
+
+				.navbar-nav {
+
+					&:not(.navbar-nav--right) {
+
+						> li {
+
+							&:nth-child(6) {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+
+	    &.stop {
+
+	        .navbar {
+
+	            .navbar-header {
+
+	                .navbar-brand {
+
+	                    img {
+	                        max-width: 110px;
+	                    }
+	                }
+	            }
+	        }
+	    }
+	}
+
+	.header-gutter {
+		height: 68.58px;
+		min-height: 68.58px;
+	}
+
+}/* 480 */

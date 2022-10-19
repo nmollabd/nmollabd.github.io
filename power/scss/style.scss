@@ -51,18 +51,18 @@ h1, .h1 {
 }
 
 h2, .h2 {
-	font-size: 48px;
-	line-height: 58px;
+	font-size: 40px;
+	line-height: 50px;
 }
 
 h3, .h3 {
-	font-size: 30px;
-	line-height: 40px;
+	font-size: 25px;
+	line-height: 35px;
 }
 
 h4, .h4 {
-	font-size: 24px;
-	line-height: 34px;
+	font-size: 20px;
+	line-height: 30px;
 }
 
 h5, .h5 {
@@ -71,8 +71,8 @@ h5, .h5 {
 }
 
 h6, .h6 {
-	font-size: 14px;
-	line-height: 34px;
+	font-size: 16px;
+	line-height: 26px;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -104,19 +104,26 @@ section {
 .btn {
 	border: 0;
 	color: #FFFFFF;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 19px;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 30px;
 	position: relative;
-	padding: 12px 44px 12px;
+	padding: 13px 37px 15px;
 	background-color: $danger;
 	text-transform: capitalize;
-	@include border-radius(500px);
+	@include border-radius(5px);
 	@include transition(all 0.3s ease);
 
+	&.btn-border {
+		color: $black;
+		background: transparent;
+		border: 1px solid $black;
+		padding: 12px 37px 14px;
+	}
+
 	&:hover, &:focus {
-		color: $white !important;
-		background-color: $orange !important;
+		color: $black;
+		background-color: $orange; 
 	}
 }
 

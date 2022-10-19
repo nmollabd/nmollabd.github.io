@@ -73,8 +73,8 @@ HEADER STYLES
 }
 
 .header-gutter {
-  height: 88.84px;
-  min-height: 88.84px;
+  height: 129.72px;
+  min-height: 129.72px;
 }
 
 .header {
@@ -85,14 +85,14 @@ HEADER STYLES
   z-index: 1030;
   position: fixed;
   background: #FFF;
-  padding: 20.88px 0;
+  padding: 24px 0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .header .container {
+  position: initial;
   padding-left: 50px;
   padding-right: 50px;
-  position: initial;
 }
 .header .navbar {
   padding: 0;
@@ -102,6 +102,7 @@ HEADER STYLES
   padding: 0;
 }
 .header .navbar .navbar-header .navbar-brand img {
+  max-width: 220px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -110,21 +111,40 @@ HEADER STYLES
       -ms-flex-align: center;
           align-items: center;
 }
+.header .navbar .navbar-collapse .navbar-nav > li {
+  padding: 0;
+}
 .header .navbar .navbar-collapse .navbar-nav > li:not(:first-child) {
   margin-left: 40px;
 }
 .header .navbar .navbar-collapse .navbar-nav > li > a {
-  display: block;
   color: #000000;
+  display: block;
   font-size: 18px;
   font-weight: 300;
   line-height: 28px;
+  position: relative;
   letter-spacing: 0.54px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.header .navbar .navbar-collapse .navbar-nav > li > a:hover, .header .navbar .navbar-collapse .navbar-nav > li > a:focus {
-  color: #16D800;
+.header .navbar .navbar-collapse .navbar-nav > li > a:before {
+  left: 0;
+  right: 0;
+  height: 3px;
+  width: 100%;
+  content: "";
+  bottom: -6px;
+  position: absolute;
+  background-color: #F92524;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header .navbar .navbar-collapse .navbar-nav > li > a:hover:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 .header .navbar .navbar-collapse .navbar-nav > li.btn-menu {
   margin-left: 20px;
@@ -136,7 +156,8 @@ HEADER STYLES
   line-height: 28px;
   text-align: center;
   background: #F92524;
-  padding: 10px 28px 12px;
+  display: inline-block;
+  padding: 14px 36px 16px;
   border-radius: 5px;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -144,17 +165,64 @@ HEADER STYLES
   -moz-transform: translate3d(0, 0, 0);
   letter-spacing: 0.54px;
 }
-.header .navbar .navbar-collapse .navbar-nav > li.btn-menu a:hover, .header .navbar .navbar-collapse .navbar-nav > li.btn-menu a:focus {
-  background: #000000;
+.header .navbar .navbar-collapse .navbar-nav > li.btn-menu a:after {
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  z-index: -2;
+  height: 100%;
+  position: absolute;
+  background-color: #F92524;
+  border-radius: 5px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+.header .navbar .navbar-collapse .navbar-nav > li.btn-menu a:before {
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  z-index: -1;
+  content: "";
+  height: 100%;
+  position: absolute;
+  background-color: #000000;
+  border-radius: 5px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.9s in-ease;
+  transition: all 0.9s in-ease;
+}
+.header .navbar .navbar-collapse .navbar-nav > li.btn-menu a:hover {
+  color: #fff;
+}
+.header .navbar .navbar-collapse .navbar-nav > li.btn-menu a:hover:before {
+  width: 100%;
+}
+.header .navbar .navbar-collapse .navbar-nav.navbar-nav--right .mobile-navbar-toggler {
+  display: none;
+  margin-left: 20px;
+}
+.header .navbar .navbar-collapse .navbar-nav.navbar-nav--right .mobile-navbar-toggler a:before {
+  display: none;
 }
 .header.transparent {
   background-color: transparent;
 }
 .header.stop {
-  padding: 15px 0;
+  padding: 10px 0;
   background: #FFF;
   -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.16);
           box-shadow: 0 0 24px rgba(0, 0, 0, 0.16);
+}
+.header.stop .navbar .navbar-header .navbar-brand img {
+  max-width: 170px;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
 }
 
 .navbar-toggle {
@@ -310,18 +378,18 @@ h1.lg, .h1.lg {
 }
 
 h2, .h2 {
-  font-size: 48px;
-  line-height: 58px;
+  font-size: 40px;
+  line-height: 50px;
 }
 
 h3, .h3 {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 25px;
+  line-height: 35px;
 }
 
 h4, .h4 {
-  font-size: 24px;
-  line-height: 34px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 h5, .h5 {
@@ -330,8 +398,8 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-size: 14px;
-  line-height: 34px;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -362,14 +430,14 @@ section {
 .btn {
   border: 0;
   color: #FFFFFF;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 19px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
   position: relative;
-  padding: 12px 44px 12px;
+  padding: 13px 37px 15px;
   background-color: #F92524;
   text-transform: capitalize;
-  border-radius: 500px;
+  border-radius: 5px;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
@@ -377,9 +445,15 @@ section {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+.btn.btn-border {
+  color: #000000;
+  background: transparent;
+  border: 1px solid #000000;
+  padding: 12px 37px 14px;
+}
 .btn:hover, .btn:focus {
-  color: #FFFFFF !important;
-  background-color: #FFD500 !important;
+  color: #000000;
+  background-color: #FFD500;
 }
 
 [class$=__media] {
@@ -448,3 +522,310 @@ section {
 .basic {
   padding: 150px 0;
 }
+
+@media only screen and (max-width: 1366px) {
+  h1.lg, .h1.lg {
+    font-size: 70px;
+    line-height: 80px;
+  }
+}
+/* 1366 */
+@media only screen and (max-width: 1199px) {
+  h1.lg, .h1.lg {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  /***********************************
+  HEADER STYLE
+  ***********************************/
+  .header {
+    padding: 20px 0;
+  }
+  .header .container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .header .navbar .navbar-header .navbar-brand svg, .header .navbar .navbar-header .navbar-brand img {
+    max-width: 170px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav li:not(:first-child) {
+    margin-left: 30px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav li a {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav li.btn-menu a {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 10px 30px 12px;
+    letter-spacing: 0.54px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(1) {
+    display: none;
+  }
+  .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right .mobile-navbar-toggler {
+    display: block;
+  }
+
+  .header-gutter {
+    height: 103px;
+    min-height: 103px;
+  }
+}
+/* 1199 */
+@media only screen and (max-width: 991px) {
+  h1, .h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  h1.lg, .h1.lg {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  h2, .h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .btn {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 10px 30px 10px;
+  }
+  .btn.btn-border {
+    padding: 8px 29px 10px;
+  }
+
+  /***********************************
+  HEADER STYLE
+  ***********************************/
+  .header {
+    padding: 18px 0;
+  }
+  .header .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav li:not(:first-child) {
+    margin-left: 25px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav li.btn-menu a {
+    padding: 9px 30px 10px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(2), .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(3) {
+    display: none;
+  }
+  .header.stop {
+    padding: 8px 0;
+  }
+  .header.stop .navbar .navbar-header .navbar-brand img {
+    max-width: 150px;
+  }
+
+  .header-gutter {
+    height: 99px;
+    min-height: 99px;
+  }
+}
+/* 991 */
+@media only screen and (max-width: 767px) {
+  h1, .h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  h1.lg, .h1.lg {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  h2, .h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .btn {
+    padding: 8px 25px 8px;
+  }
+  .btn.btn-border {
+    padding: 7px 24px 7px;
+  }
+
+  /***********************************
+  HEADER STYLE
+  ***********************************/
+  .header {
+    padding: 15px 0;
+  }
+  .header .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .header .navbar .navbar-header .navbar-brand img {
+    max-width: 150px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav li:not(:first-child) {
+    margin-left: 20px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav li.btn-menu a {
+    padding: 8px 25px 9px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(4) {
+    display: none;
+  }
+
+  .header-gutter {
+    height: 85.72px;
+    min-height: 85.72px;
+  }
+}
+/* 767 */
+@media only screen and (max-width: 575px) {
+  h1, .h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  h1.lg, .h1.lg {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  h2, .h2 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  h3, .h3 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .btn {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 7px 22px 7px;
+  }
+  .btn.btn-border {
+    padding: 6px 21px 6px;
+  }
+
+  body {
+    font: 400 14px/24px "Poppins", sans-serif;
+  }
+
+  /***********************************
+  HEADER STYLE
+  ***********************************/
+  .header {
+    padding: 12px 0;
+  }
+  .header .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .header .navbar .navbar-header .navbar-brand img {
+    max-width: 130px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav li.btn-menu a {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 7px 22px 8px;
+    letter-spacing: 0.48px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(5) {
+    display: none;
+  }
+  .header.stop .navbar .navbar-header .navbar-brand img {
+    max-width: 120px;
+  }
+
+  .header-gutter {
+    height: 72.28px;
+    min-height: 72.28px;
+  }
+}
+/* 575 */
+@media only screen and (max-width: 480px) {
+  h1, .h1 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  h1.lg, .h1.lg {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  h2, .h2 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  h3, .h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  h4, .h4 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  h5, .h5 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  h6, .h6 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .btn {
+    padding: 6px 20px 6px;
+  }
+  .btn.btn-border {
+    padding: 5px 19px 5px;
+  }
+
+  /***********************************
+  HEADER STYLE
+  ***********************************/
+  .header .navbar .navbar-header .navbar-brand img {
+    max-width: 120px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(6) {
+    display: none;
+  }
+  .header.stop .navbar .navbar-header .navbar-brand img {
+    max-width: 110px;
+  }
+
+  .header-gutter {
+    height: 68.58px;
+    min-height: 68.58px;
+  }
+}
+/* 480 */

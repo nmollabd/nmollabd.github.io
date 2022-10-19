@@ -134,39 +134,6 @@
         }
     });
 
-    jQuery(document).ready(function() {
-
-        //Testimonial Slider 
-        $(".testimonial-section .slider-area").slick({
-            autoplay: true, 
-            dots: true,
-            slidesToShow: 3,
-            arrows: false,
-            responsive : [
-                {
-                    breakpoint: 1200, 
-                    settings: {
-                        slidesToShow: 2,
-                    }
-                }, 
-                {
-                    breakpoint: 575, 
-                    settings: {
-                        slidesToShow: 1,
-                    }
-                }
-            ]
-        });
-
-        //Blog Thumbnail Slider 
-        $(".blog-thumbnail-slider").slick({
-            autoplay: true, 
-            prevArrow: '<button type="button" class="slick-prev"><i class="icon-left-open"></i></button>',
-            nextArrow: '<button type="button" class="slick-next"><i class="icon-right-open"></i></button>',
-            
-        }); 
-    });
-
     /** Sidr submenu */
     function portfolioMobileMenu() {
         var $nav = $(".navbar-mobile"),
@@ -221,73 +188,18 @@
 
     portfolioMobileMenu();
 
-    /*** Popup Video lightbox */
-    $('.popup-video').magnificPopup({
-         type: 'iframe',
-         preloader: false,
-         fixedBgPos: true,
-         removalDelay: 500,
-         fixedContentPos: true,
-         callbacks: {
-             beforeOpen: function() {
-                 // console.log(this.st.iframe.markup);
-                 this.st.iframe.markup = this.st.iframe.markup.replace('mfp-iframe-scaler', 'mfp-iframe-scaler mfp-with-anim');
-                 this.st.mainClass = this.st.el.attr('data-effect');
-             }
-         },
-    });
+    /*** Smooth scroll */
+    $('.sscroll, .sscroll a').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top - 60
+                }, 1e3, "easeInOutExpo");
 
-
-    $('.application-select-card').magnificPopup({
-        type: 'inline',
-        preloader: true,
-        fixedBgPos: true,
-        removalDelay: 500,
-        closeBtnInside: true,
-        fixedContentPos: true,
-        callbacks: {
-            beforeOpen: function () {
-                this.st.mainClass = this.st.el.attr('data-effect');
-            },
-            buildControls: function() {
-                // re-appends controls inside the main container
-                $('<button type="button" class="mfp-close">Close <i class="icon-close"></i></button>').appendTo(this.container);
-
+                return false;
             }
-        },
-        midClick: true,
+        }
     });
-
-    // WOW JS
-    jQuery(window).on('load', function() {
-
-        // WOW JS
-        new WOW().init();
-
-        // Preloader
-        var preLoder = $("#preloader");
-        preLoder.fadeOut(0);
-
-        //ProgressBar 
-        // jQuery(".progress-bar").ProgressBar(); 
-    });
-
-    // myCursor    
-    // var myCursor    = jQuery('.mouse-cursor');
-    
-    //     if(myCursor.length){
-    //         if ($("body")) {
-    //         const e = document.querySelector(".cursor-inner"),
-    //             t = document.querySelector(".cursor-outer");
-    //         let n, i = 0,
-    //             o = !1;
-    //         window.onmousemove = function (s) {
-    //             o || (t.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), e.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)", n = s.clientY, i = s.clientX
-    //         }, $("body").on("mouseenter", "a, .ryker_tm_topbar .trigger, .cursor-pointer", function () {
-    //             e.classList.add("cursor-hover"), t.classList.add("cursor-hover")
-    //         }), $("body").on("mouseleave", "a, .ryker_tm_topbar .trigger, .cursor-pointer", function () {
-    //             $(this).is("a") && $(this).closest(".cursor-pointer").length || (e.classList.remove("cursor-hover"), t.classList.remove("cursor-hover"))
-    //         }), e.style.visibility = "visible", t.style.visibility = "visible"
-    //     }
-    // }
 }(jQuery));
