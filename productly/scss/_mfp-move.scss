@@ -1,0 +1,234 @@
+.mfp-move-from-top {
+	@include transition(initial);
+
+	&.mfp-bg {
+		opacity: 1 !important; 
+		backdrop-filter: blur(10px);
+		--webkit-backdrop-filter: blur(10px); 
+		background-color: rgba(255, 255, 255, 0);
+	}
+
+	.mfp-container {
+		padding: 0 15px; 
+
+		.mfp-content {
+			height: 100%;
+			padding: 40px 0;
+			vertical-align: middle; 
+
+			.container {
+				padding: 0;
+			}
+		}
+	}
+  
+  /* start state */
+	.mfp-with-anim {
+		opacity: 0;
+		@include transition(all 0.5s);
+		@include transform(translateY(300px));
+	}
+  
+	&.mfp-bg {
+		opacity: 0;
+		@include transition(all 0.5s);
+	}
+  
+	/* animate in */
+	&.mfp-ready {
+
+		.mfp-with-anim {
+			opacity: 1;
+			@include transform(translateY(0));
+		}
+
+		&.mfp-bg {
+			opacity: 0.8;
+		}
+	}
+  
+	/* animate out */
+	&.mfp-removing {
+
+		.mfp-with-anim {
+		  	transform: translateY(100px);
+		  	opacity: 0;
+		}
+
+		&.mfp-bg {
+		  	opacity: 0;
+		}
+	}
+
+	.mfp-container { 
+		width: 100%;
+
+		.mfp-content {
+			height: auto; 
+
+			.mfp-figure {
+
+				&:after {
+					box-shadow: none;
+					background: transparent;
+				}
+
+				.mfp-close {
+					opacity: 1;
+					color: $primary;
+					font-size: 18px;
+					cursor: pointer;
+					line-height: 24px;
+					padding-bottom: 20px;
+					text-transform: uppercase;
+					@include transition(all 0.3s ease);
+
+					span {
+						font-size: 13px;
+						margin-left: 7px;
+						vertical-align: 1px;
+						display: inline-block;
+					}
+
+					&:hover, &:focus {
+						color: $secondary;
+					}
+				}
+
+				.mfp-bottom-bar {
+
+					.mfp-title {
+						color: red;
+						font-size: 16px;
+						font-weight: 400;
+						line-height: 24px;
+					}
+
+					.mfp-counter {
+						color: red;
+						font-size: 16px;
+						font-weight: 400;
+						line-height: 24px;
+					}
+				}
+			}
+		}
+
+		.mfp-arrow {
+			opacity: 1;
+			width: 90px;
+			height: 90px;
+			font-size: 22px;
+			overflow: hidden;
+			text-align: center;
+			margin: -55px 20px 0;
+			border-radius: 500px;
+			@include transition(all .3s ease);
+			background: linear-gradient(220deg, #ef66c5 0%, #364ddd 49.75%, #00bfe8 100%);
+
+			&:hover {
+				background: $secondary;
+			}
+
+			&:before {
+				border: 0;
+				margin: 0;
+				opacity: 1;
+				color: $white;
+				width: auto;
+				height: auto;
+				top: calc(50% - 13px);
+				left: calc(50% - 14.65px);
+				font-family: "productly";
+				@include transition(all 0.3s);
+			}
+
+			&:after {
+				content: none;
+			}
+
+			&.mfp-arrow-left {
+
+				&:before {
+					content: "";
+				}
+
+				&:hover {
+
+					&:before {
+						color: $primary; 
+					}
+				}
+			}
+
+			&.mfp-arrow-right {
+
+				&:before {
+					content: "";
+				}
+
+				&:hover {
+
+					&:before {
+						color: $primary; 
+					}
+				}
+			}
+		}
+
+		.mfp-bottom-bar {
+			margin-top: -20px;
+			
+			.mfp-title {
+				color: $primary;
+			}
+
+			.mfp-counter {
+				color: $primary;
+			}
+		}
+	}
+
+	.mfp-iframe-scaler {
+		overflow: inherit;
+		vertical-align: middle;
+
+		.mfp-iframe {
+			padding: 0;
+			margin: 0;
+			background: $white;
+		}
+
+		.mfp-close {
+			opacity: 1;
+			color: $black;
+			font-size: 35px;
+			cursor: pointer;
+			line-height: 35px;
+			padding-bottom: 20px;
+			text-transform: uppercase;
+			font-family: 'productly';
+			@include transition(all 0.3s ease); 
+
+			&:hover, &:focus {
+				color: #FF9900;
+			}
+		}
+	}
+
+	.mfp-close {
+		opacity: 1;
+		color: $black;
+		font-size: 18px;
+		cursor: pointer;
+		line-height: 44px;
+		padding-bottom: 20px;
+		text-transform: uppercase;
+		font-family: 'productly';
+		@include transition(all 0.3s ease); 
+
+		&:hover, &:focus {
+			color: #FF9900;
+		}
+	}
+}
