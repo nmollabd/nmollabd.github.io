@@ -1,0 +1,46 @@
+/***********************************
+BANNER STYLES
+***********************************/
+.banner {
+    overflow: hidden;
+    padding: 475px 0 394px;
+
+    .gray-overlay {
+    	left: -316px;
+    	bottom: 430px;
+    	position: absolute;
+    }
+
+	&__content {
+		z-index: 1;
+    	max-width: 668px;
+    	position: relative;
+
+		.title {
+			color: $black;
+			position: relative;
+			margin-bottom: 31px;
+
+			&:before {
+				left: 0;
+				height: 5px;
+				content: '';
+				width: 100px;
+				bottom: -10px;
+				position: absolute;
+				background: $danger;
+			}
+		}
+
+		.description {
+			margin-bottom: 38px;
+		}
+	}
+
+	&__media {
+		top: 50%;
+		right: -300px;
+		position: absolute;
+		@include transform(translateY(-50%));
+	}
+}
