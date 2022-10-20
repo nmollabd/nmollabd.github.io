@@ -1,0 +1,9 @@
+<svg id="hero" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1890" height="835" viewBox="0 0 1890 835">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.493" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffe5d2" stop-opacity="0.627"/>
+      <stop offset="1" stop-color="#fff4e5" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <ellipse id="Oval" cx="945" cy="417.5" rx="945" ry="417.5" fill="url(#linear-gradient)"/>
+</svg>
