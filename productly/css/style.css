@@ -1077,15 +1077,6 @@ BANNER STYLES
   padding: 84.6px 0;
   position: relative;
 }
-.superpowers .gray-background:before {
-  top: 0;
-  left: 0;
-  width: 100%;
-  content: "";
-  height: 100%;
-  position: absolute;
-  background: url(../productly/images/gray-background.svg) no-repeat center/cover;
-}
 .superpowers .gray-background .btn {
   margin-top: 50px;
 }
@@ -1201,15 +1192,6 @@ BANNER STYLES
 .hero {
   padding: 10px 0;
   position: relative;
-}
-.hero:before {
-  top: 0;
-  left: 0;
-  width: 100%;
-  content: "";
-  height: 100%;
-  position: absolute;
-  background: url(../productly/images/hero.svg) no-repeat center/cover;
 }
 .hero .hero-iner {
   padding: 118px 0 133px;
