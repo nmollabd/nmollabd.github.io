@@ -150,4 +150,48 @@
         midClick: true,
     });
 
+    $('.marketing__slider')
+        .slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            prevArrow: $('.slider-controls .slide-prev'),
+            nextArrow: $('.slider-controls .slide-next'),
+            responsive: [
+                {
+                    breakpoint: 575,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        autoplay: true,
+                    },
+                },
+            ],
+        })
+        
+        .on('setPosition', function () {
+            $('.marketing__slider .slick-track')
+            .find('.slick-slide')
+            .css(
+                'height',
+                $('.marketing__slider .slick-track').outerHeight() + 'px'
+            );
+    });
+
+    /*** AOS */
+    AOS.init({
+        once: true,
+        offset: -300,
+        duration: 900,
+    });
+
 }(jQuery));

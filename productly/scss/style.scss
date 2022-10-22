@@ -1,9 +1,9 @@
 /*
-Theme Name: SmartOne
+Theme Name: Productly
 Author: GoingClear Interactive
-Author URI: https://www.goingclear.com/
+Author URI: https://nmollabd.github.io/
 Version: 1.0.0
-Text Domain: SmartOne
+Text Domain: productly
 */
 
 /***********************************
@@ -174,6 +174,13 @@ section {
     flex: 1 1 300px !important;
 }
 
+.horizontal-linebar {
+	margin: 0;
+	padding: 0;
+	border-width: 2px;
+	border-color: $white;
+}
+
 input[type="text"]:not(.select2-input),
 input[type="number"],
 input[type="email"],
@@ -183,23 +190,23 @@ input[type="password"],
 input[type="file"],
 select, textarea {
 	@include appearance;
-	border: 0 !important;
 	width: 100% !important;
-	color: $black !important;
-	font-size: 18px !important;
+	color: #BCD0E5 !important;
+	font-size: 16px !important;
 	font-weight: 400 !important;
 	box-shadow: none !important;
 	line-height: 26px !important; 
-	background: $white !important;
-	border-radius: 500px !important;
 	padding: 14px 16px !important;
+	background: transparent !important;
 	@include transition(all 0.3s ease);
+	border: 1px solid #BCD0E5 !important;
+	@include border-radius(4px !important);
 	-webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12) !important;
-    @include placeholderWithlettertraking(#000, 18px, 26px, 0, 400);
+    // box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12) !important;
+    @include placeholderWithlettertraking(#BCD0E5, 16px, 26px, 0, 400);
 
 
 	&:hover, &:focus {
@@ -291,6 +298,45 @@ BANNER STYLES
 		}
 	}
 
+	&-btn {
+
+		.btn {
+
+			&:after {
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				content: '';
+				z-index: -2;
+				height: 100%;
+				position: absolute;
+				background-color: $orange;
+				@include border-radius(4px);
+			}
+
+			&:before {
+				left: 0;
+				bottom: 0;
+				width: 0%;
+				z-index: -1;
+				content: '';
+				height: 100%;
+				position: absolute;
+				background-color: $primary;
+				@include border-radius(4px);
+				@include transition(all 0.3s ease);
+			}
+
+			&:hover {
+				color: $black;
+
+				&:before {
+					width: 100%;
+				}
+			}
+		}
+	}
+
 	&__card {
 		margin-left: 30px;
 
@@ -340,6 +386,39 @@ BANNER STYLES
 
 		.btn {
 			margin-top: 50px;
+
+			&:after {
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				content: '';
+				z-index: -2;
+				height: 100%;
+				position: absolute;
+				background-color: $orange;
+				@include border-radius(4px);
+			}
+
+			&:before {
+				left: 0;
+				bottom: 0;
+				width: 0%;
+				z-index: -1;
+				content: '';
+				height: 100%;
+				position: absolute;
+				background-color: $primary;
+				@include border-radius(4px);
+				@include transition(all 0.3s ease);
+			}
+
+			&:hover {
+				color: $black;
+
+				&:before {
+					width: 100%;
+				}
+			}
 		}
 
 		.entry-title {
@@ -471,9 +550,290 @@ BANNER STYLES
 	}
 }
 
+.marketing {
+	overflow: hidden;
+	position: relative;
+	padding: 30px 0 90px;
+    background: linear-gradient(to top, #f2f5fa 10%, rgba(224, 232, 245, 0) 100%);
+
+	.entry-title {
+		margin-bottom: 30px;
+
+		.title {
+			margin-bottom: 0;
+		}
+	}
+
+	.slider-controls {
+
+		.slick-arrow {
+			border-radius: 0;
+			border: 4px solid #fff;
+			@include transition(all 0.3s ease);
+
+			i {
+				font-size: 18px;
+				display: inline-block;
+			}
+
+			&.slide-next {
+
+				i {
+			  		transform: rotate(180deg);
+				}
+			}
+
+			&:hover,&:focus {
+				border-color: $primary;
+				background-color: $primary;
+			}
+		}
+
+		.slick-track {
+			height: 100%;
+			display: table !important;
+		}
+
+		.slick-slide {
+			padding: 0rem 1rem;
+			float: none !important;
+			vertical-align: middle;
+			display: table-cell !important;
+			height: initial !important;
+		}
+	}
+
+	.mbm-20 {
+		margin-bottom: -20px;
+	}
+
+	&__card {
+		width: 100%;
+		padding: 20px;
+		display: block;
+		margin-bottom: 20px;
+		background-color: $white;
+		height: calc(100% - 20px);
+		@include border-radius(16px);
+		// box-shadow: 0px 44px 33px rgb(0 0 0 / 16%) !important;
+
+		.media {
+			overflow: hidden;
+			margin-bottom: 20px;
+			@include border-radius(36px);
+
+			img {
+				@include transition(all 0.3s ease);
+			}
+		}
+
+		.text {
+			max-width: 423px;
+
+			span {
+				color: $gray;
+				display: block;
+				margin-bottom: 10px;
+			}
+
+			.title {
+				margin-bottom: 0;
+				@include transition(all 0.3s ease);
+			}
+		}
+
+		&:any-link {
+
+		    &:hover,&:focus {
+
+				.media {
+
+					img {
+						@include transform(scale(1.2));
+					}
+				}
+
+				.text {
+
+					.title {
+						color: $orange;
+					}
+				}
+			}
+		}
+	}
+
+	.link-wrap {
+		margin-top: 50px;
+
+		.btn {
+
+			&:after {
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				content: '';
+				z-index: -2;
+				height: 100%;
+				position: absolute;
+				background-color: $orange;
+				@include border-radius(4px);
+			}
+
+			&:before {
+				left: 0;
+				bottom: 0;
+				width: 0%;
+				z-index: -1;
+				content: '';
+				height: 100%;
+				position: absolute;
+				@include border-radius(4px);
+				background-color: $secondary;
+				@include transition(all 0.3s ease);
+			}
+
+			&:hover {
+				color: $orange;
+
+				&:before {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
 .footer {
-    padding: 61px 0;
-    background: #F2F5F0;
-    border-top: 1px solid #E2E2E2;
+	padding: 90px 0;
+	background: #f2f5fa;
+
+	.logo {
+		margin-bottom: 20px;
+	}
+
+	.description {
+		max-width: 170px;
+	}
+
+    .search-form {
+
+        .form-group {
+        	margin-bottom: 21px;
+
+            input[type="search"] {
+            	color: #BCD0E5;
+                min-width: 100%;
+                border: 1px solid #BCD0E5 !important;
+                border-radius: 0 !important;
+                padding: 23px 15px !important;
+                padding-right: 128px !important;
+                background: transparent !important;
+
+                &:hover, &:focus {
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    &__widget {
+
+    	&-nav {
+
+    		li {
+
+    			&:not(:last-child) {
+    				margin-bottom: 5px;
+    			}
+
+    			&.bold {
+    				margin-bottom: 30px;
+
+    				a {
+    					color: $black;
+    					font-size: 20px;
+    					line-height: 30px;
+    					font-family: $oswald;
+    					@include letter-spacing(15, 20);
+    					@include transition(all 0.3s ease);
+
+    					&:any-link {
+
+    						&:hover, &:focus {
+    							color: inherit;
+    						}
+    					}
+    				}
+    			}
+
+    			a {
+    				color: $black;
+    				display: block;
+    				font-family: $oswald;
+    				@include letter-spacing(15, 16);
+    				@include transition(all 0.3s ease);
+
+    				&:any-link {
+
+    					&:hover, &:focus {
+    						color: $orange;
+    					}
+    				}
+    			}
+    		}
+    	}
+    }
+
+    &__deal {
+
+    	span {
+    		color: $black;
+    		display: block;
+    		font-size: 20px;
+    		max-width: 219px;
+    		line-height: 30px;
+    		margin-bottom: 30px;
+    		font-family: $oswald;
+    		@include letter-spacing(15, 20);
+    	}
+
+    	.btn {
+
+			&:after {
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				content: '';
+				z-index: -2;
+				height: 100%;
+				position: absolute;
+				background-color: $orange;
+				@include border-radius(4px);
+			}
+
+			&:before {
+				left: 0;
+				bottom: 0;
+				width: 0%;
+				z-index: -1;
+				content: '';
+				height: 100%;
+				position: absolute;
+				background-color: $primary;
+				@include border-radius(4px);
+				@include transition(all 0.3s ease);
+			}
+
+			&:hover {
+				color: $black;
+
+				&:before {
+					width: 100%;
+				}
+			}
+    	}
+    }
 }
 @import'responsive';

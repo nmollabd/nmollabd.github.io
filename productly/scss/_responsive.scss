@@ -120,6 +120,22 @@
 		    padding: 70px 0;
 		}
     }
+
+    .marketing {
+    	padding: 70px 0;
+
+    	.entry-title {
+		    margin-bottom: 25px;
+		}
+    }
+
+    /***********************************
+    FOOTER STYLES
+    ***********************************/
+    .footer {
+    	padding: 70px 0;
+    }
+
 }/* 1199 */
 
 @media only screen and (max-width: 991px) {
@@ -285,6 +301,52 @@
 		    padding: 70px 0;
 		}
     }
+
+    .marketing {
+    	padding: 60px 0;
+
+    	.entry-title {
+		    margin-bottom: 20px;
+		}
+
+	 	.link-wrap {
+		    margin-top: 40px;
+		}
+
+		&__card {
+
+			.media {
+				@include border-radius(24px);
+			}
+
+			.text {
+
+				span {
+				    margin-bottom: 5px;
+				}
+			}
+		}
+    }
+
+    /***********************************
+    FOOTER STYLES
+    ***********************************/
+    .footer {
+    	padding: 60px 0;
+
+    	.description {
+    		max-width: 100%;
+    		margin-bottom: 30px;
+    	}
+
+    	&__deal {
+
+    		span {
+			    max-width: 100%;
+			}
+    	}
+    }
+
 }/* 991 */
 
 @media only screen and (max-width: 800px) {
@@ -554,6 +616,50 @@
 		    padding: 60px 0;
 		}
     }
+
+    .marketing {
+    	padding: 50px 0;
+
+    	.entry-title {
+		    margin-bottom: 15px;
+		}
+
+	 	.link-wrap {
+		    margin-top: 30px;
+		}
+
+		&__card {
+
+			.media {
+				@include border-radius(16px);
+			}
+
+			.text {
+
+				span {
+				    margin-bottom: 0;
+				}
+			}
+		}
+    }
+
+    /***********************************
+    FOOTER STYLES
+    ***********************************/
+    .footer {
+    	padding: 50px 0;
+
+    	.search-form {
+
+    		.form-group {
+
+    			input[type=search] {
+				    padding-right: 50px !important;
+				}
+    		}
+    	}
+    }
+
 }/* 767 */
 
 @media only screen and (max-width: 575px) {
@@ -735,7 +841,43 @@
 		    padding: 50px 0;
 		}
     }
-}
+
+    .marketing {
+    	padding: 40px 0;
+
+		&__card {
+
+			.media {
+				@include border-radius(8px);
+			}
+		}
+    }
+
+    /***********************************
+    FOOTER STYLES
+    ***********************************/
+    .footer {
+    	padding: 40px 0;
+
+    	.search-form {
+
+    		.form-group {
+
+    			input[type=search] {
+				    padding-right: 10px !important;
+				}
+    		}
+    	}
+
+		.row {
+
+			[class^=col] {
+			    flex: 0 0 100%;
+			    max-width: 100%;
+			}
+		}
+    }
+}/* 575 */
 
 @media only screen and (max-width: 480px) {
 
@@ -807,6 +949,24 @@
     /***********************************
     HOME STYLES
     ***********************************/
+    .banner {
+
+    	&__card {
+    		margin-left: 10px;
+
+    		span {
+			    font-size: 13px;
+			    line-height: 18px;
+			}
+
+
+    		.icon {
+			    font-size: 13px;
+			    margin-right: 5px;
+			}
+    	}
+    }
+
     .superpowers {
     	padding: 40px 0;
 
