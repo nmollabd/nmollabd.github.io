@@ -3281,7 +3281,7 @@ FOOTER STYLE
   }
 
   .banner {
-    padding: 115px 0 80px;
+    padding: 145px 0 80px;
   }
   .banner__content {
     max-width: 335px;
@@ -3495,7 +3495,7 @@ FOOTER STYLE
   }
 
   .banner {
-    padding: 90px 0 60px;
+    padding: 120px 0 60px;
   }
   .banner__content {
     max-width: 296px;
@@ -3571,9 +3571,6 @@ FOOTER STYLE
   /***********************************
   HERO-SECTION STYLES
   ***********************************/
-  .banner {
-    padding: 75px 0 60px;
-  }
   .banner__content {
     max-width: 100%;
   }
@@ -3751,7 +3748,7 @@ FOOTER STYLE
   BANNER STYLE
   ***********************************/
   .banner {
-    padding: 75px 0 60px;
+    padding: 100px 0 60px;
   }
   .banner__content {
     max-width: 100%;
