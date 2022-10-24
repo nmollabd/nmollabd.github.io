@@ -91,12 +91,12 @@ PRELOADER-INNER STYLE
      	text-align: center;
 
      	> div {
-			width: 5px;
-			height: 350px;
+			width: 15px;
+			height: 15px;
 			display: inline-block;
 			background-color: $success;
-			@include border-radius(12px);
-			animation: sk-bouncedelay 1.9s infinite ease-in-out both;
+			@include border-radius(500px);
+            animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 	    }
 
 	    .bounce1 {

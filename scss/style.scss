@@ -1283,10 +1283,10 @@ ABOUT STYLE
 				    top: 50%;
 				    left: 10px;
 				    z-index: 999;
-				    color: $white;
+				    color: $danger;
 				    padding: 4px 12px;
 				    position: absolute;
-				    border: 1px solid $white;
+				    border: 1px solid $danger;
 				    background-color: transparent;
 				    @include transition(all 0.3s ease);
 				    @include transform(translateY(-50%));
