@@ -580,12 +580,6 @@ BANNER STYLES
 		position: absolute;
 	}
 
-	.overlay {
-		background-size: cover !important;
-		background-repeat: no-repeat !important;
-		background-image: url(../images/project-bg.png);
-	}
-
 	&--content {
 
 		.mbm-30 {
@@ -690,12 +684,14 @@ BANNER STYLES
 	}
 
 	.right-vector {
-		position: absolute;
-		width: auto;
 		left: 5px;
 		top: 100px;
 		left: auto;
 		right: 5px;
+		width: auto;
+		z-index: -1;
+		position: absolute;
+		animation: danger 15s ease-in-out infinite;
 	}
 }
 
@@ -806,6 +802,7 @@ BANNER STYLES
 			left: 40%;
 			width: 100px;
 			position: absolute;
+			animation: danger 15s ease-in-out infinite;
 		}
 
 		.right-content {
