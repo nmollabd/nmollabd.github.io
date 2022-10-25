@@ -218,7 +218,7 @@ SCROLLDOWN STYLE
         @include border-radius(15px 15px 0px 0px);
 
         &.motion-blur {
-            animation: primary 5s ease-in-out infinite;
+            animation: primary 7s ease-in-out infinite;
         }
     }
 }
@@ -240,7 +240,7 @@ SCROLLDOWN STYLE
         @include border-radius(500px);
 
         &.motion-blur {
-            animation: secondary 5s ease-in-out infinite;
+            animation: secondary 9s ease-in-out infinite;
         }
     }
 }
@@ -262,7 +262,7 @@ SCROLLDOWN STYLE
         @include border-radius(500px);
 
         &.motion-blur {
-            animation: secondary 5s ease-in-out infinite;
+            animation: secondary 11s ease-in-out infinite;
         }
     }
 }
@@ -284,7 +284,7 @@ SCROLLDOWN STYLE
         @include border-radius(0px 0px 15px 15px);
 
         &.motion-blur {
-            animation: danger 5s ease-in-out infinite;
+            animation: danger 14s ease-in-out infinite;
         }
     }
 }

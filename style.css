@@ -1100,8 +1100,8 @@ SCROLLDOWN STYLE
   -moz-transform: translate3d(0, 0, 0);
 }
 .ball-primary .primary.motion-blur {
-  -webkit-animation: primary 5s ease-in-out infinite;
-          animation: primary 5s ease-in-out infinite;
+  -webkit-animation: primary 7s ease-in-out infinite;
+          animation: primary 7s ease-in-out infinite;
 }
 
 .ball-secondary {
@@ -1124,8 +1124,8 @@ SCROLLDOWN STYLE
   -moz-transform: translate3d(0, 0, 0);
 }
 .ball-secondary .secondary.motion-blur {
-  -webkit-animation: secondary 5s ease-in-out infinite;
-          animation: secondary 5s ease-in-out infinite;
+  -webkit-animation: secondary 9s ease-in-out infinite;
+          animation: secondary 9s ease-in-out infinite;
 }
 
 .ball-red {
@@ -1148,8 +1148,8 @@ SCROLLDOWN STYLE
   -moz-transform: translate3d(0, 0, 0);
 }
 .ball-red .red.motion-blur {
-  -webkit-animation: secondary 5s ease-in-out infinite;
-          animation: secondary 5s ease-in-out infinite;
+  -webkit-animation: secondary 11s ease-in-out infinite;
+          animation: secondary 11s ease-in-out infinite;
 }
 
 .ball-danger {
@@ -1172,8 +1172,8 @@ SCROLLDOWN STYLE
   -moz-transform: translate3d(0, 0, 0);
 }
 .ball-danger .danger.motion-blur {
-  -webkit-animation: danger 5s ease-in-out infinite;
-          animation: danger 5s ease-in-out infinite;
+  -webkit-animation: danger 14s ease-in-out infinite;
+          animation: danger 14s ease-in-out infinite;
 }
 
 @-webkit-keyframes primary {
