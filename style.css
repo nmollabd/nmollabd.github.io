@@ -1875,12 +1875,18 @@ HERO-SECTION STYLE
 BANNER STYLES
 ***********************************/
 .banner {
-  cursor: pointer;
   overflow: hidden;
+  position: relative;
   background: #28293E;
   padding: 140px 0 80px;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
+}
+.banner:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  content: "";
+  height: 100%;
+  position: absolute;
   background-image: url("../images/banner-firework-animated-gif-image.webp");
 }
 .banner__content {
