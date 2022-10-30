@@ -4352,6 +4352,25 @@ FOOTER STYLE
   .sticky-contact i {
     font-size: 20px;
   }
+
+  .clocks .clock {
+    left: 190px;
+    width: 100px;
+    height: 100px;
+    bottom: -40px;
+  }
+  .clocks .clock .sec {
+    width: 78px;
+    height: 78px;
+  }
+  .clocks .clock .min {
+    width: 70px;
+    height: 70px;
+  }
+  .clocks .clock .hour {
+    height: 65px;
+    height: 65px;
+  }
 }
 /* 420 */
 .scrolltop {

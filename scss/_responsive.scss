@@ -1446,5 +1446,30 @@
 	    	font-size: 20px;
 	    }
 	}
+
+	.clocks {
+
+		.clock {
+			left: 190px;
+			width: 100px;
+			height: 100px;
+			bottom: -40px;
+
+		    .sec {
+				width: 78px;
+				height: 78px;
+		    }
+
+	       .min {
+		        width: 70px;
+		        height: 70px;
+		    }
+
+	        .hour {
+		        height: 65px;
+		        height: 65px;
+		    }
+		}
+	}
 }
 /* 420 */
