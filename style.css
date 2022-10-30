@@ -446,6 +446,24 @@ HEADER STYLES
   opacity: 1;
   visibility: visible;
 }
+.header.white .navbar .navbar-collapse .navbar-nav > li > a {
+  color: #FFFFFF;
+}
+.header.white .navbar .navbar-collapse .navbar-nav > li.cuurent-menu-item > a, .header.white .navbar .navbar-collapse .navbar-nav > li:focus > a, .header.white .navbar .navbar-collapse .navbar-nav > li:focus > a {
+  color: #51BC70;
+}
+.header.white .navbar .navbar-toggle .icon-bar {
+  background-color: #FFFFFF;
+}
+.header.white.stop .navbar .navbar-collapse .navbar-nav > li > a {
+  color: #062d65;
+}
+.header.white.stop .navbar .navbar-collapse .navbar-nav > li.cuurent-menu-item > a, .header.white.stop .navbar .navbar-collapse .navbar-nav > li:focus > a, .header.white.stop .navbar .navbar-collapse .navbar-nav > li:focus > a {
+  color: #51BC70;
+}
+.header.white.stop .navbar-toggle .icon-bar {
+  background-color: #062D65;
+}
 .header.transparent {
   background-color: transparent;
 }
@@ -1748,8 +1766,8 @@ BANNER STYLES
 ***********************************/
 .banner {
   overflow: hidden;
-  background: #F7F7F7;
-  padding: 200px 0 150px;
+  background: #28293E;
+  padding: 140px 0 80px;
 }
 .banner__content {
   z-index: 1;
@@ -1757,24 +1775,22 @@ BANNER STYLES
   position: relative;
 }
 .banner__content .title {
-  color: #062D65;
+  color: #FFFFFF;
   margin-bottom: 15px;
+}
+.banner__content .title .text-secondary {
+  color: #ffa500 !important;
 }
 .banner__content .description {
   margin-bottom: 20px;
 }
 .banner__content .description p {
+  color: #FFFFFF;
   font-family: "Oswald", sans-serif;
 }
-.banner__media {
-  top: 50%;
-  right: -100px;
-  position: absolute;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.banner__media img {
-  max-width: 850px;
+.banner__content .btn {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 
 .service {
@@ -3294,13 +3310,6 @@ FOOTER STYLE
   /***********************************
   HERO-SECTION STYLES
   ***********************************/
-  .banner__media {
-    right: -10px;
-  }
-  .banner__media img {
-    max-width: 750px;
-  }
-
   .service__item {
     margin-bottom: 20px;
     height: calc(100% - 20px);
@@ -3432,25 +3441,6 @@ FOOTER STYLE
     height: 70px;
     font-size: 25px;
     line-height: 70px;
-  }
-
-  .banner {
-    padding: 170px 0 110px;
-  }
-  .banner__content {
-    max-width: 375px;
-  }
-  .banner__content .title {
-    margin-bottom: 10px;
-  }
-  .banner__content .btn {
-    padding: 9px 30px 10px;
-  }
-  .banner__media {
-    right: 0px;
-  }
-  .banner__media img {
-    max-width: 650px;
   }
 
   .service__item .icon-wrapper {
@@ -3640,22 +3630,7 @@ FOOTER STYLE
   }
 
   .banner {
-    padding: 145px 0 80px;
-  }
-  .banner__content {
-    max-width: 335px;
-  }
-  .banner__content .title {
-    margin-bottom: 5px;
-  }
-  .banner__content .btn {
-    padding: 8px 25px 8px;
-  }
-  .banner__media {
-    right: -30px;
-  }
-  .banner__media img {
-    max-width: 550px;
+    padding: 120px 0 80px;
   }
 
   .sticky-contact {
@@ -3852,22 +3827,6 @@ FOOTER STYLE
     font-size: 20px;
     line-height: 50px;
   }
-
-  .banner {
-    padding: 120px 0 60px;
-  }
-  .banner__content {
-    max-width: 296px;
-  }
-  .banner__content .btn {
-    padding: 7px 20px 7px;
-  }
-  .banner__media {
-    right: -30px;
-  }
-  .banner__media img {
-    max-width: 450px;
-  }
 }
 /* 680 */
 @media only screen and (max-width: 575px) {
@@ -3930,21 +3889,14 @@ FOOTER STYLE
   /***********************************
   HERO-SECTION STYLES
   ***********************************/
+  .banner .media {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
   .banner__content {
     max-width: 100%;
-  }
-  .banner__content .description {
-    max-width: 290px;
-  }
-  .banner__content .btn {
-    padding: 6px 18px 6px;
-  }
-  .banner__media {
-    top: 75%;
-    right: -20px;
-  }
-  .banner__media img {
-    max-width: 380px;
   }
 
   .sticky-contact {
@@ -4101,29 +4053,6 @@ FOOTER STYLE
     font-size: 12px;
     line-height: 20px;
     padding-bottom: 5px;
-  }
-
-  /***********************************
-  BANNER STYLE
-  ***********************************/
-  .banner {
-    padding: 100px 0 60px;
-  }
-  .banner__content {
-    max-width: 100%;
-  }
-  .banner__content .description {
-    max-width: 251px;
-  }
-  .banner__content .btn {
-    padding: 5px 15px 5px;
-  }
-  .banner__media {
-    top: 85%;
-    right: -10px;
-  }
-  .banner__media img {
-    max-width: 280px;
   }
 
   .sticky-contact {

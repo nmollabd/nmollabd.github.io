@@ -380,8 +380,8 @@ BANNER STYLES
 ***********************************/
 .banner {
     overflow: hidden;
-    background: #F7F7F7;
-    padding: 200px 0 150px;
+    background: #28293E;
+    padding: 140px 0 80px;
 
 	&__content {
 		z-index: 1;
@@ -389,27 +389,26 @@ BANNER STYLES
     	position: relative;
 
 		.title {
-			color: #062D65;
+			color: $white;
 			margin-bottom: 15px;
+
+			.text-secondary {
+				color: #ffa500 !important;
+			}
 		}
 
 		.description {
 			margin-bottom: 20px;
 
 			p {
+				color: $white;
 				font-family: $oswald;
 			}
 		}
-	}
 
-	&__media {
-		top: 50%;
-		right: -100px;
-		position: absolute;
-		@include transform(translateY(-50%));
-
-		img {
-			max-width: 850px;
+		.btn {
+			color: $white;
+			border-color: $white;
 		}
 	}
 }

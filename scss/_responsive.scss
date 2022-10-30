@@ -28,16 +28,6 @@
 	/***********************************
 	HERO-SECTION STYLES
 	***********************************/
-	.banner {
-
-		&__media {
-			right: -10px;
-
-			img {
-			    max-width: 750px;
-			}
-		}
-	}
 
 	.service {
 
@@ -225,30 +215,6 @@
 	    height: 70px;
 	    font-size: 25px;
 	    line-height: 70px;
-	}
-
-	.banner {
-		padding: 170px 0 110px;
-
-		&__content {
-			max-width: 375px;
-
-			.title {
-				margin-bottom: 10px;
-			}
-
-			.btn {
-			    padding: 9px 30px 10px;
-			}
-		}
-
-		&__media {
-			right: 0px;
-
-			img {
-			    max-width: 650px;
-			}
-		}
 	}
 
 	.service {
@@ -537,27 +503,7 @@
 	}
 
 	.banner {
-	    padding: 145px 0 80px;
-
-		&__content {
-			max-width: 335px;
-
-			.title {
-				margin-bottom: 5px;
-			}
-
-			.btn {
-			    padding: 8px 25px 8px;
-			}
-		}
-
-		&__media {
-			right: -30px;
-
-			img {
-			    max-width: 550px;
-			}
-		}
+		padding: 120px 0 80px;
 	}
 
 	.sticky-contact {
@@ -875,26 +821,6 @@
 	    font-size: 20px;
 	    line-height: 50px;
 	}
-
-	.banner {
-        padding: 120px 0 60px;
-
-		&__content {
-		    max-width: 296px;
-
-			.btn {
-			    padding: 7px 20px 7px;
-			}
-		}
-
-		&__media {
-			right: -30px;
-
-			img {
-			    max-width: 450px;
-			}
-		}
-	}
 }
 /* 680 */
 
@@ -989,27 +915,16 @@
 	HERO-SECTION STYLES
 	***********************************/
 	.banner {
-        // padding: 75px 0 60px;
+
+		.media {
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 20px;
+		}
 
 		&__content {
 		    max-width: 100%;
-
-		    .description {
-		    	max-width: 290px;
-		    }
-
-			.btn {
-			    padding: 6px 18px 6px;
-			}
-		}
-
-		&__media {
-			top: 75%;
-			right: -20px;
-
-			img {
-			    max-width: 380px;
-			}
 		}
 	}
 
@@ -1246,34 +1161,6 @@
 		    font-size: 12px;
 		    line-height: 20px;
 		    padding-bottom: 5px;
-		}
-	}
-
-	/***********************************
-	BANNER STYLE
-	***********************************/
-	.banner {
-        padding: 100px 0 60px;
-
-		&__content {
-		    max-width: 100%;
-
-		    .description {
-		    	max-width: 251px;
-		    }
-
-			.btn {
-			    padding: 5px 15px 5px;
-			}
-		}
-
-		&__media {
-			top: 85%;
-			right: -10px;
-
-			img {
-			    max-width: 280px;
-			}
 		}
 	}
 

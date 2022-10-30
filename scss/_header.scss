@@ -224,6 +224,72 @@ HEADER STYLES
         }
     }
 
+    &.white {
+
+        .navbar {
+
+            .navbar-collapse {
+
+                .navbar-nav {
+
+                    > li {
+
+                        > a {
+                            color: $white;
+                        }
+
+                        &.cuurent-menu-item, &:focus, &:focus {
+
+                            > a {
+                                color: $success;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .navbar-toggle {
+
+                .icon-bar {
+                    background-color: $white;
+                }
+            }
+        }
+
+        &.stop {
+
+            .navbar {
+
+                .navbar-collapse {
+
+                    .navbar-nav {
+
+                        > li {
+
+                            > a {
+                                color: #062d65;
+                            }
+
+                            &.cuurent-menu-item, &:focus, &:focus {
+
+                                > a {
+                                    color: $success;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .navbar-toggle {
+
+                .icon-bar {
+                    background-color: #062D65;
+                }
+            }
+        }
+    }
+
     &.transparent {
         background-color: transparent;
     }
