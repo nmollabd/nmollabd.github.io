@@ -417,3 +417,89 @@ SCROLLDOWN STYLE
         transform: scaleX(1) skewX(0deg);
     }
 }
+
+
+.clocks {
+    display: none;
+
+    .clock {
+        left: 380px;
+        bottom: 40px;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        background-color: $white;
+        border: 4px solid #ffa500;
+        @include border-radius(500px);
+        background-size: cover !important;
+        @include transition(all 0.3s ease);
+        background-position: center center !important;
+        background-image: url("../images/clockimg.png");
+        box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3), inset 0 15px 15px rgba(0, 0, 0, 0.3);
+
+        &:before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            z-index: 1000;
+            position: absolute;
+            border: 2px solid $white;
+            background-color: #ffa500;
+            @include border-radius(500px);
+            @include transition(all 0.3s ease);
+        }
+
+        .hour {
+            width: 5px;
+            height: 115px;
+
+            &:before {
+                width: 5px;
+                content: "";
+                height: 50%;
+                position: absolute;
+                @include border-radius(5px);
+                background-color: $secondary;
+            }
+        }
+
+
+        .min {
+            width: 135px;
+            height: 135px;
+
+            &:before {
+                width: 3px;
+                content: "";
+                height: 50%;
+                background-color: #888888;
+                @include border-radius(5px);
+            }
+        }
+
+        .hour, .min, .sec {
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            @include border-radius(500px);
+        }
+
+
+
+        .sec {
+            width: 155px;
+            height: 155px;
+
+            &:before {
+                content: "";
+                width: 2px;
+                height: 60%;
+                @include border-radius(2px);
+                background-color: rgb(255, 153, 0);
+            }
+        }
+    }
+}

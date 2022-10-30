@@ -114,6 +114,32 @@
 		}
 	}
 
+	.clock {
+		left: 270px;
+		width: 180px;
+		bottom: 20px;
+		height: 180px;
+
+	    .sec {
+	        width: 140px;
+	        height: 140px;
+	    }
+
+       .min {
+	        width: 130px;
+	        height: 130px;
+	    }
+
+        .hour {
+	        height: 110px;
+	        height: 110px;
+
+	        &:before {
+	            width: 4px;
+	        }
+	    }
+	}
+
 }/* 1199 */
 
 @media only screen and (max-width: 991px) {
@@ -385,6 +411,27 @@
 				}
 			}
 		}
+	}
+
+	.clock {
+		left: 230px;
+		width: 150px;
+		height: 150px;
+
+	    .sec {
+			width: 118px;
+			height: 118px;
+	    }
+
+       .min {
+	        width: 110px;
+	        height: 110px;
+	    }
+
+        .hour {
+	        height: 100px;
+	        height: 100px;
+	    }
 	}
 
 }/* 991 */
@@ -821,6 +868,28 @@
 	    font-size: 20px;
 	    line-height: 50px;
 	}
+
+	.clock {
+		left: 200px;
+		width: 120px;
+		height: 120px;
+		bottom: -40px;
+
+	    .sec {
+			width: 90px;
+			height: 90px;
+	    }
+
+       .min {
+	        width: 85px;
+	        height: 85px;
+	    }
+
+        .hour {
+	        height: 75px;
+	        height: 75px;
+	    }
+	}
 }
 /* 680 */
 
@@ -1081,6 +1150,27 @@
 		padding-bottom: 40px;
 	}
 
+	.clock {
+		width: 100px;
+		height: 100px;
+		bottom: -50px;
+
+	    .sec {
+			width: 78px;
+			height: 78px;
+	    }
+
+       .min {
+	        width: 70px;
+	        height: 70px;
+	    }
+
+        .hour {
+	        height: 65px;
+	        height: 65px;
+	    }
+	}
+
 	/***********************************
 	FOOTER STYLE
 	***********************************/
@@ -1313,6 +1403,32 @@
 				    font-size: 20px;
 				}
 			}
+		}
+	}
+
+	.clocks {
+		display: block;
+
+		.clock {
+			left: 250px;
+			width: 100px;
+			height: 100px;
+			bottom: -30px;
+
+		    .sec {
+				width: 78px;
+				height: 78px;
+		    }
+
+	       .min {
+		        width: 70px;
+		        height: 70px;
+		    }
+
+	        .hour {
+		        height: 65px;
+		        height: 65px;
+		    }
 		}
 	}
 
