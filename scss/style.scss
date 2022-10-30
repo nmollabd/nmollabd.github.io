@@ -379,9 +379,13 @@ HERO-SECTION STYLE
 BANNER STYLES
 ***********************************/
 .banner {
-    overflow: hidden;
-    background: #28293E;
-    padding: 140px 0 80px;
+	cursor: pointer;
+	overflow: hidden;
+	background: #28293E;
+	padding: 140px 0 80px;
+	background-size: cover!important;
+	background-repeat: no-repeat !important;
+	background-image: url("../images/banner-firework-animated-gif-image.webp");
 
 	&__content {
 		z-index: 1;
