@@ -379,6 +379,7 @@ HERO-SECTION STYLE
 BANNER STYLES
 ***********************************/
 .banner {
+	z-index: 0;
 	overflow: hidden;
 	position: relative;
 	background: #28293E;
@@ -389,7 +390,7 @@ BANNER STYLES
 		top: 0;
 		left: 0;
 		width: 100%;
-		content: '';
+		// content: '';
 		height: 100%;
 		position: absolute;
 		background-image: url("../images/banner-firework-animated-gif-image.webp");
@@ -422,6 +423,15 @@ BANNER STYLES
 			color: $white;
 			border-color: $white;
 		}
+	}
+
+	#canvas {
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    z-index: -1;
+	    height: 100%;
+	    position: absolute;
 	}
 }
 
