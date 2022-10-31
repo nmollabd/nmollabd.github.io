@@ -2262,7 +2262,8 @@ ABOUT STYLE
   -moz-transform: translate3d(0, 0, 0);
 }
 .blog__main--post .media a img {
-  height: auto;
+  width: 870px;
+  height: 489px;
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -3079,13 +3080,6 @@ FOOTER-TOP STYLE
   position: absolute;
   background-color: #f5f5f5;
 }
-.footer-top .footer-top-card .icon-wrapper {
-  margin-bottom: 15px;
-}
-.footer-top .footer-top-card .icon-wrapper i {
-  font-size: 30px;
-  color: #ffa500;
-}
 .footer-top .footer-top-card .text .title {
   margin-bottom: 8px;
 }
@@ -3172,6 +3166,32 @@ FOOTER STYLES
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.footer .copy-right {
+  margin-top: 20px;
+}
+.footer .copy-right p {
+  color: #221b68;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  font-family: "Oswald", sans-serif;
+}
+.footer .copy-right p a {
+  color: #ffa500;
+  margin-left: 5px;
+  letter-spacing: -0.18px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.footer .copy-right p a:-webkit-any-link:hover, .footer .copy-right p a:-webkit-any-link:focus {
+  text-decoration: underline;
+}
+.footer .copy-right p a:-moz-any-link:hover, .footer .copy-right p a:-moz-any-link:focus {
+  text-decoration: underline;
+}
+.footer .copy-right p a:any-link:hover, .footer .copy-right p a:any-link:focus {
+  text-decoration: underline;
 }
 
 .search-form {

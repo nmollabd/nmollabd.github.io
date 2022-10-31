@@ -1047,7 +1047,8 @@ ABOUT STYLE
 				a {
 
 					img {
-						height: auto;
+						width: 870px;
+						height: 489px;
 						max-width: 100%;
 						object-fit: cover;
 						@include transition(all 0.3s ease-in);
@@ -1939,15 +1940,6 @@ FOOTER-TOP STYLE
 			}
     	}
 
-    	.icon-wrapper {
-		    margin-bottom: 15px;
-
-		    i {
-		    	font-size: 30px;
-		    	color: #ffa500;
-		    }
-		}
-
 		.text {
 
 			.title {
@@ -2056,6 +2048,32 @@ FOOTER STYLES
 						height: auto;
 						max-width: 100%;
 						object-fit: cover;
+					}
+				}
+			}
+		}
+	}
+
+	.copy-right {
+		margin-top: 20px;
+
+		p {
+			color: #221b68;
+			font-size: 12px;
+			font-weight: 700;
+			line-height: 18px;
+			font-family: $oswald;
+
+			a {
+				color: #ffa500;
+				margin-left: 5px;
+				@include letter-spacing(-15, 12);
+				@include transition(all 0.3s ease);
+
+				&:any-link {
+
+					&:hover, &:focus {
+						text-decoration: underline;
 					}
 				}
 			}
