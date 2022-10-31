@@ -103,7 +103,7 @@ HEADER STYLES
                         }
                     }
 
-                    &.cuurent-menu-item, &:focus, &:focus {
+                    &.cuurent-menu-item, &:hover, &:focus {
 
                         > a {
                             color: $success;
@@ -132,7 +132,7 @@ HEADER STYLES
                                 }
                             }
 
-                            &.cuurent-menu-item, &:focus, &:focus {
+                            &.cuurent-menu-item, &:hover, &:focus {
 
                                 > a {
                                     color: $success;
@@ -190,7 +190,7 @@ HEADER STYLES
                                     }
                                 }
 
-                                &.cuurent-menu-item, &:focus, &:focus {
+                                &.cuurent-menu-item, &:hover, &:focus {
                                     border-bottom: 2px solid $success;
 
                                     > a {
@@ -239,7 +239,7 @@ HEADER STYLES
                             color: $white;
                         }
 
-                        &.cuurent-menu-item, &:focus, &:focus {
+                        &.cuurent-menu-item, &:hover, &:focus {
 
                             > a {
                                 color: $success;
@@ -271,7 +271,7 @@ HEADER STYLES
                                 color: #062d65;
                             }
 
-                            &.cuurent-menu-item, &:focus, &:focus {
+                            &.cuurent-menu-item, &:hover, &:focus {
 
                                 > a {
                                     color: $success;

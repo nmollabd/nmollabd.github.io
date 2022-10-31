@@ -134,6 +134,41 @@
         }
     });
 
+     $('.testimonial__slider')
+        .slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            prevArrow: $('.slider-controls .slide-prev'),
+            nextArrow: $('.slider-controls .slide-next'),
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+                {
+                    breakpoint: 481,
+                    settings: {
+                        slidesToShow: 1,
+                        autoplay: true,
+                    },
+                },
+            ],
+        })
+        .on('setPosition', function () {
+            $('.testimonial__slider .slick-track')
+                .find('.slick-slide')
+                .css(
+                'height',
+            $('.testimonial__slider .slick-track').outerHeight() + 'px'
+        );
+    });
+
     jQuery(document).ready(function() {
 
         //Testimonial Slider 
@@ -292,6 +327,7 @@
     // }
 }(jQuery));
 
+// Clock
 const deg = 6;
 const hour = document.querySelector(".hour");
 const min = document.querySelector(".min");
@@ -309,6 +345,7 @@ const setClock = () => {
 setClock();
 setInterval(setClock, 1000);
 
+// DOMContentLoaded
 window.addEventListener("resize", resizeCanvas, false);
 window.addEventListener("DOMContentLoaded", onLoad, false);
 
