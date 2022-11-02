@@ -1714,6 +1714,47 @@ POPUP VIDEO STYLE
 	}
 }
 
+.business {
+	padding: 90px 0;
+	background-color: #ffffff;
+
+	.mbm-20 {
+		margin-bottom: -20px;
+	}
+
+	&__item {
+		width: 100%;
+		padding: 30px;
+		min-height: 220px;
+		margin-bottom: 20px;
+		height: calc(100% - 20px);
+		background-color: #f3fff3;
+
+		.icon {
+			margin-bottom: 20px;
+		}
+	}
+
+	.bottom-content {
+		margin-top: 30px;
+
+		.description {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__content {
+
+		.sub-title {
+			margin-bottom: 10px;
+		}
+
+		.title {
+			margin-bottom: 40px;
+		}
+	}
+}
+
 /***********************************
 SERVICE SINGLE STYLE
 ***********************************/
@@ -1823,7 +1864,7 @@ TESTIMONIAL-SECTION STYLE
 .testimonial-section {
 	padding: 100px 0;
 	position: relative;
-	padding-bottom: 220px;
+	padding-bottom: 150px;
 	background-size: cover!important;
 	background-repeat: no-repeat!important;
 	background-image: url(../images/testimonial-bg.png);
@@ -1912,9 +1953,288 @@ TESTIMONIAL-SECTION STYLE
 	}
 }
 
+.project-study {
+	padding: 90px 0;
+
+	.mbm-30 {
+		margin-bottom: -30px;
+	}
+
+	&__item {
+		z-index: 1;
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		padding: 30px 15px;
+		margin-bottom: 30px;
+		background-color: $white;
+		height: calc(100% - 30px);
+		border: 1px solid #f1f1f1;
+		@include border-radius(5px);
+		@include transition(all 0.3s ease);
+
+		&:before {
+			top: 0;
+			right: 0;
+			opacity: 0;
+			content: '';
+			width: 100%;
+			z-index: -1;
+			height: 100%;
+			display: block;
+			visibility: hidden;
+			position: absolute;
+			background-color: #6930c3;
+			@include transform(scale(0.5));
+			@include transition(all 0.3s ease);
+		}
+
+		.icon {
+			max-width: 70px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 15px;
+
+			img {
+				@include transition(all 0.3s ease);
+			}
+		}
+
+		.counter-number {
+		    display: block;
+		    font-weight: 500;
+		    font-weight: 700;
+		    margin-left: 30px;
+		    position: relative;
+		    font-family: $oswald;
+		    @include transition(all 0.3s ease);
+
+		    &:before {
+				top: 50%;
+				left: -30px;
+				content: '';
+				width: 20px;
+				height: 1px;
+				display: block;
+				position: absolute;
+				background: #f1f1f1;
+				@include transition(all 0.3s ease);
+		    }
+		}
+
+		.content {
+
+			.title {
+				margin-bottom: 15px;
+				@include transition(all 0.3s ease);
+			}
+
+			.description {
+
+				p {
+					font-weight: 500;
+				}
+			}
+		}
+
+		&:hover {
+
+			&:before {
+				opacity: 1;
+				visibility: visible;
+				@include transform(scale(1));
+			}
+
+			.counter-number {
+				color: #ffa500;
+			}
+
+			.icon {
+
+				img {
+					filter: drop-shadow(2px 4px 6px black);
+				}
+			}
+
+			.content {
+
+				.title {
+					color: $white;
+				}
+
+				.description {
+
+					p {
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+}
+
+.page-banner {
+	overflow: hidden;
+	position: relative;
+	padding: 150px 0 120px;
+	background: url(../images/about-banner-bg.svg) no-repeat center / cover;
+
+	&:before {
+		top: 0;
+		left: 0;
+		width: 100%;
+		content: '';
+		height: 100%;
+		z-index: -1;
+		position: absolute;
+		background: linear-gradient(#e0f1ff 0%, #f3ebff 100%);
+	}
+
+	&__content {
+
+		.title {
+			margin-bottom: 10px;
+			font-family: $roboto;
+		}
+
+		.description {
+			max-width: 420px;
+			margin-bottom: 20px;
+
+			p {
+				font-family: $oswald;
+			}
+		}
+	}
+}
+
+
+.project-section {
+	padding: 90px 0 50px;
+
+	.entry-title {
+		max-width: 536px;
+		margin-left: auto;
+		margin-right: auto;
+
+		span {
+			font-weight: 700;
+			position: relative;
+			font-family: $oswald;
+			display: inline-block;
+
+			&:before {
+				content: "";
+				width: 30px;
+				height: 3px;
+				right: -40px;
+				bottom: 10px;
+				display: block;
+				position: absolute;
+				background-color: #33913b;
+			}
+		}
+
+		.title {
+			margin-bottom: 0;
+		}
+	}
+
+	.mbm-20 {
+		margin-bottom: -20px;
+	}
+
+	&__item {
+		width: 100%;
+		padding: 24px;
+		min-height: 366px;
+		margin-bottom: 20px;
+		background-color: $white;
+		border: 1px solid #ddf9bd;
+		height: calc(100% - 20px);
+		@include border-radius(30px);
+		@include transition(all 0.3s ease);
+
+		.media {
+			overflow: hidden;
+			margin-bottom: 20px;
+			@include border-radius(30px);
+
+			img {
+				@include transition(all 0.3s ease);
+			}
+		}
+
+		.content {
+
+			a {
+
+				span {
+					color: #221b68;
+					position: relative;
+					display: inline-block;
+					text-transform: capitalize;
+					@include transition(all 0.3s ease);
+
+					&:after {
+						content: "";
+						width: 30px;
+						height: 1px;
+						bottom: 6px;
+						right: -40px;
+						display: block;
+						position: absolute;
+						background-color: #33913b;
+						@include transition(all 0.3s ease);
+					}
+				}
+
+				.title {
+					margin-bottom: 0;
+					@include transition(all 0.3s ease);
+				}
+			}
+		}
+
+		&:hover {
+			background-color: $success;
+
+			.media {
+
+				img {
+					@include transform(scale(1.2));
+				}
+			}
+
+			.content {
+
+				a {
+
+					span {
+						color: $white;
+
+						&:after {
+							background-color: $white;
+						}
+					}
+
+					.title {
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+}
+
 /***********************************
 FOOTER-TOP STYLE
 ***********************************/
+.home-footer-top {
+	padding: 100px 0;
+}
+
+
 .footer-top {
     color: #f5f5f5;
     overflow: hidden;
@@ -2019,6 +2339,7 @@ FOOTER STYLES
 					font-size: 20px;
 					font-weight: 700;
 					line-height: 24px;
+					font-family: $oswald;
 					@include transition(all 0.3s ease);
 				}
 

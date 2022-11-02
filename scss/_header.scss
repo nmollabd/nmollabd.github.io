@@ -28,9 +28,9 @@ HEADER STYLES
     @include transition(all 0.5s ease);
 
     .container {
+        position: initial;
         padding-left: 50px;
         padding-right: 50px;
-        position: initial;
     }
 
     .navbar {
@@ -44,6 +44,7 @@ HEADER STYLES
 
                 img {
                     max-width: 180px;
+                    min-width: 180px;
                     @include transition(all 0.5s ease);
                 }
             }
@@ -69,6 +70,7 @@ HEADER STYLES
                                 text-align: center;
                                 background: $white;
                                 padding: 10px 28px 12px;
+                                text-transform: capitalize;
                                 @include border-radius(500px);
                                 @include letter-spacing(35, 14);
                                 box-shadow: 0px 12px 12px rgb(0 0 0 / 16%);
@@ -95,6 +97,7 @@ HEADER STYLES
                         font-weight: 700;
                         line-height: 28px;
                         font-family: $oswald;
+                        text-transform: capitalize;
                         @include letter-spacing(-15, 18);
                         @include transition(all 0.3s ease);
 

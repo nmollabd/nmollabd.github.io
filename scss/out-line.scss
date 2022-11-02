@@ -344,3 +344,68 @@ SCROLLDOWN STYLE
         margin-left: 80%;
     }
 }
+
+
+/***********************************
+PAGE-BANNER SCROLL STYLE
+***********************************/
+.scroll {
+    top: 50%;
+    left: 60px;
+    z-index: 9;
+    width: 100px;
+    position: absolute;
+    @include transform(translateY(-50%));
+
+
+    span {
+        top: -70px;
+        font-weight: 500;
+        position: absolute;
+        margin-left: -23px;
+        font-family: $oswald;
+        display: inline-block;
+        @include transform(rotate(-90deg));
+    }
+
+    &__scrolldown {
+        border: 0;
+        width: inherit;
+        color: #292E31;
+        height: inherit;
+        font-size: 12px;
+        z-index: inherit;
+        border-radius: 0;
+        line-height: 22px;
+        text-align: inherit;
+        background: transparent;
+
+        .icon {
+            width: 30px;
+            display: block;
+            margin-top: 30px;
+
+            img {
+                animation: 2s scrolldown infinite;
+            }
+        }
+
+        &:hover, &:focus {
+            background: transparent;
+        }
+    }
+}
+
+@keyframes scrolldown {
+    0% {
+        @include transform(translateY(22%));
+    }
+
+    50% {
+        @include transform(translateY(0%));
+    }
+
+    100% {
+        @include transform(translateY(27%));
+    }
+}

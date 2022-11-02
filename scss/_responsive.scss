@@ -1,3 +1,25 @@
+@media only screen and (max-width: 1480px) {
+
+	/***********************************
+	PAGE-BANNER SCROLL STYLE
+	***********************************/
+	.scroll {
+	    left: 40px;
+	}
+
+}/* 1480 */
+
+@media only screen and (max-width: 1366px) {
+
+	/***********************************
+	PAGE-BANNER SCROLL STYLE
+	***********************************/
+	.scroll {
+		left: 10px;
+	}
+
+}/* 1366 */
+
 @media only screen and (max-width: 1199px) {
 	h1, .h1 {
 		font-size: 40px;
@@ -50,7 +72,7 @@
 
 	.testimonial-section {
 		padding-top: 70px;
-		padding-bottom: 150px;
+		padding-bottom: 120px;
 	}
 
 	.author-section {
@@ -138,6 +160,64 @@
 	            width: 4px;
 	        }
 	    }
+	}
+
+	.page-banner {
+		padding: 120px 0 100px;
+
+		&__content {
+
+			.title {
+				margin-bottom: 5px;
+			}
+
+			.description {
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	.business {
+		padding: 70px 0;
+
+		&__item {
+		    min-height: 180px;
+		}
+
+		&__content {
+			margin-top: 20px;
+
+			.sub-title {
+				margin-bottom: 0;
+			}
+
+			.title {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	/***********************************
+	PAGE-BANNER SCROLL STYLE
+	***********************************/
+	.scroll {
+
+		span {
+			font-size: 12px;
+			line-height: 18px;
+			margin-left: -19px;
+		}
+
+		&__scrolldown {
+
+			.icon {
+				margin-top: 10px;
+
+				img {
+					max-width: 20px;
+				}
+			}
+		}
 	}
 
 }/* 1199 */
@@ -267,7 +347,7 @@
 
 	.testimonial-section {
 		padding-top: 60px;
-		padding-bottom: 120px;
+		padding-bottom: 100px;
 
 		.slider-area {
 
@@ -432,6 +512,49 @@
 	        height: 100px;
 	        height: 100px;
 	    }
+	}
+
+	.page-banner {
+		padding: 100px 0 80px;
+
+		&__content {
+
+			.description {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.business {
+		padding: 60px 0;
+
+		&__item {
+		    min-height: 150px;
+		}
+
+		&__content {
+			margin-top: 20px;
+
+			.title {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	/***********************************
+	PAGE-BANNER SCROLL STYLE
+	***********************************/
+	.scroll {
+		left: 5px;
+		top: inherit;
+		bottom: 40px;
+
+		&__scrolldown {
+
+			.icon {
+				margin-top: 0;
+			}
+		}
 	}
 
 }/* 991 */
@@ -676,6 +799,25 @@
 		}
 	}
 
+	.page-banner {
+		padding-bottom: 70px;
+
+		&__media {
+			margin-bottom: 30px;
+		}
+
+		&__content {
+
+			.description {
+				max-width: 100%;
+			}
+		}
+	}
+
+	.business {
+		padding: 50px 0;
+	}
+
 	.about {
 		padding-top: 0;
 		padding-bottom: 50px;
@@ -817,6 +959,16 @@
 			}
 		}
 	}
+
+	/***********************************
+	PAGE-BANNER SCROLL STYLE
+	***********************************/
+	.scroll {
+		right: -60px;
+	    bottom: 40px;
+	    left: inherit;
+	}
+
 	/***********************************
 	FOOTER STYLES
 	***********************************/
@@ -1463,6 +1615,20 @@
 		}
 	}
 
+	.business {
+
+		&__item {
+			padding: 20px;
+
+			.icon {
+				
+				img {
+					max-width: 50px;
+				}
+			}
+		}
+	}
+
 	.clocks {
 		display: block;
 
@@ -1486,6 +1652,16 @@
 		        height: 65px;
 		        height: 65px;
 		    }
+		}
+	}
+
+	/***********************************
+	PAGE-BANNER SCROLL STYLE
+	***********************************/
+	.scroll {
+		
+		span {
+			top: -60px;
 		}
 	}
 
@@ -1526,6 +1702,23 @@
 		        height: 65px;
 		        height: 65px;
 		    }
+		}
+	}
+}
+/* 420 */
+
+@media only screen and (max-width: 380px) {
+	/***********************************
+	BUSINESS STYLES
+	***********************************/
+	.business {
+
+		.row {
+
+			[class^=col] {
+			    flex: 0 0 100%;
+			    max-width: 100%;
+			}
 		}
 	}
 }
