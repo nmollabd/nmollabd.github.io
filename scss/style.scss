@@ -27,6 +27,7 @@ $success: #51BC70;
 @import 'header';
 @import 'grid';
 @import 'out-line';
+@import 'animation';
 
 .text-secondary {
 	color: $secondary !important;
@@ -1410,6 +1411,55 @@ POPUP VIDEO STYLE
 	-webkit-transform: translate3d(0, 0, 0);
 	-moz-transform: translate3d(0, 0, 0);
 
+	&.about-video {
+		min-height: 164px;
+
+		&.has--overlay {
+
+			.media {
+
+				&:before {
+					display: none;
+				}
+			}
+		}
+
+		&.popup-video {
+
+			.icon {
+				top: 50%;
+				left: 50%;
+				width: 55px;
+				height: 55px;
+				position: absolute;
+				text-align: center;
+				background-color: #6930c3;
+				@include border-radius(500px);
+				@include transition(all 0.3s ease-in);
+				@include transform(translate(-50%, -50%));
+				animation: ripple-animation infinite 2s linear;
+
+				i {
+					color: #ffffff;
+					font-size: 20px;
+					margin-top: 50%;
+					text-indent: 5px;
+					display: inline-block;
+					@include transform(translateY(-50%));
+					@include transition(all 0.3s ease);
+				}
+
+				&:hover {
+					background-color: #ffa500;
+				}
+			}
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+
 	&.popup-video {
 		position: relative;
 
@@ -1864,7 +1914,6 @@ TESTIMONIAL-SECTION STYLE
 .testimonial-section {
 	padding: 100px 0;
 	position: relative;
-	padding-bottom: 150px;
 	background-size: cover!important;
 	background-repeat: no-repeat!important;
 	background-image: url(../images/testimonial-bg.png);
@@ -2227,81 +2276,231 @@ TESTIMONIAL-SECTION STYLE
 	}
 }
 
-/***********************************
-FOOTER-TOP STYLE
-***********************************/
-.home-footer-top {
+.home-contact {
 	padding: 100px 0;
-}
 
+	&__lcontent {
 
-.footer-top {
-    color: #f5f5f5;
-    overflow: hidden;
-    background: #f5f5f5;
+		.tagline {
+			margin-bottom: 10px;
 
-    .footer-top-card {
-	    z-index: 1;
-    	width: 100%;
-    	position: relative;
-    	padding: 80px 15px 90px;
+			span {
+			    font-size: 18px;
+			    font-weight: 700;
+			    position: relative;
+			    display: inline-block;
+			    text-transform: capitalize;
 
-    	&.overlay--primary {
-
-    		&:before {
-			    top: 0;
-			    right: 0;
-			    z-index: -1;
-			    content: "";
-			    width: 100vw;
-			    height: 100%;
-			    position: absolute;
-			    background-color: #f5f5f5;
-			}
-    	}
-
-		.text {
-
-			.title {
-			    margin-bottom: 8px;
-			}
-
-			.content__editor {
-			    max-width: 383px;
-			    margin-left: auto;
-			    margin-right: auto;
-
-			    .btn {
-			    	margin-top: 26px;
+			    &:after {
+					content: "";
+					width: 30px;
+					height: 3px;
+					right: -40px;
+					bottom: 10px;
+					display: block;
+					position: absolute;
+					background-color: #33913b;
 			    }
 			}
 		}
 
-		&.overlay--success {
-			position: relative;
+		.title {
+			margin-bottom: 30px;
+		}
 
-			&:before {
-			    top: 0;
-			    left: 0;
-			    z-index: -1;
-			    content: "";
-			    width: 100vw;
-			    height: 100%;
-			    position: absolute;
-			    background-color: #51BC70;
+		.hotline {
+
+			.icon {
+				margin-right: 30px;
+
+				img {
+					width: 100%;
+					height: auto;
+					object-fit: cover;
+				}
 			}
 
-			.btn {
-				color: $black;
-				border-color: $white;
+			.phone-number {
 
-				&:hover, &:focus {
-					border-color: $primary;
-					color: $white !important;
+				span {
+					margin-bottom: 0;
+				}
+
+				.number {
+					color: #33913b;
+					font-family: $roboto;
+					@include letter-spacing(-50, 30);
 				}
 			}
 		}
-    }
+	}
+
+	&__form {
+		width: 100%;
+		background: $white;
+		padding: 40px 40px 28px;
+		@include border-radius(36px);
+		box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.06);
+
+
+		.form-group {
+			margin-bottom: 15px !important;
+
+			.form-control {
+				width: 100% !important;
+				padding: 21.5px 12px !important;
+				@include border-radius(0 !important);
+				background-color: #ffffff !important;
+				border: 1px solid #33913b !important;
+			}
+
+			input[type="submit"] {
+			    float: right !important;
+			    background-color: #33913b !important;
+			    box-shadow: 8.817px 12.135px 30px 0px rgb(3 33 4 / 15%) !important;
+			}
+		}
+
+		.btn {
+			width: 100%;
+			border-radius: 0;
+			border: 1px solid #33913b;
+		}
+
+		.tagline {
+			margin-bottom: 15px;
+
+			span {
+				font-size: 18px;
+				font-weight: 700;
+				position: relative;
+				display: inline-block;
+				text-transform: capitalize;
+
+			    &:after {
+					content: "";
+					width: 30px;
+					height: 3px;
+					right: -40px;
+					bottom: 10px;
+					display: block;
+					position: absolute;
+					background-color: #33913b;
+			    }
+			}
+		}
+	}
+}
+
+/***********************************
+FOOTER-TOP STYLE
+***********************************/
+.footer-top {
+	padding: 50px 0 80px;
+
+	.mbm-20 {
+		margin-bottom: -20px;
+	}
+
+	.cta-item {
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		display: block;
+		overflow: hidden;
+		min-height: 240px;
+		position: relative;
+		padding: 40px 30px;
+		margin-bottom: 20px;
+		@include border-radius(14px);
+		background: linear-gradient(#000f45 0%, #5430a3 100%);
+
+		.media {
+			top: -80px;
+			right: 13px;
+			z-index: -1;
+			position: absolute;
+
+			img {
+				width: 100%;
+				height: auto;
+				object-fit: cover;
+				@include transition(all 0.3s ease);
+			}
+		}
+
+		&.white {
+			background: linear-gradient(#e0f1ff 0%, #f3ebff 100%);
+
+			.text {
+
+				.title {
+					color: $primary;
+					@include transition(all 0.3s ease);
+				}
+
+				.description {
+
+					p {
+						color: $primary;
+					}
+				}
+
+				.btn {
+					color: $white;
+				}
+			}
+
+			.media {
+
+				img {
+					max-width: 350px;
+				}
+			}
+		}
+
+		.text {
+			margin-bottom: 0;
+
+			.title {
+				color: $white;
+				font-weight: 600;
+				margin-bottom: 3px;
+				@include transition(all 0.3s ease);
+			}
+
+			.description {
+				max-width: 415px;
+				margin-bottom: 15px;
+
+				p {
+					color: $white;
+					font-size: 16px;
+					line-height: 26px;
+				}
+			}
+		}
+
+		&:any-link {
+
+			&:hover, &:focus {
+
+				.media {
+
+					img {
+						@include transform(scale(1.2));
+					}
+				}
+
+				.text {
+
+					.title {
+						color: #ffa500;
+					}
+				}
+			}
+		}
+	}
 }
 
 /***********************************

@@ -116,7 +116,7 @@ STICKY-CONTACT STYLE
 ***********************************/
 .sticky-contact {
     bottom: 3%;
-    z-index: 11;
+    z-index: 101;
     right: 40px;
     color: $white;
     width: 115px;
@@ -134,6 +134,7 @@ STICKY-CONTACT STYLE
     justify-content: center;
     @include border-radius(500px);
     @include transition(all 0.3s ease);
+    animation: ripple-animation infinite 2s linear;
     filter: drop-shadow(0px 24px 24px rgba(0, 0, 0, 0.16));
 
     span {
@@ -184,6 +185,7 @@ SCROLLDOWN STYLE
     background: #BBCAFF;
     @include border-radius(500px);
     @include transition(all 0.3s ease);
+    animation: ripple-animation infinite 2s linear;
     filter: drop-shadow(0px 6px 24px rgba(0, 0, 0, 0.06));
 
     span {
@@ -193,7 +195,7 @@ SCROLLDOWN STYLE
 
     &:hover {
         color: $white;
-        background: #ffa500;
+        background: #6930c3;
 
         span {
             @include transform(translateY(5px));
@@ -386,26 +388,12 @@ PAGE-BANNER SCROLL STYLE
             margin-top: 30px;
 
             img {
-                animation: 2s scrolldown infinite;
+                animation: 2s scrolldowns infinite;
             }
         }
 
         &:hover, &:focus {
             background: transparent;
         }
-    }
-}
-
-@keyframes scrolldown {
-    0% {
-        @include transform(translateY(22%));
-    }
-
-    50% {
-        @include transform(translateY(0%));
-    }
-
-    100% {
-        @include transform(translateY(27%));
     }
 }
