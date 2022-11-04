@@ -43,8 +43,7 @@ HEADER STYLES
                 padding: 0;
 
                 img {
-                    max-width: 180px;
-                    min-width: 180px;
+                    width: 180px;
                     @include transition(all 0.5s ease);
                 }
             }

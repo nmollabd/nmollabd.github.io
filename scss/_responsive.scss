@@ -282,7 +282,7 @@
 				.navbar-brand {
 
 					svg, img {
-						max-width: 170px;
+						width: 170px;
 					}
 				}
 			}
@@ -709,7 +709,7 @@
 				.navbar-brand {
 
 					svg, img {
-						max-width: 160px;
+						width: 160px;
 					}
 				}
 			}
@@ -1267,7 +1267,7 @@
 				.navbar-brand {
 
 					svg, img {
-						max-width: 140px;
+						width: 140px;
 					}
 				}
 			}
@@ -1288,6 +1288,11 @@
 				}
 			}
 		}
+	}
+
+	.header-gutter {
+		height: 72.81px;
+		min-height: 72.81px;
 	}
 
 	/***********************************
@@ -1634,7 +1639,7 @@
 				.navbar-brand {
 
 					svg, img {
-						max-width: 120px;
+						width: 120px;
 					}
 				}
 			}
@@ -1655,6 +1660,11 @@
 				}
 			}
 		}
+	}
+
+	.header-gutter {
+		height: 66.7px;
+		min-height: 66.7px;
 	}
 
 	/***********************************

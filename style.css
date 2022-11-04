@@ -305,8 +305,7 @@ HEADER STYLES
   padding: 0;
 }
 .header .navbar .navbar-header .navbar-brand img {
-  max-width: 180px;
-  min-width: 180px;
+  width: 180px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -4083,7 +4082,7 @@ FOOTER STYLES
     padding-left: 30px;
   }
   .header .navbar .navbar-header .navbar-brand svg, .header .navbar .navbar-header .navbar-brand img {
-    max-width: 170px;
+    width: 170px;
   }
   .header .navbar .navbar-collapse .navbar-nav li:not(:first-child) {
     margin-left: 25px;
@@ -4375,7 +4374,7 @@ FOOTER STYLES
     padding-left: 20px;
   }
   .header .navbar .navbar-header .navbar-brand svg, .header .navbar .navbar-header .navbar-brand img {
-    max-width: 160px;
+    width: 160px;
   }
   .header .navbar .navbar-collapse .navbar-nav li:not(:first-child) {
     margin-left: 22px;
@@ -4741,10 +4740,15 @@ FOOTER STYLES
     padding-left: 15px;
   }
   .header .navbar .navbar-header .navbar-brand svg, .header .navbar .navbar-header .navbar-brand img {
-    max-width: 140px;
+    width: 140px;
   }
   .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(5) {
     display: none;
+  }
+
+  .header-gutter {
+    height: 72.81px;
+    min-height: 72.81px;
   }
 
   /***********************************
@@ -4994,10 +4998,15 @@ FOOTER STYLES
   HEADER STYLE
   ***********************************/
   .header .navbar .navbar-header .navbar-brand svg, .header .navbar .navbar-header .navbar-brand img {
-    max-width: 120px;
+    width: 120px;
   }
   .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li.btn-menu {
     display: none;
+  }
+
+  .header-gutter {
+    height: 66.7px;
+    min-height: 66.7px;
   }
 
   /***********************************
