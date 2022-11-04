@@ -3136,6 +3136,10 @@ SERVICE SINGLE STYLE
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
 }
+.platforms .applications-featured.popup-video:before {
+  -webkit-animation: ripple-animation infinite 2s linear;
+          animation: ripple-animation infinite 2s linear;
+}
 .platforms__content .title {
   margin-bottom: 10px;
 }

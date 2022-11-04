@@ -1817,6 +1817,13 @@ SERVICE SINGLE STYLE
 	    .media {
 	    	@include border-radius(36px);
 	    }
+
+	    &.popup-video {
+
+	    	&:before {
+    		    animation: ripple-animation infinite 2s linear;
+	    	}
+	    }
 	}
 
 	&__content {
