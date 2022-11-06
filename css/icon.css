@@ -1,12 +1,12 @@
 /*** Icon */
 @font-face {
 	font-family: 'portfolio';
-	src: url('../font/portfolio.eot?13207206');
-	src: url('../font/portfolio.eot?13207206#iefix') format('embedded-opentype'),
-		url('../font/portfolio.woff2?13207206') format('woff2'),
-		url('../font/portfolio.woff?13207206') format('woff'),
-		url('../font/portfolio.ttf?13207206') format('truetype'),
-		url('../font/portfolio.svg?13207206#portfolio') format('svg');
+	src: url('../font/portfolio.eot?23295492');
+	src: url('../font/portfolio.eot?23295492#iefix') format('embedded-opentype'),
+		url('../font/portfolio.woff2?23295492') format('woff2'),
+		url('../font/portfolio.woff?23295492') format('woff'),
+		url('../font/portfolio.ttf?23295492') format('truetype'),
+		url('../font/portfolio.svg?23295492#portfolio') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -35,39 +35,41 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-phone-1:before { content: '\e800'; }
-.icon-mail:before { content: '\e801'; }
-.icon-facebook-1:before { content: '\e802'; }
-.icon-play:before { content: '\e803'; }
-.icon-tags:before { content: '\e804'; }
-.icon-user:before { content: '\e805'; }
-.icon-twitter:before { content: '\e806'; }
-.icon-comment:before { content: '\e807'; }
-.icon-calendar:before { content: '\e808'; }
-.icon-lifebuoy:before { content: '\e809'; }
-.icon-network:before { content: '\e80a'; }
-.icon-arrow-right:before { content: '\e80b'; }
-.icon-search:before { content: '\e80c'; }
-.icon-arrow-down:before { content: '\e80d'; }
-.icon-arrow-left:before { content: '\e80e'; }
-.icon-arrow-right-1:before { content: '\e80f'; }
-.icon-arrow-up:before { content: '\e810'; }
-.icon-bell-on:before { content: '\e811'; }
-.icon-business-time:before { content: '\e812'; }
-.icon-phone:before { content: '\e813'; }
-.icon-chart-bullet:before { content: '\e813'; }
-.icon-checkmark:before { content: '\e814'; }
-.icon-gears:before { content: '\e815'; }
-.icon-hygienic:before { content: '\e816'; }
-.icon-management:before { content: '\e817'; }
-.icon-manage-time:before { content: '\e818'; }
-.icon-memo-circle-check:before { content: '\e819'; }
-.icon-message-pen:before { content: '\e81a'; }
-.icon-poll-people:before { content: '\e81b'; }
-.icon-replacements:before { content: '\e81c'; }
-.icon-shield-virus:before { content: '\e81d'; }
-.icon-user-clock:before { content: '\e81e'; }
-.icon-users-gear-alt:before { content: '\e81f'; }
+.icon-close:before { content: '\e800'; }
+.icon-phone-1:before { content: '\e801'; }
+.icon-mail:before { content: '\e802'; }
+.icon-facebook-1:before { content: '\e803'; }
+.icon-play:before { content: '\e804'; }
+.icon-tags:before { content: '\e805'; }
+.icon-user:before { content: '\e806'; }
+.icon-twitter:before { content: '\e807'; }
+.icon-comment:before { content: '\e808'; }
+.icon-calendar:before { content: '\e809'; }
+.icon-lifebuoy:before { content: '\e80a'; }
+.icon-network:before { content: '\e80b'; }
+.icon-arrow-right:before { content: '\e80c'; }
+.icon-search:before { content: '\e80d'; }
+.icon-arrow-down:before { content: '\e80e'; }
+.icon-arrow-left:before { content: '\e80f'; }
+.icon-arrow-right-1:before { content: '\e810'; }
+.icon-arrow-up:before { content: '\e811'; }
+.icon-bell-on:before { content: '\e812'; }
+.icon-business-time:before { content: '\e813'; }
+.icon-phone:before { content: '\e814'; }
+.icon-chart-bullet:before { content: '\e815'; }
+.icon-checkmark:before { content: '\e816'; }
+.icon-gears:before { content: '\e817'; }
+.icon-hygienic:before { content: '\e818'; }
+.icon-management:before { content: '\e819'; }
+.icon-manage-time:before { content: '\e81a'; }
+.icon-memo-circle-check:before { content: '\e81b'; }
+.icon-message-pen:before { content: '\e81c'; }
+.icon-poll-people:before { content: '\e81d'; }
+.icon-replacements:before { content: '\e81e'; }
+.icon-shield-virus:before { content: '\e81f'; }
+.icon-user-clock:before { content: '\e820'; }
+.icon-users-gear-alt:before { content: '\e821'; }
+.icon-youtube-play-1:before { content: '\e822'; }
 .icon-down-open:before { content: '\f004'; }
 .icon-up-open:before { content: '\f005'; }
 .icon-right-open:before { content: '\f006'; }
@@ -81,7 +83,6 @@
 .icon-quote-left:before { content: '\f10d'; }
 .icon-quote-right:before { content: '\f10e'; }
 .icon-youtube-play:before { content: '\f16a'; }
-.icon-youtube-play:before { content: '\f16a'; }
 .icon-instagram:before { content: '\f16d'; }
 .icon-envelope-open-o:before { content: '\f2b7'; }
 .icon-telegram:before { content: '\f2c6'; }
@@ -89,4 +90,4 @@
 .icon-twitter-bird:before { content: '\f303'; }
 .icon-skype:before { content: '\f30b'; }
 .icon-linkedin:before { content: '\f318'; }
-.icon-linkedin:before { content: '\f31a'; }
+.icon-linkedin-1:before { content: '\f31a'; }

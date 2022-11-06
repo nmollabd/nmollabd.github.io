@@ -270,6 +270,8 @@
                  this.st.mainClass = this.st.el.attr('data-effect');
              }
          },
+
+         closeMarkup: '<button title="Close (Esc)" type="button" class="mfp-close">Close<span class="icon-close"></span></button>',
     });
 
 
