@@ -15,6 +15,7 @@ $roboto: 'Roboto', sans-serif;
 // COLORS
 $danger: #CB633D;
 $primary: #221b68;
+$orange: #f5da0d;
 $secondary: #6930c3;
 
 $black: #292E31;
@@ -2400,6 +2401,145 @@ TESTIMONIAL-SECTION STYLE
 					background-color: #33913b;
 			    }
 			}
+		}
+	}
+}
+
+.responsibility {
+	padding: 90px 0;
+
+	&__media {
+	    z-index: 1;
+	    position: relative;
+
+	    img {
+		    top: 50%;
+		    left: 50%;
+		    width: 100%;
+		    z-index: -1;
+		    height: auto;
+		    position: absolute;
+		    transform: translate(-50%, -45%);
+		}
+	}
+
+	.entry-title {
+		margin-bottom: 50px;
+
+		.title {
+			color: #0123AA;
+			font-size: 112px;
+			margin-bottom: 0;
+			max-width: 914px;
+		    font-weight: 900;
+			margin-left: auto;
+			margin-right: auto;
+		    line-height: 124px;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: #CB633D;
+		    @include letter-spacing(50, 112);
+
+		     span {
+			    display: block;
+
+			    &:nth-child(even) {
+				    text-align: right;
+				}
+			}
+		}
+	}
+
+	.rotate-text {
+		top: 50%;
+		right: 0;
+		z-index: 1;
+		color: $orange;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 16px;
+		position: absolute;
+		letter-spacing: 1.5px;
+		text-orientation: mixed;
+		writing-mode: vertical-rl;
+		transform: rotate(180deg);
+		@include letter-spacing(250, 12);
+		@include transform(translateY(-50%));
+	}
+
+	&__overlay-right {
+		top: 0;
+		right: 0;
+		z-index: -1;
+		position: absolute;
+	}
+
+	&__content {
+
+		.title {
+			color: #0123AA;
+			font-size: 90px;
+			margin-left: 0;
+			margin-bottom: 0;
+			max-width: 470px;
+			font-weight: 900;
+			margin-right: auto;
+			line-height: 100px;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: #F5DA0D;
+			@include letter-spacing(30, 112);
+
+		     span {
+			    display: block;
+
+			    &:nth-child(even) {
+				    text-align: right;
+				}
+			}
+		}
+
+		.description {
+			max-width: 453px;
+
+			p {
+				font-size: 14px;
+				line-height: 24px;
+			}
+		}
+	}
+
+	.boxes {
+    	margin-bottom: 0;
+	    max-width: 487px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-bottom: -24px;
+
+
+	    li {
+		    flex: 1 1 50%;
+		    padding-left: 15px;
+		    padding-right: 15px;
+		    padding-bottom: 24px;
+		}
+
+		&__item {
+		    width: 211px;
+		    height: 211px;
+		    padding: 15px;
+		    display: block;
+		    background: #0123AA;
+		    text-align: center;
+		    border-radius: 500px;
+		    filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.06));
+
+		    .text {
+
+		    	.title {
+		    		color: currentColor;
+		    	}
+		    }
 		}
 	}
 }

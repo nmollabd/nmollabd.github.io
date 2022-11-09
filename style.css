@@ -1034,8 +1034,8 @@ STICKY-CONTACT STYLE
   transition: all 0.3s ease;
   -webkit-animation: ripple-animation infinite 2s linear;
           animation: ripple-animation infinite 2s linear;
-  -webkit-filter: drop-shadow(0px 24px 24px rgba(0, 0, 0, 0.16));
-          filter: drop-shadow(0px 24px 24px rgba(0, 0, 0, 0.16));
+  -webkit-filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.16));
 }
 .sticky-contact span {
   color: #292E31;
@@ -3542,6 +3542,129 @@ TESTIMONIAL-SECTION STYLE
   background-color: #33913b;
 }
 
+.responsibility {
+  padding: 90px 0;
+}
+.responsibility__media {
+  z-index: 1;
+  position: relative;
+}
+.responsibility__media img {
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  z-index: -1;
+  height: auto;
+  position: absolute;
+  -webkit-transform: translate(-50%, -45%);
+          transform: translate(-50%, -45%);
+}
+.responsibility .entry-title {
+  margin-bottom: 50px;
+}
+.responsibility .entry-title .title {
+  color: #0123AA;
+  font-size: 112px;
+  margin-bottom: 0;
+  max-width: 914px;
+  font-weight: 900;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 124px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #CB633D;
+  letter-spacing: 5.6px;
+}
+.responsibility .entry-title .title span {
+  display: block;
+}
+.responsibility .entry-title .title span:nth-child(even) {
+  text-align: right;
+}
+.responsibility .rotate-text {
+  top: 50%;
+  right: 0;
+  z-index: 1;
+  color: #f5da0d;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  position: absolute;
+  letter-spacing: 1.5px;
+  text-orientation: mixed;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  letter-spacing: 3px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.responsibility__overlay-right {
+  top: 0;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+}
+.responsibility__content .title {
+  color: #0123AA;
+  font-size: 90px;
+  margin-left: 0;
+  margin-bottom: 0;
+  max-width: 470px;
+  font-weight: 900;
+  margin-right: auto;
+  line-height: 100px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #F5DA0D;
+  letter-spacing: 3.36px;
+}
+.responsibility__content .title span {
+  display: block;
+}
+.responsibility__content .title span:nth-child(even) {
+  text-align: right;
+}
+.responsibility__content .description {
+  max-width: 453px;
+}
+.responsibility__content .description p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.responsibility .boxes {
+  margin-bottom: 0;
+  max-width: 487px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -24px;
+}
+.responsibility .boxes li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 24px;
+}
+.responsibility .boxes__item {
+  width: 211px;
+  height: 211px;
+  padding: 15px;
+  display: block;
+  background: #0123AA;
+  text-align: center;
+  border-radius: 500px;
+  -webkit-filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.06));
+          filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.06));
+}
+.responsibility .boxes__item .text .title {
+  color: currentColor;
+}
+
 /***********************************
 FOOTER-TOP STYLE
 ***********************************/
@@ -3839,6 +3962,9 @@ FOOTER STYLES
   .about {
     padding-bottom: 70px;
   }
+  .responsibility .rotate-text {
+    display: none;
+  }
   /***********************************
   CONTACT STYLES
   ***********************************/
@@ -3928,6 +4054,27 @@ FOOTER STYLES
   }
   .project-section {
     padding-top: 70px;
+  }
+  .responsibility .entry-title .title {
+    font-size: 90px;
+    max-width: 737px;
+    line-height: 100px;
+    letter-spacing: 4.5px;
+  }
+  .responsibility .boxes li {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+  }
+  .responsibility .boxes__item {
+    width: 200px;
+    height: 200px;
+  }
+  .responsibility__content .title {
+    font-size: 80px;
+    max-width: 418px;
+    line-height: 90px;
+    letter-spacing: 2.4px;
   }
   /***********************************
   FOOTER-TOP STYLE
@@ -4115,6 +4262,44 @@ FOOTER STYLES
   }
   .business__content .title {
     margin-bottom: 20px;
+  }
+  .responsibility {
+    padding: 80px 0;
+  }
+  .responsibility .entry-title {
+    margin-bottom: 0 !important;
+  }
+  .responsibility .entry-title .title {
+    font-size: 80px;
+    max-width: 650px;
+    line-height: 90px;
+    letter-spacing: 4px;
+  }
+  .responsibility .boxes {
+    max-width: 445px;
+  }
+  .responsibility .boxes__item {
+    width: 190px;
+    height: 190px;
+  }
+  .responsibility__media {
+    padding: 70px;
+  }
+  .responsibility__media img {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .responsibility__content .title {
+    font-size: 70px;
+    max-width: 366px;
+    line-height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    letter-spacing: 2.1px;
+  }
+  .responsibility__content .description {
+    max-width: 100%;
   }
   /***********************************
   PAGE-BANNER SCROLL STYLE
@@ -4456,6 +4641,37 @@ FOOTER STYLES
   .project-section {
     padding-top: 0;
   }
+  .responsibility {
+    padding: 70px 0;
+  }
+  .responsibility .entry-title {
+    margin-bottom: 0 !important;
+  }
+  .responsibility .entry-title .title {
+    font-size: 70px;
+    max-width: 573px;
+    line-height: 80px;
+    letter-spacing: 3.5px;
+  }
+  .responsibility .boxes {
+    max-width: 400px;
+  }
+  .responsibility .boxes__item {
+    width: 180px;
+    height: 180px;
+  }
+  .responsibility__media {
+    padding: 60px;
+  }
+  .responsibility__content .title {
+    font-size: 60px;
+    max-width: 320px;
+    line-height: 70px;
+    letter-spacing: 1.8px;
+  }
+  .responsibility__content .description {
+    max-width: 100%;
+  }
   /***********************************
   FOOTER-TOP STYLE
   ***********************************/
@@ -4736,6 +4952,42 @@ FOOTER STYLES
   .project-section__item .content a span:after {
     display: none;
   }
+  .responsibility {
+    padding: 60px 0;
+  }
+  .responsibility .entry-title {
+    margin-bottom: 0 !important;
+  }
+  .responsibility .entry-title .title {
+    font-size: 60px;
+    max-width: 490px;
+    line-height: 70px;
+    letter-spacing: 3px;
+  }
+  .responsibility .boxes {
+    max-width: 360px;
+  }
+  .responsibility .boxes__item {
+    width: 160px;
+    height: 160px;
+  }
+  .responsibility .boxes li {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+  }
+  .responsibility__media {
+    padding: 50px;
+  }
+  .responsibility__content .title {
+    font-size: 50px;
+    max-width: 262px;
+    line-height: 60px;
+    letter-spacing: 1.5px;
+  }
+  .responsibility__content .description {
+    max-width: 100%;
+  }
   /***********************************
   FOOTER-TOP STYLE
   ***********************************/
@@ -4908,6 +5160,28 @@ FOOTER STYLES
   .scroll span {
     top: -60px;
   }
+  .responsibility .entry-title .title {
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 2.5px;
+  }
+  .responsibility .boxes {
+    max-width: 260px;
+  }
+  .responsibility .boxes__item {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+  }
+  .responsibility__media {
+    padding: 40px;
+  }
+  .responsibility__content .title {
+    font-size: 40px;
+    max-width: 210px;
+    line-height: 50px;
+    letter-spacing: 1.2px;
+  }
   /***********************************
   FOOTER STYLE
   ***********************************/
@@ -4950,6 +5224,27 @@ FOOTER STYLES
   .clocks .clock .hour {
     height: 65px;
     height: 65px;
+  }
+  .responsibility .entry-title .title {
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 2px;
+  }
+  .responsibility .boxes {
+    max-width: 220px;
+  }
+  .responsibility .boxes__item {
+    width: 100px;
+    height: 100px;
+  }
+  .responsibility__media {
+    padding: 30px;
+  }
+  .responsibility__content .title {
+    font-size: 30px;
+    max-width: 160px;
+    line-height: 40px;
+    letter-spacing: 0.9px;
   }
 }
 /* 420 */
