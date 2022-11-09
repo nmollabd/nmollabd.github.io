@@ -371,7 +371,7 @@ HEADER STYLES
 }
 .header .navbar .navbar-collapse .navbar-nav > li.dropdown > a .dropdown-toggle:after {
   border: 0;
-  content: "\f004";
+  content: "\e810";
   font-size: 10px;
   margin-left: 3px;
   border-bottom: 0;
@@ -639,7 +639,7 @@ HEADER STYLES
 }
 .sidr .navigation .navbar-nav > li.dropdown > a .dropdown-toggle:after {
   border: 0;
-  content: "\e80b";
+  content: "\e810";
   font-size: 12px;
   line-height: 22px;
   font-family: "portfolio";
