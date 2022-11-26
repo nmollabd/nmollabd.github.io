@@ -97,7 +97,7 @@ HEADER STYLES
                         line-height: 28px;
                         font-family: $oswald;
                         text-transform: capitalize;
-                        @include letter-spacing(-15, 18);
+                        @include letter-spacing(35, 18);
                         @include transition(all 0.3s ease);
 
                         &:hover, &:focus {
@@ -113,87 +113,70 @@ HEADER STYLES
                     }
 
                     &.dropdown {
-                        position: inherit;
-
-                        > a {
-
-                            .dropdown-toggle {
-                                width: 12px;
-                                display: inline-block;
-                                @include transition(all 0.5s ease);
-
-                                &:after {
-                                    border: 0;
-                                    content: "";
-                                    font-size: 10px;
-                                    margin-left: 3px;
-                                    border-bottom: 0;
-                                    display: inline-block;
-                                    vertical-align: middle;
-                                    font-family: "portfolio";
-                                }
-                            }
-
-                            &.cuurent-menu-item, &:hover, &:focus {
-
-                                > a {
-                                    color: $success;
-                                }
-                            }
-                        }
 
                         .dropdown-menu {
-                            top: 150%;
                             margin: 0;
-                            border: 0;
-                            left: auto;
+                            padding: 0;
                             opacity: 0;
                             display: block;
-                            padding: 15px;
-                            border-radius: 0;
-                            min-width: 180px;
+                            min-width: 240px;
+                            padding: 10px 20px;
                             visibility: hidden;
-                            background: $secondary;
-                            @include border-radius(5px);
+                            top: calc(100% + 52px);
                             @include transition(all 0.5s ease);
-                            box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.06);
 
                             &:after {
-                                left: 0;
-                                bottom: 100%;
-                                width: 100%;
+                                top: -5px;
+                                left: 45px;
+                                width: 10px;
                                 content: "";
-                                height: 65px;
+                                height: 10px;
+                                z-index: -1;
+                                background: $white;
                                 position: absolute;
-                                background: transparent;
+                                @include transform(rotate(45deg));
+                                border-top: 1px solid rgba(0, 0, 0, 0.15);
+                                border-left: 1px solid rgba(0, 0, 0, 0.15);
                             }
 
                             li {
-                                padding-bottom: 5px;
-
-                                &:not(:last-child) {
-                                    border-bottom: 1px solid $white;
-                                }
 
                                 &:not(:last-child) {
                                     margin-bottom: 10px;
+                                    border-bottom: 1px solid $black;
                                 }
 
-                                > a {
-                                    color: $white;
-                                    display: block;
-                                    font-size: 16px;
-                                    font-weight: 700;
-                                    line-height: 24px;
-                                    @include transition(all 0.5s ease);
+                                &:first-child {
 
-                                    &:hover, &:focus {
-                                        color: $success;
+                                    a {
+                                        border-top-left-radius: 4px;
+                                        border-top-right-radius: 4px;
                                     }
                                 }
 
+                                &:last-child {
+
+                                    a {
+                                        border-bottom-left-radius: 4px;
+                                        border-bottom-right-radius: 4px;
+                                    }
+                                }
+
+                                a {
+                                    z-index: 0;
+                                    color: $black;
+                                    font-size: 18px;
+                                    padding: 7.5px 0;
+                                    font-weight: 700;
+                                    line-height: 28px;
+                                    position: relative;
+                                    font-family: $oswald;
+                                    text-transform: capitalize;
+                                    @include letter-spacing(35, 18);
+                                    @include transition(all 0.3s ease);
+                                }
+
                                 &.cuurent-menu-item, &:hover, &:focus {
-                                    border-bottom: 2px solid $success;
 
                                     > a {
                                         color: $success;
@@ -202,23 +185,21 @@ HEADER STYLES
                             }
                         }
 
-                        &.show {
+                        // &.show {
 
-                            > a {
+                        //     .dropdown-menu {
+                        //         opacity: 1;
+                        //         visibility: visible;
+                        //         top: calc(100% + 7px);
+                        //     }
+                        // }
 
-                                .dropdown-toggle {
-
-                                    &:after {
-                                        content: "";
-                                        font-family: "portfolio";
-                                    }
-                                }
-                            }
+                        &:hover, &:focus {
 
                             .dropdown-menu {
-                                top: 100%;
                                 opacity: 1;
                                 visibility: visible;
+                                top: calc(100% + 25px);
                             }
                         }
                     }
@@ -228,6 +209,7 @@ HEADER STYLES
     }
 
     &.white {
+        padding: 40px 0;
 
         .navbar {
 

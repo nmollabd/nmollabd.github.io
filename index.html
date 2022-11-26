@@ -64,8 +64,8 @@
 		<nav class="navbar navbar-expand">
 			<div class="container">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="index.html">
-						<img src="../images/logo.png" class="img-fluid" alt="">
+					<a class="navbar-brand" href="#" data-normal="../images/logo.png" data-white="../images/white-logo.svg">
+						<img src="../images/white-logo.svg" class="img-fluid" alt="">
 					</a>
 				</div>
 
@@ -74,7 +74,18 @@
 						<li class="cuurent-menu-item"><a href="index.html">Home</a></li>
 						<li><a href="about.html">About Us</a></li>
 						<li><a href="blog.html">blog</a></li>
-						<li><a href="pages.html">Pages</a></li>
+						<li class="dropdown">
+							<a href="pages.html">Pages
+								<span class="dropdown-toggle" data-toggle="dropdown"></span>
+							</a>
+
+							<ul role="menu" class=" dropdown-menu">
+								<li><a href="portfolio-list.html" class="scroll-trigger">Portfolio List</a></li>
+								<li><a href="portfolio-single.html" class="scroll-trigger">Portfolio single</a></li>
+								<li><a href="service-list.html" class="scroll-trigger">service list</a></li>
+								<li><a href="service-single.html" class="scroll-trigger">service Single</a></li>
+							</ul>
+						</li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 
@@ -93,39 +104,38 @@
 		</nav><!-- /nav -->
 	</header><!-- /header -->
 
-	<section class="banner">
-		<canvas id="canvas"></canvas>
+	<section class="banner d-flex align-items-center justify-content-center">
+		<video autoplay="" muted="muted" loop="loop" id="myVideo" __idm_id__="1720321">
+            <source src="../images/video/Website Devlopment Company In Jaipur - Dqot Solutions.mp4" type="video/mp4">
+        </video>
 		<div class="container position-relative">
 			<div class="row align-items-center flex-row-reverse">
 				<div class="col-sm-6">
-					<figure class="media animate__animated animate__fadeInUp animate__delay-1s">
-						<img src="../images/banner-hero.svg" class="img-fluid" alt="">
+					<figure class="media justify-content-center animate__animated animate__fadeInUp animate__delay-1s">
+						<img src="../images/home-img.svg" class="img-fluid" alt="">
 					</figure>
 				</div>
 
 				<div class="col-sm-6">
 					<div class="banner__content">
-						<h1 class="title h2 animate__animated animate__fadeInUp animate__delay-1s">Hi! I'm Professional<span class="text-secondary"> Front-end Developer</span></h1>
+						<h1 class="title animate__animated animate__fadeInUp animate__delay-1s">Hi! I'm Professional<span class="text-secondary"> Front-end Developer</span></h1>
 
 						<div class="description animate__animated animate__fadeInUp animate__delay-2s">
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque dolorum aliquid debitis odio aliquam cumque ad! Sapiente, enim. Facilis deleniti quis minima non tempore!</p>
 						</div>
 
 						<a href="#" class="btn btn-border animate__animated animate__fadeInUp animate__delay-3s">Download resume</a>
+
+						<button class="scrollDown icon-arrow-down" data-space="80"></button>
 					</div>
 				</div>
 			</div>
+
+			<div class="overlay-right">
+				<img src="../images/dot-wave-blue.png" class="img-fluid" alt="">
+			</div>
 		</div>
 	</section>
-
-	<div class="container">
-		<div class="col-12">
-			<button class="scrollDown animate__animated animate__fadeInLeft animate__delay-5s" data-space="0">
-				<span class="icon-arrow-down"></span>
-				<!-- <i class="icon-arrow-down"></i> -->
-			</button>
-		</div>
-	</div>
 
     <div id="primary" class="content-area">
 

@@ -249,3 +249,47 @@ html {
         @include border-radius(500px);
     }
 }
+
+input[type=text]:not(.select2-input),
+input[type=number],
+input[type=email],
+input[type=tel],
+input[type=search],
+input[type=password],
+input[type=file],
+select, textarea {
+    appearance: none;
+    width: 100% !important;
+    color: $black !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    box-shadow: none !important;
+    line-height: 24px !important;
+    background: #F5F8FA !important;
+    border-radius: 500px !important;
+    padding: 8px 18px 6px !important;
+    @include transition(all 0.3s ease);
+    border: 1px solid #CFD7DD !important;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+}
+input[type=text]:not(.select2-input):hover,
+input[type=text]:not(.select2-input):focus,
+input[type=number]:hover,
+input[type=number]:focus,
+input[type=email]:hover,
+input[type=email]:focus,
+input[type=tel]:hover,
+input[type=tel]:focus,
+input[type=search]:hover,
+input[type=search]:focus,
+input[type=password]:hover,
+input[type=password]:focus,
+input[type=file]:hover,
+input[type=file]:focus,
+select:hover,
+select:focus, textarea:hover, textarea:focus {
+    outline: 0;
+}

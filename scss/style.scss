@@ -58,7 +58,7 @@ $success: #51BC70;
 		}
 	}
   
-  /* start state */
+  	/* start state */
 	.mfp-with-anim {
 		opacity: 0;
 		@include transition(all 0.5s);
@@ -258,51 +258,6 @@ $success: #51BC70;
 	}
 }
 
-input[type=text]:not(.select2-input),
-input[type=number],
-input[type=email],
-input[type=tel],
-input[type=search],
-input[type=password],
-input[type=file],
-select, textarea {
-	appearance: none;
-	width: 100% !important;
-	color: $black !important;
-	font-size: 16px !important;
-	font-weight: 400 !important;
-	box-shadow: none !important;
-	line-height: 24px !important;
-	background: #F5F8FA !important;
-	border-radius: 500px !important;
-	padding: 8px 18px 6px !important;
-	@include transition(all 0.3s ease);
-	border: 1px solid #CFD7DD !important;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-webkit-transform: translate3d(0, 0, 0);
-	-moz-transform: translate3d(0, 0, 0);
-}
-input[type=text]:not(.select2-input):hover,
-input[type=text]:not(.select2-input):focus,
-input[type=number]:hover,
-input[type=number]:focus,
-input[type=email]:hover,
-input[type=email]:focus,
-input[type=tel]:hover,
-input[type=tel]:focus,
-input[type=search]:hover,
-input[type=search]:focus,
-input[type=password]:hover,
-input[type=password]:focus,
-input[type=file]:hover,
-input[type=file]:focus,
-select:hover,
-select:focus, textarea:hover, textarea:focus {
-  	outline: 0;
-}
-
-
 /***********************************
     BREADCRUMB STYLES
 ***********************************/
@@ -386,34 +341,50 @@ HERO-SECTION STYLE
 BANNER STYLES
 ***********************************/
 .banner {
-	z-index: 0;
-	overflow: hidden;
-	position: relative;
-	background: #28293E;
-	padding: 140px 0 80px;
+    overflow: hidden;
+    min-height: 800px;
+    position: relative;
 	
-
 	&:before {
-		top: 0;
-		left: 0;
-		width: 100%;
-		// content: '';
-		height: 100%;
-		position: absolute;
-		background-image: url("../images/banner-firework-animated-gif-image.webp");
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    width: 100%;
+	    content: "";
+	    height: 100%;
+	    background: black;
+	    position: absolute;
+	    background: radial-gradient(circle, rgba(0, 0, 0, 0.35) 0%, #172b4b 100%, #404040 10101%);
+	}
+
+	video {
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    z-index: 0;
+	    z-index: -1;
+	    width: 100vw;
+	    height: 100%;
+	    object-fit: cover;
+	    position: absolute;
 	}
 
 	&__content {
 		z-index: 1;
-    	max-width: 482px;
+    	max-width: 500px;
     	position: relative;
 
 		.title {
 			color: $white;
 			margin-bottom: 15px;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: $white;
 
 			.text-secondary {
-				color: #ffa500 !important;
+				-webkit-text-fill-color: transparent;
+				-webkit-text-stroke-width: 1px;
 			}
 		}
 
@@ -432,13 +403,16 @@ BANNER STYLES
 		}
 	}
 
-	#canvas {
-	    top: 0;
-	    left: 0;
-	    width: 100%;
-	    z-index: -1;
-	    height: 100%;
-	    position: absolute;
+	.overlay-right {
+		top: -4px;
+		z-index: -1;
+		right: -200px;
+		position: absolute;
+
+		img {
+		    filter: brightness(4);
+			animation: pulse 10s ease-in-out infinite;
+		}
 	}
 }
 
