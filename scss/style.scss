@@ -343,6 +343,7 @@ BANNER STYLES
 .banner {
     overflow: hidden;
     min-height: 800px;
+    padding-top: 60px;
     position: relative;
 	
 	&:before {
@@ -353,9 +354,8 @@ BANNER STYLES
 	    width: 100%;
 	    content: "";
 	    height: 100%;
-	    background: black;
 	    position: absolute;
-	    background: radial-gradient(circle, rgba(0, 0, 0, 0.35) 0%, #172b4b 100%, #404040 10101%);
+	    background: radial-gradient(circle, rgba(0, 0, 0, 0.45) 0%, #172b4b 100%);
 	}
 
 	video {
@@ -410,9 +410,136 @@ BANNER STYLES
 		position: absolute;
 
 		img {
-		    filter: brightness(4);
+		    // filter: brightness(4);
 			animation: pulse 10s ease-in-out infinite;
 		}
+	}
+}
+
+.our_development {
+	padding: 90px 0;
+	background: #f6f6f6;
+
+	.entry-title {
+		margin-bottom: 65px;
+
+		.sub-title {
+			margin-bottom: 0;
+			@include letter-spacing(30, 14);
+		}
+
+		.title {
+			margin-bottom: 0;
+		}
+	}
+
+	.spacing_col {
+		height: 102px;
+	}
+
+	.process_card {
+		text-align: center;
+		position: relative;
+	}
+	.arrowAnim {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: absolute;
+		top: 36%;
+		transform: translate(0px, -50%);
+	}
+	.arrow {
+		width: 5px;
+		height: 5px;
+		border: 6px solid;
+		transform: rotate(135deg);
+		border-color: $orange transparent transparent $orange;
+	}
+	.arrowSliding {
+		position: absolute;
+		animation: slide 6s linear infinite;
+	}
+	.anim2 {
+		.arrowSliding {
+			animation: slidesmall 4s linear infinite;
+		}
+		.delay1 {
+			-webkit-animation-delay: 1s;
+			animation-delay: 1s;
+		}
+		.delay2 {
+			-webkit-animation-delay: 2s;
+			animation-delay: 2s;
+		}
+	}
+	.delay1 {
+		-webkit-animation-delay: 1s;
+		animation-delay: 1s;
+	}
+	.delay2 {
+		-webkit-animation-delay: 2s;
+		animation-delay: 2s;
+	}
+	.delay3 {
+		-webkit-animation-delay: 3s;
+		animation-delay: 3s;
+	}
+	.processcol {
+		position: relative;
+		&::before {
+			position: absolute;
+			left: 50%;
+			top: 36%;
+			transform: translate(-50%, -50%);
+			background: #fff;
+			height: 1px;
+			width: 75%;
+			content: "";
+			border: 1px dashed #dbdfe7;
+			z-index: 0;
+		}
+	}
+	.processcol.processcol_2 {
+		&::before {
+			width: 50%;
+		}
+	}
+	.icon {
+		width: 85px;
+		height: 85px;
+		display: inline-block;
+		border: 1px solid #dbdfe7;
+		border-radius: 50px;
+		text-align: center;
+		position: relative;
+		padding: 25px;
+		margin-bottom: 14px;
+		background: #fff;
+		span {
+			font-size: 11px;
+			font-weight: 700;
+			width: 24px;
+			height: 24px;
+			border-radius: 50px;
+			position: absolute;
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			top: -12px;
+			left: 50%;
+			transform: translate(-50%, 0px);
+			background: #0e2b5c;
+			background: linear-gradient(190deg, #0e2b5c 0%, #17489b 100%, #404040 10101%);
+		}
+	}
+	h4 {
+		font-size: 18px;
+		color: #0e2b5c;
+		font-weight: 700;
+		margin: 0;
 	}
 }
 

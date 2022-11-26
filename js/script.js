@@ -269,22 +269,23 @@
         preLoder.fadeOut(0);
     });
 
-    // myCursor    
-    // var myCursor    = jQuery('.mouse-cursor');
-    
-    //     if(myCursor.length){
-    //         if ($("body")) {
-    //         const e = document.querySelector(".cursor-inner"),
-    //             t = document.querySelector(".cursor-outer");
-    //         let n, i = 0,
-    //             o = !1;
-    //         window.onmousemove = function (s) {
-    //             o || (t.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), e.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)", n = s.clientY, i = s.clientX
-    //         }, $("body").on("mouseenter", "a, .ryker_tm_topbar .trigger, .cursor-pointer", function () {
-    //             e.classList.add("cursor-hover"), t.classList.add("cursor-hover")
-    //         }), $("body").on("mouseleave", "a, .ryker_tm_topbar .trigger, .cursor-pointer", function () {
-    //             $(this).is("a") && $(this).closest(".cursor-pointer").length || (e.classList.remove("cursor-hover"), t.classList.remove("cursor-hover"))
-    //         }), e.style.visibility = "visible", t.style.visibility = "visible"
-    //     }
-    // }
+    // Disable right-click
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+    function ctrlShiftKey(e, keyCode) {
+        return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+    }
+
+    document.onkeydown = (e) => {
+        // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+
+        if (
+            event.keyCode === 123 ||
+            ctrlShiftKey(e, 'I') ||
+            ctrlShiftKey(e, 'J') ||
+            ctrlShiftKey(e, 'C') ||
+            (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+        )
+
+        return false;
+    };
 }(jQuery));
