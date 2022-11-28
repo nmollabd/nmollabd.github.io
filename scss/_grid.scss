@@ -143,19 +143,25 @@ section {
 	}
 }
 
-
-.horizontal-linebar {
+hr {
     margin: 0;
     padding: 0;
-    border-color: #1B1C1D;
+    border-width: 1px;
+    border-color: $white;
 
-    &.linebar-md {
-	  border-width: 2px;
-	  border-color: $secondary
-	}
+	&.horizontal-linebar {
+	  	border-width: 2px;
+	    border-color: #1B1C1D;
 
-	&.base-color {
-	    border-color: #1D2A45;
+	    &.linebar-md {
+			border-width: 3px;
+			border-color: $secondary
+		}
+
+		&.base-color {
+			border-width: 4px;
+		    border-color: #1D2A45;
+		}
 	}
 }
 

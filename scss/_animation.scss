@@ -115,3 +115,97 @@ SCROLLDOWN ANIMATION STYLE
         transform: scale(1);
     } 
 }
+
+@keyframes animation1 {
+
+    0% {
+        top: 90%;
+        left: -110%;
+    }
+
+    50% {
+        top: -30%;
+        left: 10%;
+    }
+
+    100% {
+        top: -10%;
+        left: -10%;
+    }
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translate(-100%);
+  }
+
+  100% {
+    transform: translate(100%);
+  }
+}
+
+
+@keyframes animate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+
+@keyframes animate3 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+@keyframes animate4 {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes pulse {
+    
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    70% {
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes our_development {
+    
+    0% {
+        @include transform(scale(1));
+    }
+
+    70% {
+        @include transform(scale(1.2));
+    }
+
+    100% {
+        @include transform(scale(1));
+    }
+}

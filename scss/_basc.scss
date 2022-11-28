@@ -222,11 +222,11 @@ html {
         width: 10px;
     }
     &::-webkit-scrollbar-track {
-        background: #FFFFFF;
+        background: $orange;
     }
     &::-webkit-scrollbar-thumb {
         background: $success;
-        @include border-radius(500px);
+        @include border-radius(0);
     }
 }
 
