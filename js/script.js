@@ -286,7 +286,7 @@
         $(selector).toggleClass('show').find('.search-input').focus();
     });
 
-    // Disable right-click
+    // // Disable right-click
     document.addEventListener('contextmenu', (e) => e.preventDefault());
     function ctrlShiftKey(e, keyCode) {
         return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);

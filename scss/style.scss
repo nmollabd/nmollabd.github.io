@@ -2786,7 +2786,7 @@ FOOTER STYLES
 		    							@include letter-spacing(30, 14);
 		    						}
 
-		    						.position {
+		    						.country {
 		    							color: $white;
 		    						}
 		    					}
@@ -2835,7 +2835,6 @@ FOOTER STYLES
     }
 
     &__bottom {
-    	margin-top: 50px;
     	padding: 30px 0px;
     	background: #15151f;
 
@@ -2955,13 +2954,117 @@ FOOTER STYLES
 			}
     	}
 
+    	.entry-title {
+    		margin-bottom: 20px;
+
+    		.title {
+    			color: $white;
+    		}
+    	}
+
     	.location_card {
 
     		.media {
-    			width: 70px;
-    			height: 70px;
     			overflow: hidden;
+    			margin-right: 15px;
     			@include border-radius(500px);
+    			
+    			img {
+    				width: 68px;
+    				height: auto;
+    				max-width: 100%;
+    				object-fit: cover;
+    				vertical-align: middle;
+    				mix-blend-mode: multiply;
+    			}
+    		}
+
+    		.content {
+
+    			.title {
+    				color: $white;
+    				@include letter-spacing(15, 18);
+    			}
+
+    			span {
+    				color: $white;
+    				text-transform: capitalize;
+    			}
+    		}
+    	}
+    }
+
+    &__menu {
+    	margin-top: 40px;
+    	padding: 47px 0px 41px;
+    	background: rgba(255, 255, 255, 0.1019607843);
+
+    	.menu-title {
+			color: $white;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 28px;
+			position: relative;
+			margin-bottom: 20px;
+			font-family: $oswald;
+
+			&:before {
+				left: 0;
+				width: 39px;
+				content: "";
+				height: 4px;
+				bottom: -10px;
+				background: #fc5546;
+				position: absolute;
+			}
+    	}
+
+    	.entry-title {
+    		margin-bottom: 0;
+
+    		.description {
+
+    			p {
+    				color: $white;
+    			}
+    		}
+    	}
+
+    	.menu-item {
+
+    		&:not(:last-child) {
+    			margin-bottom: 20px;
+    		}
+    	}
+
+    	.menu {
+    		margin-bottom: 0;
+    		margin-bottom: -6px;
+			margin-left: -5px !important;
+			margin-right: -5px !important;
+
+    		li {
+    			margin-left: 5px;
+    			margin-right: 5px;
+    			margin-bottom: 6px;
+    			display: inline-block;
+
+    			a {
+    				color: $white;
+    				font-weight: normal;
+    				font-family: $oswald;
+    				text-transform: capitalize;
+    				@include letter-spacing(30, 16);
+    				@include transition(all 0.3s ease);
+
+    				&:any-link {
+
+    					&:hover, &:focus {
+    						color: #fc5546;
+    						text-decoration: underline;
+    					}
+    				}
+    			}
     		}
     	}
     }

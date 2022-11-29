@@ -4301,7 +4301,7 @@ FOOTER STYLES
   margin-bottom: 0;
   letter-spacing: 0.42px;
 }
-.footer .testiamonial .swiper .swiper-wrapper .swiper-slide .testiamonial-card .text .card-body .content .position {
+.footer .testiamonial .swiper .swiper-wrapper .swiper-slide .testiamonial-card .text .card-body .content .country {
   color: #FFFFFF;
 }
 .footer .testiamonial .swiper .swiper_nav {
@@ -4344,7 +4344,6 @@ FOOTER STYLES
   display: none !important;
 }
 .footer__bottom {
-  margin-top: 50px;
   padding: 30px 0px;
   background: #15151f;
 }
@@ -4471,15 +4470,98 @@ FOOTER STYLES
   font-family: "Oswald", sans-serif;
   letter-spacing: 0.24px;
 }
+.footer__middle .entry-title {
+  margin-bottom: 20px;
+}
+.footer__middle .entry-title .title {
+  color: #FFFFFF;
+}
 .footer__middle .location_card .media {
-  width: 70px;
-  height: 70px;
   overflow: hidden;
+  margin-right: 15px;
   border-radius: 500px;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
+}
+.footer__middle .location_card .media img {
+  width: 68px;
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+  mix-blend-mode: multiply;
+}
+.footer__middle .location_card .content .title {
+  color: #FFFFFF;
+  letter-spacing: 0.27px;
+}
+.footer__middle .location_card .content span {
+  color: #FFFFFF;
+  text-transform: capitalize;
+}
+.footer__menu {
+  margin-top: 40px;
+  padding: 47px 0px 41px;
+  background: rgba(255, 255, 255, 0.1019607843);
+}
+.footer__menu .menu-title {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  position: relative;
+  margin-bottom: 20px;
+  font-family: "Oswald", sans-serif;
+}
+.footer__menu .menu-title:before {
+  left: 0;
+  width: 39px;
+  content: "";
+  height: 4px;
+  bottom: -10px;
+  background: #fc5546;
+  position: absolute;
+}
+.footer__menu .entry-title {
+  margin-bottom: 0;
+}
+.footer__menu .entry-title .description p {
+  color: #FFFFFF;
+}
+.footer__menu .menu-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.footer__menu .menu {
+  margin-bottom: 0;
+  margin-bottom: -6px;
+  margin-left: -5px !important;
+  margin-right: -5px !important;
+}
+.footer__menu .menu li {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+.footer__menu .menu li a {
+  color: #FFFFFF;
+  font-weight: normal;
+  font-family: "Oswald", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 0.48px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.footer__menu .menu li a:-moz-any-link:hover, .footer__menu .menu li a:-moz-any-link:focus {
+  color: #fc5546;
+  text-decoration: underline;
+}
+.footer__menu .menu li a:any-link:hover, .footer__menu .menu li a:any-link:focus {
+  color: #fc5546;
+  text-decoration: underline;
 }
 
 .search-form {
