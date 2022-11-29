@@ -14,7 +14,7 @@
    -moz-transition: $transition;
   -ms-transition: $transition;
    -o-transition: $transition;
-    transition: $transition;
+	transition: $transition;
 }
 
 @mixin transform($transform) {
@@ -22,7 +22,7 @@
    -moz-transform: $transform;
   -ms-transform: $transform;
    -o-transform: $transform;
-    transform: $transform;
+	transform: $transform;
 }
 
 @mixin coverbg {
@@ -39,14 +39,14 @@
   -moz-appearance: none;
   appearance: none;
 
-    &::-webkit-inner-spin-button { 
-      -webkit-appearance: none;
-      cursor:pointer;
-      display:block;
-      width:8px;
-      color: #333;
-      text-align:center;
-      position:relative;
+	&::-webkit-inner-spin-button { 
+	  -webkit-appearance: none;
+	  cursor:pointer;
+	  display:block;
+	  width:8px;
+	  color: #333;
+	  text-align:center;
+	  position:relative;
   }
 }
 
@@ -55,15 +55,15 @@
   position: relative;
 
   &:before {
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    content: '';
-    position: absolute;
-    background: rgba($color, $opacity);
-    @include transition(all 0.3s ease);
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	content: '';
+	position: absolute;
+	background: rgba($color, $opacity);
+	@include transition(all 0.3s ease);
   }
 }
 
@@ -96,166 +96,166 @@
 
   // all
   @if $type == 'all' {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	
   // horizontal
   } @else if $type == 'horizontal' {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 
   // vertical
   } @else if $type == 'vertical' {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
 
   // vertical
   } @else if $type == 'bottom' {
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
   }
 }
 
 @mixin placeholder($color,$font_size, $font_weight) {
   &::-webkit-input-placeholder {
-    color: $color;
-    font-size: $font_size;
-    font-weight: $font_weight;
+	color: $color;
+	font-size: $font_size;
+	font-weight: $font_weight;
   }
   &::-moz-placeholder { 
-    color: $color;
-    font-size: $font_size;
-    font-weight: $font_weight;
+	color: $color;
+	font-size: $font_size;
+	font-weight: $font_weight;
   }
   &:-ms-input-placeholder { 
-    color: $color;
-    font-size: $font_size;
-    font-weight: $font_weight;
+	color: $color;
+	font-size: $font_size;
+	font-weight: $font_weight;
   }
   &:-moz-placeholder { 
-    color: $color;
-    font-size: $font_size;
-    font-weight: $font_weight;
+	color: $color;
+	font-size: $font_size;
+	font-weight: $font_weight;
   }
 }
 
 @mixin placeholderWithlettertraking($color,$font_size, $line_height, $letter_traking, $font_weight) {
   &::-webkit-input-placeholder {
-    color: $color;
-    font-size: $font_size;
-    font-line: $line_height;
-    font-weight: $font_weight;
-    @include letter-spacing($letter_traking, $font_size)
+	color: $color;
+	font-size: $font_size;
+	font-line: $line_height;
+	font-weight: $font_weight;
+	@include letter-spacing($letter_traking, $font_size)
   }
   &::-moz-placeholder { 
-    color: $color;
-    font-size: $font_size;
-    font-line: $line_height;
-    font-weight: $font_weight;
-    @include letter-spacing($letter_traking, $font_size)
+	color: $color;
+	font-size: $font_size;
+	font-line: $line_height;
+	font-weight: $font_weight;
+	@include letter-spacing($letter_traking, $font_size)
   }
   &:-ms-input-placeholder { 
-    color: $color;
-    font-size: $font_size;
-    font-line: $line_height;
-    font-weight: $font_weight;
-    @include letter-spacing($letter_traking, $font_size)
+	color: $color;
+	font-size: $font_size;
+	font-line: $line_height;
+	font-weight: $font_weight;
+	@include letter-spacing($letter_traking, $font_size)
   }
   &:-moz-placeholder { 
-    color: $color;
-    font-size: $font_size;
-    font-line: $line_height;
-    font-weight: $font_weight;
-    @include letter-spacing($letter_traking, $font_size)
+	color: $color;
+	font-size: $font_size;
+	font-line: $line_height;
+	font-weight: $font_weight;
+	@include letter-spacing($letter_traking, $font_size)
   }
 }
 
 @mixin angle($pseudo, $flip: false, $use-background-color: false, $angle: 3deg) {
-    // $pseudo: before, after, both
-    @if $pseudo == 'before' or $pseudo == 'after' or $pseudo == 'both' {
-      z-index: 1;
-        position: relative;
-        $selector: if($pseudo == 'both', '&:before,&:after', '&:#{$pseudo}');
+	// $pseudo: before, after, both
+	@if $pseudo == 'before' or $pseudo == 'after' or $pseudo == 'both' {
+	  	z-index: 1;
+		position: relative;
+		$selector: if($pseudo == 'both', '&:before,&:after', '&:#{$pseudo}');
 
-        #{$selector} {
-            left: 0;
-            right: 0;
-            content: '';
-            z-index: -1;
-            height: 100px;
-            display: block;
-            position: absolute;
-            -webkit-backface-visibility: hidden;
+		#{$selector} {
+			left: 0;
+			right: 0;
+			content: '';
+			z-index: -1;
+			height: 100px;
+			display: block;
+			position: absolute;
+			-webkit-backface-visibility: hidden;
 
-            @if $use-background-color {
-                background: $color__background-body;
-            }@else {
-                background: inherit;
-            }
-        }
+			@if $use-background-color {
+				background: $color__background-body;
+			}@else {
+				background: inherit;
+			}
+		}
 
-        @if $pseudo == 'before' {
-            #{$selector} {
-                top: 0;
+		@if $pseudo == 'before' {
+			#{$selector} {
+				top: 0;
 
-                @if $flip {
-                    transform: skewY($angle * -1);
-                    transform-origin: 0 0;
-                } @else {
-                    transform: skewY($angle);
-                    transform-origin: 100% 0;
-                }
-            }
-        }
+				@if $flip {
+					transform: skewY($angle * -1);
+					transform-origin: 0 0;
+				} @else {
+					transform: skewY($angle);
+					transform-origin: 100% 0;
+				}
+			}
+		}
 
-        @if $pseudo == 'after' {
-            #{$selector} {
-                bottom: 0;
+		@if $pseudo == 'after' {
+			#{$selector} {
+				bottom: 0;
 
-                @if $flip {
-                    transform: skewY($angle);
-                    transform-origin: 0 100%;
-                } @else {
-                    transform: skewY($angle * -1);
-                    transform-origin: 100%;
-                }
-            }
-        }
+				@if $flip {
+					transform: skewY($angle);
+					transform-origin: 0 100%;
+				} @else {
+					transform: skewY($angle * -1);
+					transform-origin: 100%;
+				}
+			}
+		}
 
-        @if $pseudo == 'both' {
+		@if $pseudo == 'both' {
 
-            &:before {
-                top: 0;
+			&:before {
+				top: 0;
 
-                @if $flip {
-                    transform: skewY($angle * -1);
-                    transform-origin: 0 0;
-                } @else {
-                    transform: skewY($angle);
-                    transform-origin: 100% 0;
-                }
-            }
+				@if $flip {
+					transform: skewY($angle * -1);
+					transform-origin: 0 0;
+				} @else {
+					transform: skewY($angle);
+					transform-origin: 100% 0;
+				}
+			}
 
-            &:after {
-                bottom: 0;
+			&:after {
+				bottom: 0;
 
-                @if $flip {
-                    transform: skewY($angle);
-                    transform-origin: 0 0;
-                } @else {
-                    transform: skewY($angle * -1);
-                    transform-origin: 100%;
-                }
-            }
-        }
-    }
+				@if $flip {
+					transform: skewY($angle);
+					transform-origin: 0 0;
+				} @else {
+					transform: skewY($angle * -1);
+					transform-origin: 100%;
+				}
+			}
+		}
+	}
 }
 
 $social-colors: (
@@ -280,34 +280,34 @@ $social-colors: (
 
 @keyframes bounce {
   0%, 20%, 60%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
   }
 
   40% {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px);
   }
 
   80% {
-    -webkit-transform: translateY(-3px);
-    transform: translateY(-3px);
+	-webkit-transform: translateY(-3px);
+	transform: translateY(-3px);
   }
 }
 
 @keyframes shake {
   0%, 20%, 60%, 100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
   }
 
   40% {
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
+	-webkit-transform: translateX(-5px);
+	transform: translateX(-5px);
   }
 
   80% {
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
+	-webkit-transform: translateX(-3px);
+	transform: translateX(-3px);
   }
 }

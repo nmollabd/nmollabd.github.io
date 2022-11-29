@@ -64,9 +64,9 @@
 		<nav class="navbar navbar-expand">
 			<div class="container">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="#" data-normal="../images/logo.png" data-white="../images/white-logo.svg">
-						<img src="../images/white-logo.svg" class="img-fluid" alt="">
-					</a>
+					<a class="navbar-brand" href="index.html" data-normal="../images/logo.png" data-white="../images/white-logo.svg">
+		 		 		<img src="../images/white-logo.svg" class="img-fluid" alt="">					 	
+		 		 	</a>
 				</div>
 
 				<div class="collapse navbar-collapse justify-content-end">
@@ -86,12 +86,26 @@
 								<li><a href="service-single.html" class="scroll-trigger">service Single</a></li>
 							</ul>
 						</li>
+						<li><a href="contact.html">Portfolio</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 
 					<ul class="navbar-nav navbar-nav--right">
+						<li class="has-border header-search">
+							<a class="search-toggle" data-selector=".header-search">
+								<span class="icon-search"></span>
+							</a>
+
+							<form class="search-box" action="#" method="get">
+							    <div class="form-group d-flex align-items-center">
+							    	<input type="search" name="s" value="" class="search-input" id="search" placeholder="Search">
+							    	<button type="submit" class="search-submit"><i class="icon-search"></i></button>
+							    </div>
+							</form>
+						</li>
 						<li class="btn-menu"><a href="#">About Me</a></li>
-						<li class="mobile-navbar-toggler">
+
+						<li class="mobile-navbar-toggler d-xl-none">
 							<a href="#sidr" class="navbar-toggle">
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
@@ -105,18 +119,15 @@
 	</header><!-- /header -->
 
 	<section class="banner d-flex align-items-center justify-content-center">
-		<!-- <video autoplay="" muted="muted" loop="loop" id="myVideo" __idm_id__="1720321">
-            <source src="../images/video/Website Devlopment Company In Jaipur - Dqot Solutions.mp4" type="video/mp4">
-        </video> -->
 		<div class="container position-relative">
 			<div class="row align-items-center flex-row-reverse">
-				<div class="col-sm-6">
+				<div class="col-md-6">
 					<figure class="media justify-content-center animate__animated animate__fadeInUp animate__delay-1s">
 						<img src="../images/home-img.svg" class="img-fluid" alt="">
 					</figure>
 				</div>
 
-				<div class="col-sm-6">
+				<div class="col-md-6">
 					<div class="banner__content">
 						<h1 class="title animate__animated animate__fadeInUp animate__delay-1s">Hi! I'm Professional<span class="text-secondary"> Front-end Developer</span></h1>
 
@@ -124,21 +135,11 @@
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque dolorum aliquid debitis odio aliquam cumque ad! Sapiente, enim. Facilis deleniti quis minima non tempore!</p>
 						</div>
 
-						<a href="#" class="btn btn-border animate__animated animate__fadeInUp animate__delay-3s">
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-							Download resume
-						</a>
+						<a href="#" class="btn btn-border animate__animated animate__fadeInUp animate__delay-3s"><span></span><span></span><span></span><span></span>Download resume</a>
 
-						<button class="scrollDown icon-arrow-down" data-space="80"></button>
+						<button class="scrollDown icon-arrow-down" data-space="0"></button>
 					</div>
 				</div>
-			</div>
-
-			<div class="overlay-right">
-				<!-- <img src="../images/dot-wave-blue.png" class="img-fluid" alt=""> -->
 			</div>
 		</div>
 	</section>
@@ -160,72 +161,58 @@
 		        	<img src="../images/right-vector.png" class="img-fluid" alt="">
 		        </div>
 
-		        <div class="processcol">
-		            <div class="arrowAnim">
-		                <div class="arrowSliding">
-		                    <div class="arrow"></div>
-		                </div>
-		                <div class="arrowSliding delay1">
-		                    <div class="arrow"></div>
-		                </div>
-		                <div class="arrowSliding delay2">
-		                    <div class="arrow"></div>
-		                </div>
-		                <div class="arrowSliding delay3">
-		                    <div class="arrow"></div>
-		                </div>
-		            </div>
+		        <div class="process-col">
+					<div class="animation"><div class="slide"><div class="arrow"></div></div><div class="slide delay-1"><div class="arrow"></div></div><div class="slide delay-2"><div class="arrow"></div></div><div class="slide delay-3"><div class="arrow"></div></div></div>
 
 		            <div class="row mbm-30 justify-content-center">
-		                <div class="col-md-3 col-6">
-		                    <div class="process_card">
+		                <div class="col-lg-3 col-sm-4">
+		                    <div class="development-item">
 		                        <div class="icon">
 		                            <span>1</span>
 		                            <img src="../images/svg/process_1.svg" class="img-fluid" alt="">
 		                        </div>
 
 		                        <div class="content">
-		                            <h4 class="title">animation</h4>
+		                            <h5 class="title">animation</h5>
 		                        </div>
 		                    </div>
 		                </div>
 
-		                <div class="col-md-3 col-6">
-		                    <div class="process_card">
+		                <div class="col-lg-3 col-sm-4">
+		                    <div class="development-item">
 		                        <div class="icon">
 		                            <span>2</span>
 		                            <img src="../images/svg/process_2.svg" class="img-fluid" alt="">
 		                        </div>
+
 		                        <div class="content">
-		                            <h4 class="title">Front-End Developer</h4>
+		                            <h5 class="title">Front-End Developer</h5>
 		                        </div>
 		                    </div>
 		                </div>
 
-		                <div class="col-md-3 col-6">
-		                    <div class="process_card">
+		                <div class="col-lg-3 col-sm-4">
+		                    <div class="development-item">
 		                        <div class="icon">
 		                            <span>3</span>
 		                            <img src="../images/svg/process_3.svg" class="img-fluid" alt="">
 		                        </div>
+
 		                        <div class="content">
-		                            <h4>
-		                                UI Design
-		                            </h4>
+		                            <h5 class="title">UI Design</h5>
 		                        </div>
 		                    </div>
 		                </div>
 
-		                <div class="col-md-3 col-6">
-		                    <div class="process_card">
+		                <div class="col-lg-3 col-sm-4">
+		                    <div class="development-item">
 		                        <div class="icon">
 		                            <span>4</span>
 		                            <img src="../images/svg/process_4.svg" class="img-fluid" alt="">
 		                        </div>
+
 		                        <div class="content">
-		                            <h4>
-		                                Development
-		                            </h4>
+		                            <h5 class="title">Development</h5>
 		                        </div>
 		                    </div>
 		                </div>
@@ -234,58 +221,45 @@
 
 		        <div class="spacing_col"></div>
 
-		        <div class="processcol processcol_2">
-		            <div class="arrowAnim anim2">
-		                <div class="arrowSliding">
-		                    <div class="arrow"></div>
-		                </div>
-		                <div class="arrowSliding delay1">
-		                    <div class="arrow"></div>
-		                </div>
-		                <div class="arrowSliding delay2">
-		                    <div class="arrow"></div>
-		                </div>
-		            </div>
+		        <div class="process-col process-col-2">
+		            <div class="animation animation-2"><div class="slide"><div class="arrow"></div></div><div class="slide delay-1"><div class="arrow"></div></div><div class="slide delay-2"><div class="arrow"></div></div></div>
 
-		            <div class="row justify-content-center">
-		                <div class="col-md-3 col-6">
-		                    <div class="process_card">
+		            <div class="row mbm-30 justify-content-center">
+		                <div class="col-sm-3 col-6">
+		                    <div class="development-item">
 		                        <div class="icon">
 		                            <span>5</span>
 		                            <img src="../images/svg/process_5.svg" class="img-fluid" alt="">
 		                        </div>
+
 		                        <div class="content">
-		                            <h4>
-		                                QA(Release Beta)
-		                            </h4>
+		                            <h5 class="title">QA(Release Beta)</h5>
 		                        </div>
 		                    </div>
 		                </div>
 
-		                <div class="col-md-3 col-6">
-		                    <div class="process_card">
+		                <div class="col-sm-3 col-6">
+		                    <div class="development-item">
 		                        <div class="icon">
 		                            <span>6</span>
 		                            <img src="../images/svg/process_6.svg" class="img-fluid" alt="">
 		                        </div>
+
 		                        <div class="content">
-		                            <h4>
-		                                Launch
-		                            </h4>
+		                            <h5 class="title">Launch</h5>
 		                        </div>
 		                    </div>
 		                </div>
 
-		                <div class="col-md-3 col-6">
-		                    <div class="process_card">
+		                <div class="col-sm-3 col-6">
+		                    <div class="development-item">
 		                        <div class="icon">
 		                            <span>7</span>
 		                            <img src="../images/svg/process_7.svg" class="img-fluid" alt="">
 		                        </div>
+
 		                        <div class="content">
-		                            <h4>
-		                                Support &amp; Maintenance
-		                            </h4>
+		                            <h5 class="title">Support & Maintenance</h5>
 		                        </div>
 		                    </div>
 		                </div>
@@ -953,7 +927,7 @@
     	<div class="container position-relative">
     		<div class="footer__top">
     			<div class="row">
-    				<div class="col-md-6">
+    				<div class="col-lg-6">
 					    <div class="form_col">
 					    	<div class="entry-title">
 					    		<h3 class="title">Let's Get Connected</h3>
@@ -1057,13 +1031,13 @@
 					                </div>
 
 					               	<div class="col-md-12">
-					                    <div class="row">
+					                    <div class="row lr-9">
 						                	<div class="col-lg-6">
 						                        <div class="form-group">
 						                            <div class="input-group mb-3">
 						                                <div id="created_captcha" class="created_captcha form-control mb-0">L1J0F3</div>
-						                                <a href="#" onclick="createCaptcha()" class="btn btn-primary captcha-btn">
-						                                	<i class="fa-solid fa-arrow-rotate-right"></i>
+						                                <a href="#" onclick="createCaptcha()" class="btn captcha-btn">
+						                                	<i class="icon-ccw"></i>
 						                                </a>
 						                            </div>
 						                        </div>
@@ -1086,6 +1060,103 @@
 					        </div>
 					    </div>
 					</div>
+
+					<div class="col-lg-6">
+						<div class="testiamonial">
+							<div class="entry-title">
+								<h3 class="title">What Clients Say</h3>
+							</div>
+
+							<div class="swiper testiamonialSlide">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="testiamonial-card">
+											<div class="icon-wrapper">
+												<img src="../images/svg/quto.svg" class="img-fluid" alt="">
+											</div>
+
+											<div class="text">
+												<div class="description h5">
+													<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A exercitationem praesentium quibusdam voluptates deleniti enim architecto cum vel quo in! Deserunt vel incidunt non consequuntur dolorem, earum esse voluptatem officiis ut optio asperiores sed perspiciatis pariatur quidem excepturi commodi et aspernatur modi. Natus sunt deserunt non voluptatem consectetur, eveniet, ut?</p>
+												</div>
+
+												<div class="card-body d-flex align-items-center">
+													<figure class="media">
+														<img src="../images/sumon-ali.png" class="img-fluid" alt="">
+													</figure>
+
+													<div class="content">
+														<h6 class="name text-uppercase">sumon-ali</h6>
+														<span class="position text-capitalize">Full Stack Developer / bangladesh</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="testiamonial-card">
+											<div class="icon-wrapper">
+												<img src="../images/svg/quto.svg" class="img-fluid" alt="">
+											</div>
+
+											<div class="text">
+												<div class="description h5">
+													<p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Earum veritatis, ratione ipsum reprehenderit, pariatur expedita laudantium impedit magni optio voluptatum aspernatur fuga alias. Vel unde fugiat aliquam delectus iure nulla, odio quos, corrupti voluptate adipisci in earum debitis voluptatibus dignissimos optio reiciendis exercitationem fuga, omnis provident cumque temporibus consequuntur. Iste.</p>
+												</div>
+
+												<div class="card-body d-flex align-items-center">
+													<figure class="media">
+														<img src="../images/sumon-ali.png" class="img-fluid" alt="">
+													</figure>
+
+													<div class="content">
+														<h6 class="name text-uppercase">sumon-ali</h6>
+														<span class="position text-capitalize">Full Stack Developer / bangladesh</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="testiamonial-card">
+											<div class="icon-wrapper">
+												<img src="../images/svg/quto.svg" class="img-fluid" alt="">
+											</div>
+
+											<div class="text">
+												<div class="description h5">
+													<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita maxime commodi nostrum eius cumque quod? Doloremque repudiandae quaerat, error, iste eos ratione consectetur ex rem et autem quidem facilis sit molestiae, cum exercitationem eveniet sint a sed? Facilis ratione voluptatum quia aliquid esse porro dolor sint, pariatur reprehenderit, voluptates!</p>
+												</div>
+
+												<div class="card-body d-flex align-items-center">
+													<figure class="media">
+														<img src="../images/sumon-ali.png" class="img-fluid" alt="">
+													</figure>
+
+													<div class="content">
+														<h6 class="name text-uppercase">sumon-ali</h6>
+														<span class="position text-capitalize">Full Stack Developer / bangladesh</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper_nav">
+						            <div class="swiper-button-next arrow">
+						                <span class="icon-left-open"></span>
+						            </div>
+
+						            <div class="swiper-button-prev arrow swiper-button-disabled">
+						                <span class="icon-right-open"></span>
+						            </div>
+						        </div>
+							</div>
+						</div>
+					</div>
     			</div>	
     		</div>
     		<div class="right-bg">
@@ -1098,6 +1169,81 @@
     			<div class="col-12">
     				<hr>
     			</div>
+    		</div>
+    	</div>
+
+    	<div class="footer__middle">
+    		<div class="container">
+		    	<div class="row align-items-center justify-content-center">
+		            <div class="col-lg-4 col-sm-6">
+		                <div class="qot-conect">
+		                    <ul class="qot-conect__item list-inline">
+		                        <li>
+		                            <a href="naim:nmollabd@gmail.com" class="d-flex align-items-center">
+		                                <div class="icon">
+		                                    <i class="icon-mail"></i>
+		                                </div>
+		                                <span class="text">nmollabd@gmail.com</span>
+		                            </a>
+		                        </li>
+
+		                        <li>
+		                            <a href="#" class="d-flex align-items-center">
+		                                <div class="icon">
+		                                    <i class="icon-skype"></i>
+		                                </div>
+		                                <span class="text">Naim Molla</span>
+		                            </a>
+		                        </li>
+
+		                        <li>
+		                            <a href="tel:+917976026456" class="d-flex align-items-center">
+		                                <div class="icon">
+		                                    <i class="icon-phone"></i>
+		                                </div>
+		                                <span class="text">bangladesh: <small>+8801712943179</small></span>
+		                            </a>
+		                        </li>
+		                    </ul>
+		                </div>
+		            </div>
+
+		            <div class="col-lg-8">
+		                <div class="row">
+		                    <div class="col-md-12">
+		                        <div class="heading_loc">
+		                            <h4>Our Locations</h4>
+		                        </div>
+		                    </div>
+		                </div>
+
+		                <div class="row justify-content-left">
+		                    <div class="col-md-4 col-sm-6">
+		                        <div class="location_card d-flex align-items-center">
+		                        	<figure class="media">
+		                                <img src="../images/bangladesh-flag.jpg" class="img-fluid" alt="">
+		                        	</figure>
+
+		                            <div class="contents">
+		                                <h6>F-201, AK Heights Joshi Marg Jhotwara, Jaipur.</h6>
+		                            </div>
+		                        </div>
+		                    </div>
+
+		                    <div class="col-md-4 col-sm-6">
+		                        <div class="location_card">
+		                            <div class="icon">
+		                                <img src="img/icon/canda_flag.svg" class="img-fluid" alt="">
+		                            </div>
+
+		                            <div class="contents">
+		                                <h6>Mississauga, Ontàrio, CANADA.</h6>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
     		</div>
     	</div>
 
