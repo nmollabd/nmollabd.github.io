@@ -645,7 +645,27 @@ BANNER STYLES
 
 .service {
 	padding: 50px 0;
-    background-color: #ffffff;
+	position: relative;
+    background-color: #292738;
+
+    &:before {
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		content: "";
+		min-height: 801px;
+		position: absolute;
+	    animation: our_development 10s ease-in-out infinite;
+		background: url(../images/lines-waves1.png) no-repeat center / cover;
+    }
+
+    .entry-title {
+
+    	.title {
+    		color: $white;
+    	}
+    }
 
 	.mbm-30 {
 		margin-bottom: -30px;
@@ -693,6 +713,7 @@ BANNER STYLES
 		.text {
 
 			.title {
+				color: $white;
 				margin-bottom: 15px;
 				@include transition(all 0.3s ease);
 			}
@@ -701,7 +722,7 @@ BANNER STYLES
 				margin-bottom: 15px;
 
 				p {
-					color: $black;
+					color: $white;
 					font-weight: 500;
 					@include transition(all 0.3s ease);
 				}

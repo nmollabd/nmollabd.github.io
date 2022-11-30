@@ -2432,7 +2432,23 @@ BANNER STYLES
 
 .service {
   padding: 50px 0;
-  background-color: #ffffff;
+  position: relative;
+  background-color: #292738;
+}
+.service:before {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  content: "";
+  min-height: 801px;
+  position: absolute;
+  -webkit-animation: our_development 10s ease-in-out infinite;
+          animation: our_development 10s ease-in-out infinite;
+  background: url(../images/lines-waves1.png) no-repeat center/cover;
+}
+.service .entry-title .title {
+  color: #FFFFFF;
 }
 .service .mbm-30 {
   margin-bottom: -30px;
@@ -2478,6 +2494,7 @@ BANNER STYLES
      object-fit: cover;
 }
 .service__item .text .title {
+  color: #FFFFFF;
   margin-bottom: 15px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -2486,7 +2503,7 @@ BANNER STYLES
   margin-bottom: 15px;
 }
 .service__item .text .description p {
-  color: #292E31;
+  color: #FFFFFF;
   font-weight: 500;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
