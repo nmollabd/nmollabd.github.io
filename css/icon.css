@@ -1,12 +1,12 @@
 /*** Icon */
 @font-face {
 	font-family: 'portfolio';
-	src: url('../font/portfolio.eot?31085461');
-	src: url('../font/portfolio.eot?31085461#iefix') format('embedded-opentype'),
-		url('../font/portfolio.woff2?31085461') format('woff2'),
-		url('../font/portfolio.woff?31085461') format('woff'),
-		url('../font/portfolio.ttf?31085461') format('truetype'),
-		url('../font/portfolio.svg?31085461#portfolio') format('svg');
+	src: url('../font/portfolio.eot?72339455');
+	src: url('../font/portfolio.eot?72339455#iefix') format('embedded-opentype'),
+		url('../font/portfolio.woff2?72339455') format('woff2'),
+		url('../font/portfolio.woff?72339455') format('woff'),
+		url('../font/portfolio.ttf?72339455') format('truetype'),
+		url('../font/portfolio.svg?72339455#portfolio') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -83,6 +83,8 @@
 .icon-business-time:before { content: '\e82d'; }
 .icon-phone:before { content: '\e82e'; }
 .icon-chart-bullet:before { content: '\e82f'; }
+.icon-left-3:before { content: '\e837'; }
+.icon-right-3:before { content: '\e86e'; }
 .icon-down-open:before { content: '\f004'; }
 .icon-up-open:before { content: '\f005'; }
 .icon-right-open:before { content: '\f006'; }

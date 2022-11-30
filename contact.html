@@ -50,6 +50,7 @@
 								<li><a href="service-single.html" class="scroll-trigger">service Single</a></li>
 							</ul>
 						</li>
+                        <li><a href="portfolio.thml">Portfolio</a></li>
 						<li class="cuurent-menu-item"><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -71,13 +72,37 @@
 						<li><a href="index.html">home</a></li>
 						<li><a href="about.html">about us</a></li>
 						<li><a href="blog.html">blog</a></li>
-						<li><a href="pages.html">Pages</a></li>
+                      <li class="dropdown">
+                            <a href="pages.html">Pages
+                                <span class="dropdown-toggle" data-toggle="dropdown"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="portfolio-list.html" class="scroll-trigger">Portfolio List</a></li>
+                                <li><a href="portfolio-single.html" class="scroll-trigger">Portfolio single</a></li>
+                                <li><a href="service-list.html" class="scroll-trigger">service list</a></li>
+                                <li><a href="service-single.html" class="scroll-trigger">service Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="portfolio.thml">Portfolio</a></li>
 						<li class="cuurent-menu-item"><a href="contact.html">Contact</a></li>
 					</ul>
 
 					<ul class="navbar-nav navbar-nav--right">
-						<li class="btn-menu"><a href="#">Hire Me</a></li>
-						<li class="mobile-navbar-toggler">
+                        <li class="has-border white header-search">
+                            <a class="search-toggle" data-selector=".header-search">
+                                <span class="icon-search"></span>
+                            </a>
+
+                            <form class="search-box" action="#" method="get">
+                                <div class="form-group d-flex align-items-center">
+                                    <input type="search" name="s" value="" class="search-input" id="search" placeholder="Search">
+                                    <button type="submit" class="search-submit"><i class="icon-search"></i></button>
+                                </div>
+                            </form>
+                        </li>
+						<li class="btn-menu"><a href="#">About Me</a></li>
+						<li class="mobile-navbar-toggler d-xl-none">
 							<a href="#sidr" class="navbar-toggle">
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
@@ -91,217 +116,434 @@
 	</header><!-- /header -->
 	<div class="header-gutter"></div><!-- header-gutter -->
 
-	<div class="before-gradient"></div>
-
-    <section class="breadcrumb-wrapper">
+    <section class="ct-page-banner">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="ct-page-banner__content">
+                        <div class="transparent-text">Contact</div>
+                        <h1 class="title roboto">Contact <span class="font-weight-light">With Us</span></h1>
+                    </div>
+
                     <nav class="breadcrumb">
                         <a href="index.html">home</a>
                         <span class="angle-right">/</span>
-                        <span class="current-page">Contact Us</span>
+                        <span class="current-page">Contact</span>
                     </nav>
                 </div>
+
+                <div class="col-md-6">
+                    <div class="ct-page-banner__media">
+                        <img src="../images/page-banner-1.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="ct-page-banner__overlay">
+            <img src="../images/ct-page-banner-bg.jpg" class="img-fluid" alt="">
         </div>
     </section>
 
     <div id="primary" class="content-area">
 
-    	<section class="about-me">
-    		<div class="container">
-    			<div class="row">
-    				<div class="col-12">
-    					<div class="entry-title text-center">
-    						<h1 class="title h2">Contact Us</h1>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</section>
-
-    	<section class="project-service">
-    		<div class="container">
-    			<div class="row align-items-center flex-row-reverse">
-    				<div class="col-md-6">
-    					<div class="media justify-content-md-end">
-    						<img src="../images/abp-img.png" class="img-fluid" alt="">
-    					</div>
-    				</div>
-
-    				<div class="col-md-6">
-    					<div class="project-service__content">
-    						<h2 class="title"><span class="text-secondary">Hello!</span> Tell Us About Your Project Service</h2>
-
-    						<div class="project-service__content__eddtor">
-    							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod earum rem, voluptas reiciendis accusamus id.</p>
-
-    							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nobis soluta eligendi accusamus culpa consequuntur optio ad quaerat est. Et quis dolor ullam voluptatibus laboriosam, possimus. Quibusdam labore dolores commodi.</p>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</section>
-
-    	<section class="contact-form">
-    		<div class="container">
+        <section class="quote-contact">
+            <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="google-maps wow fadeInUp">
-                            <iframe class="w-100 mb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14532.427174675298!2d88.97044108630858!3d24.412357187588267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc11714a398415%3A0x4b786d401795f55b!2sNatore!5e0!3m2!1sen!2sbd!4v1668006365749!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="col-4">
+                        
+                    </div>
+
+                    <div class="col-8">
+                        <div class="form_col">
+                            <div class="entry-title">
+                                <h3 class="title">Let's Get Connected</h3>
+                            </div>
+
+                            <div class="form-part">
+                                <form enctype="multipart/form-data" method="post" accept-charset="utf-8" name="inquiry_footer_form" class="row inquiry_footer_form" onsubmit="return inquiry_footer_form_submit()" action="/contactus/send-mail">
+                                    <div>
+                                        <input type="hidden" name="_method" value="POST">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="hidden" name="page_name" id="page_name" value="L1J0F3">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Full Name" name="name">
+                                                <span class="input-group-text">
+                                                    <img src="../images/svg/user.svg" class="img-fluid" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="hidden" name="page_id" value="dq_cof">
+
+                                                <input type="email" class="form-control setemail" placeholder="Email Address" name="email" onkeyup="trimeamil(this)" id="Footer_form">
+
+                                                <span class="input-group-text">
+                                                    <img src="../images/svg/mail.svg" class="img-fluid" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <select name="country" class="form-select form-control" onchange="getcodes(this)" id="country_names">
+                                                    <option value="AFG (+ 93)">AFG (+ 93)</option>
+                                                    <option value="ALB (+ 355)">ALB (+ 355)</option>
+                                                    <option value="BWA (+ 267)">BWA (+ 267)</option>
+                                                    <option value="BRA (+ 55)">BRA (+ 55)</option>
+                                                    <option value=" (+ 246)"> (+ 246)</option>
+                                                    <option value="BRN (+ 673)">BRN (+ 673)</option>
+                                                    <option value="BGR (+ 359)">BGR (+ 359)</option>
+                                                    <option value="BFA (+ 226)">BFA (+ 226)</option>
+                                                    <option value="BDI (+ 257)">BDI (+ 257)</option>
+                                                    <option value="KHM (+ 855)">KHM (+ 855)</option>
+                                                    <option value="CMR (+ 237)">CMR (+ 237)</option>
+                                                    <option value="COM (+ 269)">COM (+ 269)</option>
+                                                    <option value="COG (+ 242)">COG (+ 242)</option>
+                                                    <option value="COD (+ 242)">COD (+ 242)</option>
+                                                    <option value="COK (+ 682)">COK (+ 682)</option>
+                                                    <option value="CRI (+ 506)">CRI (+ 506)</option>
+                                                    <option value="CIV (+ 225)">CIV (+ 225)</option>
+                                                    <option value="HRV (+ 385)">HRV (+ 385)</option>
+                                                    <option value="CUB (+ 53)">CUB (+ 53)</option>
+                                                    <option value="CYP (+ 357)">CYP (+ 357)</option>
+                                                    <option value="CZE (+ 420)">CZE (+ 420)</option>
+                                                    <option value="DNK (+ 45)">DNK (+ 45)</option>
+                                                    <option value="DJI (+ 253)">DJI (+ 253)</option>
+                                                    <option value="IND (+ 91)" selected="+880">BAN (+880)</option>
+                                                    <option value="DMA (+ 1767)">DMA (+ 1767)</option>
+                                                    <option value="DOM (+ 1809)">DOM (+ 1809)</option>
+                                                    <option value="ECU (+ 593)">ECU (+ 593)</option>
+                                                    <option value="EGY (+ 20)">EGY (+ 20)</option>
+                                                    <option value="SLV (+ 503)">SLV (+ 503)</option>
+                                                    <option value="GNQ (+ 240)">GNQ (+ 240)</option>
+                                                    <option value="ERI (+ 291)">ERI (+ 291)</option>
+                                                    <option value="EST (+ 372)">EST (+ 372)</option>
+                                                    <option value="ETH (+ 251)">ETH (+ 251)</option>
+                                                    <option value="GBR (+ 44)">GBR (+ 44)</option>
+                                                    <option value="FLK (+ 500)">FLK (+ 500)</option>
+                                                    <option value="VAT (+ 39)">VAT (+ 39)</option>
+                                                    <option value="HND (+ 504)">HND (+ 504)</option>
+                                                    <option value="HKG (+ 852)">HKG (+ 852)</option>
+                                                    <option value="HUN (+ 36)">HUN (+ 36)</option>
+                                                    <option value="ISL (+ 354)">ISL (+ 354)</option>
+                                                    <option value="IDN (+ 62)">IDN (+ 62)</option>
+                                                    <option value="IRN (+ 98)">IRN (+ 98)</option>
+                                                </select>
+
+                                                <input type="hidden"class="form-control set_namessss" name="country_name" value="BANGLADESH (+880)">
+
+                                                <input type="number" class="form-control phone-control" name="phone" placeholder="Phone Number" data-errormessage-value-missing="Phone is required!">
+
+                                                <span class="input-group-text">
+                                                    <img src="../images/svg/phone.svg" class="img-fluid" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control text_area" style="border-radius: 4px !important;" placeholder="Your Requirements" rows="3" name="message"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="row lr-9">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <div class="input-group mb-3">
+                                                        <div id="created_captcha" class="created_captcha form-control mb-0">N1N0M3</div>
+                                                        <a href="#" onclick="createCaptcha()" class="btn captcha-btn">
+                                                            <i class="icon-ccw"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="input">
+                                                    <input type="text" name="Captcha" id="captchacontact" placeholder="Type The Captcha" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-btn">
+                                            <button class="btn btn-primary d-block w-100" type="submit">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-    			<div class="row lr-9">
-    				<div class="col-md-6">
-    					<div class="contact-form__content wow fadeInLeft">
-    						<div class="contact d-flex align-items-center">
-    							<div class="icon">
-    								<span class="icon-phone"></span>
-    							</div>
-
-    							<div class="phone-number">
-    								<span>Support number</span>
-    								<h2 class="number">01712943179</h2>
-    							</div>
-    						</div>
-
-    						<div class="address">
-    							<div class="row lr-5 mbm-20 justify-content-center">
-    								<div class="col-sm-6">
-    									<div class="address__item text-center d-flex align-items-center justify-content-between flex-column">
-    										<div class="icon">
-    											<span class="icon-envelope-open-o"></span>
-    										</div>
-
-    										<div class="text">
-    											<h4 class="title">Online Support</h4>
-
-    											<ul class="list-unstyled m-0">
-    												<li><a href="#">nmollabd@gmail.com</a></li>
-    											</ul>
-    										</div>
-    									</div>
-    								</div>
-
-    								<div class="col-sm-6">
-    									<div class="address__item text-center d-flex align-items-center justify-content-between flex-column">
-    										<div class="icon">
-    											<span class="icon-envelope-open-o"></span>
-    										</div>
-
-    										<div class="text">
-    											<h4 class="title">Online Support</h4>
-
-    											<ul class="list-unstyled m-0">
-    												<li><a href="#">nmollabd@gmail.com</a></li>
-    											</ul>
-    										</div>
-    									</div>
-    								</div>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-
-    				<div class="col-md-6">
-                        <div class="form wow fadeInRight">
-    						<div class="entry-title">
-    							<h2 class="title"><span class="text-secondary">Let's</span> Talk today</h2>
-    						</div>
-
-                            <div class="row lr-5">
-                                <div class="col-lg-12">
-                                    <input type="text" class="form-control" placeholder="Name">
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <input type="email" class="form-control" placeholder="Email Adress">
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <input type="tel" class="form-control" placeholder="Phone Number">
-                                </div>
-
-                                <div class="col-lg-12">
-                                    <textarea rows="5" class="form-control" placeholder="Enter Your txt"></textarea>
-                                    <button type="submit" class="btn submit-btn margin-top-30">Send now</button>
-                                </div>
-                            </div>
-                        </div>
-    				</div>
-    			</div>
-    		</div>
-    	</section>
+            </div>
+        </section>
 
     </div>
 
-    <section class="footer-top">
+    <footer class="footer pb-0">
+        <div class="container position-relative">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="testiamonial contact">
+                            <div class="entry-title">
+                                <h3 class="title">What Clients Say</h3>
+                            </div>
+
+                            <div class="swiper testiamonialSlide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="testiamonial-card">
+                                            <div class="icon-wrapper">
+                                                <img src="../images/svg/quto.svg" class="img-fluid" alt="">
+                                            </div>
+
+                                            <div class="text">
+                                                <div class="description h5">
+                                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa delectus, ratione, neque, temporibus id quidem unde rem voluptatem nihil sint aspernatur placeat minima laboriosam doloremque cupiditate vitae quibusdam mollitia debitis doloribus facere dolorem iure quaerat, veritatis adipisci qui. Ullam molestias atque sint amet dicta, rem repellat recusandae facilis ad in cum consectetur rerum excepturi. Rerum magni tenetur, tempore quam architecto, odit autem dignissimos repellat quia iure quidem sunt necessitatibus ullam beatae magnam reprehenderit, laboriosam ab, voluptates cumque velit impedit soluta?</p>
+                                                </div>
+
+                                                <div class="card-body d-flex align-items-center">
+                                                    <figure class="media">
+                                                        <img src="../images/sumon-ali.png" class="img-fluid" alt="">
+                                                    </figure>
+
+                                                    <div class="content">
+                                                        <h6 class="name text-uppercase">sumon-ali</h6>
+                                                        <span class="country text-capitalize">boston</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="testiamonial-card">
+                                            <div class="icon-wrapper">
+                                                <img src="../images/svg/quto.svg" class="img-fluid" alt="">
+                                            </div>
+
+                                            <div class="text">
+                                                <div class="description h5">
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi consequatur facere quia, maiores. Minima numquam voluptatem, aut dolor ducimus ab asperiores debitis nihil fugit placeat, veniam eveniet, adipisci ex! Vero saepe, officiis cum quod quas, magni libero voluptate nisi quasi ipsum error, accusamus cumque facilis! Necessitatibus a minima, dignissimos incidunt ullam itaque ea laudantium suscipit pariatur, consectetur eveniet dolorem aliquid fugit mollitia vero quis ipsum repellendus vel illum, blanditiis nostrum similique cum quia minus. Fuga explicabo, facere. Voluptatum, minus, accusantium.</p>
+                                                </div>
+
+                                                <div class="card-body d-flex align-items-center">
+                                                    <figure class="media">
+                                                        <img src="../images/sumon-ali.png" class="img-fluid" alt="">
+                                                    </figure>
+
+                                                    <div class="content">
+                                                        <h6 class="name text-uppercase">sumon-ali</h6>
+                                                        <span class="country text-capitalize">boston</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="testiamonial-card">
+                                            <div class="icon-wrapper">
+                                                <img src="../images/svg/quto.svg" class="img-fluid" alt="">
+                                            </div>
+
+                                            <div class="text">
+                                                <div class="description h5">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil in temporibus laboriosam aperiam quod rem quasi dolore corporis recusandae sunt nisi nam iure eaque expedita omnis voluptate aliquam perspiciatis assumenda odit tempora cum quam soluta laudantium, ut maxime. Debitis, quibusdam, molestias sint, vitae dolorum illo praesentium quisquam perspiciatis itaque vel unde cupiditate aliquam quaerat omnis dignissimos optio expedita laudantium impedit enim temporibus id laboriosam amet modi. Totam, fugit distinctio dignissimos, a ad maxime blanditiis eum, porro ut numquam delectus natus.</p>
+                                                </div>
+
+                                                <div class="card-body d-flex align-items-center">
+                                                    <figure class="media">
+                                                        <img src="../images/sumon-ali.png" class="img-fluid" alt="">
+                                                    </figure>
+
+                                                    <div class="content">
+                                                        <h6 class="name text-uppercase">sumon-ali</h6>
+                                                        <span class="country text-capitalize">boston</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper_nav">
+                                <div class="swiper-button-next arrow">
+                                    <span class="icon-left-3"></span>
+                                </div>
+
+                                <div class="swiper-button-prev arrow swiper-button-disabled">
+                                    <span class="icon-right-3"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="right-bg">
+                <img src="../images/dot-wave-blue.png" class="img-fluid" alt="">
+            </div>
+        </div>
+
         <div class="container">
-            <div class="row lr-10 mbm-20 align-items-center">
-                <div class="col-md-6">
-                    <a href="#" class="cta-item d-flex flex-column justify-content-center">
-                        <div class="media">
-                            <img src="../images/chat.svg" class="img-fluid" alt="">
-                        </div>
-
-                        <div class="text">
-                            <h4 class="title letter">portfolio Here</h4>
-                            <div class="description">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore</p>
-                            </div>
-                            <button class="btn sm">Button Text</button>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-6">
-                    <a href="#" class="cta-item white d-flex flex-column justify-content-center">
-                        <div class="media">
-                            <img src="../images/cta.png" class="img-fluid" alt="">
-                        </div>
-
-                        <div class="text">
-                            <h4 class="title letter">portfolio Here</h4>
-                            <div class="description">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore</p>
-                            </div>
-                            <button class="btn sm">Button Text</button>
-                        </div>
-                    </a>
+            <div class="row">
+                <div class="col-12">
+                    <hr>
                 </div>
             </div>
         </div>
-    </section>
 
-    <footer class="footer">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-12">
-    				<div class="footer__logo text-center">
-    					<img src="../images/logo.png" class="img-fluid" alt="">
-    				</div>
+        <div class="footer__middle">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="qot-conect">
+                            <ul class="qot-conect__item list-inline">
+                                <li>
+                                    <a href="naim:nmollabd@gmail.com" class="d-flex align-items-center">
+                                        <div class="icon">
+                                            <i class="icon-mail"></i>
+                                        </div>
+                                        <span class="text">nmollabd@gmail.com</span>
+                                    </a>
+                                </li>
 
-    				<div class="footer__widget text-center">
-    					<ul class="footer__widget-nav list-unstyled">
-    						<li class="cuurent-menu-item"><a href="#">Home</a></li>
-    						<li><a href="about.html">About Us</a></li>
-    						<li><a href="#">Your Health</a></li>
-    						<li><a href="#">Our Discovery</a></li>
-    						<li><a href="careers.html">Careers</a></li>
-    						<li><a href="#">Contact Us</a></li>
-    					</ul>
-    				</div>
+                                <li>
+                                    <a href="#" class="d-flex align-items-center">
+                                        <div class="icon">
+                                            <i class="icon-skype"></i>
+                                        </div>
+                                        <span class="text">Naim Molla</span>
+                                    </a>
+                                </li>
 
-    				<div class="copy-right text-center">
-    					<p>Web Design by <a href="#"> Naim Islam</a></p>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
+                                <li>
+                                    <a href="tel:+917976026456" class="d-flex align-items-center">
+                                        <div class="icon">
+                                            <i class="icon-phone"></i>
+                                        </div>
+                                        <span class="text">bangladesh: <small>+8801712943179</small></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="entry-title">
+                                    <h4 class="title">Our Locations</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-left">
+                            <div class="col-md-6">
+                                <div class="location_card d-flex align-items-center">
+                                    <figure class="media">
+                                        <img src="../images/bangladesh-flag.jpg" class="img-fluid" alt="">
+                                    </figure>
+
+                                    <div class="content">
+                                        <h5 class="title">Bangladesh</h5>
+                                        <span>rajshahi, Bangladesh</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="location_card d-flex align-items-center">
+                                    <figure class="media">
+                                        <img src="../images/canda_flag.svg" class="img-fluid" alt="">
+                                    </figure>
+
+                                    <div class="content">
+                                        <h5 class="title">Mississauga, Ontàrio, CANADA.</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__menu">
+            <div class="container">
+                <div class="row lr-9">
+                    <div class="col-md-6">
+                        <div class="menu-item">
+                            <h5 class="menu-title">Company</h5>
+                            <ul class="list-inline menu">
+                                <li><a href="#">About US</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Our Blog</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-item">
+                            <h5 class="menu-title">Services</h5>
+                            <ul class="list-inline menu">
+                                <li><a href="#">Mobile App Developmeant</a></li>
+                                <li><a href="#">web design</a></li>
+                                <li><a href="#">UX/UI Design</a></li>
+                                <li><a href="#">Digital Marketing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="entry-title">
+                            <h5 class="menu-title">Expertise</h5>
+
+                            <div class="description">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Recusandae qui, doloremque possimus nobis minima minus explicabo odit nisi iusto eaque libero vero quos quae magni consectetur maxime sequi rerum repellendus. Id dicta nihil praesentium ducimus atque nulla impedit excepturi deleniti rem corrupti, quod quo, possimus ut rerum assumenda qui, tempora.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container" id="tobehide">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="footer__bottom__copyright">
+                                <p>© 2022 Dqotsolutions All Rights Reserved.</p>
+                            </div>
+
+                            <ul class="socail-media list-inline m-0 mb-0">
+                                <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                                <li><a href="#"><i class="icon-facebook"></i></a></li>
+                                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                <li><a href="#"><i class="icon-skype"></i></a></li>
+                                <li><a href="#"><i class="icon-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 	<!-- <div class="mouse-cursor cursor-inner"></div> -->

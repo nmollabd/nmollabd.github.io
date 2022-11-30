@@ -209,3 +209,18 @@ SCROLLDOWN ANIMATION STYLE
         @include transform(scale(1));
     }
 }
+
+@keyframes ct-page-banner {
+    
+    0% {
+        @include transform(scale(1));
+    }
+
+    70% {
+        @include transform(scale(0.9));
+    }
+
+    100% {
+        @include transform(scale(1));
+    }
+}

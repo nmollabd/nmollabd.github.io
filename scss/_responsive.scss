@@ -163,9 +163,6 @@
 	/***********************************
 	ABOUT STYLES
 	***********************************/
-	.about-me {
-		padding: 70px 0;
-	}
 
 	.awards {
 		padding: 70px 0;
@@ -178,13 +175,6 @@
 	/***********************************
 	CONTACT STYLES
 	***********************************/
-	.project-service {
-		padding-bottom: 70px;
-	}
-
-	.contact-form {
-		padding: 70px 0;
-	}
 
 	/***********************************
 	BLOG STYLES
@@ -511,9 +501,6 @@
 	/***********************************
 	ABOUT STYLES
 	***********************************/
-	.about-me {
-		padding: 60px 0;
-	}
 	
 	.awards {
 		padding: 60px 0;
@@ -551,13 +538,6 @@
 	/***********************************
 	CONTACT STYLES
 	***********************************/
-	.project-service {
-		padding: 60px 0;
-	}
-
-	.contact-form {
-		padding: 60px 0;
-	}
 
 	/***********************************
 	BLOG STYLES
@@ -1035,9 +1015,6 @@
 	/***********************************
 	ABOUT STYLES
 	***********************************/
-	.about-me {
-		padding: 50px 0;
-	}
 	
 	.awards {
 		padding: 50px 0;
@@ -1098,56 +1075,6 @@
 	/***********************************
 	CONTACT STYLES
 	***********************************/
-	.project-service {
-		padding: 50px 0;
-
-		.media {
-			margin-bottom: 30px;
-			justify-content: center;
-		}
-
-		&__content {
-
-			.title {
-			    margin-bottom: 15px;
-			}
-
-			&__eddtor {
-			    max-width: 100%;
-			}
-		}
-	}
-
-	.contact-form {
-		padding: 50px 0;
-
-		.address {
-			margin-bottom: 30px;
-		}
-
-		.form {
-
-			.btn {
-			    margin-top: 10px;
-			}
-		}
-
-		&__content {
-
-			.contact {
-
-				.icon {
-					margin-right: 25px;
-
-					span {
-					    width: 70px;
-					    height: 70px;
-					    font-size: 40px;
-					}
-				}
-			}
-		}
-	}
 
 	/***********************************
 	BLOG STYLES
@@ -1541,9 +1468,6 @@
 	/***********************************
 	ABOUT STYLES
 	***********************************/
-	.about-me {
-		padding: 40px 0;
-	}
 	
 	.awards {
 		padding: 40px 0;
@@ -1570,44 +1494,6 @@
 	/***********************************
 	CONTACT STYLES
 	***********************************/
-	.project-service {
-		padding: 40px 0;
-
-		.media {
-			margin-bottom: 20px;
-		}
-
-		&__content {
-
-			.title {
-			    margin-bottom: 10px;
-			}
-		}
-	}
-
-	.contact-form {
-		padding: 40px 0;
-
-		.address {
-			margin-bottom: 20px;
-		}
-
-		&__content {
-
-			.contact {
-
-				.icon {
-					margin-right: 20px;
-
-					span {
-					    width: 60px;
-					    height: 60px;
-					    font-size: 30px;
-					}
-				}
-			}
-		}
-	}
 
 	/***********************************
 	BLOG STYLES
@@ -1924,35 +1810,6 @@
 					.media {
 					    width: 100px;
 					    margin-left: 20px;
-					}
-				}
-			}
-		}
-	}
-
-	.contact-form {
-
-		&__content {
-
-			.contact {
-
-				.icon {
-					margin-right: 10px;
-
-					span {
-					    width: 50px;
-					    height: 50px;
-					    font-size: 25px;
-					}
-				}
-
-				.phone-number {
-
-					span {
-
-						&:after {
-							display: none;
-						}
 					}
 				}
 			}

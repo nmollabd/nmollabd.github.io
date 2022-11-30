@@ -103,6 +103,13 @@ HEADER STYLES
                                     margin-top: -3px;
                                 }
                             }
+
+                            &.white {
+
+                                a {
+                                    border: 2px solid $black;
+                                }
+                            }
                         }
 
                         &.header-search {
