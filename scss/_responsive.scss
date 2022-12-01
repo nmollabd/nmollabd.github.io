@@ -296,6 +296,28 @@
 	FOOTER-TOP STYLE
 	***********************************/
 
+	.footer {
+		padding: 70px 0;
+
+		&__bottom {
+
+			.socail-media {
+
+				li {
+
+					a {
+					    width: 35px;
+					    height: 35px;
+
+					    i {
+					    	font-size: 15px;
+					    }
+					}
+				}
+			}
+		}
+	}
+
 }/* 1199 */
 
 @media only screen and (max-width: 991px) {
@@ -733,6 +755,76 @@
 		}
 	}
 
+	.footer {
+		padding: 60px 0;
+
+		&__bottom {
+
+			.socail-media {
+				margin-left: -3px;
+				margin-right: -3px;
+
+				li {
+					margin-left: 3px;
+					margin-right: 3px;
+
+					a {
+					    width: 32px;
+					    height: 32px;
+
+					    i {
+					    	font-size: 15px;
+					    }
+					}
+				}
+			}
+		}
+
+		&__middle {
+
+			.qot-conect {
+			    margin-bottom: 30px;
+			}
+		}
+
+		.right-bg {
+		    right: 0;
+		    bottom: 0;
+			top: inherit;
+		}
+
+		.form-part {
+
+			.form-btn {
+				margin-top: 15px;
+			}
+		}
+
+		.testiamonial {
+			margin-top: 30px;
+
+			.swiper {
+
+				.swiper-wrapper {
+
+					.swiper-slide {
+
+						.testiamonial-card {
+
+							.text {
+
+								.description {
+								    max-width: 100%;
+								    margin-bottom: 30px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 }/* 991 */
 
 @media only screen and (max-width: 767px) {
@@ -768,6 +860,18 @@
 
 	.entry-title {
 	    margin-bottom: 25px !important; 
+	}
+
+	input[type=text]:not(.select2-input),
+	input[type=number],
+	input[type=email],
+	input[type=tel],
+	input[type=search],
+	input[type=password],
+	input[type=file],
+	select, textarea {
+	    font-size: 14px !important;
+	    line-height: 22px !important;
 	}
   	/***********************************
   	HEADER STYLE
@@ -940,61 +1044,6 @@
 
 					img {
 					    width: 60px;
-					}
-				}
-			}
-		}
-	}
-
-	.author-section {
-
-		.author-content {
-			padding: 30px;
-
-			.img-container {
-
-				.media {
-					max-width: 400px;
-					margin-left: auto;
-					margin-right: auto;
-					margin-bottom: 20px;
-				}
-			}
-		}
-	}
-
-	.about-section {
-		padding: 50px 0;
-
-		.right-content {
-
-			.title {
-			    margin-bottom: 30px;
-			}
-		}
-
-		.left-content {
-
-			.media-content {
-
-				.top-media {
-					display: none;
-				}
-
-				.bottom-media {
-					width: inherit;
-					right: inherit;
-					bottom: inherit;
-					position: inherit;
-					margin-bottom: 30px;
-
-					.video-img {
-						display: none;
-					}
-
-					.about {
-						height: auto;
-						display: block !important;
 					}
 				}
 			}
@@ -1195,26 +1244,71 @@
 	.footer {
 		padding: 50px 0;
 
-		&__widget {
+		&__middle {
 
-			&-nav {
+			.qot-conect {
+			    margin-bottom: 30px;
+			}
+		}
 
-				li {
+		.right-bg {
+		    right: 0;
+		    bottom: 0;
+			top: inherit;
+		}
 
-					&:not(:first-child) {
-						margin-left: 15px;
+		.form-part {
+
+			.form-group {
+
+				.input-group {
+
+					.created_captcha {
+					    font-size: 14px;
+					    line-height: 22px;
 					}
 				}
 			}
+		}
 
-			&__privacy-menu {
-				margin-top: 20px;
-				padding-left: -10px;
-				padding-right: -10px;
+		&__menu {
 
-				li {
-					padding-left: 10px;
-					padding-right: 10px;
+			.entry-title {
+			    margin-top: 20px;
+			}
+		}
+
+		.testiamonial {
+			margin-top: 30px;
+
+			.swiper {
+
+				.swiper-wrapper {
+
+					.swiper-slide {
+
+						.testiamonial-card {
+
+							.icon-wrapper {
+
+								img {
+									max-width: 55px;
+								}
+							}
+
+							.text {
+
+								.description {
+									margin-bottom: 25px;
+
+								    p {
+								    	font-size: 16px;
+								    	line-height: 26px;
+								    }
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -1610,25 +1704,83 @@
 	}
 
 	.footer {
-		padding: 40px 0;
+		padding: 50px 0;
 
-		&__logo {
-			margin-bottom: 20px;
+		&__bottom {
+
+			&__copyright {
+				margin-top: 20px;
+			}
+
+			.d-flex {
+				text-align: center;
+				display: block !important;
+				justify-content: center !important;
+			}
 		}
 
-		&__widget {
+		&__top {
+		    padding-bottom: 30px;
+		}
 
-			&-nav {
+		&__middle {
 
-				li {
+			.qot-conect {
+			    margin-bottom: 30px;
+			}
 
-					&:not(:first-child) {
-						margin-left: 15px;
+			.location_card {
+
+				.media {
+
+					img {
+					    width: 60px;
 					}
+				}
+			}
+		}
 
-					a {
-						font-size: 18px;
-						line-height: 22px;
+		&__menu {
+
+			.entry-title {
+			    margin-top: 20px;
+			}
+		}
+
+		.testiamonial {
+			margin-top: 30px;
+
+			.swiper {
+
+				.swiper-wrapper {
+
+					.swiper-slide {
+
+						.testiamonial-card {
+
+							.icon-wrapper {
+
+								img {
+									max-width: 50px;
+								}
+							}
+
+							.text {
+
+								.description {
+									margin-bottom: 20px;
+								}
+
+								.card-body {
+
+									.media {
+									    width: 55px;
+									    height: 55px;
+									    margin-right: 12px;
+									}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -1926,19 +2078,83 @@
 
 	.footer {
 
-		&__widget-nav {
+		&__bottom {
 
-			li {
+			&__copyright {
+				margin-top: 20px;
+			}
 
-				a {
-				    font-size: 16px;
-				    line-height: 20px;
+			.d-flex {
+				text-align: center;
+				display: block !important;
+				justify-content: center !important;
+			}
+		}
+
+		&__top {
+		    padding-bottom: 30px;
+		}
+
+		&__middle {
+
+			.qot-conect {
+			    margin-bottom: 20px;
+			}
+
+			.location_card {
+
+				.media {
+
+					img {
+					    width: 50px;
+					}
+				}
+			}
+
+			.justify-content-left {
+
+				[class^=col] {
+				    flex: 0 0 100%;
+				    max-width: 100%;
+				}
+			}
+
+			.location_card {
+
+				&.mt-10 {
+					margin-top: 10px;
 				}
 			}
 		}
 
-		&__logo {
-			max-width: 160px;
+		.form-part {
+			padding: 10px;
+
+			.form-group {
+
+				.input-group {
+
+					.form-select {
+					    max-width: 100px !important;
+					}
+
+					.form-control {
+					    min-height: 38px !important;
+					}
+
+					.captcha-btn {
+					    min-height: 38px;
+					    padding: 11px 15px;
+					}
+				}
+			}
+
+			.input {
+
+				#captchacontact {
+				    min-height: 38px !important;
+				}
+			}
 		}
 	}
 
