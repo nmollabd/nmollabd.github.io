@@ -2508,6 +2508,9 @@ BANNER STYLES
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+.service__item .text .btn {
+  color: #FFFFFF;
+}
 .service__item:-moz-any-link:hover, .service__item:-moz-any-link:focus {
   border-radius: 6px;
   -webkit-backface-visibility: hidden;
