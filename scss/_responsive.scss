@@ -141,17 +141,6 @@
 		}
 	}
 
-	.testimonial-section {
-		padding-top: 70px;
-	}
-
-	.author-section {
-
-		.author-content {
-			padding: 20px 30px;
-		}
-	}
-
 	.about-section {
 		padding: 70px 0;
 	}
@@ -166,95 +155,6 @@
 
 	.awards {
 		padding: 70px 0;
-	}
-
-	.about {
-		padding-bottom: 70px;
-	}
-
-	/***********************************
-	CONTACT STYLES
-	***********************************/
-
-	/***********************************
-	BLOG STYLES
-	***********************************/
-	.blog {
-		padding: 70px 0;
-	}
-
-	.blog-Details {
-
-		&__main {
-
-			.blog-content {
-
-				.media {
-				    @include border-radius(24px);
-				}
-			}
-		}
-	}
-
-	.clock {
-		left: 270px;
-		width: 180px;
-		bottom: 20px;
-		height: 180px;
-
-	    .sec {
-	        width: 140px;
-	        height: 140px;
-	    }
-
-       .min {
-	        width: 130px;
-	        height: 130px;
-	    }
-
-        .hour {
-	        height: 110px;
-	        height: 110px;
-
-	        &:before {
-	            width: 4px;
-	        }
-	    }
-	}
-
-	.page-banner {
-		padding: 120px 0 100px;
-
-		&__content {
-
-			.title {
-				margin-bottom: 5px;
-			}
-
-			.description {
-				margin-bottom: 15px;
-			}
-		}
-	}
-
-	.business {
-		padding: 70px 0;
-
-		&__item {
-		    min-height: 180px;
-		}
-
-		&__content {
-			margin-top: 20px;
-
-			.sub-title {
-				margin-bottom: 0;
-			}
-
-			.title {
-				margin-bottom: 30px;
-			}
-		}
 	}
 
 	/***********************************
@@ -284,16 +184,12 @@
 	    padding-bottom: 70px;
 	}
 
-	.home-contact {
-	    padding: 70px 0;
-	}
-
 	.project-section {
 	    padding-top: 70px;
 	}
 
 	/***********************************
-	FOOTER-TOP STYLE
+	FOOTER STYLE
 	***********************************/
 
 	.footer {
@@ -484,27 +380,6 @@
 		}
 	}
 
-	.testimonial-section {
-		padding: 60px 0;
-
-		.slider-area {
-
-			.single-slide {
-
-				.description {
-				    margin-bottom: 20px;
-				}
-			}
-		}
-	}
-
-	.author-section {
-
-		.author-content {
-			padding: 30px 50px;
-		}
-	}
-
 	.about-section {
 		padding: 60px 0;
 
@@ -538,133 +413,6 @@
 				.title {
 				    margin-bottom: 10px;
 				}
-			}
-		}
-	}
-
-	.about {
-		padding: 60px 0;
-
-		&__content {
-
-			.title {
-				margin-bottom: 10px;
-			}
-
-			.sub-title {
-			    margin-bottom: 20px;
-			}
-		}
-	}
-
-	/***********************************
-	CONTACT STYLES
-	***********************************/
-
-	/***********************************
-	BLOG STYLES
-	***********************************/
-	.blog {
-		padding: 60px 0;
-
-		&__main--post {
-
-			.blog-thumbnail-slider {
-
-				.media {
-
-					img {
-					    height: 300px;
-					}
-				}
-			}
-		}
-
-		.applications-featured {
-			min-height: 300px;
-		}
-
-		.sidebar {
-
-			.single-widget {
-
-				&.author-widget {
-				    padding: 20px;
-
-				    .author-social-link {
-
-				    	.social-media {
-
-				    		li {
-
-				    			a {
-								    width: 25px;
-								    height: 25px;
-								    font-size: 12px;
-								}
-				    		}
-				    	}
-				    }
-
-				    .media {
-						max-width: 350px;
-						margin-left: auto;
-						margin-right: auto;
-						margin-bottom: 20px;
-				    }
-				}
-
-				.header-search {
-					margin-top: 30px;
-				}
-			}
-		}
-	}
-
-	.clock {
-		left: 230px;
-		width: 150px;
-		height: 150px;
-
-	    .sec {
-			width: 118px;
-			height: 118px;
-	    }
-
-       .min {
-	        width: 110px;
-	        height: 110px;
-	    }
-
-        .hour {
-	        height: 100px;
-	        height: 100px;
-	    }
-	}
-
-	.page-banner {
-		padding: 100px 0 80px;
-
-		&__content {
-
-			.description {
-				margin-bottom: 10px;
-			}
-		}
-	}
-
-	.business {
-		padding: 60px 0;
-
-		&__item {
-		    min-height: 150px;
-		}
-
-		&__content {
-			margin-top: 20px;
-
-			.title {
-				margin-bottom: 20px;
 			}
 		}
 	}
@@ -704,17 +452,6 @@
 		}
 	}
 
-	.home-contact {
-	    padding: 60px 0;
-
-	    &__lcontent {
-
-	    	.title {
-			    margin-bottom: 20px;
-			}
-	    }
-	}
-
 	.project-section {
 	    padding-top: 60px;
 
@@ -730,31 +467,8 @@
 	}
 
 	/***********************************
-	FOOTER-TOP STYLE
+	FOOTER STYLE
 	***********************************/
-	.footer-top {
-		padding-bottom: 60px;
-
-		.cta-item {
-
-			.media {
-			    right: 0px;
-			    top: -120px;
-
-			    img {
-			    	width: 250px;
-			    }
-			}
-
-			&.white {
-
-				.media {
-					top: -50px;
-				}
-			}
-		}
-	}
-
 	.footer {
 		padding: 60px 0;
 
@@ -1029,27 +743,6 @@
 		}
 	}
 
-	.testimonial-section {
-		padding: 50px 0;
-
-		.slider-area {
-
-			.single-slide {
-
-				.description {
-				    margin-bottom: 15px;
-				}
-
-				.slide-bottom {
-
-					img {
-					    width: 60px;
-					}
-				}
-			}
-		}
-	}
-
 	.applications-featured {
 
 		&.about-video {
@@ -1079,116 +772,9 @@
 		}
 	}
 
-	.page-banner {
-		padding-bottom: 70px;
-
-		&__media {
-			margin-bottom: 30px;
-		}
-
-		&__content {
-
-			.description {
-				max-width: 100%;
-			}
-		}
-	}
-
-	.business {
-		padding: 50px 0;
-	}
-
-	.about {
-		padding-top: 0;
-		padding-bottom: 50px;
-
-		&__content {
-
-			.sub-title {
-			    margin-bottom: 10px;
-			}
-
-			&__btn {
-				text-align: center;
-			}
-		}
-
-		&__media {
-			max-width: 500px;
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 30px;
-		}
-	}
-
 	/***********************************
 	CONTACT STYLES
 	***********************************/
-
-	/***********************************
-	BLOG STYLES
-	***********************************/
-	.blog {
-		padding: 50px 0;
-
-		&__main {
-
-			&--post {
-
-				.blog-thumbnail-slider {
-
-					.media {
-
-						img {
-						    height: 250px;
-						}
-					}
-				}
-
-				.blog-content {
-
-					&__top {
-						margin-top: 15px;
-
-						.blog-date {
-							margin-bottom: 10px;
-
-							li {
-
-								&:not(:first-child) {
-								    margin-left: 10px;
-								}
-
-								a {
-									font-size: 14px;
-									line-height: 20px;
-									@include letter-spacing(30, 14);
-
-									i {
-										margin-right: 5px;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-
-		.applications-featured {
-			min-height: 250px;
-		}
-
-		.sidebar {
-
-			.single-widget {
-
-				.header-search {
-					margin-top: 20px;
-				}
-			}
-		}
-	}
 
 	/***********************************
 	PAGE-BANNER SCROLL STYLE
@@ -1211,35 +797,13 @@
 		}
 	}
 
-	.home-contact {
-	    padding: 50px 0;
-
-	    &__lcontent {
-
-	    	.hotline {
-
-	    		.icon {
-				    margin-right: 25px;
-				}
-	    	}
-	    }
-	}
-
 	.project-section {
 	    padding-top: 0;
 	}
 
 	/***********************************
-	FOOTER-TOP STYLE
+	FOOTER STYLE
 	***********************************/
-	.footer-top {
-		padding-bottom: 50px;
-
-		.cta-item {
-		    padding: 30px;
-		    min-height: 220px;
-		}
-	}
 
 	.footer {
 		padding: 50px 0;
@@ -1517,23 +1081,6 @@
 		padding: 40px 0;
 	}
 
-	.testimonial-section {
-		padding-top: 40px;
-
-		.slider-area {
-
-			.single-slide {
-
-				.slide-bottom {
-
-					img {
-					    width: 40px;
-					}
-				}
-			}
-		}
-	}
-
 	.applications-featured {
 
 		&.about-video {
@@ -1543,20 +1090,6 @@
 
 	.project {
 		padding: 40px 0;
-	}
-
-
-	.author-section {
-
-		.author-content {
-
-			.img-container {
-
-				.media {
-					max-width: 350px;
-				}
-			}
-		}
 	}
 
 	/***********************************
@@ -1577,47 +1110,9 @@
 		}
 	}
 
-	.about {
-		padding-bottom: 40px;
-
-		&__media {
-			max-width: 400px;
-		}
-	}
-
 	/***********************************
 	CONTACT STYLES
 	***********************************/
-
-	/***********************************
-	BLOG STYLES
-	***********************************/
-	.blog {
-		padding-top: 0;
-		padding-bottom: 40px;
-	}
-
-	.clock {
-		width: 100px;
-		height: 100px;
-		bottom: -50px;
-
-	    .sec {
-			width: 78px;
-			height: 78px;
-	    }
-
-       .min {
-	        width: 70px;
-	        height: 70px;
-	    }
-
-        .hour {
-	        height: 65px;
-	        height: 65px;
-	    }
-	}
-
 	.project-study {
 	    padding-bottom: 50px;
 
@@ -1627,42 +1122,6 @@
 		    .icon {
 			    max-width: 50px;
 			}
-		}
-	}
-
-	.home-contact {
-	    padding: 50px 0;
-
-	    &__lcontent {
-
-	    	.tagline {
-	    		text-align: center;
-	    	}
-
-	    	.title {
-	    		text-align: center;
-	    	}
-
-	    	.hotline {
-	    		justify-content: center;
-
-	    		.icon {
-	    			width: 45px;
-				    margin-right: 15px;
-				}
-	    	}
-
-			.phone-number {
-
-				.number {
-				    @include letter-spacing(-50, 24);
-				}
-			}
-	    }
-
-	    &__form {
-		    padding: 20px;
-		    @include border-radius(18px);
 		}
 	}
 
@@ -1692,17 +1151,8 @@
 	}
 
 	/***********************************
-	FOOTER-TOP STYLE
+	FOOTER STYLE
 	***********************************/
-	.footer-top {
-		padding-bottom: 40px;
-
-		.cta-item {
-		    padding: 25px;
-		    min-height: 200px;
-		}
-	}
-
 	.footer {
 		padding: 50px 0;
 
@@ -1919,146 +1369,6 @@
 		}
 	}
 
-	.about {
-
-		&__media {
-			max-width: 300px;
-		}
-
-		&__content {
-
-			.personal-info {
-
-				&:after {
-					content: none;
-				}
-
-				.row {
-
-					[class^=col] {
-					    flex: 0 0 100%;
-					    max-width: 100%;
-					}
-				}
-			}
-		}
-	}
-
-	.author-section {
-
-		.author-content {
-
-			.img-container {
-
-				.media {
-					max-width: 300px;
-				}
-			}
-
-			.right-content {
-
-				.sign-button {
-
-					.media {
-					    width: 100px;
-					    margin-left: 20px;
-					}
-				}
-			}
-		}
-	}
-
-	.testimonial-section {
-
-		.slick-dots {
-			display: none !important;
-		}
-	}
-
-	/***********************************
-	BLOG STYLES
-	***********************************/
-	.blog {
-
-		&__main {
-
-			&--post {
-
-				.blog-thumbnail-slider {
-
-					.media {
-						@include border-radius(12px);
-
-						img {
-						    height: 200px;
-						}
-					}
-				}
-			}
-
-			.blog-thumbnail-slider {
-
-				.slick-arrow {
-					display: none !important;
-				}
-			}
-		}
-
-		.applications-featured {
-			min-height: 200px;
-
-			&.popup-video {
-
-				&:before {
-				    top: 45%;
-				    width: 40px;
-				    height: 40px;
-				    font-size: 20px;
-				}
-			}
-		}
-	}
-
-	.business {
-
-		&__item {
-			padding: 20px;
-
-			.icon {
-				
-				img {
-					max-width: 50px;
-				}
-			}
-		}
-	}
-
-	.clocks {
-		display: block;
-
-		.clock {
-			left: 250px;
-			width: 100px;
-			height: 100px;
-			bottom: -30px;
-
-		    .sec {
-				width: 78px;
-				height: 78px;
-		    }
-
-	       .min {
-		        width: 70px;
-		        height: 70px;
-		    }
-
-	        .hour {
-		        height: 65px;
-		        height: 65px;
-		    }
-		}
-	}
-
 	/***********************************
 	PAGE-BANNER SCROLL STYLE
 	***********************************/
@@ -2072,9 +1382,6 @@
 	/***********************************
 	FOOTER STYLE
 	***********************************/
-	.footer-top {
-		padding-top: 0;
-	}
 
 	.footer {
 
@@ -2172,37 +1479,12 @@
 	    	font-size: 20px;
 	    }
 	}
-
-	.clocks {
-
-		.clock {
-			left: 190px;
-			width: 100px;
-			height: 100px;
-			bottom: -40px;
-
-		    .sec {
-				width: 78px;
-				height: 78px;
-		    }
-
-	       .min {
-		        width: 70px;
-		        height: 70px;
-		    }
-
-	        .hour {
-		        height: 65px;
-		        height: 65px;
-		    }
-		}
-	}
 }
 /* 420 */
 
 @media only screen and (max-width: 380px) {
 	/***********************************
-	BUSINESS STYLES
+	HEADER STYLES
 	***********************************/
 	.header {
 
@@ -2232,17 +1514,6 @@
 						}
 					}
 				}
-			}
-		}
-	}
-
-	.business {
-
-		.row {
-
-			[class^=col] {
-			    flex: 0 0 100%;
-			    max-width: 100%;
 			}
 		}
 	}
