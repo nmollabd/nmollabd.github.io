@@ -12,8 +12,8 @@ HEADER STYLES
 }
 
 .header-gutter {
-    height: 88.84px;
-    min-height: 88.84px;
+    height: 135px;
+    min-height: 135px;
 }
 
 .header {
@@ -227,23 +227,19 @@ HEADER STYLES
                     > a {
                         display: block;
                         color: $primary;
-                        font-size: 18px;
+                        font-size: 16px;
                         font-weight: 700;
-                        line-height: 28px;
+                        line-height: 26px;
                         font-family: $oswald;
-                        text-transform: capitalize;
-                        @include letter-spacing(35, 18);
+                        text-transform: uppercase;
+                        @include letter-spacing(35, 16);
                         @include transition(all 0.3s ease);
-
-                        &:hover, &:focus {
-                            color: $success;
-                        }
                     }
 
                     &.cuurent-menu-item, &:hover, &:focus {
 
                         > a {
-                            color: $success;
+                            color: #ffaa17;
                         }
                     }
 
@@ -361,7 +357,7 @@ HEADER STYLES
                         &.cuurent-menu-item, &:hover, &:focus {
 
                             > a {
-                                color: $success;
+                                color: #ffaa17;
                             }
                         }
                     }
@@ -396,7 +392,7 @@ HEADER STYLES
                             &.cuurent-menu-item, &:hover, &:focus {
 
                                 > a {
-                                    color: $success;
+                                    color: #ffaa17;
                                 }
                             }
                         }

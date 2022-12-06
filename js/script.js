@@ -145,20 +145,37 @@
     jQuery(document).ready(function() {
 
         //Testimonial Slider 
-        $(".testimonial-section .slider-area").slick({
+        $(".team-slider .slider-area").slick({
             autoplay: true, 
-            dots: true,
-            slidesToShow: 3,
+            dots: false,
+            slidesToShow: 5,
             arrows: false,
+            autoplaySpeed: 1000,
+
             responsive : [
                 {
                     breakpoint: 1200, 
                     settings: {
+                        slidesToShow: 4,
+                    }
+                },
+
+                {
+                    breakpoint: 992, 
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+
+                {
+                    breakpoint: 768, 
+                    settings: {
                         slidesToShow: 2,
                     }
-                }, 
+                },
+
                 {
-                    breakpoint: 575, 
+                    breakpoint: 481, 
                     settings: {
                         slidesToShow: 1,
                     }
@@ -286,7 +303,7 @@
         $(selector).toggleClass('show').find('.search-input').focus();
     });
 
-    // // Disable right-click
+    // Disable right-click
     document.addEventListener('contextmenu', (e) => e.preventDefault());
     function ctrlShiftKey(e, keyCode) {
         return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);

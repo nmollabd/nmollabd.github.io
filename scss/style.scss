@@ -335,8 +335,131 @@ BEFORE-GRADIENT STYLES
 }
 
 /***********************************
-HERO-SECTION STYLE
+SERVICES STYLE
 ***********************************/
+.s-page-banner {
+	z-index: 1;
+	overflow: hidden;
+	position: relative;
+	padding: 245px 0 200px;
+
+	&:before {
+		top: 0;
+		left: 0;
+		width: 100%;
+		content: '';
+		z-index: -3;
+		height: 100%;
+		position: absolute;
+		background: url(../images/pexels-fox-1595385.jpg) no-repeat center / cover;
+	}
+
+	&:after {
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    z-index: -2;
+	    content: '';
+	    height: 100%;
+	    opacity: 0.6;
+	    position: absolute;
+	    background-color: #757a89;
+	}
+
+	&__content {
+		position: relative;
+
+		.transparent-text {
+			top: 50%;
+			left: 50%;
+			z-index: -1;
+			opacity: 0.3;
+			font-size: 200px;
+			font-weight: 700;
+			line-height: 100px;
+			position: absolute;
+			white-space: nowrap;
+			text-transform: uppercase;
+			transform: translate(-50%, -50%);
+			-webkit-text-stroke: transparent;
+			-webkit-text-stroke-width: 1.5px;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-color: $orange;
+		}
+
+		.title {
+			color: $white;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+		}
+
+		.description {
+			max-width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+
+			p {
+				color: $white;
+			}
+		}
+	}
+
+	.breadcrumb-wrapper {
+		padding: 0;
+		max-width: 174px;
+		margin-top: 20px;
+		margin-left: auto;
+		text-align: center;
+		margin-right: auto;
+		background: #ffaa17;
+
+		.breadcrumb {
+			border-bottom: 0;
+			padding: 20px 25px;
+
+			a {
+				font-family: $oswald;
+				text-transform: uppercase;
+				@include letter-spacing(15, 16);
+			}
+
+			.angle-right {
+				line-height: 22px;
+			}
+
+			.current-page {
+				color: $black;
+				text-transform: uppercase;
+				@include letter-spacing(15, 16);
+			}
+		}
+	}
+
+	&__shape {
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 220px;
+		position: absolute;
+		background-color: transparent;
+
+		svg {
+			left: 50%;
+			height: 225px;
+			display: block;
+			position: relative;
+			width: calc(125% + 1.3px);
+			@include transform(translateX(-50%));
+
+			path {
+			    fill: #ffffff;
+			    transform-origin: center;
+			    @include transform(rotateY(0deg));
+			}
+		}
+	}
+}
+
 /***********************************
 BANNER STYLES
 ***********************************/
@@ -359,6 +482,14 @@ BANNER STYLES
 		filter: brightness(0.8);
 	    animation: pulse 10s ease-in-out infinite;
 		background: url(../images/footer_vector.png) no-repeat center / cover;
+    }
+
+    &:after {
+		top: 0;
+		left: 0;
+		position: absolute;
+	    filter: grayscale(1);
+		content: url(../images/line.png);
     }
 
 	&__content {
@@ -2067,64 +2198,109 @@ SERVICE SINGLE STYLE
 /***********************************
 TESTIMONIAL-SECTION STYLE
 ***********************************/
-.testimonial-section {
-	padding: 100px 0;
+.team-slider {
+	overflow: hidden;
 	position: relative;
-	background-size: cover!important;
-	background-repeat: no-repeat!important;
-	background-image: url(../images/testimonial-bg.png);
+	padding: 50px 0 70px;
+	background: transparent;
 
-	.circle-vector {
-		position: absolute;
-		top: 10%;
-		left: 15%;
-		width: 100px;
+	.container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.entry-title {
+
+		.title {
+			color: $white;
+		}
 	}
 
 	.slick-slide {
-		margin-left: 30px;
+		margin-left: 20px;
 	}
 
 	.slick-list {
-		margin-left: -30px;
-		box-sizing: initial;
-		padding-top: 8px;
-		padding-bottom: 8px;
-		padding-right: 8px;
+		margin-left: -20px;
+		box-sizing: border-box;
 	}
 
 	.slider-area {
 		overflow: hidden;
 
 		.single-slide {
-			padding: 20px;
-			background-color: $white;
-			box-shadow: 0px 10px 20px 0px rgba(176, 176, 176, 0.1);
+			padding: 0;
+			background-color: transparent;
 
-			.description {
-				margin-bottom: 30px;
+			&__item {
+				display: block;
+				position: relative;
 
-				p {
-					font-weight: 500;
+				.media {
+					overflow: hidden;
+					position: relative;
+					@include border-radius(24px);
+
+					img {
+						width: 100%;
+						height: auto;
+						@include transition(all 0.3s ease);
+					}
+
+					&:before {
+						top: 0;
+						left: 0;
+						width: 100%;
+						z-index: 1;
+						content: '';
+						opacity: 0.7;
+						height: 100%;
+						position: absolute;
+						background-color: #757a89;
+					}
 				}
-			}
 
-			.slide-bottom {
-
-				img {
-					width: 90px;
-					float: right;
-				}
-
-				.designation {
+				.text {
+					left: 0;
+					bottom: 0;
+					z-index: 2;
+					padding: 30px;
+					position: absolute;
 
 					.name {
-						margin-bottom: 0;
+						color: $white;
+						margin-bottom: 5px;
+						@include transition(all 0.3s ease);
 					}
 
 					.position {
+						color: $orange;
 						display: block;
-						margin-top: 6px;
+						font-size: 18px;
+						margin-bottom: 0;
+						line-height: 28px;
+						font-family: $oswald;
+						text-transform: uppercase;
+					}
+				}
+
+				&:any-link {
+
+					&:hover, &:focus {
+
+						.media {
+
+							img {
+								@include transform(scale(1.2));
+							}
+						}
+
+						.text {
+							
+							.name {
+								color: $success;
+							}
+						}
 					}
 				}
 			}
@@ -2145,13 +2321,13 @@ TESTIMONIAL-SECTION STYLE
 				font-size: 0;
 				border: none;
 				border-radius: 50%;
-				background-color: #221b68;
+				background-color: $white;
 			}
 
 			&.slick-active {
 
 				button {
-					background-color: #6930c3;
+					background-color: $orange;
 				}
 			}
 		}
@@ -2427,6 +2603,18 @@ TESTIMONIAL-SECTION STYLE
 					}
 				}
 			}
+		}
+	}
+}
+
+.latetest-post {
+	padding: 90px 0;
+
+	.entry-title {
+
+		.sub-title {
+			color: #ffaa17;
+			margin-bottom: 10px;
 		}
 	}
 }
@@ -2988,6 +3176,10 @@ FOOTER STYLES
     			}
     		}
     	}
+    }
+
+    &.default {
+    	background: $white;
     }
 }
 
