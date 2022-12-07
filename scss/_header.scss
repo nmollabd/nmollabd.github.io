@@ -24,7 +24,7 @@ HEADER STYLES
     z-index: 1030;
     position: fixed;
     background: #FFF;
-    padding: 20.88px 0;
+    padding: 40px 0;
     @include transition(all 0.5s ease);
 
     .container {
@@ -94,7 +94,7 @@ HEADER STYLES
                                 display: inline-flex;
                                 justify-content: center;
                                 background: transparent;
-                                border: 2px solid $white;
+                                border: 2px solid $primary;
                                 @include border-radius(500px);
                                 @include transition(all 0.3s ease);
 
@@ -358,6 +358,19 @@ HEADER STYLES
 
                             > a {
                                 color: #ffaa17;
+                            }
+                        }
+                    }
+
+                    &.navbar-nav--right {
+
+                        li {
+
+                            &.has-border {
+
+                                > a {
+                                    border-color: $white;
+                                }
                             }
                         }
                     }
