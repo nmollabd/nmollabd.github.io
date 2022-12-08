@@ -3176,50 +3176,6 @@ BANNER STYLES
   color: #FFFFFF !important;
 }
 
-.about-section {
-  padding: 90px 0;
-  position: relative;
-}
-.about-section .left-content .media-content {
-  position: relative;
-  z-index: 100;
-}
-.about-section .left-content .media-content .bottom-media {
-  width: 220px;
-  right: -150px;
-  bottom: -76px;
-  position: absolute;
-}
-.about-section .left-content .media-content .bottom-media .media {
-  overflow: hidden;
-  border-radius: 36px;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-}
-.about-section .right-content .title {
-  margin-bottom: 40px;
-}
-.about-section .right-content .task-list {
-  padding: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(176, 176, 176, 0.1);
-          box-shadow: 0px 10px 20px 0px rgba(176, 176, 176, 0.1);
-}
-.about-section .right-content .task-list:not(:last-child) {
-  margin-bottom: 20px;
-}
-.about-section .right-content .task-list .media {
-  margin-right: 15px;
-}
-
 .our-project {
   padding: 90px 0;
 }
@@ -3361,6 +3317,87 @@ BANNER STYLES
   -moz-transform: translate3d(0, 0, 0);
   background: -webkit-gradient(linear, left top, left bottom, from(#e0f1ff), to(#f3ebff));
   background: linear-gradient(#e0f1ff 0%, #f3ebff 100%);
+}
+
+.case-study {
+  padding: 90px 0;
+}
+.case-study .mbm-30 {
+  margin-bottom: -30px;
+}
+.case-study .case-study-box {
+  z-index: 1;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+.case-study .case-study-box:before {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  content: "";
+  z-index: -2;
+  height: 100%;
+  visibility: hidden;
+  position: absolute;
+  background-color: #757a89;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.case-study .case-study-box .media {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -2;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.case-study .case-study-box .text {
+  bottom: 0;
+  opacity: 0;
+  z-index: 2;
+  left: -80px;
+  visibility: hidden;
+  position: absolute;
+  padding: 30px 40px;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.case-study .case-study-box .text .sub-title {
+  color: #ffaa17;
+  font-weight: 700;
+  padding-left: 50px;
+  position: relative;
+  margin-bottom: 5px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+.case-study .case-study-box .text .sub-title:before {
+  left: 0;
+  top: 50%;
+  content: "";
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  background-color: #ffaa17;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.case-study .case-study-box:hover .media, .case-study .case-study-box:focus .media {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.case-study .case-study-box:hover .text, .case-study .case-study-box:focus .text {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 /***********************************
@@ -5011,6 +5048,9 @@ FOOTER STYLES
   .latetest-post {
     padding: 70px 0;
   }
+  .case-study {
+    padding: 70px 0;
+  }
   /***********************************
   FOOTER STYLE
   ***********************************/
@@ -5220,6 +5260,12 @@ FOOTER STYLES
   .team-slider .slick-list {
     margin-left: -8px;
     margin-right: -8px;
+  }
+  .case-study {
+    padding: 60px 0;
+  }
+  .case-study .case-study-box {
+    margin-bottom: 25px;
   }
   /***********************************
   FOOTER STYLE
@@ -5485,6 +5531,17 @@ select, textarea {
   }
   .team-slider .slider-area .single-slide__item .text .position {
     text-transform: capitalize;
+  }
+  .case-study {
+    padding: 50px 0;
+    padding-bottom: 50px !important;
+  }
+  .case-study .case-study-box {
+    margin-bottom: 20px;
+  }
+  .case-study .case-study-box .text .sub-title {
+    margin-bottom: 0;
+    padding-left: 40px;
   }
   /***********************************
   FOOTER STYLE

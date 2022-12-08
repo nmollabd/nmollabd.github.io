@@ -231,6 +231,10 @@
 		padding: 70px 0;
 	}
 
+	.case-study {
+		padding: 70px 0;
+	}
+
 	/***********************************
 	FOOTER STYLE
 	***********************************/
@@ -601,6 +605,15 @@
 		.slick-list {
 			margin-left: -8px;
 			margin-right: -8px;
+		}
+	}
+
+	.case-study {
+		padding: 60px 0;
+		// padding-bottom: 60px !important;
+
+		.case-study-box {
+		    margin-bottom: 25px;
 		}
 	}
 
@@ -1067,6 +1080,23 @@
 					}
 				}
 			}
+		}
+	}
+
+	.case-study {
+		padding: 50px 0;
+		padding-bottom: 50px !important;
+
+		.case-study-box {
+		    margin-bottom: 20px;
+
+		    .text {
+
+		    	.sub-title {
+		    		margin-bottom: 0;
+		    		padding-left: 40px;
+		    	}
+		    }
 		}
 	}
 
