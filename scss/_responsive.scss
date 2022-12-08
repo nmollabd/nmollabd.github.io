@@ -227,6 +227,10 @@
 	    padding-bottom: 70px;
 	}
 
+	.latetest-post {
+		padding: 70px 0;
+	}
+
 	/***********************************
 	FOOTER STYLE
 	***********************************/
@@ -571,6 +575,33 @@
 	    &__media {
 	    	margin-bottom: 20px;
 	    }
+	}
+
+	.latetest-post {
+		padding: 60px 0;
+
+		&__item {
+
+			.meta {
+
+				.media {
+				    margin-bottom: 15px;
+				}
+			}
+		}
+	}
+
+	.team-slider {
+
+		.slick-slide {
+			margin-right: 8px;
+			margin-left: 8px;
+		}
+
+		.slick-list {
+			margin-left: -8px;
+			margin-right: -8px;
+		}
 	}
 
 	/***********************************
@@ -984,6 +1015,61 @@
 	    }
 	}
 
+	.latetest-post {
+		padding: 50px 0;
+
+		&__item {
+
+			.meta {
+
+				.media {
+				    margin-bottom: 10px;
+				}
+			}
+
+			.content {
+
+				.title {
+				    font-size: 26px;
+				    line-height: 36px;
+				}
+			}
+		}
+	}
+
+	.team-slider {
+		padding: 50px 0;
+
+		.slick-slide {
+			margin-right: 8px;
+			margin-left: 8px;
+		}
+
+		.slick-list {
+			margin-left: -8px;
+			margin-right: -8px;
+		}
+
+		.slider-area {
+
+			.single-slide__item {
+
+				.text {
+
+					.name {
+						font-size: 20px;
+					    margin-bottom: 0;
+						line-height: 28px;
+					}
+
+					.position {
+						text-transform: capitalize;
+					}
+				}
+			}
+		}
+	}
+
 	/***********************************
 	FOOTER STYLE
 	***********************************/
@@ -1380,6 +1466,23 @@
 
 	.b-page-banner {
 		padding: 40px 0;
+	}
+
+	.latetest-post {
+
+		&__item {
+
+			.content {
+
+				.title {
+				    margin-bottom: 0;
+				}
+
+				.btn {
+					margin-top: 15px;
+				}
+			}
+		}
 	}
 	/***********************************
 	FOOTER STYLE
