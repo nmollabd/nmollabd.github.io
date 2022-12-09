@@ -2738,6 +2738,83 @@ SERVICES STYLE
   transform: rotateY(0deg);
 }
 
+.framework {
+  padding: 90px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2f9ff), to(#f8f4ff));
+  background: linear-gradient(#f2f9ff 0%, #f8f4ff 100%);
+}
+.framework .framework-list {
+  margin-top: 30px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.framework .framework-list .nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0 !important;
+}
+.framework .framework-list .nav-item .nav-link {
+  padding: 0 !important;
+}
+.framework .framework-list .nav-item .nav-link .icon {
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 40px;
+  line-height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 500px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.framework .framework-list .nav-item .nav-link .icon img {
+  mix-blend-mode: multiply;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.framework .framework-list .nav-item .nav-link.active {
+  background: transparent;
+}
+.framework .framework-list .nav-item .nav-link.active .icon {
+  color: #FFFFFF !important;
+  background-color: #ffaa17 !important;
+}
+.framework .framework-list .nav-item .text .title {
+  color: #221b68;
+}
+.framework__content .sub-title {
+  color: #ffaa17;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.24px;
+}
+.framework__content .title {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.framework__content .tab-content .tab-pane .description p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  font-family: "Oswald", sans-serif;
+}
+
 /***********************************
 BANNER STYLES
 ***********************************/
