@@ -65,16 +65,29 @@
 
 				<div class="collapse navbar-collapse justify-content-end">
 					<ul class="navbar-nav">
-						<li><a href="index.html">home</a></li>
+						<li><a href="index.html">Home</a></li>
 						<li class="cuurent-menu-item"><a href="about.html">About Us</a></li>
 						<li><a href="blog.html">blog</a></li>
-						<li><a href="pages.html">Pages</a></li>
+						<li><a href="services.html">Services</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 
 					<ul class="navbar-nav navbar-nav--right">
-						<li class="btn-menu"><a href="#">Hire Me</a></li>
-						<li class="mobile-navbar-toggler">
+						<li class="has-border header-search">
+							<a class="search-toggle" data-selector=".header-search">
+								<span class="icon-search"></span>
+							</a>
+
+							<form class="search-box" action="#" method="get">
+							    <div class="form-group d-flex align-items-center">
+							    	<input type="search" name="s" value="" class="search-input" id="search" placeholder="Search">
+							    	<button type="submit" class="search-submit"><i class="icon-search"></i></button>
+							    </div>
+							</form>
+						</li>
+						<li class="btn-menu"><a href="#">About Me</a></li>
+
+						<li class="mobile-navbar-toggler d-xl-none">
 							<a href="#sidr" class="navbar-toggle">
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
@@ -89,6 +102,7 @@
 	<div class="header-gutter"></div><!-- header-gutter -->
 
     <div id="primary" class="content-area">
+
     	<section class="awards">
     		<div class="container">
     			<div class="row">
