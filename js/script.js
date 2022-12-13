@@ -414,23 +414,43 @@
         direction: "next",
     });
 
-    // Disable right-click
-    document.addEventListener('contextmenu', (e) => e.preventDefault());
-    function ctrlShiftKey(e, keyCode) {
-        return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
-    }
+    // // Disable right-click
+    // document.addEventListener('contextmenu', (e) => e.preventDefault());
+    // function ctrlShiftKey(e, keyCode) {
+    //     return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+    // }
 
-    document.onkeydown = (e) => {
-        // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+    // document.onkeydown = (e) => {
+    //     // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
 
-        if (
-            event.keyCode === 123 ||
-            ctrlShiftKey(e, 'I') ||
-            ctrlShiftKey(e, 'J') ||
-            ctrlShiftKey(e, 'C') ||
-            (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
-        )
+    //     if (
+    //         event.keyCode === 123 ||
+    //         ctrlShiftKey(e, 'I') ||
+    //         ctrlShiftKey(e, 'J') ||
+    //         ctrlShiftKey(e, 'C') ||
+    //         (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+    //     )
 
-        return false;
-    };
+    //     return false;
+    // };
 }(jQuery));
+
+$(document).ready(function() {
+    // Users can skip the loading process if they want.
+    $('.skip').click(function() {
+        $('.overlay, body').addClass('loaded');
+    })
+    
+    // Will wait for everything on the page to load.
+    $(window).bind('load', function() {
+        $('.overlay, body').addClass('loaded');
+        setTimeout(function() {
+            $('.overlay').css({'display':'none'})
+        }, 2000)
+    });
+    
+    // Will remove overlay after 1min for users cannnot load properly.
+    setTimeout(function() {
+        $('.overlay, body').addClass('loaded');
+    }, 60000);
+})

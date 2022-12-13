@@ -1938,8 +1938,15 @@ BANNER STYLES
 }
 
 .carouselticker-slider {
-	padding: 80px 0;
+	padding: 140px 0 100px;
 	background: $white;
+
+	.map-overlay {
+	    top: 50%;
+	    left: 50%;
+	    position: absolute;
+	    @include transform(translate(-50%, -50%));
+	}
 }
 
 .carouselTicker {

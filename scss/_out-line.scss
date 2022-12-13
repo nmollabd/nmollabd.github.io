@@ -58,67 +58,234 @@ MOUSE-CURSOR STYLES
 /***********************************
 PRELOADER-INNER STYLE
 ***********************************/
-.preloader-inner {
+.overlay {
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
     position: fixed;
-    z-index: 9999999999;
-    align-items: center;
-    justify-content: center;
-    background-color: #000000;
+    z-index: 100000000;
 
-    .cancel-preloader {
-        right: 30px;
-        bottom: 30px;
-        position: absolute;
+    .overlayDoor {
 
-        a {
-            height: 50px;
-            width: 200px;
-            display: block;
-            color: #6930c3;
-            font-weight: 600;
-            line-height: 50px;
-            text-align: center;
-            border-radius: 30px;
-            background-color: $white;
-            text-transform: capitalize;
-            @include transition(all 0.3s ease-in);
+        &:before, &:after {
+            width: 50%;
+            content: "";
+            height: 100%;
+            background: $white;
+            position: absolute;
+            transition-delay: .8s;
+            transition: .5s cubic-bezier(.77,0,.18,1);
+        }
 
-            &:hover, &:focus {
-                color: $white;
-                background-color: #221b68;
-            }
+        &:before {
+            left: 0;
+        }
+
+        &:after {
+            right: 0;
         }
     }
 
- 	.spinner {
-     	width: 100%;
-     	height: auto;
-     	text-align: center;
+    &.loaded {
 
-     	> div {
-			width: 15px;
-			height: 15px;
-			display: inline-block;
-			background-color: $success;
-			@include border-radius(500px);
-            animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-	    }
+        .overlayDoor {
 
-	    .bounce1 {
-	        animation-delay: -0.50s;
-	    	background-color: $primary;
-	    }
+            &:before {
+                left: -50%;
+            }
 
-	    .bounce2 {
-	        animation-delay: -0.30s;
-	        background-color: $danger;
-	    }
-	}
+            &:after {
+                right: -50%;
+            }
+        }
+
+        .overlayContent {
+            opacity: 0;
+            margin-top: -15px;
+        }
+    }
+
+    .overlayContent {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        transition: .5s cubic-bezier(.77,0,.18,1);
+
+        .skip {
+            color: #ffaa17;
+            display: block;
+            font-weight: 700;
+            margin-top: 10px;
+            text-align: center;
+            font-family: $oswald;
+            @include transition(all 0.5s ease);
+        }
+    }
+}
+
+.loader {
+    width: 128px;
+    height: 128px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #ffaa17;
+    @include border-radius(500px);
+    animation: spin 1s linear infinite;
+    border-bottom: 3px solid transparent;
+
+    .inner {
+        width: 64px;
+        height: 64px;
+        border: 3px solid transparent;
+        border-top: 3px solid #ffaa17;
+        @include border-radius(500px);
+        animation: spinInner 1s linear infinite;
+    }
+}
+
+.loading {
+    font-size: 18px;
+    margin-top: 10px;
+    overflow: hidden;
+    font-weight: 700;
+    line-height: 28px;
+    position: relative;
+    font-family: $oswald;
+    text-transform: capitalize;
+    @include letter-spacing(125, 18);
+    
+    &:before {
+        color: #000;
+        content: attr(data-loading-text);
+    }
+    
+    &:after {
+        top: 0;
+        left: 0;
+        width: 0;
+        opacity: 1;
+        color: #ffaa17;
+        overflow: hidden;
+        position: absolute;
+        content: attr(data-loading-text);
+        animation: loading 5s infinite;
+    }
+    
+    @keyframes loading {
+
+        0% { 
+            width: 0; 
+        }
+
+        100% {
+            width: 100%; 
+        }
+    }
+}
+
+.loading-text {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: row;
+
+    &__letter {
+        color: #fec468;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58px;
+        font-family: $oswald;
+        animation-name: bounce;
+        animation-duration: 2s;
+        text-transform: uppercase;
+        @include letter-spacing(125, 48);
+        animation-iteration-count: infinite;
+
+        span {
+            background-size: 100px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: color 10s linear infinite;
+            background-image: linear-gradient(to left, $orange, #fec468, #ffaa17, #CB633D, #6930c3, #221b68, $orange);
+        }
+
+        &:nth-child(2) {
+            animation-delay: .1s; 
+        }
+
+        &:nth-child(3) {
+            animation-delay: .2s;
+        }
+
+        &:nth-child(4) {
+            animation-delay: .3s; 
+        }
+
+        &:nth-child(5) {
+            animation-delay: .4s;
+        }
+
+        &:nth-child(6) {
+            animation-delay: .5s; 
+        }
+
+        &:nth-child(7) {
+            animation-delay: .6s;
+        }
+
+        &:nth-child(8) {
+            animation-delay: .8s;
+        }
+
+        &:nth-child(9) {
+            animation-delay: 1s;
+        }
+    }
+}
+
+@keyframes color {
+    100% {
+        background-position: -1000px;
+    }
+}
+
+@keyframes bounce {
+
+    0% {
+        transform: translateY(0px)
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    80%, 100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinInner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-720deg);
+    }
 }
 
 /***********************************
@@ -271,148 +438,16 @@ PAGE-BANNER SCROLL STYLE
 /***********************************
 PAGE LOAD ANIMATION
 ***********************************/
-.preloader {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: default;
-  position: fixed;
-  z-index: 9999999;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.preloader .animation-preloader {
-  z-index: 1000;
-}
-.preloader .animation-preloader .spinner {
-  -webkit-animation: spinner 1s infinite linear;
-          animation: spinner 1s infinite linear;
-  border-radius: 50%;
-  border: 3px solid rgba(0, 0, 0, 0.2);
-  border-top-color: #342;
-  height: 9em;
-  margin: 0 auto 3.5em auto;
-  width: 9em;
-}
-@media (max-width: 767px) {
-  .preloader .animation-preloader .spinner {
-    width: 7.5em;
-    height: 7.5em;
-    margin: 0 auto 1.5em auto;
+@-webkit-keyframes spinner {
+  to {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
   }
 }
-.preloader .animation-preloader .txt-loading {
-  font-size: 80px;
-  line-height: 118px;
-  text-align: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  font-weight: 700;
-}
-@media (max-width: 767px) {
-  .preloader .animation-preloader .txt-loading {
-    font-size: 50px;
-    line-height: 77px;
-  }
-}
-@media (max-width: 575px) {
-  .preloader .animation-preloader .txt-loading {
-    font-size: 36px;
-    line-height: 58px;
-  }
-}
-.preloader .animation-preloader .txt-loading .letters-loading {
-  color: #EF0548;
-  position: relative;
-}
-.preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-.preloader .animation-preloader .txt-loading .letters-loading:nth-child(3):before {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-.preloader .animation-preloader .txt-loading .letters-loading:nth-child(4):before {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-.preloader .animation-preloader .txt-loading .letters-loading:nth-child(5):before {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-.preloader .animation-preloader .txt-loading .letters-loading:nth-child(6):before {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.preloader .animation-preloader .txt-loading .letters-loading:nth-child(7):before {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-}
-.preloader .animation-preloader .txt-loading .letters-loading:nth-child(8):before {
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
-}
-.preloader .animation-preloader .txt-loading .letters-loading::before {
-  -webkit-animation: letters-loading 4s infinite;
-          animation: letters-loading 4s infinite;
-  color: #4069FF;
-  content: attr(data-text-preloader);
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  top: -3px;
-  -webkit-transform: rotateY(-90deg);
-          transform: rotateY(-90deg);
-}
-.preloader p {
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 8px;
-  color: #243342;
-}
-.preloader .loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  font-size: 0;
-  z-index: 1;
-  pointer-events: none;
-}
-.preloader .loader .row {
-  height: 100%;
-}
-.preloader .loader .loader-section {
-  padding: 0px;
-}
-.preloader .loader .loader-section .bg {
-  background-color: #fff;
-  height: 100%;
-  left: 0;
-  width: 100%;
-  -webkit-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
-  transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
-}
-.preloader.loaded .animation-preloader {
-  opacity: 0;
-  -webkit-transition: 0.3s ease-out;
-  transition: 0.3s ease-out;
-}
-.preloader.loaded .loader-section .bg {
-  width: 0;
-  -webkit-transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
-  transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
+
+@keyframes spinner {
+
+    to {
+        transform: rotateZ(360deg);
+    }
 }
