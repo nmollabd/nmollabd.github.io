@@ -259,6 +259,10 @@ $success: #51BC70;
 	}
 }
 
+.mr-10 {
+	margin-right: 10px;
+}
+
 /***********************************
     BREADCRUMB STYLES
 ***********************************/
@@ -854,7 +858,7 @@ SERVICES STYLE
 	overflow: hidden;
 	position: relative;
 	padding: 245px 0 200px;
-    background: linear-gradient(#f2f9ff 0%, #f8f4ff 100%);
+    // background: linear-gradient(#f2f9ff 0%, #f8f4ff 100%);
 
 	&:before {
 		top: 0;
@@ -965,7 +969,7 @@ SERVICES STYLE
 			@include transform(translateX(-50%));
 
 			path {
-			    fill: #f2f9ff;
+			    fill: $white;
 			    transform-origin: center;
 			    @include transform(rotateY(0deg));
 			}
@@ -1081,6 +1085,172 @@ SERVICES STYLE
     		}
     	}
     }
+}
+
+.s-latetest-post {
+	padding: 90px 0;
+	overflow: hidden;
+	position: relative;
+
+	&:before {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		content: '';
+		position: absolute;
+		background: url(../images/latetest-post.png) no-repeat center / cover;
+	}
+
+	.entry-title {
+
+		.sub-title {
+			line-height: 1;
+			display: block;
+			color: #ffaa17;
+			font-size: 16px;
+			font-weight: 700;
+			position: relative;
+			font-family: $oswald;
+			display: inline-block;
+			text-transform: uppercase;
+		}
+	}
+
+	.blog-btn {
+
+		.btn {
+			font-size: 12px;
+			border-radius: 0;
+			line-height: 18px;
+			background: $orange;
+			text-transform: uppercase;
+
+			&:after {
+			    top: 10px;
+			    width: 2px;
+			    right: 10px;
+			    content: '';
+			    height: 10px;
+			    position: absolute;
+			    background-color: #000;
+			    @include transition(all 0.3s ease);
+			}
+
+			&:before {
+				position: absolute;
+				right: 10px;
+				top: 10px;
+				height: 10px;
+				width: 2px;
+				content: '';
+				background-color: #ffaa17;			}
+		}
+	}
+
+	.mbm-20 {
+		margin-bottom: -20px;
+	}
+
+	.post-item {
+	    width: 100%;
+	    padding: 20px;
+		font-size: 14px;
+    	margin-bottom: 20px;
+    	background: transparent;
+		border: 1px solid #e1f3ff;
+    	height: calc(100% - 20px);
+		@include transition(all 0.3s ease);
+
+		.category {
+			margin-bottom: 20px !important;
+
+			li {
+				display: inline-block;
+
+				a {
+					color: $white;
+					font-size: 14px;
+					font-weight: 700;
+					padding: 5px 15px;
+					font-family: $oswald;
+					text-transform: uppercase;
+					background-color: $orange;
+				}
+			}
+		}
+
+		.content {
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid #f1f4f9;
+
+			a {
+
+				.title {
+					color: #000;
+					margin-bottom: 10px;
+					@include transition(all 0.3s ease);
+				}
+			}
+
+			.description {
+
+				p {
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 26px;
+					font-family: $oswald;
+				}
+			}
+		}
+
+		.post-meta {
+			margin-left: -10px;
+			margin-right: -10px;
+
+			li {
+				margin-left: 10px;
+				margin-right: 10px;
+				display: inline-block;
+
+				i {
+				    color: $orange;
+				    margin-right: 5px;
+				}
+
+				a {
+					color: #000;
+					font-size: 12px;
+					font-weight: 700;
+					line-height: 18px;
+					font-family: $oswald;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+		&:hover, &:focus {
+    		border-color: transparent;
+			box-shadow: 0px 16px 32px 0px rgb(28 116 198 / 8%);
+
+			.content {
+
+				a {
+
+					&:any-link {
+
+						&:hover, &:focus {
+
+							.title {
+								color: $orange;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 /***********************************
@@ -1737,7 +1907,7 @@ BANNER STYLES
 			    margin-bottom: 5px;
 			    display: inline-block;
 			    text-transform: uppercase;
-			    font-family: "Oswald", sans-serif;
+			    font-family: $oswald;
 
 				&:before {
 					left: 0;
@@ -1766,6 +1936,50 @@ BANNER STYLES
 		}
 	}
 }
+
+.carouselticker-slider {
+	padding: 80px 0;
+	background: $white;
+}
+
+.carouselTicker {
+
+	&__list {
+		padding: 0;
+		margin: 10px 0;
+		overflow: hidden;
+		list-style-type: none;
+
+		.customers-item {
+			float: left;
+			width: 180px;
+			overflow: hidden;
+			margin-left: 10px;
+			min-height: 136px;
+			padding: 10px 10px;
+			background: #F6F7FB;
+			margin-right: 10px;
+			border-radius: 24px;
+			align-items: center;
+			justify-content: center;
+			display: flex !important;
+			margin-bottom: 10px;
+
+			img {
+				mix-blend-mode: multiply;
+				@include transition(all 0.3s ease);
+			}
+
+			&:hover, &:focus {
+
+				img {
+					@include transform(scale(1.1));
+				}
+			}
+		}
+	}
+}
+
 
 /***********************************
 ABOUT STYLE
@@ -2820,22 +3034,10 @@ TESTIMONIAL-SECTION STYLE
 			font-size: 16px;
 			font-weight: 700;
 			position: relative;
-			margin-left: 40px;
 			margin-bottom: 10px;
 			font-family: $oswald;
 			display: inline-block;
 			text-transform: uppercase;
-
-			&:before {
-				top: 50%;
-				left: -40px;
-				height: 2px;
-				width: 30px;
-				content: '';
-				position: absolute;
-				background-color: $white;
-				@include transform(translateY(-50%));
-			}
 		}
 	}
 }

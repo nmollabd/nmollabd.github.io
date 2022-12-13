@@ -409,6 +409,11 @@
         scrollBar: $blog_wrap.find('.break-room-scrollbar'),
     });
 
+    /*** carouselTicker initail */
+    $(".carouselTicker-start").carouselTicker({
+        direction: "next",
+    });
+
     // Disable right-click
     document.addEventListener('contextmenu', (e) => e.preventDefault());
     function ctrlShiftKey(e, keyCode) {
