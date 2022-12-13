@@ -1,6 +1,6 @@
 /*
 Theme Name: PORTFOLIO
-Author: GoingClear Interactive
+Author: 
 Author URI: https://nmollabd.github.io/
 Version: 1.0.0
 Text Domain: PORTFOLIO
@@ -2631,6 +2631,8 @@ SERVICES STYLE
   overflow: hidden;
   position: relative;
   padding: 245px 0 200px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2f9ff), to(#f8f4ff));
+  background: linear-gradient(#f2f9ff 0%, #f8f4ff 100%);
 }
 .s-page-banner:before {
   top: 0;
@@ -2731,7 +2733,7 @@ SERVICES STYLE
   transform: translateX(-50%);
 }
 .s-page-banner__shape svg path {
-  fill: #ffffff;
+  fill: #f2f9ff;
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-transform: rotateY(0deg);
@@ -2740,34 +2742,36 @@ SERVICES STYLE
 
 .framework {
   padding: 90px 0;
+  overflow: hidden;
+  position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(#f2f9ff), to(#f8f4ff));
   background: linear-gradient(#f2f9ff 0%, #f8f4ff 100%);
 }
 .framework .framework-list {
   margin-top: 30px;
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 .framework .framework-list .nav-item {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
   padding: 0 !important;
 }
 .framework .framework-list .nav-item .nav-link {
   padding: 0 !important;
 }
 .framework .framework-list .nav-item .nav-link .icon {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 40px;
-  line-height: 100px;
+  color: #221b68;
+  font-size: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2781,19 +2785,34 @@ SERVICES STYLE
   transition: all 0.3s ease-out 0s;
 }
 .framework .framework-list .nav-item .nav-link .icon img {
-  mix-blend-mode: multiply;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  max-width: 30px;
+}
+.framework .framework-list .nav-item .nav-link .icon:hover, .framework .framework-list .nav-item .nav-link .icon:focus {
+  color: #FFFFFF;
+  background-color: #ffaa17;
 }
 .framework .framework-list .nav-item .nav-link.active {
   background: transparent;
 }
 .framework .framework-list .nav-item .nav-link.active .icon {
-  color: #FFFFFF !important;
-  background-color: #ffaa17 !important;
+  color: #FFFFFF;
+  background-color: #ffaa17;
 }
 .framework .framework-list .nav-item .text .title {
   color: #221b68;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  font-family: "Oswald", sans-serif;
+}
+.framework__overlay-left {
+  left: -373px;
+  bottom: -140px;
+  position: absolute;
+}
+.framework__overlay-left img {
+  -webkit-animation: our_development 10s ease-in-out infinite;
+          animation: our_development 10s ease-in-out infinite;
 }
 .framework__content .sub-title {
   color: #ffaa17;

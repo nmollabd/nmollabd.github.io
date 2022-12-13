@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
 Theme Name: GUMHOST
-Author: GoingClear Interactive
+Author: 
 Author URI: https://nmollabd.github.io/
 Version: 1.0.0
 Text Domain: GUMHOST
@@ -246,44 +246,28 @@ section {
 
 .icon-cancel:before {
   content: "\e800";
-}
-
-/* '' */
+} /* '' */
 .icon-basket:before {
   content: "\e801";
-}
-
-/* '' */
+} /* '' */
 .icon-user:before {
   content: "\e802";
-}
-
-/* '' */
+} /* '' */
 .icon-mail:before {
   content: "\e803";
-}
-
-/* '' */
+} /* '' */
 .icon-facebook:before {
   content: "\e804";
-}
-
-/* '' */
+} /* '' */
 .icon-google-plus:before {
   content: "\e805";
-}
-
-/* '' */
+} /* '' */
 .icon-instagram:before {
   content: "\e806";
-}
-
-/* '' */
+} /* '' */
 .icon-twitter:before {
   content: "\e807";
-}
-
-/* '' */
+} /* '' */
 *:not(ul):not(ol) {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -932,9 +916,6 @@ HEADER STYLES
   color: #FFFFFF;
   letter-spacing: 0.18px;
 }
-.footer .copyright p a:-webkit-any-link:hover, .footer .copyright p a:-webkit-any-link:focus {
-  color: #3e9ad8;
-}
 .footer .copyright p a:-moz-any-link:hover, .footer .copyright p a:-moz-any-link:focus {
   color: #3e9ad8;
 }
@@ -1027,12 +1008,10 @@ HEADER STYLES
     font-size: 45px;
     line-height: 55px;
   }
-
   .container {
     padding-right: 40px;
     padding-left: 40px;
   }
-
   /***********************************
   HEADER STYLES
   ***********************************/
@@ -1053,7 +1032,6 @@ HEADER STYLES
     font-size: 18px;
     line-height: 27px;
   }
-
   /***********************************
   BANNER STYLES
   ***********************************/
@@ -1076,12 +1054,10 @@ HEADER STYLES
     font-size: 40px;
     line-height: 50px;
   }
-
   .container {
     padding-right: 30px;
     padding-left: 30px;
   }
-
   /***********************************
   HEADER STYLES
   ***********************************/
@@ -1101,12 +1077,10 @@ HEADER STYLES
   .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li.btn-menu a {
     padding: 8px 25px 10px;
   }
-
   .header-gutter {
     height: 103px;
     min-height: 103px;
   }
-
   /***********************************
   BANNER STYLES
   ***********************************/
@@ -1135,12 +1109,10 @@ HEADER STYLES
     font-size: 35px;
     line-height: 45px;
   }
-
   .container {
     padding-right: 20px;
     padding-left: 20px;
   }
-
   /***********************************
   HEADER STYLES
   ***********************************/
@@ -1160,12 +1132,10 @@ HEADER STYLES
   .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(3), .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(4) {
     display: none;
   }
-
   .header-gutter {
     height: 80px;
     min-height: 80px;
   }
-
   /***********************************
   BANNER STYLES
   ***********************************/
@@ -1205,12 +1175,10 @@ HEADER STYLES
     font-size: 30px;
     line-height: 40px;
   }
-
   .container {
     padding-right: 15px;
     padding-left: 15px;
   }
-
   /***********************************
   HEADER STYLES
   ***********************************/
@@ -1224,7 +1192,6 @@ HEADER STYLES
   .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav--right) > li:nth-child(5) {
     display: none;
   }
-
   /***********************************
       BANNER STYLES
   ***********************************/
@@ -1258,7 +1225,6 @@ HEADER STYLES
     margin-top: 20px;
     padding: 9px 40px;
   }
-
   .footer {
     display: block;
   }
@@ -1268,14 +1234,12 @@ HEADER STYLES
     font-size: 25px;
     line-height: 35px;
   }
-
   /***********************************
   BANNER STYLES
   ***********************************/
   .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li.btn-menu {
     display: none;
   }
-
   /***********************************
   BANNER STYLES
   ***********************************/

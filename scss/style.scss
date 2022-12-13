@@ -1,6 +1,6 @@
 /*
 Theme Name: PORTFOLIO
-Author: GoingClear Interactive
+Author: 
 Author URI: https://nmollabd.github.io/
 Version: 1.0.0
 Text Domain: PORTFOLIO
@@ -854,6 +854,7 @@ SERVICES STYLE
 	overflow: hidden;
 	position: relative;
 	padding: 245px 0 200px;
+    background: linear-gradient(#f2f9ff 0%, #f8f4ff 100%);
 
 	&:before {
 		top: 0;
@@ -964,7 +965,7 @@ SERVICES STYLE
 			@include transform(translateX(-50%));
 
 			path {
-			    fill: #ffffff;
+			    fill: #f2f9ff;
 			    transform-origin: center;
 			    @include transform(rotateY(0deg));
 			}
@@ -974,37 +975,43 @@ SERVICES STYLE
 
 .framework {
 	padding: 90px 0;
+	overflow: hidden;
+	position: relative;
 	background: linear-gradient(#f2f9ff 0%, #f8f4ff 100%);
 
     .framework-list {
     	margin-top: 30px;
-    	margin-left: -10px;
-    	margin-right: -10px;
+    	margin-left: -8px;
+    	margin-right: -8px;
 
     	.nav-item {
-    		margin-left: 10px;
-    		margin-right: 10px;
+    		margin-left: 8px;
+    		margin-right: 8px;
 			padding: 0 !important;
 
     		.nav-link {
     			padding: 0 !important;
 
     			.icon {
-					width: 100px;
-					height: 100px;
+					width: 70px;
+					height: 70px;
 					display: flex;
-				    font-size: 40px;
-					line-height: 100px;
+    				color: $primary;
+				    font-size: 20px;
 					align-items: center;
-					margin-bottom: 15px;
+					margin-bottom: 10px;
 					justify-content: center;
 					background-color: $white;
 					@include border-radius(500px);
 					@include transition(all 0.3s ease-out 0s);
 
 					img {
-					    mix-blend-mode: multiply;
-					    @include transition(all 0.3s ease);
+						max-width: 30px;
+					}
+
+					&:hover, &:focus {
+						color: $white;
+						background-color: #ffaa17;
 					}
     			}
 
@@ -1012,8 +1019,8 @@ SERVICES STYLE
 					background: transparent;
 
 					.icon {
-					    color: $white !important;
-					    background-color: #ffaa17 !important;
+					    color: $white;
+					    background-color: #ffaa17;
 					}
 				}
     		}
@@ -1022,8 +1029,22 @@ SERVICES STYLE
 
     			.title {
     				color: $primary;
+    				font-size: 12px;
+    				font-weight: 700;
+    				line-height: 18px;
+    				font-family: $oswald;
     			}
     		}
+    	}
+    }
+
+    &__overlay-left {
+    	left: -373px;
+    	bottom: -140px;
+    	position: absolute;
+
+    	img {
+		    animation: our_development 10s ease-in-out infinite;
     	}
     }
 

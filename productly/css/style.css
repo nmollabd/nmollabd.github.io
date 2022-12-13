@@ -1,6 +1,6 @@
 /*
 Theme Name: Productly
-Author: GoingClear Interactive
+Author: 
 Author URI: https://nmollabd.github.io/
 Version: 1.0.0
 Text Domain: productly
@@ -403,11 +403,6 @@ HEADER STYLES
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li.sign-in a:-webkit-any-link:hover, .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li.sign-in a:-webkit-any-link:focus {
-  color: #FFFFFf;
-  background: #FF9900;
-  border-color: #FF9900;
-}
 .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li.sign-in a:-moz-any-link:hover, .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li.sign-in a:-moz-any-link:focus {
   color: #FFFFFf;
   background: #FF9900;
@@ -428,10 +423,6 @@ HEADER STYLES
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-.header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li.sign-up a:-webkit-any-link:hover, .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li.sign-up a:-webkit-any-link:focus {
-  color: #2F281E;
-  background: #BCD0E5;
 }
 .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li.sign-up a:-moz-any-link:hover, .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li.sign-up a:-moz-any-link:focus {
   color: #2F281E;
@@ -619,11 +610,6 @@ HEADER STYLES
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.sidr .navigation .navbar-nav.navbar-nav-right li.sign-in a:-webkit-any-link:hover, .sidr .navigation .navbar-nav.navbar-nav-right li.sign-in a:-webkit-any-link:focus {
-  color: #FFFFFf;
-  background: #FF9900;
-  border-color: #FF9900;
-}
 .sidr .navigation .navbar-nav.navbar-nav-right li.sign-in a:-moz-any-link:hover, .sidr .navigation .navbar-nav.navbar-nav-right li.sign-in a:-moz-any-link:focus {
   color: #FFFFFf;
   background: #FF9900;
@@ -644,10 +630,6 @@ HEADER STYLES
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-.sidr .navigation .navbar-nav.navbar-nav-right li.sign-up a:-webkit-any-link:hover, .sidr .navigation .navbar-nav.navbar-nav-right li.sign-up a:-webkit-any-link:focus {
-  color: #2F281E;
-  background: #BCD0E5;
 }
 .sidr .navigation .navbar-nav.navbar-nav-right li.sign-up a:-moz-any-link:hover, .sidr .navigation .navbar-nav.navbar-nav-right li.sign-up a:-moz-any-link:focus {
   color: #2F281E;
@@ -989,19 +971,12 @@ select:focus, textarea:hover, textarea:focus {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.sticky-contact:-webkit-any-link:hover i, .sticky-contact:-webkit-any-link:focus i {
-  -webkit-animation: shake 0.5s forwards;
-          animation: shake 0.5s forwards;
-}
 .sticky-contact:-moz-any-link:hover i, .sticky-contact:-moz-any-link:focus i {
   animation: shake 0.5s forwards;
 }
 .sticky-contact:any-link:hover i, .sticky-contact:any-link:focus i {
   -webkit-animation: shake 0.5s forwards;
           animation: shake 0.5s forwards;
-}
-.sticky-contact:-webkit-any-link:hover span, .sticky-contact:-webkit-any-link:focus span {
-  text-decoration: underline;
 }
 .sticky-contact:-moz-any-link:hover span, .sticky-contact:-moz-any-link:focus span {
   text-decoration: underline;
@@ -1095,18 +1070,11 @@ BANNER STYLES
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.banner__card:-webkit-any-link:hover .icon, .banner__card:-webkit-any-link:focus .icon {
-  color: #BCD0E5;
-}
 .banner__card:-moz-any-link:hover .icon, .banner__card:-moz-any-link:focus .icon {
   color: #BCD0E5;
 }
 .banner__card:any-link:hover .icon, .banner__card:any-link:focus .icon {
   color: #BCD0E5;
-}
-.banner__card:-webkit-any-link:hover span, .banner__card:-webkit-any-link:focus span {
-  color: #BCD0E5;
-  text-decoration: none;
 }
 .banner__card:-moz-any-link:hover span, .banner__card:-moz-any-link:focus span {
   color: #BCD0E5;
@@ -1366,10 +1334,6 @@ BANNER STYLES
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.marketing__card:-webkit-any-link:hover .media img, .marketing__card:-webkit-any-link:focus .media img {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
 .marketing__card:-moz-any-link:hover .media img, .marketing__card:-moz-any-link:focus .media img {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
@@ -1377,9 +1341,6 @@ BANNER STYLES
 .marketing__card:any-link:hover .media img, .marketing__card:any-link:focus .media img {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
-}
-.marketing__card:-webkit-any-link:hover .text .title, .marketing__card:-webkit-any-link:focus .text .title {
-  color: #FF9900;
 }
 .marketing__card:-moz-any-link:hover .text .title, .marketing__card:-moz-any-link:focus .text .title {
   color: #FF9900;
@@ -1470,9 +1431,6 @@ BANNER STYLES
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.footer__widget-nav li.bold a:-webkit-any-link:hover, .footer__widget-nav li.bold a:-webkit-any-link:focus {
-  color: inherit;
-}
 .footer__widget-nav li.bold a:-moz-any-link:hover, .footer__widget-nav li.bold a:-moz-any-link:focus {
   color: inherit;
 }
@@ -1486,9 +1444,6 @@ BANNER STYLES
   letter-spacing: 0.24px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-.footer__widget-nav li a:-webkit-any-link:hover, .footer__widget-nav li a:-webkit-any-link:focus {
-  color: #FF9900;
 }
 .footer__widget-nav li a:-moz-any-link:hover, .footer__widget-nav li a:-moz-any-link:focus {
   color: #FF9900;
@@ -1550,16 +1505,13 @@ BANNER STYLES
     font-size: 40px;
     line-height: 50px;
   }
-
   .container {
     padding-right: 40px;
     padding-left: 40px;
   }
-
   .btn {
     padding: 15px 39px 15px;
   }
-
   /***********************************
   HEADER STYLES
   ***********************************/
@@ -1576,12 +1528,10 @@ BANNER STYLES
   .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li.sign-up a {
     padding: 10px 21px 8px;
   }
-
   .header-gutter {
     height: 114px;
     min-height: 114px;
   }
-
   /***********************************
   HOME STYLES
   ***********************************/
@@ -1594,7 +1544,6 @@ BANNER STYLES
   .superpowers .gray-background .btn {
     margin-top: 40px;
   }
-
   .professionals {
     padding: 70px 0;
   }
@@ -1613,46 +1562,38 @@ BANNER STYLES
   .professionals__content .content__editor p {
     margin: 0 0 15px !important;
   }
-
   .hero .hero-iner {
     padding: 70px 0;
   }
-
   .marketing {
     padding: 70px 0;
   }
   .marketing .entry-title {
     margin-bottom: 25px;
   }
-
   /***********************************
   FOOTER STYLES
   ***********************************/
   .footer {
     padding: 70px 0;
   }
-}
-/* 1199 */
+} /* 1199 */
 @media only screen and (max-width: 991px) {
   h1, .h1 {
     font-size: 36px;
     line-height: 46px;
   }
-
   h2, .h2 {
     font-size: 30px;
     line-height: 40px;
   }
-
   .container {
     padding-right: 40px;
     padding-left: 40px;
   }
-
   .btn {
     padding: 15px 39px 15px;
   }
-
   /***********************************
   HEADER STYLES
   ***********************************/
@@ -1675,12 +1616,10 @@ BANNER STYLES
   .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li.mobile-navbar-toggler {
     display: block;
   }
-
   .header-gutter {
     height: 114px;
     min-height: 114px;
   }
-
   /***********************************
   HOME STYLES
   ***********************************/
@@ -1696,7 +1635,6 @@ BANNER STYLES
   .superpowers .gray-background .entry-title {
     margin-bottom: 45px;
   }
-
   .professionals {
     padding: 70px 0;
   }
@@ -1727,11 +1665,9 @@ BANNER STYLES
   .professionals__content .content__editor p {
     margin: 0 0 10px !important;
   }
-
   .hero .hero-iner {
     padding: 70px 0;
   }
-
   .marketing {
     padding: 60px 0;
   }
@@ -1751,7 +1687,6 @@ BANNER STYLES
   .marketing__card .text span {
     margin-bottom: 5px;
   }
-
   /***********************************
   FOOTER STYLES
   ***********************************/
@@ -1765,8 +1700,7 @@ BANNER STYLES
   .footer__deal span {
     max-width: 100%;
   }
-}
-/* 991 */
+} /* 991 */
 @media only screen and (max-width: 800px) {
   /***********************************
   BANNER STYLES
@@ -1793,40 +1727,33 @@ BANNER STYLES
     max-width: 100%;
     margin-bottom: 20px;
   }
-}
-/* 800 */
+} /* 800 */
 @media only screen and (max-width: 767px) {
   h1, .h1 {
     font-size: 30px;
     line-height: 40px;
   }
-
   h2, .h2 {
     font-size: 24px;
     line-height: 34px;
   }
-
   h3, .h3 {
     font-size: 22px;
     line-height: 32px;
   }
-
   h4, .h4 {
     font-size: 20px;
     line-height: 30px;
   }
-
   .container {
     padding-right: 30px;
     padding-left: 30px;
   }
-
   .btn {
     font-size: 15px;
     line-height: 18px;
     padding: 13px 30px 13px;
   }
-
   /***********************************
   HEADER STYLES
   ***********************************/
@@ -1846,12 +1773,10 @@ BANNER STYLES
   .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li.sign-up a {
     padding: 8px 18px 7px;
   }
-
   .header-gutter {
     height: 101px;
     min-height: 101px;
   }
-
   .sticky-contact {
     width: 100px;
     padding: 8px;
@@ -1862,7 +1787,6 @@ BANNER STYLES
   .sticky-contact i {
     font-size: 27px;
   }
-
   /***********************************
   BANNER STYLES
   ***********************************/
@@ -1886,7 +1810,6 @@ BANNER STYLES
     font-size: 16px;
     margin-right: 8px;
   }
-
   /***********************************
   HOME STYLES
   ***********************************/
@@ -1908,7 +1831,6 @@ BANNER STYLES
   .superpowers .gray-background .entry-title {
     margin-bottom: 35px;
   }
-
   .professionals {
     padding: 60px 0;
   }
@@ -1943,11 +1865,9 @@ BANNER STYLES
   .professionals__content .content__editor p {
     margin: 0 0 8px !important;
   }
-
   .hero .hero-iner {
     padding: 60px 0;
   }
-
   .marketing {
     padding: 50px 0;
   }
@@ -1967,7 +1887,6 @@ BANNER STYLES
   .marketing__card .text span {
     margin-bottom: 0;
   }
-
   /***********************************
   FOOTER STYLES
   ***********************************/
@@ -1977,23 +1896,19 @@ BANNER STYLES
   .footer .search-form .form-group input[type=search] {
     padding-right: 50px !important;
   }
-}
-/* 767 */
+} /* 767 */
 @media only screen and (max-width: 575px) {
   h1, .h1 {
     font-size: 28px;
     line-height: 40px;
   }
-
   .container {
     padding-right: 20px;
     padding-left: 20px;
   }
-
   .btn {
     padding: 11px 25px 11px;
   }
-
   /***********************************
   HEADER STYLES
   ***********************************/
@@ -2016,12 +1931,10 @@ BANNER STYLES
   .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li.sign-up a {
     padding: 6px 18px 6px;
   }
-
   .header-gutter {
     height: 88px;
     min-height: 88px;
   }
-
   .sticky-contact {
     right: 15px;
     width: 90px;
@@ -2033,7 +1946,6 @@ BANNER STYLES
   .sticky-contact i {
     font-size: 25px;
   }
-
   /***********************************
   BANNER STYLES
   ***********************************/
@@ -2046,7 +1958,6 @@ BANNER STYLES
   .banner__card {
     margin-left: 20px;
   }
-
   /***********************************
   HOME STYLES
   ***********************************/
@@ -2068,7 +1979,6 @@ BANNER STYLES
   .superpowers .gray-background .entry-title {
     margin-bottom: 30px;
   }
-
   .professionals {
     padding: 50px 0;
   }
@@ -2087,11 +1997,9 @@ BANNER STYLES
   .professionals__content .title {
     margin-bottom: 8px;
   }
-
   .hero .hero-iner {
     padding: 50px 0;
   }
-
   .marketing {
     padding: 40px 0;
   }
@@ -2102,7 +2010,6 @@ BANNER STYLES
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
   }
-
   /***********************************
   FOOTER STYLES
   ***********************************/
@@ -2118,18 +2025,15 @@ BANNER STYLES
             flex: 0 0 100%;
     max-width: 100%;
   }
-}
-/* 575 */
+} /* 575 */
 @media only screen and (max-width: 480px) {
   .container {
     padding-right: 15px;
     padding-left: 15px;
   }
-
   .btn {
     padding: 11px 25px 11px;
   }
-
   /***********************************
   HEADER STYLES
   ***********************************/
@@ -2146,12 +2050,10 @@ BANNER STYLES
   .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li:nth-child(2) {
     display: none;
   }
-
   .header-gutter {
     height: 72px;
     min-height: 72px;
   }
-
   .sticky-contact {
     width: 80px;
     height: 80px;
@@ -2160,7 +2062,6 @@ BANNER STYLES
     font-size: 22px;
     margin-bottom: 0;
   }
-
   /***********************************
   HOME STYLES
   ***********************************/
@@ -2175,14 +2076,12 @@ BANNER STYLES
     font-size: 13px;
     margin-right: 5px;
   }
-
   .superpowers {
     padding: 40px 0;
   }
   .superpowers .gray-background {
     padding: 40px 0;
   }
-
   .professionals {
     padding: 40px 0;
   }
@@ -2192,22 +2091,18 @@ BANNER STYLES
   .professionals__item.product-managers .content .managers li:not(:last-child) {
     margin-bottom: 15px;
   }
-
   .hero .hero-iner {
     padding: 40px 0;
   }
-}
-/* 480 */
+} /* 480 */
 @media only screen and (max-width: 380px) {
   .container {
     padding-right: 15px;
     padding-left: 15px;
   }
-
   .btn {
     padding: 11px 25px 11px;
   }
-
   /***********************************
   HEADER STYLES
   ***********************************/
@@ -2224,12 +2119,10 @@ BANNER STYLES
   .header .navbar .navbar-collapse .navbar-nav.navbar-nav--right li:nth-child(2) {
     display: none;
   }
-
   .header-gutter {
     height: 72px;
     min-height: 72px;
   }
-
   .sticky-contact {
     width: 80px;
     height: 80px;
@@ -2238,7 +2131,6 @@ BANNER STYLES
     font-size: 22px;
     margin-bottom: 0;
   }
-
   /***********************************
   HOME STYLES
   ***********************************/
@@ -2248,5 +2140,4 @@ BANNER STYLES
             flex: 0 0 100%;
     max-width: 100%;
   }
-}
-/* 380 */
+} /* 380 */
