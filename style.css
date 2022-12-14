@@ -2785,6 +2785,55 @@ SERVICES STYLE
   height: 400%;
 }
 
+.contact-us {
+  padding: 90px 0;
+}
+.contact-us__content {
+  max-width: 495px;
+}
+.contact-us__content .sub-title {
+  display: block;
+  font-weight: 700;
+  color: #ffaa17;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.contact-us__content .title {
+  margin-bottom: 20px;
+}
+.contact-us__item .align-items-center {
+  margin-bottom: 15px;
+}
+.contact-us__item .icon {
+  font-size: 20px;
+  color: #ffaa17;
+}
+.contact-us__item .description {
+  margin-bottom: 20px;
+}
+.contact-us__item-body li a {
+  color: #292E31;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contact-us__item-body li a:-moz-any-link:hover, .contact-us__item-body li a:-moz-any-link:focus {
+  color: #ffaa17;
+  text-decoration: underline;
+}
+.contact-us__item-body li a:any-link:hover, .contact-us__item-body li a:any-link:focus {
+  color: #ffaa17;
+  text-decoration: underline;
+}
+.contact-us hr {
+  opacity: 0.2;
+  border: 0.5px solid #ffaa17 !important;
+}
+.contact-us hr.mt {
+  margin-top: 50px;
+}
+
 /***********************************
 BANNER STYLES
 ***********************************/

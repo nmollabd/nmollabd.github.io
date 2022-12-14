@@ -17,6 +17,7 @@ $gothic: "league-gothic",sans-serif;
 $danger: #CB633D;
 $primary: #221b68;
 $orange: #f5da0d;
+$d_orange: #ffaa17;
 $secondary: #6930c3;
 
 $black: #292E31;
@@ -1419,6 +1420,72 @@ SERVICES STYLE
 	}
 }
 
+.contact-us {
+	padding: 90px 0;
+
+	&__content {
+	    max-width: 495px;
+
+	    .sub-title {
+	    	display: block;
+	    	font-weight: 700;
+	    	color: $d_orange;
+	    	margin-bottom: 10px;
+	    	text-transform: uppercase;
+	    }
+
+	    .title {
+	    	margin-bottom: 20px;
+	    }
+	}
+
+	&__item {
+	    // max-width: 254px;
+
+	    .align-items-center {
+	    	margin-bottom: 15px;
+	    }
+
+	    .icon {
+		    font-size: 20px;
+	    	color: $d_orange;
+		}
+
+		.description {
+			margin-bottom: 20px;
+		}
+
+		&-body {
+
+			li {
+
+				a {
+					color: $black;
+					font-weight: 400;
+					font-family: $oswald;
+					@include transition(all 0.3s ease);
+
+					&:any-link {
+
+						&:hover, &:focus {
+							color: $d_orange;
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	hr {
+		opacity: 0.2;
+		border: 0.5px solid $d_orange !important;
+
+		&.mt {
+			margin-top: 50px;
+		}
+	}
+}
 /***********************************
 BANNER STYLES
 ***********************************/
