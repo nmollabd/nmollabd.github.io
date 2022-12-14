@@ -34,6 +34,20 @@ $success: #51BC70;
 	color: $secondary !important;
 }
 
+#particles-js {
+	top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+	background: transparent;
+}
+
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
 .mfp-move-from-top {
 	@include transition(initial);
 
@@ -882,6 +896,33 @@ SERVICES STYLE
 	    background-color: #757a89;
 	}
 
+	&.contact {
+
+		.transparent-text {
+			font-size: 170px;
+		}
+
+		.breadcrumb-wrapper {
+
+			.breadcrumb {
+				font-size: 14px;
+				line-height: 24px;
+			    padding: 17px 23px;
+			}
+		}
+
+		&:before {
+			top: 0;
+			left: 0;
+			width: 100%;
+			content: '';
+			z-index: -3;
+			height: 100%;
+			position: absolute;
+			background: url(../images/photo-1557426272-fc759fdf7a8d.avif) no-repeat center / cover;
+		}
+	}
+
 	&__content {
 		position: relative;
 
@@ -1143,7 +1184,8 @@ SERVICES STYLE
 				height: 10px;
 				width: 2px;
 				content: '';
-				background-color: #ffaa17;			}
+				background-color: #ffaa17;
+			}
 		}
 	}
 
@@ -1175,6 +1217,12 @@ SERVICES STYLE
 					font-family: $oswald;
 					text-transform: uppercase;
 					background-color: $orange;
+					@include transition(all 0.3s ease);
+
+					&:hover, &:focus {
+						color: $white;
+						background: $primary;
+					}
 				}
 			}
 		}
@@ -1252,6 +1300,125 @@ SERVICES STYLE
 	}
 }
 
+.contact {
+	position: relative;
+
+	#contact-map {
+		top: 0;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+
+	}
+
+	.place-card {
+		display: none !important;
+	}
+
+	.contact-form {
+	    border: 0;
+		padding: 30px;
+		max-width: 480px;
+		border-radius: 0;
+		background: $white;
+		box-shadow: 0px 10px 30px rgb(4 33 63 / 5%);
+
+		.entry-title {
+			margin-bottom: 30px;
+
+			.sub-title {
+				color: $orange;
+				display: block;
+				font-weight: 700;
+				margin-bottom: 5px;
+				text-transform: uppercase;
+			}
+
+			.title {
+				text-transform: uppercase;
+			}
+		}
+
+
+		form {
+
+			.form-group {
+
+				label {
+					font-size: 14px;
+					font-weight: 700;
+					line-height: 24px;
+					margin-bottom: 10px;
+					font-family: $oswald;
+				}
+
+				.control {
+					width: 100% !important;
+					box-sizing: border-box;
+					outline: none !important;
+					font-size: 15px !important;
+					max-width: 100% !important;
+					font-weight: 400 !important;
+					line-height: 26px !important;
+					border-radius: 4px !important;
+					padding: 10.5px 20px !important;
+					background-color: transparent !important;
+					border: 1.5px solid rgba(14, 30, 54, 0.2);
+
+					&.massage {
+					    padding: 18px 20px 50px 20px !important;
+					}
+				}
+			}
+
+			.btn {
+				border: 0;
+				z-index: 1;
+				color: #FFF;
+				font-size: 14px;
+				overflow: hidden;
+				font-weight: 500;
+				line-height: 24px;
+				position: relative;
+				padding: 12px 35px;
+				display: inline-block;
+				box-sizing: border-box;
+				text-transform: uppercase;
+				background-color: $primary;
+				@include border-radius(2px);
+				@include transition(all 0.3s ease);
+
+                &:after {
+                    top: 50%;
+                    left: 50%;
+                    content: "";
+                    width: 100%;
+                    height: 0%;
+                    z-index: -1;
+                    background: #FF9C00;
+                    position: absolute;
+                    @include transition(all 0.3s ease);
+                    transform: translate(-50%, -50%) rotate(-45deg);
+                }
+
+                &:hover, &:focus {
+                    color: #FFF;
+                    background-color: #FF9C00;
+
+                    &:after {
+                        height: 400%;
+                    }
+                }
+			}
+		}
+	}
+}
+
 /***********************************
 BANNER STYLES
 ***********************************/
@@ -1282,6 +1449,11 @@ BANNER STYLES
 		position: absolute;
 	    filter: grayscale(1);
 		content: url(../images/line.png);
+    }
+
+    .media {
+    	z-index: 1;
+    	position: relative;
     }
 
 	&__content {
@@ -1850,6 +2022,7 @@ BANNER STYLES
 
 .case-study {
 	padding: 90px 0;
+ 	background-color: #f7fcff;
 
 	.mbm-30 {
 		margin-bottom: -30px;
@@ -1981,6 +2154,116 @@ BANNER STYLES
 				img {
 					@include transform(scale(1.1));
 				}
+			}
+		}
+	}
+}
+
+.skills-section {
+	padding: 90px 0;
+    position: relative;
+    background-color: #f7fcff;
+
+    .skill-bars {
+
+		.content {
+
+			.sub-title {
+				color: #ffaa17;
+				display: block;
+				font-weight: 700;
+				margin-bottom: 10px;
+				font-family: $oswald;
+				text-transform: uppercase;
+			}
+
+			.title {
+				font-weight: 700;
+				margin-bottom: 20px;
+				font-family: $roboto;
+			}
+		}
+
+		.skill-progress {
+
+			&:not(:last-child) {
+				margin-bottom: 30px;
+			}
+
+			.title {
+				font-weight: 700;
+				margin-bottom: 20px;
+				font-family: $oswald;
+				text-transform: uppercase;
+			}
+
+			.progressbar-wrap {
+			    height: 5px;
+			    width: 100%;
+			    position: relative;
+			    background-color: #eaf2f8;
+
+			    .progressbar {
+					left: 0;
+					width: 0;
+					top: 50%;
+					height: 16px;
+					position: absolute;
+					background-color: #ffaa17;
+					@include transform(translateY(-50%));
+					@include transition(width 3s ease-in-out);
+			    }
+			}
+		}
+	}
+
+	.media {
+	    z-index: 1;
+		position: relative;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	.hire-btn {
+		border: 0;
+		z-index: 1;
+		color: #FFF;
+		font-size: 14px;
+		overflow: hidden;
+		margin-top: 50px;
+		font-weight: 700;
+		line-height: 22px;
+		position: relative;
+		padding: 12px 35px;
+		font-family: $oswald;
+		display: inline-block;
+		box-sizing: border-box;
+		text-transform: uppercase;
+		background-color: $primary;
+		@include border-radius(2px);
+		@include transition(all 0.4s ease-in-out);
+
+		&:after {
+			top: 50%;
+			left: 50%;
+			content: "";
+			width: 100%;
+			height: 0%;
+			z-index: -1;
+			background: #FF9C00;
+			position: absolute;
+			@include transition(all 0.3s ease);
+			transform: translate(-50%, -50%) rotate(-45deg);
+		}
+
+		&:hover, &:focus {
+			color: #FFF;
+			background-color: #FF9C00;
+
+			&:after {
+				height: 300%;
 			}
 		}
 	}
@@ -2658,22 +2941,9 @@ TESTIMONIAL-SECTION STYLE
 		    display: block;
 		    font-weight: 500;
 		    font-weight: 700;
-		    margin-left: 30px;
 		    position: relative;
 		    font-family: $oswald;
 		    @include transition(all 0.3s ease);
-
-		    &:before {
-				top: 50%;
-				left: -30px;
-				content: '';
-				width: 20px;
-				height: 1px;
-				display: block;
-				position: absolute;
-				background: #f1f1f1;
-				@include transition(all 0.3s ease);
-		    }
 		}
 
 		.content {
@@ -2926,8 +3196,11 @@ TESTIMONIAL-SECTION STYLE
 
 			.btn {
 				color: #fff;
+				font-size: 14px;
 				margin-top: 20px;
 				border-radius: 0;
+				line-height: 22px;
+				padding: 12px 35px;
 				border-color: $orange;
 				text-transform: uppercase;
 				@include transition(all 0.7s ease);
@@ -2951,13 +3224,17 @@ TESTIMONIAL-SECTION STYLE
 					}
 				}
 
-				.text {
+				.content {
 
 					.btn {
 
 						&:hover {
 							background-position: 0;
 						}
+					}
+
+					.title {
+						color: #FF9C00;
 					}
 				}
 			}

@@ -14,10 +14,28 @@
 	<link rel="stylesheet" href="../style.css">
 </head>
 <body>
-	<!-- magic cursor -->
-	<!-- <div class="mouse-cursor cursor-outer"></div> -->
+    <div class="overlay">
+        <div class="overlayDoor"></div>
+        <div class="overlayContent">
+            <div class="loader">
+                <div class="inner"></div>
+            </div>
 
-    <!-- Header Section -->
+            <div class="loading-text">
+                <div class="loading-text__letter"><span>P</span></div>
+                <div class="loading-text__letter"><span>R</span></div>
+                <div class="loading-text__letter"><span>O</span></div>
+                <div class="loading-text__letter"><span>T</span></div>
+                <div class="loading-text__letter"><span>F</span></div>
+                <div class="loading-text__letter"><span>O</span></div>
+                <div class="loading-text__letter"><span>L</span></div>
+                <div class="loading-text__letter"><span>I</span></div>
+                <div class="loading-text__letter"><span>O</span></div>
+            </div>
+
+            <div class="loading" data-loading-text="Loading..."></div>
+        </div>
+    </div>
     <div id="sidr">
         <div class="mobile-header d-none">
             <div class="navbar-header d-flex align-items-center justify-content-between">
@@ -58,38 +76,26 @@
         </div>
     </div>
 
-	<header class="header transparent">
-		<nav class="navbar navbar-expand">
-			<div class="container">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="index.html">
-						<img src="../images/logo.png" class="img-fluid" alt="">
-					</a>
-				</div>
+    <header class="header transparent white">
+        <nav class="navbar navbar-expand">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html" data-normal="../images/logo.png" data-white="../images/white-logo.svg">
+                        <img src="../images/white-logo.svg" class="img-fluid" alt="">                       
+                    </a>
+                </div>
 
-				<div class="collapse navbar-collapse justify-content-end">
-					<ul class="navbar-nav">
-						<li><a href="index.html">home</a></li>
-						<li><a href="about.html">about us</a></li>
-						<li><a href="blog.html">blog</a></li>
-                      <li class="dropdown">
-                            <a href="pages.html">Pages
-                                <span class="dropdown-toggle" data-toggle="dropdown"></span>
-                            </a>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="cuurent-menu-item"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">blog</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
 
-                            <ul class="dropdown-menu">
-                                <li><a href="portfolio-list.html" class="scroll-trigger">Portfolio List</a></li>
-                                <li><a href="portfolio-single.html" class="scroll-trigger">Portfolio single</a></li>
-                                <li><a href="service-list.html" class="scroll-trigger">service list</a></li>
-                                <li><a href="service-single.html" class="scroll-trigger">service Single</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="portfolio.thml">Portfolio</a></li>
-						<li class="cuurent-menu-item"><a href="contact.html">Contact</a></li>
-					</ul>
-
-					<ul class="navbar-nav navbar-nav--right">
-                        <li class="has-border white header-search">
+                    <ul class="navbar-nav navbar-nav--right">
+                        <li class="has-border header-search">
                             <a class="search-toggle" data-selector=".header-search">
                                 <span class="icon-search"></span>
                             </a>
@@ -101,190 +107,186 @@
                                 </div>
                             </form>
                         </li>
-						<li class="btn-menu"><a href="#">About Me</a></li>
-						<li class="mobile-navbar-toggler d-xl-none">
-							<a href="#sidr" class="navbar-toggle">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div><!-- /container -->
-		</nav><!-- /nav -->
-	</header><!-- /header -->
-	<div class="header-gutter"></div><!-- header-gutter -->
+                        <li class="btn-menu"><a href="#">About Me</a></li>
 
-    <section class="ct-page-banner">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="ct-page-banner__content">
-                        <div class="transparent-text">Contact</div>
-                        <h1 class="title roboto">Contact <span class="font-weight-light">With Us</span></h1>
+                        <li class="mobile-navbar-toggler d-xl-none">
+                            <a href="#sidr" class="navbar-toggle">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- /container -->
+        </nav><!-- /nav -->
+    </header><!-- /header -->
+
+    <section class="s-page-banner contact">
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-12">
+                    <div class="s-page-banner__content text-center">
+                        <div class="transparent-text">contact us</div>
+                        <h1 class="title">contact us</h1>
+                        <div class="description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque dolorum aliquid debitis odio aliquam cumque ad! Sapiente, enim.</p>
+                        </div>
                     </div>
 
-                    <nav class="breadcrumb">
-                        <a href="index.html">home</a>
-                        <span class="angle-right">/</span>
-                        <span class="current-page">Contact</span>
-                    </nav>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="ct-page-banner__media">
-                        <img src="../images/page-banner-1.jpg" class="img-fluid" alt="">
+                    <div class="breadcrumb-wrapper">
+                        <nav class="breadcrumb">
+                            <a href="index.html">home</a>
+                            <span class="angle-right">|</span>
+                            <span class="current-page">contact us</span>
+                        </nav>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="ct-page-banner__overlay">
-            <img src="../images/ct-page-banner-bg.jpg" class="img-fluid" alt="">
+        <div class="s-page-banner__shape">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <path d="M500,97C126.7,96.3,0.8,19.8,0,0v100l1000,0V1C1000,19.4,873.3,97.8,500,97z"></path>
+            </svg>
         </div>
     </section>
 
     <div id="primary" class="content-area">
 
-        <section class="quote-contact">
+       <section class="contact-us">
             <div class="container">
                 <div class="row">
-                    <div class="col-4">
-                        
+                    <div class="col-lg-6">
+                        <div class="contact-us__content">
+                            <span class="sub-title">
+                                <img src="../images/badge-line.svg" class="img-fluid mr-10" alt=""> contact us
+                            </span>
+                            <h2 class="title color-d_black mb-sm-15 mb-xs-10 mb-20">Get in Touch</h2>
+
+                            <div class="description font-la">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Libero nemo, itaque facere magnam, rem dolorem deserunt, ducimus accusamus tenetur error blanditiis. Accusantium, non. Velit aliquam voluptatem enim molestiae expedita aperiam.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-8">
-                        <div class="form_col">
+                    <div class="col-lg-6">
+                        <div class="row contact-us__item-wrapper mt-xs-35 mt-sm-40 mt-md-45">
+                            <div class="col-sm-6">
+                                <div class="contact-us__item mb-40">
+                                    <div class="contact-us__item d-flex align-items-center">
+                                        <div class="icon mr-10 color-primary">
+                                            <i class="icon-envelope-open-o"></i>
+                                        </div>
+
+                                        <h5 class="title color-d_black">bangladesh Office</h5>
+                                    </div>
+
+                                    <div class="contact-us__item-body font-la">
+                                        4517 Washington Ave. Manchester, Kentucky 39495
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="contact-us__item mb-40">
+                                    <div class="contact-us__item-header d-flex align-items-center">
+                                        <div class="icon mr-10 color-primary">
+                                            <i class="icon-envelope-open-o"></i>
+                                        </div>
+
+                                        <h5 class="title color-d_black">Ontario Office</h5>
+                                    </div>
+
+                                    <div class="contact-us__item-body font-la">
+                                        3891 Ranchview Dr. Richardson, California 62639
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="contact-us__item mb-40">
+                                    <div class="contact-us__item-header mb-25 mb-md-20 mb-sm-15 mb-xs-10 d-flex align-items-center">
+                                        <div class="icon mr-10 color-primary">
+                                            <i class="icon-phone"></i>
+                                        </div>
+
+                                        <h5 class="title color-d_black">Call Us Toll Free</h5>
+                                    </div>
+
+                                    <div class="contact-us__item-body font-la">
+                                        <ul class="list-inline">
+                                            <li><a href="tell:(406)555-0120">(406) 555-0120</a></li>
+                                            <li><a href="tell:(208)555-0112">(208) 555-0112</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="contact-us__item mb-40">
+                                    <div class="contact-us__item-header mb-25 mb-md-20 mb-sm-15 mb-xs-10 d-flex align-items-center">
+                                        <div class="icon mr-10 color-primary">
+                                            <i class="icon-mail"></i>
+                                        </div>
+
+                                        <h5 class="title color-d_black">Email Us</h5>
+                                    </div>
+
+                                    <div class="contact-us__item-body font-la">
+                                        <ul class="list-inline">
+                                            <li><a href="mailto:nmollabd@gmail.com">nmollabd@gmail.com</a></li>
+                                            <li><a href="mailto:naimmollabd@gmail.com">naimmollabd@gmail.com</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <hr class="mt-md-45 mt-sm-30 mt-xs-30 mt-60" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div id="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746840.9673121963!2d88.10064515335414!3d23.495631260045425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2sbd!4v1670943072669!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="contact-form">
                             <div class="entry-title">
-                                <h3 class="title">Let's Get Connected</h3>
+                                <span class="sub-title">
+                                    <img src="../images/badge-line.svg" class="img-fluid mr-10" alt="">
+                                help?</span>
+                                <h3 class="title">Contact Us</h3>
                             </div>
 
-                            <div class="form-part">
-                                <form enctype="multipart/form-data" method="post" accept-charset="utf-8" name="inquiry_footer_form" class="row inquiry_footer_form" onsubmit="return inquiry_footer_form_submit()" action="/contactus/send-mail">
-                                    <div>
-                                        <input type="hidden" name="_method" value="POST">
-                                    </div>
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" name=""class="control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
 
-                                    <div class="col-md-12">
-                                        <input type="hidden" name="page_name" id="page_name" value="L1J0F3">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <input type="text" class="form-control" placeholder="Full Name" name="name">
-                                                <span class="input-group-text">
-                                                    <img src="../images/svg/user.svg" class="img-fluid" alt="">
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" name="" class="control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
 
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <input type="hidden" name="page_id" value="dq_cof">
+                                <div class="form-group">
+                                    <label for="massage">Your Massage</label>
+                                    <textarea class="control massage" placeholder="Your Massage"></textarea>                                        
+                                </div>
 
-                                                <input type="email" class="form-control setemail" placeholder="Email Address" name="email" onkeyup="trimeamil(this)" id="Footer_form">
-
-                                                <span class="input-group-text">
-                                                    <img src="../images/svg/mail.svg" class="img-fluid" alt="">
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <select name="country" class="form-select form-control" onchange="getcodes(this)" id="country_names">
-                                                    <option value="AFG (+ 93)">AFG (+ 93)</option>
-                                                    <option value="ALB (+ 355)">ALB (+ 355)</option>
-                                                    <option value="BWA (+ 267)">BWA (+ 267)</option>
-                                                    <option value="BRA (+ 55)">BRA (+ 55)</option>
-                                                    <option value=" (+ 246)"> (+ 246)</option>
-                                                    <option value="BRN (+ 673)">BRN (+ 673)</option>
-                                                    <option value="BGR (+ 359)">BGR (+ 359)</option>
-                                                    <option value="BFA (+ 226)">BFA (+ 226)</option>
-                                                    <option value="BDI (+ 257)">BDI (+ 257)</option>
-                                                    <option value="KHM (+ 855)">KHM (+ 855)</option>
-                                                    <option value="CMR (+ 237)">CMR (+ 237)</option>
-                                                    <option value="COM (+ 269)">COM (+ 269)</option>
-                                                    <option value="COG (+ 242)">COG (+ 242)</option>
-                                                    <option value="COD (+ 242)">COD (+ 242)</option>
-                                                    <option value="COK (+ 682)">COK (+ 682)</option>
-                                                    <option value="CRI (+ 506)">CRI (+ 506)</option>
-                                                    <option value="CIV (+ 225)">CIV (+ 225)</option>
-                                                    <option value="HRV (+ 385)">HRV (+ 385)</option>
-                                                    <option value="CUB (+ 53)">CUB (+ 53)</option>
-                                                    <option value="CYP (+ 357)">CYP (+ 357)</option>
-                                                    <option value="CZE (+ 420)">CZE (+ 420)</option>
-                                                    <option value="DNK (+ 45)">DNK (+ 45)</option>
-                                                    <option value="DJI (+ 253)">DJI (+ 253)</option>
-                                                    <option value="IND (+ 91)" selected="+880">BAN (+880)</option>
-                                                    <option value="DMA (+ 1767)">DMA (+ 1767)</option>
-                                                    <option value="DOM (+ 1809)">DOM (+ 1809)</option>
-                                                    <option value="ECU (+ 593)">ECU (+ 593)</option>
-                                                    <option value="EGY (+ 20)">EGY (+ 20)</option>
-                                                    <option value="SLV (+ 503)">SLV (+ 503)</option>
-                                                    <option value="GNQ (+ 240)">GNQ (+ 240)</option>
-                                                    <option value="ERI (+ 291)">ERI (+ 291)</option>
-                                                    <option value="EST (+ 372)">EST (+ 372)</option>
-                                                    <option value="ETH (+ 251)">ETH (+ 251)</option>
-                                                    <option value="GBR (+ 44)">GBR (+ 44)</option>
-                                                    <option value="FLK (+ 500)">FLK (+ 500)</option>
-                                                    <option value="VAT (+ 39)">VAT (+ 39)</option>
-                                                    <option value="HND (+ 504)">HND (+ 504)</option>
-                                                    <option value="HKG (+ 852)">HKG (+ 852)</option>
-                                                    <option value="HUN (+ 36)">HUN (+ 36)</option>
-                                                    <option value="ISL (+ 354)">ISL (+ 354)</option>
-                                                    <option value="IDN (+ 62)">IDN (+ 62)</option>
-                                                    <option value="IRN (+ 98)">IRN (+ 98)</option>
-                                                </select>
-
-                                                <input type="hidden"class="form-control set_namessss" name="country_name" value="BANGLADESH (+880)">
-
-                                                <input type="number" class="form-control phone-control" name="phone" placeholder="Phone Number" data-errormessage-value-missing="Phone is required!">
-
-                                                <span class="input-group-text">
-                                                    <img src="../images/svg/phone.svg" class="img-fluid" alt="">
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <textarea class="form-control text_area" style="border-radius: 4px !important;" placeholder="Your Requirements" rows="3" name="message"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="row lr-9">
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <div class="input-group mb-3">
-                                                        <div id="created_captcha" class="created_captcha form-control mb-0">N1N0M3</div>
-                                                        <a href="#" onclick="createCaptcha()" class="btn captcha-btn">
-                                                            <i class="icon-ccw"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-6">
-                                                <div class="input">
-                                                    <input type="text" name="Captcha" id="captchacontact" placeholder="Type The Captcha" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="form-btn">
-                                            <button class="btn btn-primary d-block w-100" type="submit">Submit</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+                                <button type="submit" class="btn">Submit Message</button>
+                            </form>
                         </div>
                     </div>
                 </div>

@@ -66,18 +66,37 @@ HEADER STYLES
                                 color: #062d65;
                                 font-size: 16px;
                                 font-weight: 700;
+                                overflow: hidden;
                                 line-height: 24px;
                                 text-align: center;
                                 background: $white;
                                 padding: 10px 28px 12px;
                                 text-transform: capitalize;
-                                @include border-radius(500px);
+                                @include border-radius(5px);
                                 @include letter-spacing(35, 16);
+                                @include transition(all 0.3s ease);
                                 box-shadow: 0px 12px 12px rgb(0 0 0 / 16%);
 
+                                &:after {
+                                    top: 50%;
+                                    left: 50%;
+                                    content: "";
+                                    width: 100%;
+                                    height: 0%;
+                                    z-index: -1;
+                                    background: #FF9C00;
+                                    position: absolute;
+                                    @include transition(all 0.3s ease);
+                                    transform: translate(-50%, -50%) rotate(-45deg);
+                                }
+
                                 &:hover, &:focus {
-                                    color: $white;
-                                    background: #ffa500;
+                                    color: #FFF;
+                                    background-color: #FF9C00;
+
+                                    &:after {
+                                        height: 300%;
+                                    }
                                 }
                             }
                         }
