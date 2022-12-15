@@ -1736,6 +1736,10 @@ BANNER STYLES
     .media {
     	z-index: 1;
     	position: relative;
+
+    	img {
+    		animation: move-up-down 1s infinite  alternate;
+    	}
     }
 
 	&__content {
@@ -1853,6 +1857,29 @@ BANNER STYLES
 		img {
 		    // filter: brightness(4);
 			animation: pulse 10s ease-in-out infinite;
+		}
+	}
+}
+
+.performance {
+	padding: 90px 0;
+	overflow: hidden;
+	position: relative;
+
+	&:before {
+		top: 0;
+		left: 0;
+		width: 100%;
+		content: '';
+		height: 100%;
+		position: absolute;
+		background: url(../images/head9_back.png) no-repeat center / cover;
+	}
+
+	&__media {
+
+		img {
+		    animation: move-up-down 1s infinite alternate;
 		}
 	}
 }
@@ -2556,83 +2583,6 @@ BANNER STYLES
 ABOUT STYLE
 ***********************************/
 
-.about {
-	background: #F7F7F7;
-	padding: 60px 0 90px;
-
-	&__content {
-
-		.title {
-			margin-bottom: 20px;
-		}
-
-		.description {
-			margin-bottom: 10px; 
-
-			p {
-				font-family: $oswald;
-			}
-		}
-
-	    .sub-title {
-	    	margin-bottom: 30px;
-	    }
-
-	    &__btn {
-	    	margin-top: 30px;
-	    }
-
-		.personal-info {
-		    position: relative;
-
-		    &:after {
-				top: 50%;
-				left: 40%;
-				width: 1px;
-				clear: both;
-				content: '';
-				height: 100%;
-				display: table;
-				position: absolute;
-				background-color: #f1f1f1;
-				transform: translate(-50%, -50%);
-		    }
-
-		     ul {
-		     	margin: 0;
-
-		     	li {
-				    font-weight: 500;
-				    text-transform: capitalize;
-
-				    span {
-				    	font-weight: 700;
-				    	font-family: $oswald;
-				    }
-
-				    &:not(:last-child) {
-				    	margin-bottom: 5px;
-				    }
-
-				    a {
-				    	color: $black;
-				    	font-family: $oswald;
-				    	text-transform: lowercase;
-				    	@include transition(all 0.3s ease);
-
-				    	&:any-link {
-
-				    		&:hover, &:focus {
-				    			color: $success;
-				    		}
-				    	}
-				    }
-				}
-		     }
-		}
-	}
-}
-
 .awards {
 	padding: 70px 0 90px;
     background-color: #f7f8ff;
@@ -2903,7 +2853,7 @@ POPUP VIDEO STYLE
 	}
 }
 
-.ct-page-banner {
+.ab-page-banner {
     z-index: 1;
     overflow: hidden;
     position: relative;
@@ -2923,6 +2873,7 @@ POPUP VIDEO STYLE
 		    line-height: 100px;
 		    position: absolute;
 		    white-space: nowrap;
+		    text-transform: uppercase;
 		    -webkit-text-stroke: transparent;
 		    -webkit-text-stroke-width: 1.5px;
 		    -webkit-text-fill-color: transparent;
@@ -2931,13 +2882,22 @@ POPUP VIDEO STYLE
 
 		.title {
 			color: $white;
+			font-weight: 900;
+			margin-bottom: 10px;
+		}
+
+		.description {
+
+			p {
+				color: $white;
+			}
 		}
 	}
 
 	&__overlay {
-		top: 200px;
 		z-index: -1;
 		left: -700px;
+		bottom: -300px;
 		position: absolute;
 		filter: saturate(90);
 
@@ -2971,7 +2931,7 @@ POPUP VIDEO STYLE
             &:any-link {
 
                 &:hover, &:focus {
-                    color: $success;
+                    color: $d_orange;
                 }
             }
 
@@ -2995,26 +2955,46 @@ POPUP VIDEO STYLE
         }
 
         .current-page {
-            color: $success;
+            color: $d_orange;
         }
     }
 
     &__media {
-    	max-height: 450px;
+    	max-height: 650px;
    	 	position: relative;
     	margin-right: calc(-50vw + 50%) !important;
+
+    	img {
+    		z-index: 2;
+    		position: relative;
+    	}
 
     	&:before {
 		    content: "";
 		    top: -395px;
-		    z-index: 1;
+		    z-index: 3;
 		    left: 790px;
 		    width: 144.86px;
 		    height: 1194.97px;
 		    position: absolute;
-		    @include transform(rotate(-30.99deg));
 		    background: rgba(64, 105, 255, 0.5);
+		    @include transform(rotate(-30.99deg));
 		}
+
+		// &.overly-orange {
+		// 	position: relative;
+
+		// 	&:before {
+		// 		top: 0;
+		// 		left: 0;
+		// 		z-index: -1;
+		// 		content: "";
+		// 		width: 100vw;
+		// 		height: 100%;
+		// 		position: absolute;
+		// 		background-color: #F1C142;
+		// 	}
+		// }
 
 		&:after {
 		    top: 0;
@@ -3025,7 +3005,8 @@ POPUP VIDEO STYLE
 		    height: 100%;
 		    position: absolute;
 		    background-size: cover !important;
-		    background-image: url(../images/page-banner-overly.png);
+		    background: #F1C142 url(../images/page-banner-overly.png);
+		    // background-image: url(../images/page-banner-overly.png);
 		}
     }
 }
@@ -4371,60 +4352,6 @@ FOOTER STYLES
 	}
 }
 
-.search-form {
-    height: auto;
-
-    .form-group {
-        margin: 0;
-        overflow: hidden;
-        position: relative;
-
-        .form-control {
-        	border: 0 !important;
-        	background: $white !important;
-        	font-family: $oswald !important;
-            @include border-radius(0 !important);
-        }
-
-        input[type="search"] {
-            min-width: 100%;
-            border: 0 !important;
-            border-radius: 0 !important;
-            padding: 21.5px 37px !important;
-            padding-right: 180px !important;
-            background: transparent !important;
-
-             &.form-control {
-                font-size: 24px;
-                line-height: 29px;
-            }
-
-            &:hover, &:focus {
-                border: none;
-                outline: none;
-            }
-        }
-
-        button {
-            top: 0px;
-            border: 0;
-            right: 0px;
-            color: $white;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 21px;
-            position: absolute;
-            padding: 9px 30px;
-            background: #51bc70;
-            @include transition(all 0.3s ease);
-
-            &:hover, &:focus {
-                background: $success
-            }
-        }
-    }
-}
 
 @import 'responsive';
 
