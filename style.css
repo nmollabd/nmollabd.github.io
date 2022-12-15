@@ -2700,8 +2700,6 @@ SERVICES STYLE
   max-width: 480px;
   border-radius: 0;
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 10px 30px rgba(4, 33, 63, 0.05);
-          box-shadow: 0px 10px 30px rgba(4, 33, 63, 0.05);
 }
 .contact .contact-form .entry-title {
   margin-bottom: 30px;
@@ -2787,6 +2785,20 @@ SERVICES STYLE
 
 .contact-us {
   padding: 90px 0;
+  position: relative;
+}
+.contact-us:before {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: left top !important;
+  background-image: url(../images/map.png);
 }
 .contact-us__content {
   max-width: 495px;
@@ -2799,30 +2811,132 @@ SERVICES STYLE
   text-transform: uppercase;
 }
 .contact-us__content .title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-.contact-us__item .align-items-center {
-  margin-bottom: 15px;
+.contact-us__content .social-media {
+  max-width: 250px;
+  margin-top: 20px;
 }
-.contact-us__item .icon {
-  font-size: 20px;
-  color: #ffaa17;
+.contact-us__content .social-media li:not(:last-child) {
+  margin-bottom: 10px;
 }
-.contact-us__item .description {
-  margin-bottom: 20px;
-}
-.contact-us__item-body li a {
-  color: #292E31;
-  font-weight: 400;
-  font-family: "Oswald", sans-serif;
+.contact-us__content .social-media li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFFFFF;
+  overflow: hidden;
+  padding: 8px 15px;
+  background: #409EE6;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 500px;
+  border: 1px solid #55ACED;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.contact-us__item-body li a:-moz-any-link:hover, .contact-us__item-body li a:-moz-any-link:focus {
+.contact-us__content .social-media li a:before {
+  width: 25px;
+  font-size: 18px;
+  margin-right: 8px;
+  text-align: center;
+}
+.contact-us__content .social-media li a img {
+  max-width: 30px;
+  margin-right: 5px;
+}
+.contact-us__content .social-media li a.icon-facebook {
+  background: #395185;
+  border: 1px solid #395185;
+}
+.contact-us__content .social-media li a:-moz-any-link:hover, .contact-us__content .social-media li a:-moz-any-link:focus {
+  color: #FFFFFF;
+  border-color: #395185;
+  background: #2a3b61;
+}
+.contact-us__content .social-media li a:any-link:hover, .contact-us__content .social-media li a:any-link:focus {
+  color: #FFFFFF;
+  border-color: #395185;
+  background: #2a3b61;
+}
+.contact-us__content .social-media li.crl a {
+  color: #090909;
+  background: transparent;
+}
+.contact-us__info-list {
+  height: 100%;
+  padding: 60px;
+  background-color: #fff;
+  border-radius: 36px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 0 16px rgba(0, 0, 0, 0.03);
+}
+.contact-us__info-list .info-box {
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  -ms-grid-rows: 1;
+  grid-template-rows: 1;
+  border-bottom: 2px solid #f3f3f3;
+  -ms-grid-columns: 65px 1fr;
+  grid-template-columns: 65px 1fr;
+}
+.contact-us__info-list .info-box > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.contact-us__info-list .info-box > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.contact-us__info-list .info-box:last-child {
+  margin-bottom: 0;
+}
+.contact-us__info-list .info-box .icon {
+  line-height: 1;
+  font-size: 40px;
+  color: #ffaa17;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contact-us__info-list .info-box .content .title {
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 5px;
+  font-family: "Roboto", sans-serif;
+}
+.contact-us__info-list .info-box .content ul {
+  padding: 0;
+}
+.contact-us__info-list .info-box .content ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.contact-us__info-list .info-box .content ul li a {
+  color: #292E31;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.42px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contact-us__info-list .info-box:hover .icon, .contact-us__info-list .info-box:focus .icon {
+  -webkit-animation: shake 0.5s linear;
+          animation: shake 0.5s linear;
+}
+.contact-us__info-list .info-box:hover .content ul li a:-moz-any-link:hover, .contact-us__info-list .info-box:hover .content ul li a:-moz-any-link:focus, .contact-us__info-list .info-box:focus .content ul li a:-moz-any-link:hover, .contact-us__info-list .info-box:focus .content ul li a:-moz-any-link:focus {
   color: #ffaa17;
   text-decoration: underline;
 }
-.contact-us__item-body li a:any-link:hover, .contact-us__item-body li a:any-link:focus {
+.contact-us__info-list .info-box:hover .content ul li a:any-link:hover, .contact-us__info-list .info-box:hover .content ul li a:any-link:focus, .contact-us__info-list .info-box:focus .content ul li a:any-link:hover, .contact-us__info-list .info-box:focus .content ul li a:any-link:focus {
   color: #ffaa17;
   text-decoration: underline;
 }
@@ -2832,6 +2946,90 @@ SERVICES STYLE
 }
 .contact-us hr.mt {
   margin-top: 50px;
+}
+
+.feature-list {
+  padding: 90px 0;
+}
+.feature-list .background {
+  padding: 50px;
+  overflow: hidden;
+  position: relative;
+  background-color: #041d38;
+  border-radius: 5px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+.feature-list .background .overlay-dot {
+  top: 200px;
+  z-index: -1;
+  right: -471px;
+  position: absolute;
+}
+.feature-list .background__media {
+  overflow: hidden;
+  border-radius: 24px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+.feature-list .background__media a img {
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.feature-list .background__media a:-moz-any-link:hover img, .feature-list .background__media a:-moz-any-link:focus img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.feature-list .background__media a:any-link:hover img, .feature-list .background__media a:any-link:focus img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.feature-list .background .list-text .description {
+  max-width: 568px;
+  margin-bottom: 20px;
+}
+.feature-list .background .list-text .description p {
+  color: #FFFFFF;
+}
+.feature-list .background .list-text__item {
+  padding: 0;
+}
+.feature-list .background .list-text__item li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.feature-list .background .list-text__item li .icon {
+  width: 30px;
+  height: 30px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10px;
+  margin-right: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffaa17;
+}
+.feature-list .background .list-text__item li .text .title {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.42px;
 }
 
 /***********************************
@@ -5059,6 +5257,10 @@ FOOTER STYLES
   letter-spacing: 0.24px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+.footer.default .footer-widget-area .widget__nav li a.normal {
+  font-weight: 700;
+  font-style: normal;
 }
 .footer.default .footer-widget-area .widget__nav li a:-moz-any-link:hover, .footer.default .footer-widget-area .widget__nav li a:-moz-any-link:focus {
   color: #ffaa17;

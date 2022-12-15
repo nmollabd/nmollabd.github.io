@@ -1327,7 +1327,7 @@ SERVICES STYLE
 		max-width: 480px;
 		border-radius: 0;
 		background: $white;
-		box-shadow: 0px 10px 30px rgb(4 33 63 / 5%);
+		// box-shadow: 0px 10px 30px rgb(4 33 63 / 5%);
 
 		.entry-title {
 			margin-bottom: 30px;
@@ -1422,6 +1422,21 @@ SERVICES STYLE
 
 .contact-us {
 	padding: 90px 0;
+	position: relative;
+
+	&:before {
+		top: 0;
+		left: 0;
+		z-index: -1;
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-size: cover !important;
+		background-repeat: no-repeat !important;
+		background-position: left top !important;
+		background-image: url(../images/map.png);
+	}
 
 	&__content {
 	    max-width: 495px;
@@ -1435,41 +1450,148 @@ SERVICES STYLE
 	    }
 
 	    .title {
-	    	margin-bottom: 20px;
+	    	margin-bottom: 10px;
 	    }
+
+		.social-media {
+		    max-width: 250px;
+		    margin-top: 20px;
+
+		    li {
+			    
+			    &:not(:last-child) {
+			    	margin-bottom: 10px;
+			    }
+
+			    a {
+				    display: flex;
+				    color: $white;
+				    overflow: hidden;
+				    padding: 8px 15px;
+				    background: #409EE6;
+				    align-items: center;
+				    border-radius: 500px;
+				    border: 1px solid #55ACED;
+				    @include transition(all 0.3s ease);
+
+				    &:before {
+						width: 25px;
+						font-size: 18px;
+						margin-right: 8px;
+						text-align: center;
+				    }
+
+				    img {
+				    	max-width: 30px;
+				    	margin-right: 5px;
+				    }
+
+				    &.icon-facebook {
+				    	background: #395185;
+				    	border: 1px solid #395185;
+				    }
+
+				    &:any-link {
+
+				    	&:hover, &:focus {
+				    		color: $white;
+				    		border-color: #395185;
+				    		background: darken(#395185, 10%);
+				    	}
+				    }
+			    }
+
+			    &.crl {
+
+			    	a {
+			    		color: #090909;
+			    		background: transparent;
+			    	}
+			    }
+			}
+		}
 	}
 
-	&__item {
-	    // max-width: 254px;
+	&__info-list {
+		height: 100%;
+		padding: 60px;
+		background-color: #fff;
+		@include border-radius(36px);
+	    box-shadow: 0 0 16px rgb(0 0 0 / 3%);
 
-	    .align-items-center {
-	    	margin-bottom: 15px;
-	    }
-
-	    .icon {
-		    font-size: 20px;
-	    	color: $d_orange;
-		}
-
-		.description {
+		.info-box {
+			display: grid;
 			margin-bottom: 20px;
-		}
+			padding-bottom: 20px;
+			grid-template-rows: 1;
+			border-bottom: 2px solid #f3f3f3;
+			grid-template-columns: 65px 1fr;
 
-		&-body {
+			&:last-child {
+				margin-bottom: 0;
+			}
 
-			li {
+			.icon {
+			    line-height: 1;
+			    font-size: 40px;
+			    color: $d_orange;
+		    	@include transition(all 0.3s ease);
+			}
 
-				a {
-					color: $black;
+			.content {
+
+				.title {
 					font-weight: 400;
-					font-family: $oswald;
-					@include transition(all 0.3s ease);
+					line-height: 28px;
+					margin-bottom: 5px;
+					font-family: $roboto;
+				}
 
-					&:any-link {
+				ul {
+					padding: 0;
 
-						&:hover, &:focus {
-							color: $d_orange;
-							text-decoration: underline;
+					li {
+
+						&:not(:last-child) {
+							margin-bottom: 5px;
+						}
+
+						a {
+							color: $black;
+							display: block;
+							font-size: 14px;
+							font-weight: 400;
+							line-height: 20px;
+							font-family: $oswald;
+							@include letter-spacing(30, 14);
+							@include transition(all 0.3s ease);
+						}
+					}
+				}
+			}
+
+			&:hover, &:focus {
+
+				.icon {
+					animation: shake 0.5s linear;
+				}
+
+				.content {
+
+					ul {
+
+						li {
+
+							a {
+
+								&:any-link {
+
+									&:hover, &:focus {
+										color: $d_orange;
+										text-decoration: underline;
+									}
+								}
+							}
 						}
 					}
 				}
@@ -1486,6 +1608,99 @@ SERVICES STYLE
 		}
 	}
 }
+
+.feature-list {
+	padding: 90px 0;
+
+	.background {
+   		padding: 50px;
+   		overflow: hidden;
+   		position: relative;
+		background-color: #041d38;
+   		@include border-radius(5px);
+
+   		.overlay-dot {
+   			top: 200px;
+   			z-index: -1;
+   			right: -471px;
+   			position: absolute;
+   		}
+
+   		&__media {
+   			overflow: hidden;
+   			@include border-radius(24px);
+
+   			a {
+
+   				img {
+	   				height: auto;
+	   				max-width: 100%;
+	   				object-fit: cover;
+	   				@include transition(all 0.3s ease);
+	   			}
+
+	   			&:any-link {
+
+	   				&:hover, &:focus {
+
+	   					img {
+	   						@include transform(scale(1.2));
+	   					}
+	   				}
+	   			}
+   			}
+   		}
+
+   		.list-text {
+
+   			.description {
+   				max-width: 568px;
+   				margin-bottom: 20px;
+
+   				p {
+   					color: $white;
+   				}
+   			}
+
+   			&__item {
+   				padding: 0;
+
+   				li {
+
+   					&:not(:last-child) {
+   						margin-bottom: 10px;
+   					}
+
+   					.icon {
+						width: 30px;
+						height: 30px;
+						color: $white;
+						display: flex;
+						font-size: 10px;
+						margin-right: 15px;
+						align-items: center;
+						justify-content: center;
+						background-color: $d_orange;
+   					}
+
+   					.text {
+
+   						.title {
+   							color: $white;
+   							font-size: 14px;
+   							font-weight: 700;
+   							line-height: 20px;
+   							font-family: $oswald;
+   							text-transform: uppercase;
+   							@include letter-spacing(30, 14);
+   						}
+   					}
+   				}
+   			}
+   		}
+	}
+}
+
 /***********************************
 BANNER STYLES
 ***********************************/
@@ -3923,6 +4138,11 @@ FOOTER STYLES
     						font-family: $oswald;
     						@include letter-spacing(15, 16);
     						@include transition(all 0.3s ease);
+
+    						&.normal {
+    							font-weight: 700;
+    							font-style: normal;
+    						}
 
     						&:any-link {
 
