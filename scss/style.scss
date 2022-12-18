@@ -2653,7 +2653,6 @@ BANNER STYLES
 	}
 }
 
-
 /***********************************
 ABOUT STYLE
 ***********************************/
@@ -4628,6 +4627,154 @@ FOOTER STYLES
 
 .entry-title {
 	margin-bottom: 45px;
+}
+
+/***********************************
+MODAL STYLE
+***********************************/
+.modal {
+	top: 0;
+	left: 0;
+	outline: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1050;
+	display: none;
+	position: fixed;
+	overflow: hidden;
+
+	&.fade {
+	    transition: opacity 1s linear;
+	}
+
+	&.show {
+	    padding-left: 0 !important;
+	    padding-right: 0 !important;
+	}
+
+	.modal-dialog {
+	    height: 100vh;
+	    margin: 0 !important;
+	    max-width: 100% !important;
+
+	    .modal-content {
+	    	height: 100vh;
+	    	border: 0 !important;
+	    	border-radius: 0 !important;
+	    	background-clip: border-box !important;
+
+	    	.modal-header {
+				border-top-left-radius: 0 !important;
+				border-top-right-radius: 0 !important;
+
+				.close {
+
+					span {
+						display: flex;
+						font-size: 16px;
+						align-items: center;
+						color: $primary !important;
+						@include transition(all 0.3s ease);
+
+						p {
+							color: $primary;
+							font-size: 12px;
+							font-weight: 700;
+							line-height: 13px;
+							font-family: $oswald;
+							text-transform: uppercase;
+							margin-right: 5px !important;
+							@include transition(all 0.3s ease);
+						}
+
+						&:hover, &:focus {
+							color: red !important;
+
+							p {
+								color: red !important;
+							}
+						}
+					}
+				}
+	    	}
+
+	    	.modal-body {
+				flex: inherit !important;
+	    		padding: 212px 0 !important;
+
+				.about-me-box {
+					display: flex;
+					margin-left: auto;
+					max-width: 1170px;
+					margin-right: auto;
+					align-items: center;
+
+					.media {
+						margin-right: 30px;
+
+						img {
+							height: auto;
+							max-width: 500px;
+							object-fit: cover;
+						}
+					}
+
+					.text {
+
+						.title {
+							margin-bottom: 20px;
+							background-size: 500px;
+							-webkit-background-clip: text;
+							animation: color 10s linear infinite;
+							-webkit-text-fill-color: transparent;
+							background-image: linear-gradient(to right, orange,red,skyblue,blue,lightgreen,green,orange);
+						}
+					}
+
+					.social-media {
+						padding: 0;
+						margin-top: 30px;
+						margin-left: -2px;
+						margin-right: -2px;
+
+						li {
+							margin-left: 2px;
+							margin-right: 2px;
+							display: inline-block;
+
+							a {
+								width: 50px;
+								height: 50px;
+								display: flex;
+								color: $d_orange;
+								align-items: center;
+								background: #EDEDED;
+								justify-content: center;
+								@include border-radius(500px);
+								@include transition(all 0.3s ease);
+
+								&:any-link {
+
+									&:hover, &:focus {
+										color: $white;
+										background: $d_orange;
+										@include transform(translateY(-5px));
+									}
+								}
+							}
+						}
+					}
+				}
+	    	}
+	    }
+	}
+}
+
+@keyframes color {
+
+	100% {
+		background-position: -1000px;
+	}
 }
 
 /***********************************

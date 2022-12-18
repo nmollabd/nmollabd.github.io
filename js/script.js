@@ -415,6 +415,8 @@
         direction: "next",
     });
 
+
+    /*** progressbar */
     var bars = document.querySelectorAll('.progressbar-wrap > .progressbar');
     console.clear();
 

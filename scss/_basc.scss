@@ -215,20 +215,20 @@ html {
     display: none;
 }
 
-html {
-    overflow-x: hidden;
+// html {
+//     overflow-x: hidden;
     
-    &::-webkit-scrollbar {
-        width: 1px;
-    }
-    &::-webkit-scrollbar-track {
-        background: $orange;
-    }
-    &::-webkit-scrollbar-thumb {
-        background: $success;
-        @include border-radius(0);
-    }
-}
+//     &::-webkit-scrollbar {
+//         width: 1px;
+//     }
+//     &::-webkit-scrollbar-track {
+//         background: $orange;
+//     }
+//     &::-webkit-scrollbar-thumb {
+//         background: $success;
+//         @include border-radius(0);
+//     }
+// }
 
 input[type=text]:not(.select2-input),
 input[type=number],

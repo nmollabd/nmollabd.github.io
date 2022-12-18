@@ -231,24 +231,6 @@ html {
   display: none;
 }
 
-html {
-  overflow-x: hidden;
-}
-html::-webkit-scrollbar {
-  width: 1px;
-}
-html::-webkit-scrollbar-track {
-  background: #f5da0d;
-}
-html::-webkit-scrollbar-thumb {
-  background: #51BC70;
-  border-radius: 0;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-}
-
 input[type=text]:not(.select2-input),
 input[type=number],
 input[type=email],
@@ -6887,6 +6869,165 @@ select, textarea {
 }
 
 /***********************************
+MODAL STYLE
+***********************************/
+.modal {
+  top: 0;
+  left: 0;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1050;
+  display: none;
+  position: fixed;
+  overflow: hidden;
+}
+.modal.fade {
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+.modal.show {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.modal .modal-dialog {
+  height: 100vh;
+  margin: 0 !important;
+  max-width: 100% !important;
+}
+.modal .modal-dialog .modal-content {
+  height: 100vh;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background-clip: border-box !important;
+}
+.modal .modal-dialog .modal-content .modal-header {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+.modal .modal-dialog .modal-content .modal-header .close span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #221b68 !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.modal .modal-dialog .modal-content .modal-header .close span p {
+  color: #221b68;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 13px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin-right: 5px !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.modal .modal-dialog .modal-content .modal-header .close span:hover, .modal .modal-dialog .modal-content .modal-header .close span:focus {
+  color: red !important;
+}
+.modal .modal-dialog .modal-content .modal-header .close span:hover p, .modal .modal-dialog .modal-content .modal-header .close span:focus p {
+  color: red !important;
+}
+.modal .modal-dialog .modal-content .modal-body {
+  -webkit-box-flex: inherit !important;
+      -ms-flex: inherit !important;
+          flex: inherit !important;
+  padding: 212px 0 !important;
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  max-width: 1170px;
+  margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .media {
+  margin-right: 30px;
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .media img {
+  height: auto;
+  max-width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .text .title {
+  margin-bottom: 20px;
+  background-size: 500px;
+  -webkit-background-clip: text;
+  -webkit-animation: color 10s linear infinite;
+          animation: color 10s linear infinite;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(orange), color-stop(red), color-stop(skyblue), color-stop(blue), color-stop(lightgreen), color-stop(green), to(orange));
+  background-image: linear-gradient(to right, orange, red, skyblue, blue, lightgreen, green, orange);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media {
+  padding: 0;
+  margin-top: 30px;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li {
+  margin-left: 2px;
+  margin-right: 2px;
+  display: inline-block;
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffaa17;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #EDEDED;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 500px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a:-moz-any-link:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a:-moz-any-link:focus {
+  color: #FFFFFF;
+  background: #ffaa17;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a:any-link:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a:any-link:focus {
+  color: #FFFFFF;
+  background: #ffaa17;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+@-webkit-keyframes color {
+  100% {
+    background-position: -1000px;
+  }
+}
+
+@keyframes color {
+  100% {
+    background-position: -1000px;
+  }
+}
+/***********************************
 PRELOADER-INNER STYLE
 ***********************************/
 .overlay {
@@ -7101,12 +7242,6 @@ PRELOADER-INNER STYLE
 .loading-text__letter:nth-child(9) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-}
-
-@-webkit-keyframes color {
-  100% {
-    background-position: -1000px;
-  }
 }
 
 @keyframes color {
