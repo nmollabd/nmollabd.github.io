@@ -4346,12 +4346,15 @@ FOOTER STYLES
 							font-size: 14px;
 						}
 
-						&:any-link {
+						@each $name, $color in $social-colors {
 
-							&:hover, &:focus {
-								color: $white;
-								background: $orange;
-								@include transform(translateY(-5px));
+							&.icon-#{$name} {
+
+								&:hover, &:focus {
+									color: $white;
+									background: $color;
+									@include transform(translateY(-5px));
+								}
 							}
 						}
     				}

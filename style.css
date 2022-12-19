@@ -8,62 +8,6 @@ Text Domain: PORTFOLIO
 /***********************************
 BASE STYLES
 ***********************************/
-@-webkit-keyframes bounce {
-  0%, 20%, 60%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-  80% {
-    -webkit-transform: translateY(-3px);
-    transform: translateY(-3px);
-  }
-}
-@keyframes bounce {
-  0%, 20%, 60%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-  80% {
-    -webkit-transform: translateY(-3px);
-    transform: translateY(-3px);
-  }
-}
-@-webkit-keyframes shake {
-  0%, 20%, 60%, 100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  40% {
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
-  }
-  80% {
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
-  }
-}
-@keyframes shake {
-  0%, 20%, 60%, 100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  40% {
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
-  }
-  80% {
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
-  }
-}
 *:not(ul):not(ol) {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -5400,15 +5344,123 @@ FOOTER STYLES
 .footer.default .footer-top .social-media li a.icon-twitter {
   font-size: 14px;
 }
-.footer.default .footer-top .social-media li a:-moz-any-link:hover, .footer.default .footer-top .social-media li a:-moz-any-link:focus {
+.footer.default .footer-top .social-media li a.icon-facebook:hover, .footer.default .footer-top .social-media li a.icon-facebook:focus {
   color: #FFFFFF;
-  background: #f5da0d;
+  background: #395185;
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
 }
-.footer.default .footer-top .social-media li a:any-link:hover, .footer.default .footer-top .social-media li a:any-link:focus {
+.footer.default .footer-top .social-media li a.icon-gplus:hover, .footer.default .footer-top .social-media li a.icon-gplus:focus {
   color: #FFFFFF;
-  background: #f5da0d;
+  background: #DC4E41;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.footer.default .footer-top .social-media li a.icon-instagram:hover, .footer.default .footer-top .social-media li a.icon-instagram:focus {
+  color: #FFFFFF;
+  background: #5924D1;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.footer.default .footer-top .social-media li a.icon-linkedin:hover, .footer.default .footer-top .social-media li a.icon-linkedin:focus {
+  color: #FFFFFF;
+  background: #007AB9;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.footer.default .footer-top .social-media li a.icon-pinterest:hover, .footer.default .footer-top .social-media li a.icon-pinterest:focus {
+  color: #FFFFFF;
+  background: #EB274D;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.footer.default .footer-top .social-media li a.icon-qq:hover, .footer.default .footer-top .social-media li a.icon-qq:focus {
+  color: #FFFFFF;
+  background: #FEBF1B;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.footer.default .footer-top .social-media li a.icon-quora:hover, .footer.default .footer-top .social-media li a.icon-quora:focus {
+  color: #FFFFFF;
+  background: #b92b27;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.footer.default .footer-top .social-media li a.icon-reddit-alien:hover, .footer.default .footer-top .social-media li a.icon-reddit-alien:focus {
+  color: #FFFFFF;
+  background: #FF5600;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.footer.default .footer-top .social-media li a.icon-sina-weibo:hover, .footer.default .footer-top .social-media li a.icon-sina-weibo:focus {
+  color: #FFFFFF;
+  background: #E6162D;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.footer.default .footer-top .social-media li a.icon-snapchat-ghost:hover, .footer.default .footer-top .social-media li a.icon-snapchat-ghost:focus {
+  color: #FFFFFF;
+  background: #FFFC00;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.footer.default .footer-top .social-media li a.icon-telegram:hover, .footer.default .footer-top .social-media li a.icon-telegram:focus {
+  color: #FFFFFF;
+  background: #0088cc;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.footer.default .footer-top .social-media li a.icon-twitter:hover, .footer.default .footer-top .social-media li a.icon-twitter:focus {
+  color: #FFFFFF;
+  background: #55ACED;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.footer.default .footer-top .social-media li a.icon-vkontakte:hover, .footer.default .footer-top .social-media li a.icon-vkontakte:focus {
+  color: #FFFFFF;
+  background: #5181b8;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.footer.default .footer-top .social-media li a.icon-wechat:hover, .footer.default .footer-top .social-media li a.icon-wechat:focus {
+  color: #FFFFFF;
+  background: #7bb32e;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.footer.default .footer-top .social-media li a.icon-whatsapp:hover, .footer.default .footer-top .social-media li a.icon-whatsapp:focus {
+  color: #FFFFFF;
+  background: #25D366;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.footer.default .footer-top .social-media li a.icon-youtube:hover, .footer.default .footer-top .social-media li a.icon-youtube:focus {
+  color: #FFFFFF;
+  background: #FA1911;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.footer.default .footer-top .social-media li a.icon-twitch:hover, .footer.default .footer-top .social-media li a.icon-twitch:focus {
+  color: #FFFFFF;
+  background: #9147FE;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.footer.default .footer-top .social-media li a.icon-flickr:hover, .footer.default .footer-top .social-media li a.icon-flickr:focus {
+  color: #FFFFFF;
+  background: #FA187B;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.footer.default .footer-top .social-media li a.icon-cri:hover, .footer.default .footer-top .social-media li a.icon-cri:focus {
+  color: #FFFFFF;
+  background: #FFFFFF;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.footer.default .footer-top .social-media li a.icon-skype:hover, .footer.default .footer-top .social-media li a.icon-skype:focus {
+  color: #FFFFFF;
+  background: #00AAE9;
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
 }
@@ -7247,6 +7299,20 @@ PRELOADER-INNER STYLE
 @keyframes color {
   100% {
     background-position: -1000px;
+  }
+}
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  80%, 100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 @keyframes bounce {
