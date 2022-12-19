@@ -4756,12 +4756,15 @@ MODAL STYLE
 								@include border-radius(500px);
 								@include transition(all 0.3s ease);
 
-								&:any-link {
+								@each $name, $color in $social-colors {
 
-									&:hover, &:focus {
-										color: $white;
-										background: $d_orange;
-										@include transform(translateY(-5px));
+									&.icon-#{$name} {
+
+										&:hover, &:focus {
+											color: $white;
+											background: $color;
+											@include transform(translateY(-5px));
+										}
 									}
 								}
 							}

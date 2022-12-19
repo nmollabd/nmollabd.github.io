@@ -7055,15 +7055,123 @@ MODAL STYLE
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a:-moz-any-link:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a:-moz-any-link:focus {
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-facebook:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-facebook:focus {
   color: #FFFFFF;
-  background: #ffaa17;
+  background: #395185;
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
 }
-.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a:any-link:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a:any-link:focus {
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-gplus:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-gplus:focus {
   color: #FFFFFF;
-  background: #ffaa17;
+  background: #DC4E41;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-instagram:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-instagram:focus {
+  color: #FFFFFF;
+  background: #5924D1;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-linkedin:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-linkedin:focus {
+  color: #FFFFFF;
+  background: #007AB9;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-pinterest:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-pinterest:focus {
+  color: #FFFFFF;
+  background: #EB274D;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-qq:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-qq:focus {
+  color: #FFFFFF;
+  background: #FEBF1B;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-quora:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-quora:focus {
+  color: #FFFFFF;
+  background: #b92b27;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-reddit-alien:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-reddit-alien:focus {
+  color: #FFFFFF;
+  background: #FF5600;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-sina-weibo:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-sina-weibo:focus {
+  color: #FFFFFF;
+  background: #E6162D;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-snapchat-ghost:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-snapchat-ghost:focus {
+  color: #FFFFFF;
+  background: #FFFC00;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-telegram:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-telegram:focus {
+  color: #FFFFFF;
+  background: #0088cc;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-twitter:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-twitter:focus {
+  color: #FFFFFF;
+  background: #55ACED;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-vkontakte:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-vkontakte:focus {
+  color: #FFFFFF;
+  background: #5181b8;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-wechat:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-wechat:focus {
+  color: #FFFFFF;
+  background: #7bb32e;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-whatsapp:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-whatsapp:focus {
+  color: #FFFFFF;
+  background: #25D366;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-youtube:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-youtube:focus {
+  color: #FFFFFF;
+  background: #FA1911;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-twitch:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-twitch:focus {
+  color: #FFFFFF;
+  background: #9147FE;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-flickr:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-flickr:focus {
+  color: #FFFFFF;
+  background: #FA187B;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-cri:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-cri:focus {
+  color: #FFFFFF;
+  background: #FFFFFF;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-skype:hover, .modal .modal-dialog .modal-content .modal-body .about-me-box .social-media li a.icon-skype:focus {
+  color: #FFFFFF;
+  background: #00AAE9;
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
 }
