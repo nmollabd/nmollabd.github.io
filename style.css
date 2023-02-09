@@ -82,7 +82,6 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
   color: var(--gray-color);
   background: var(--primary-color);
   text-rendering: optimizeLegibility;
@@ -181,18 +180,6 @@ p:last-child {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .lr-10 {
@@ -865,13 +852,20 @@ section.active {
 }
 
 .home {
-  height: 100vh;
-  overflow: hidden;
+  padding: 100px 0;
   position: relative;
-  background: var(--primary-color);
+  background-repeat: no-repeat !important;
+  background-position: center bottom !important;
 }
-.home .h-100vh {
-  padding: 100px 0px 100px;
+.home:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  content: "";
+  height: 100%;
+  opacity: 0.9;
+  position: absolute;
+  background: var(--white-color);
 }
 .home .main-profile-image {
   padding: 30px;
@@ -934,21 +928,21 @@ section.active {
   margin-top: 20px;
   font-weight: 700;
   margin-bottom: 0px;
-  color: var(--white-color);
+  color: var(--black-color);
   text-shadow: 3px -3px 10px rgba(0, 0, 0, 0.3);
 }
 .home .hero-box .name span {
   color: var(--blue-color);
 }
 .home .hero-box .typed-title {
-  color: var(--white-color);
+  color: var(--black-color);
 }
 .home .hero-box .short-info {
   margin-bottom: 0;
 }
 .home .hero-box .short-info p {
   font-weight: 400;
-  color: var(--white-color);
+  color: var(--black-color);
   text-transform: capitalize;
   letter-spacing: 0.9px;
 }
@@ -1243,12 +1237,6 @@ section.active {
 
 .slick-dotted.slick-slider {
   margin-bottom: 0 !important;
-}
-
-canvas {
-  width: 100%;
-  height: 100%;
-  position: absolute;
 }
 
 .my-resume {

@@ -204,25 +204,25 @@ $(function ($) {
         closeMarkup: '<button title="Close (Esc)" type="button" class="mfp-close">Close<span class="icon-cancel"></span></button>',
     });
 
-    // // Disable right-click
-    // document.addEventListener('contextmenu', (e) => e.preventDefault());
-    // function ctrlShiftKey(e, keyCode) {
-    //     return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
-    // }
+    // Disable right-click
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+    function ctrlShiftKey(e, keyCode) {
+        return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+    }
 
-    // document.onkeydown = (e) => {
-    //     // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+    document.onkeydown = (e) => {
+        // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
 
-    //     if (
-    //         event.keyCode === 123 ||
-    //         ctrlShiftKey(e, 'I') ||
-    //         ctrlShiftKey(e, 'J') ||
-    //         ctrlShiftKey(e, 'C') ||
-    //         (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
-    //     )
+        if (
+            event.keyCode === 123 ||
+            ctrlShiftKey(e, 'I') ||
+            ctrlShiftKey(e, 'J') ||
+            ctrlShiftKey(e, 'C') ||
+            (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+        )
 
-    //     return false;
-    // };
+        return false;
+    };
 });
 
 /*** Number Counter */
@@ -230,89 +230,6 @@ $('.counter').counterUp({
     delay: 10,
     time: 1000
 });
-
-const canvas = document.getElementById('canvas')
-const context = canvas.getContext('2d')
-
-canvas.width = window.innerWidth
-canvas.height = window.innerHeight
-canvas.style.background = 'transparent'
-
-const mouse = {
-    x: undefined,
-    y: undefined
-}   
-window.addEventListener('mousemove',e =>{
-    mouse.x = e.x
-    mouse.y = e.y
-  
-})
-
-// Código abaixo cria um objeto circulo individual
-function Circle(x, y, radius = 10, speedX = 5, speedY = 5, maxRadius = 10) {
-    this.x = x
-    this.y = y
-    this.radius = radius
-    this.speedX = speedX
-    this.speedY = speedY
-    this.maxRadius = maxRadius
-    this.minRadius = radius
-
-    this.draw = () => { //desenha o circulo
-        context.beginPath()
-        context.strokeStyle = '#FFC107'
-        context.fillStyle = 'transparent'
-        context.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
-        context.stroke()
-        context.fill()
-        context.closePath()
-    }
-
-    this.update = () => { // verifica a colisao e muda o sinal da velocidade
-        if (this.x + this.radius > canvas.width || this.x - this.radius < 0) {
-            this.speedX = -this.speedX
-        }
-        if (this.y + this.radius > canvas.height || this.y - this.radius < 0) {
-            this.speedY = -this.speedY
-        }
-        this.x += this.speedX
-        this.y += this.speedY
-
-        //efeito do mouse
-        if(mouse.x - this.x < 50 && mouse.x - this.x > -50 && mouse.y - this.y < 50 && mouse.y - this.y> -50){
-            if(this.radius < this.maxRadius){
-                this.radius +=1
-            }
-        }else if(this.radius > this.minRadius){
-            this.radius -= 1
-        }
-
-        this.draw() //chama o metodo draw
-    }
-}
-
-let circleArr = []
-
-for (let i = 0; i < 500; i++) {//a quantidade de loops determina a quantidade de bolinhas
-    let radius = Math.random() * 3 + 1
-    let x = Math.random() * (canvas.width - radius * 2.5) + radius//randomização do x
-    let y = Math.random() * (canvas.height - radius * 2.5) + radius
-    let speedX = Math.random() * 1
-    let speedY = Math.random() * 1
-
-    circleArr.push(new Circle(x, y, radius, speedX, speedY))//adiciona um novo circulo a cada posição do array
-}
-
-const animate = () => {
-    requestAnimationFrame(animate)// faz um loop infinito
-    context.clearRect(0, 0, canvas.width, canvas.height) //limpa todo o canvas
-    for (let i = 0; i < circleArr.length; i++) {
-        circleArr[i].update()// tualiza a posição de cada bolinha e desenha ela na tela
-    }
-
-}
-animate()
-
 
 /*** Cursor */
 const cursor = document.querySelector('#cursor');
