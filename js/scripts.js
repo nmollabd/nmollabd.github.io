@@ -154,7 +154,7 @@ $(function ($) {
     }, 500);
 
     /*** enable lightbox */
-    $('.popup-video, .blog-post .media a.video').magnificPopup({
+    $('.popup-video').magnificPopup({
         type: 'iframe',
         preloader: false,
         fixedBgPos: true,
@@ -204,42 +204,6 @@ $(function ($) {
         closeMarkup: '<button title="Close (Esc)" type="button" class="mfp-close">Close<span class="icon-cancel"></span></button>',
     });
 
-    /*** Number Counter */
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
-
-        /*** Sly  */
-    $('.break-room-slider-wrapper').each(function(i, l) {
-
-        var $sly_frame = $(this),
-            $slide = $sly_frame.children('.slyslider').eq(0),
-            $sly_wrap  = $sly_frame.parent();
-
-        $(this).sly({
-            smart: 1,
-            speed: 300,
-            horizontal: 1,
-            mouseDragging: 1,
-            releaseSwing: 1,
-            touchDragging: 1,
-            itemNav: 'basic',
-            scrollBy: 1,
-            clickBar: 1,
-            swingSpeed: 0.2,
-            elasticBounds: 1,
-            dragHandle: 1,
-            dynamicHandle: 1,
-            sbSize: 80,
-            activateMiddle: 1,
-            easing: 'easeOutExpo',
-            scrollBar: $sly_wrap.find('.slyslider__scrollbar'),
-            prev: $sly_wrap.find('.prev'),
-            next: $sly_wrap.find('.next'),
-        });
-    });
-
     // // Disable right-click
     // document.addEventListener('contextmenu', (e) => e.preventDefault());
     // function ctrlShiftKey(e, keyCode) {
@@ -259,6 +223,12 @@ $(function ($) {
 
     //     return false;
     // };
+});
+
+/*** Number Counter */
+$('.counter').counterUp({
+    delay: 10,
+    time: 1000
 });
 
 const canvas = document.getElementById('canvas')

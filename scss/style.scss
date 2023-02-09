@@ -1513,7 +1513,6 @@ canvas {
 	&__item {
 		width: 100%;
 		overflow: hidden;
-		margin-bottom: 30px;
 		margin-bottom: 20px;
 		height: calc(100% - 20px);
 		@include border-radius(16px);
@@ -1642,24 +1641,31 @@ canvas {
 
 				.blog-content {
 
-					.media {
-						overflow: hidden;
-						margin-bottom: 0;
-						@include border-radius(16px);
+					a {
 
-						img {
-							height: auto;
-							max-width: 100%;
-							object-fit: cover;
-							@include transition(all 0.3s ease);
+						.media {
+							overflow: hidden;
+							margin-bottom: 0;
+							@include border-radius(16px);
+
+							img {
+								height: auto;
+								max-width: 100%;
+								object-fit: cover;
+								@include transition(all 0.3s ease);
+							}
 						}
 
+						&:any-link {
 
+							&:hover, &:focus {
 
-						&:hover, &:focus {
-							
-							img {
-								@include transform(scale(1.2));
+								.media {
+
+									img {
+										@include transform(scale(1.2));
+									}
+								}
 							}
 						}
 					}
@@ -1717,6 +1723,33 @@ canvas {
 	&__slider {
 
 		.modal-slider-controls {
+
+			.slick-dots {
+			    bottom: 30px;
+			    margin: 0;
+			    right: 15px;
+			    line-height: 0;
+			    text-align: right;
+			    position: relative;
+
+				li {
+					width: 12px;
+					height: 12px;
+					margin: 0 3px;
+					@include border-radius(500px);
+					background-color: var(--orange-color);
+
+					&.slick-active {
+						background-color: var(--blue-color);
+					}
+				}
+			}
+		}
+	}
+
+	.modal-slider {
+		
+		.portfoliomodal-slider-controls {
 
 			.slick-dots {
 			    bottom: 30px;
@@ -1944,8 +1977,65 @@ canvas {
     }
 }
 
-.my-project {
+.portfolio {
 	padding: 80px 0;
+	background: var(--primary-color);
+
+	.mbm-20 {
+		margin-bottom: -20px;
+	}
+
+	&__item {
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: 20px;
+		height: calc(100% - 20px);
+		@include border-radius(16px);
+		background: var(--secondary-color);
+		box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+
+		.media {
+			width: 100%;
+			overflow: hidden;
+			margin-bottom: 15px;
+			@include border-radius(16px);
+
+			img {
+				height: auto;
+				max-width: 100%;
+				object-fit: contain;
+				@include transition(all 0.3s ease);
+			}
+		}
+
+		.details {
+			padding: 20px;
+			padding-top: 0;
+
+			.title {
+				margin-bottom: 5px;
+				color: var(--white-color);
+				text-transform: capitalize;
+			}
+
+			.description {
+
+				p {
+					color: var(--white-color);
+				}
+			}
+		}
+
+		&:hover, &:focus {
+
+			.media {
+
+				img {
+					@include transform(scale(1.2));
+				}
+			}
+		}
+	}
 }
 
 @import'responsive';
