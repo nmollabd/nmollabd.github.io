@@ -55,6 +55,32 @@
 		    }
 		}
 	}
+
+	.my-resume {
+		padding: 70px 0;
+
+		.education {
+
+			&__box {
+			    padding: 25px 20px 30px;
+			}
+		}
+
+		.skill-area {
+
+			&__card {
+			    padding: 25px 20px 35px;
+			}
+		}
+
+		.video-section {
+
+			.content {
+			    margin-bottom: 30px;
+			}
+		}
+	}
+
 }/* 991 */
 
 @media only screen and (max-width: 767px) {
@@ -131,9 +157,54 @@
 		}
 	}
 
+	.my-resume {
+		padding: 60px 0;
+
+		.skill-area {
+
+			&__card {
+
+				.skill-bars {
+
+					.skill-progress {
+
+						.progressbar-wrap {
+						    height: 10px;
+						}
+					}
+				}
+			}
+		}
+
+		.video-section {
+
+			.resume-video {
+				min-height: 400px;
+
+				&:before {
+				    width: 70px;
+				    height: 70px;
+				    font-size: 23px;
+				    line-height: 70px;
+				    top: calc(50% - 35px);
+				    left: calc(50% - 35px);
+				}
+			}
+		}
+	}
+
 }/* 767 */
 
 @media only screen and (max-width: 575px) {
+
+	h1, .h1 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	.entry-title {
+	    margin-bottom: 30px;
+	}
 
 	.mainmenu-area {
 		top: 0;
@@ -287,6 +358,60 @@
 		}
 	}
 
+	.my-resume {
+		padding: 50px 0;
+
+		.skill-area {
+
+			&__card {
+
+				.skill-bars {
+
+					.skill-progress {
+
+						.progressbar-wrap {
+						    height: 6px;
+						}
+					}
+				}
+			}
+		}
+
+		.video-section {
+
+			.resume-video {
+				min-height: 350px;
+				@include border-radius(16px);
+
+				&:before {
+				    width: 60px;
+				    height: 60px;
+				    font-size: 18px;
+				    line-height: 60px;
+				    top: calc(50% - 30px);
+				    left: calc(50% - 30px);
+				}
+			}
+		}
+
+		.education__box-list {
+
+			.single-education {
+
+				.text {
+
+					.collage-name {
+					    margin-bottom: 0;
+					}
+
+					.description {
+						margin-top: 5px;
+					}
+				}
+			}
+		}
+	}
+
 }/* 575 */
 
 @media only screen and (max-width: 480px) {
@@ -345,6 +470,68 @@
 					}
 				}
 			}
+		}
+	}
+
+	.my-resume {
+		padding-top: 40px;
+
+		.skill-area {
+
+			&__card {
+				padding: 20px 15px 30px;
+
+				.skill-bars {
+
+					.skill-progress {
+
+						.progressbar-wrap {
+						    height: 6px;
+						}
+					}
+				}
+			}
+		}
+
+		.video-section {
+
+			.resume-video {
+				min-height: 280px;
+
+				&:before {
+				    width: 50px;
+				    height: 50px;
+				    font-size: 18px;
+				    line-height: 50px;
+				    top: calc(50% - 25px);
+				    left: calc(50% - 25px);
+				}
+
+				.text {
+				    padding: 5px;
+				}
+			}
+		}
+
+		.education__box-list {
+
+			.single-education {
+
+				.text {
+
+					.collage-name {
+					    margin-bottom: 0;
+					}
+
+					.description {
+						margin-top: 5px;
+					}
+				}
+			}
+		}
+
+		.education__box {
+		    padding: 20px 12px 25px;
 		}
 	}
 
