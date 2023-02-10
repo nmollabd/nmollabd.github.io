@@ -852,20 +852,9 @@ section.active {
 }
 
 .home {
-  padding: 100px 0;
   position: relative;
   background-repeat: no-repeat !important;
   background-position: center bottom !important;
-}
-.home:before {
-  top: 0;
-  left: 0;
-  width: 100%;
-  content: "";
-  height: 100%;
-  opacity: 0.9;
-  position: absolute;
-  background: var(--white-color);
 }
 .home .main-profile-image {
   padding: 30px;
@@ -928,35 +917,40 @@ section.active {
   margin-top: 20px;
   font-weight: 700;
   margin-bottom: 0px;
-  color: var(--black-color);
+  color: var(--white-color);
   text-shadow: 3px -3px 10px rgba(0, 0, 0, 0.3);
 }
 .home .hero-box .name span {
   color: var(--blue-color);
 }
 .home .hero-box .typed-title {
-  color: var(--black-color);
+  color: var(--white-color);
+}
+.home .hero-box .typed-title span {
+  color: var(--orange-color);
 }
 .home .hero-box .short-info {
   margin-bottom: 0;
 }
 .home .hero-box .short-info p {
   font-weight: 400;
-  color: var(--black-color);
+  color: var(--white-color);
   text-transform: capitalize;
   letter-spacing: 0.9px;
 }
 .home .hero-box .mybtn {
   z-index: 3;
   cursor: pointer;
+  font-size: 18px;
   overflow: hidden;
   margin-top: 20px;
   padding: 5px 20px;
+  line-height: 28px;
   position: relative;
   display: inline-block;
   outline: none !important;
   color: var(--white-color);
-  border-radius: 500px;
+  border-radius: 0;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
@@ -1019,14 +1013,18 @@ section.active {
   margin-bottom: 5px;
 }
 .about-area__info .about-box__info .info-list__item .title {
+  font-size: 18px;
   margin-bottom: 0;
   font-weight: 400;
+  line-height: 28px;
   color: var(--white-color);
   text-transform: capitalize;
 }
 .about-area__info .about-box__info .info-list__item .value {
+  font-size: 18px;
   margin-left: 2px;
   margin-bottom: 0;
+  line-height: 28px;
   color: var(--white-color);
   text-transform: capitalize;
 }
@@ -1064,6 +1062,15 @@ section.active {
 .about-area__info .about-box__item .text .title {
   margin-bottom: 0;
   color: var(--white-color);
+}
+.about-area__info .about-box__item .text .number {
+  display: none;
+  margin-bottom: 0;
+  line-height: 24px;
+  color: var(--white-color);
+}
+.about-area__info .about-box__item .text .number span {
+  color: var(--blue-color);
 }
 .about-area .mbm-20 {
   margin-bottom: -20px;
@@ -2168,3 +2175,249 @@ section.active {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
+
+/* 1480 */
+/* 1366 */
+@media only screen and (max-width: 1199px) {
+  /***********************************
+  HOME STYLE
+  ***********************************/
+} /* 1199 */
+@media only screen and (max-width: 991px) {
+  /***********************************
+  ABOUT-AREA STYLE
+  ***********************************/
+  .about-area {
+    padding: 70px 0;
+  }
+  .about-area .service__item {
+    padding: 15px;
+    min-height: 280px;
+    border-radius: 10px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+  }
+  .about-area .service__item .icon {
+    max-width: 55px;
+  }
+  .about-area .testimonial__slider {
+    padding: 20px;
+    border-radius: 16px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+  }
+  .about-area .testimonial__slider .testimonial-item .text .description p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+} /* 991 */
+@media only screen and (max-width: 767px) {
+  h1, .h1 {
+    font-size: 44px;
+    line-height: 54px;
+  }
+  h2, .h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  h3, .h3 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .entry-title {
+    margin-bottom: 40px;
+  }
+  /***********************************
+  HOME STYLE
+  ***********************************/
+  .home {
+    padding: 80px 0;
+    display: inherit !important;
+  }
+  .home .main-profile-image {
+    padding: 25px;
+    margin-bottom: 50px;
+  }
+  .home .main-profile-image:before {
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+  }
+  .about-area__info .about-box__info {
+    margin-bottom: 22px;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid #404040;
+  }
+  .about-area {
+    padding-top: 60px;
+  }
+  .about-area .testimonial__content {
+    margin-bottom: 30px;
+  }
+  .about-area .testimonial__slider .testimonial-item .text .description {
+    max-width: 500px;
+  }
+} /* 767 */
+@media only screen and (max-width: 575px) {
+  .mainmenu-area {
+    top: 0;
+    right: 0;
+    border: 0;
+    width: 220px;
+    height: auto;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding-bottom: 15px;
+  }
+  .mainmenu-area .my-navbar .navbar-links .mynav-item {
+    height: auto;
+    display: block;
+  }
+  .mainmenu-area .my-navbar .navbar-links .mynav-item:not(:first-child) {
+    margin-left: 0;
+  }
+  .mainmenu-area .my-navbar .navbar-links .mynav-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .toggle-icon {
+    top: 10px;
+    right: 15px;
+  }
+  /***********************************
+  HOME STYLE
+  ***********************************/
+  .home {
+    padding: 60px 0;
+  }
+  .home .main-profile-image {
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  .home .hero-box .mybtn {
+    width: 100%;
+    text-align: center;
+  }
+  .home .hero-box .short-info p {
+    letter-spacing: 0;
+  }
+  .about-area {
+    padding: 50px 0 60px;
+  }
+  .about-area .service__item {
+    min-height: 250px;
+  }
+  .about-area__info .about-box__info .info-list__item {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 0.5px solid #404040;
+  }
+  .about-area__info .about-box__info .info-list__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .about-area .about-box__info {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+  }
+  .about-area .about-box .minus {
+    margin-left: -25px;
+  }
+  .about-area .about-box .minus [class^=col] {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .about-area .about-box__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+    padding-top: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #404040;
+  }
+  .about-area .about-box__item .top {
+    margin-bottom: 0;
+    display: inline-block !important;
+  }
+  .about-area .about-box__item .top .number {
+    display: none;
+  }
+  .about-area .about-box__item .top .icon {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 70px;
+  }
+  .about-area .about-box__item .top .number {
+    margin-bottom: 0;
+  }
+  .about-area .about-box__item .text .number {
+    display: block;
+  }
+} /* 575 */
+@media only screen and (max-width: 480px) {
+  /***********************************
+  HOME STYLE
+  ***********************************/
+  .home {
+    padding: 50px 0;
+  }
+  .home .main-profile-image {
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  .about-area .testimonial__slider {
+    padding: 15px 10px;
+    padding-bottom: 25px;
+  }
+  .about-area .testimonial__slider .testimonial-item .text .description p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .about-area .testimonial .slider-controls {
+    margin-top: 20px;
+  }
+  .about-area .about-box__item .top .icon {
+    width: 65px;
+    height: 65px;
+    font-size: 25px;
+    line-height: 65px;
+  }
+} /* 480 */
+@media only screen and (max-width: 380px) {
+  /***********************************
+  HOME STYLE
+  ***********************************/
+  .home .main-profile-image {
+    padding: 10px;
+  }
+  .about-area .about-box__item .top .icon {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    line-height: 60px;
+  }
+} /* 380 */

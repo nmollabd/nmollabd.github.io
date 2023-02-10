@@ -1,0 +1,384 @@
+@media only screen and (max-width: 1480px) {
+
+}/* 1480 */
+
+@media only screen and (max-width: 1366px) {
+	
+}/* 1366 */
+
+@media only screen and (max-width: 1199px) {
+
+	/***********************************
+	HOME STYLE
+	***********************************/
+	
+
+}/* 1199 */
+
+@media only screen and (max-width: 991px) {
+
+	/***********************************
+	ABOUT-AREA STYLE
+	***********************************/
+	.about-area {
+	    padding: 70px 0;
+
+	    .service {
+
+	    	&__item {
+			    padding: 15px;
+			    min-height: 280px;
+			    @include border-radius(10px);
+
+			    .icon {
+			    	max-width: 55px;
+			    }
+			}
+	    }
+
+	    .testimonial__slider {
+		    padding: 20px;
+		    @include border-radius(16px);
+
+		    .testimonial-item {
+
+		    	.text {
+
+		    		.description {
+
+		    			p {
+		    				font-size: 20px;
+		    				line-height: 30px;
+		    			}
+		    		}
+		    	} 
+		    }
+		}
+	}
+}/* 991 */
+
+@media only screen and (max-width: 767px) {
+
+	h1, .h1 {
+	    font-size: 44px;
+	    line-height: 54px;
+	}
+
+	h2, .h2 {
+		font-size: 32px;
+		line-height: 42px;
+	}
+
+	h3, .h3 {
+	    font-size: 26px;
+	    line-height: 36px;
+	}
+
+	.entry-title {
+	    margin-bottom: 40px;
+	}
+
+	/***********************************
+	HOME STYLE
+	***********************************/
+	.home {
+		padding: 80px 0;
+		display: inherit !important;
+
+		.main-profile-image {
+    		padding: 25px;
+			margin-bottom: 50px;
+
+			&:before {
+			    @include transform(rotate(-34deg));
+			}
+		}
+	}
+
+	.about-area {
+
+		&__info {
+
+			.about-box__info {
+				margin-bottom: 22px;
+				padding-bottom: 20px;
+				border-bottom: 0.5px solid #404040;
+			}
+		}
+	}
+
+	.about-area {
+		padding-top: 60px;
+
+		.testimonial {
+
+			&__content {
+				margin-bottom: 30px;
+			}
+		}
+
+		.testimonial__slider {
+
+		    .testimonial-item {
+
+		    	.text {
+
+		    		.description {
+		    			max-width: 500px;
+		    		}
+		    	} 
+		    }
+		}
+	}
+
+}/* 767 */
+
+@media only screen and (max-width: 575px) {
+
+	.mainmenu-area {
+		top: 0;
+		right: 0;
+		border: 0;
+	    width: 220px;
+	    height: auto;
+	    border-radius: 0;
+	    box-shadow: none;
+	    padding-bottom: 15px;
+
+	    .my-navbar {
+
+	    	.navbar-links {
+
+	    		.mynav-item {
+				    height: auto;
+				    display: block;
+
+				    &:not(:first-child) {
+					    margin-left: 0;
+					}
+
+				    &:not(:last-child) {
+					    margin-bottom: 20px;
+					}
+				}
+	    	}
+	    }
+	}
+
+	.toggle-icon {
+	    top: 10px;
+	    right: 15px;
+	}
+
+	/***********************************
+	HOME STYLE
+	***********************************/
+	.home {
+		padding: 60px 0;
+
+		.main-profile-image {
+			padding: 20px;
+			margin-bottom: 40px;
+		}
+
+		.hero-box {
+
+			.mybtn {
+				width: 100%;
+				text-align: center;
+			}
+
+			.short-info {
+
+				p {
+					letter-spacing: 0;
+				}
+			}
+		}
+	}
+
+	.about-area {
+		padding: 50px 0 60px;
+
+		.service {
+
+			&__item {
+			    min-height: 250px;
+			}
+		}
+
+		&__info {
+
+			.about-box {
+
+				&__info {
+
+					.info-list__item {
+					    flex: 100%;
+					    width: 100%;
+						display: flex;
+						padding-left: 0;
+						padding-right: 0;
+						align-items: center;
+					    padding-bottom: 10px;
+						justify-content: space-between;
+						border-bottom: 0.5px solid #404040;
+
+						&:not(:last-child) {
+						    margin-bottom: 10px;
+						}
+					}
+				}
+			}
+		}
+
+		.about-box {
+
+			&__info {
+			    border-bottom: 0;
+			    margin-bottom: 0;
+			    padding-bottom: 15px;
+			}
+
+			.minus {
+			    margin-left: -25px;
+
+				[class^=col] {
+				    flex: 0 0 100%;
+				    max-width: 100%;
+				}
+			}
+
+			&__item {
+				display: flex;
+				margin-bottom: 0;
+				padding-top: 15px;
+				align-items: center;
+				padding-bottom: 15px;
+				border-bottom: 0.5px solid #404040;
+
+				.top {
+					margin-bottom: 0;
+					display: inline-block !important; 
+
+					.number {
+						display: none;
+					}
+
+					.icon {
+					    width: 70px;
+					    height: 70px;
+					    font-size: 30px;
+					    line-height: 70px;
+					}
+
+					.number {
+						margin-bottom: 0;
+					}
+				}
+
+				.text {
+
+					.number {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+}/* 575 */
+
+@media only screen and (max-width: 480px) {
+
+	/***********************************
+	HOME STYLE
+	***********************************/
+	.home {
+		padding: 50px 0;
+
+		.main-profile-image {
+			padding: 15px;
+			margin-bottom: 30px;
+		}
+	}
+
+	.about-area {
+
+		.testimonial__slider {
+		    padding: 15px 10px;
+		    padding-bottom: 25px;
+
+		    .testimonial-item {
+
+		    	.text {
+
+		    		.description {
+
+		    			p {
+						    font-size: 18px;
+						    line-height: 28px;
+						}
+		    		}
+		    	}
+		    }
+		}
+
+		.testimonial {
+
+			.slider-controls {
+			    margin-top: 20px;
+			}
+		}
+
+		.about-box {
+
+			&__item {
+
+				.top {
+
+					.icon {
+					    width: 65px;
+					    height: 65px;
+					    font-size: 25px;
+					    line-height: 65px;
+					}
+				}
+			}
+		}
+	}
+
+}/* 480 */
+
+@media only screen and (max-width: 380px) {
+	
+	/***********************************
+	HOME STYLE
+	***********************************/
+	.home {
+
+		.main-profile-image {
+			padding: 10px;
+		}
+	}
+
+	.about-area {
+
+		.about-box {
+
+			&__item {
+
+				.top {
+
+					.icon {
+					    width: 60px;
+					    height: 60px;
+					    font-size: 22px;
+					    line-height: 60px;
+					}
+				}
+			}
+		}
+	}
+
+}/* 380 */
