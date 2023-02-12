@@ -204,25 +204,43 @@ $(function ($) {
         closeMarkup: '<button title="Close (Esc)" type="button" class="mfp-close">Close<span class="icon-cancel"></span></button>',
     });
 
-    // Disable right-click
-    document.addEventListener('contextmenu', (e) => e.preventDefault());
-    function ctrlShiftKey(e, keyCode) {
-        return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+    //Search Popup
+    if($('.search-popup').length){
+        
+        $('.search-toggler').on('click', function() {
+            $('.search-popup').addClass('popup-visible');
+        });
+
+        $(document).keydown(function(e){
+            if(e.keyCode === 27) {
+                $('.search-popup').removeClass('popup-visible');
+            }
+        });
+
+        $('.close-search,.search-popup .overlay-layer').on('click', function() {
+            $('.search-popup').removeClass('popup-visible');
+        });
     }
 
-    document.onkeydown = (e) => {
-        // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+    // // Disable right-click
+    // document.addEventListener('contextmenu', (e) => e.preventDefault());
+    // function ctrlShiftKey(e, keyCode) {
+    //     return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+    // }
 
-        if (
-            event.keyCode === 123 ||
-            ctrlShiftKey(e, 'I') ||
-            ctrlShiftKey(e, 'J') ||
-            ctrlShiftKey(e, 'C') ||
-            (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
-        )
+    // document.onkeydown = (e) => {
+    //     // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
 
-        return false;
-    };
+    //     if (
+    //         event.keyCode === 123 ||
+    //         ctrlShiftKey(e, 'I') ||
+    //         ctrlShiftKey(e, 'J') ||
+    //         ctrlShiftKey(e, 'C') ||
+    //         (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+    //     )
+
+    //     return false;
+    // };
 });
 
 /*** Number Counter */
@@ -233,7 +251,6 @@ $('.counter').counterUp({
 
 /*** Cursor */
 const cursor = document.querySelector('#cursor');
-
 if ( cursor ) {
     
     const cursorCircle = cursor.querySelector('.cursor__circle');
