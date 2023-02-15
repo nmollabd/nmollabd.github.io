@@ -560,10 +560,10 @@ BANNER STYLES
 
 
 .toggle-icon {
-    top: 25px;
-    width: 50px;
-    right: 25px;
-    height: 50px;
+    top: 15px;
+    width: 40px;
+    right: 20px;
+    height: 40px;
     z-index: 1000;
     position: fixed;
     cursor: pointer;
@@ -572,7 +572,6 @@ BANNER STYLES
     text-align: center;
     @include border-radius(500px);
     background: var(--secondary-color);
-    box-shadow: 0px 0px 1px 1px var(--white-color);
 
 	#nav-icon3 {
 	    top: 0px;
@@ -611,9 +610,9 @@ BANNER STYLES
 	    }
 
 	    span {
-		    left: 16px;
-		    width: 35%;
+		    left: 12px;
 		    opacity: 1;
+		    width: 18px;
 		    height: 2px;
 		    display: block;
 		    position: absolute;
@@ -623,15 +622,15 @@ BANNER STYLES
 		    @include transition(.25s ease-in-out);
 
 		    &:nth-child(1) {
-		    	top: 19px;
+		    	top: 13px;
 		    }
 
 		    &:nth-child(2), &:nth-child(3) {
-		    	top: 24px;
+		    	top: 19px;
 		    }
 
 		    &:nth-child(4) {
-		    	top: 29px;
+		    	top: 25px;
 		    }
 		}
 	}
@@ -645,18 +644,17 @@ BANNER STYLES
 }
 
 .mainmenu-area {
-	top: 25px;
+	top: 15px;
 	opacity: 1;
-	right: 25px;
+	right: 20px;
 	z-index: 999;
-	height: 50px;
+	height: 40px;
 	display: flex;
 	position: fixed;
 	visibility: hidden;
-	padding: 0px 70px 0px 20px;
+	padding: 0px 50px 0px 20px;
 	@include border-radius(500px);
 	background: var(--secondary-color);
-	box-shadow: 0px 0px 2px 1px var(--white-color);
 
 	&.show {
 		opacity: 1;
@@ -743,44 +741,59 @@ section {
 	background-repeat: no-repeat !important;
 	background-position: center bottom !important;
 
-	// &:before {
-	// 	top: 0;
-	// 	left: 0;
-	// 	width: 100%;
-	// 	content: '';
-	// 	opacity: 0.5;
-	// 	height: 100%;
-	// 	position: absolute;
-	// 	background: var(--primary-color);
-		
-	// }
+	&__slider {
 
-	.main-profile-image {
-	    padding: 30px;
-	    overflow: hidden;
-	    position: relative;
-	    @include border-radius(10px);
-	    background: var(--secondary-color);
+		.modal-slider {
+			padding: 30px;
+			overflow: hidden;
+			position: relative;
+			@include border-radius(10px);
+			background: var(--secondary-color);
 
-	    img {
-		    z-index: 1;
-	    	width: 100%;
-		    height: 100%;
-	    	max-width: 100%;
-		    position: relative;
-		    @include border-radius(10px);
-		    @include transition(all 0.3s ease);
-		}
+		    &:before {
+			    content: '';
+			    width: 100%;
+			    height: 200%;
+			    top: -100px;
+			    left: -100px;
+			    position: absolute;
+			    transform: rotate(-30deg);
+			    background: var(--orange-color);
+			}
 
-	    &:before {
-		    content: '';
-		    width: 100%;
-		    height: 200%;
-		    top: -100px;
-		    left: -100px;
-		    position: absolute;
-		    transform: rotate(-30deg);
-		    background: var(--orange-color);
+			.slick-list {
+
+				.slick-track {
+
+					.testimonial-item {
+						min-height: auto;
+						padding-left: 0px;
+						padding-right: 0px;
+
+						.media {
+							margin-bottom: 0;
+							overflow: hidden;
+							@include border-radius(10px);
+
+							img {
+								z-index: 1;
+								width: 100%;
+								height: 100%;
+								max-width: 100%;
+								position: relative;
+								@include transition(all 0.3s ease);
+							}
+
+							&:hover, &:focus {
+
+								img {
+									@include transform(scale(1.1));
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -2270,11 +2283,11 @@ section {
 SEARCH-BOX STYLES
 ***********************************/
 .search-box-outer {
-    left: 25px;
+    top: 15px;
+    right: 65px;
     width: 40px;
     height: 40px;
-    bottom: 25px;
-    z-index: 1000;
+    z-index: 999;
 	display: flex;
     position: fixed;
     cursor: pointer;
@@ -2285,7 +2298,6 @@ SEARCH-BOX STYLES
 	justify-content: center;
     @include border-radius(500px);
     background: var(--secondary-color);
-    box-shadow: 0px 0px 1px 1px var(--white-color);
 
     .icon-search {
     	font-size: 12px;
@@ -2294,8 +2306,8 @@ SEARCH-BOX STYLES
 }
 
 .search-popup {
-	left: 0;
 	top: 0px;
+	left: 0px;
 	opacity: 0;
 	width: 100%;
 	height: 100%;

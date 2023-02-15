@@ -34,22 +34,6 @@ $(function ($) {
         }
     });
 
-    // Ajax On Modal 
-    $(".service-area-wrapper").each(function () {
-        $(this).magnificPopup({
-            delegate: ".service-modal:visible",
-            type: "ajax",
-            tLoading:
-            '<div class="preloader"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>',
-            mainClass: "mfp-fade",
-            closeBtnInside: true,
-            midClick: true,
-            gallery: {
-                enabled: true,
-            },
-        });
-    });
-
     $('.project-gallery-item').each(function() {
         $(this).magnificPopup({
                 delegate: '.pp:visible',

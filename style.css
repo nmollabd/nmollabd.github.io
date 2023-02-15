@@ -685,10 +685,10 @@ BANNER STYLES
   }
 }
 .toggle-icon {
-  top: 25px;
-  width: 50px;
-  right: 25px;
-  height: 50px;
+  top: 15px;
+  width: 40px;
+  right: 20px;
+  height: 40px;
   z-index: 1000;
   position: fixed;
   cursor: pointer;
@@ -701,8 +701,6 @@ BANNER STYLES
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   background: var(--secondary-color);
-  -webkit-box-shadow: 0px 0px 1px 1px var(--white-color);
-          box-shadow: 0px 0px 1px 1px var(--white-color);
 }
 .toggle-icon #nav-icon3 {
   top: 0px;
@@ -734,9 +732,9 @@ BANNER STYLES
   left: 50%;
 }
 .toggle-icon #nav-icon3 span {
-  left: 16px;
-  width: 35%;
+  left: 12px;
   opacity: 1;
+  width: 18px;
   height: 2px;
   display: block;
   position: absolute;
@@ -752,13 +750,13 @@ BANNER STYLES
   transition: 0.25s ease-in-out;
 }
 .toggle-icon #nav-icon3 span:nth-child(1) {
-  top: 19px;
+  top: 13px;
 }
 .toggle-icon #nav-icon3 span:nth-child(2), .toggle-icon #nav-icon3 span:nth-child(3) {
-  top: 24px;
+  top: 19px;
 }
 .toggle-icon #nav-icon3 span:nth-child(4) {
-  top: 29px;
+  top: 25px;
 }
 
 #main {
@@ -769,25 +767,23 @@ BANNER STYLES
 }
 
 .mainmenu-area {
-  top: 25px;
+  top: 15px;
   opacity: 1;
-  right: 25px;
+  right: 20px;
   z-index: 999;
-  height: 50px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: fixed;
   visibility: hidden;
-  padding: 0px 70px 0px 20px;
+  padding: 0px 50px 0px 20px;
   border-radius: 500px;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   background: var(--secondary-color);
-  -webkit-box-shadow: 0px 0px 2px 1px var(--white-color);
-          box-shadow: 0px 0px 2px 1px var(--white-color);
 }
 .mainmenu-area.show {
   opacity: 1;
@@ -872,7 +868,7 @@ section.active {
   background-repeat: no-repeat !important;
   background-position: center bottom !important;
 }
-.home .main-profile-image {
+.home__slider .modal-slider {
   padding: 30px;
   overflow: hidden;
   position: relative;
@@ -883,21 +879,7 @@ section.active {
   -moz-transform: translate3d(0, 0, 0);
   background: var(--secondary-color);
 }
-.home .main-profile-image img {
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  position: relative;
-  border-radius: 10px;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.home .main-profile-image:before {
+.home__slider .modal-slider:before {
   content: "";
   width: 100%;
   height: 200%;
@@ -907,6 +889,33 @@ section.active {
   -webkit-transform: rotate(-30deg);
           transform: rotate(-30deg);
   background: var(--orange-color);
+}
+.home__slider .modal-slider .slick-list .slick-track .testimonial-item {
+  min-height: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.home__slider .modal-slider .slick-list .slick-track .testimonial-item .media {
+  margin-bottom: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+.home__slider .modal-slider .slick-list .slick-track .testimonial-item .media img {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.home__slider .modal-slider .slick-list .slick-track .testimonial-item .media:hover img, .home__slider .modal-slider .slick-list .slick-track .testimonial-item .media:focus img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .home .hero-box .greeting {
   font-size: 16px;
@@ -2416,11 +2425,11 @@ section.active {
 SEARCH-BOX STYLES
 ***********************************/
 .search-box-outer {
-  left: 25px;
+  top: 15px;
+  right: 65px;
   width: 40px;
   height: 40px;
-  bottom: 25px;
-  z-index: 1000;
+  z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2441,8 +2450,6 @@ SEARCH-BOX STYLES
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   background: var(--secondary-color);
-  -webkit-box-shadow: 0px 0px 1px 1px var(--white-color);
-          box-shadow: 0px 0px 1px 1px var(--white-color);
 }
 .search-box-outer .icon-search {
   font-size: 12px;
@@ -2450,8 +2457,8 @@ SEARCH-BOX STYLES
 }
 
 .search-popup {
-  left: 0;
   top: 0px;
+  left: 0px;
   opacity: 0;
   width: 100%;
   height: 100%;
