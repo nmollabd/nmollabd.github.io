@@ -80,6 +80,7 @@ h6, .h6 {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-weight: 700;
+	margin-bottom: 0;
 }
 
 a:hover, a:focus, button:hover, button:focus {
@@ -126,6 +127,16 @@ p {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+}
+
+.text-white {
+	color: var(--white-color);
+}
+
+hr {
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid var(--dsecondary-color);
 }
 
 input[type="text"],
@@ -1091,6 +1102,7 @@ section {
     }
 
     .testimonial {
+    	margin-bottom: 50px;
 
     	.entry-title {
     		margin-bottom: 30px;
@@ -1457,6 +1469,7 @@ section {
 
 	.video-section {
 	    margin-top: 50px;
+	    margin-bottom: 50px;
 
 	    .resume-video {
 		    width: 100%;
@@ -1576,6 +1589,10 @@ section {
 
 	.mbm-20 {
 		margin-bottom: -20px;
+	}
+
+	.blogs-style{
+		margin-bottom: 50px;
 	}
 
 	&__item {
@@ -1923,6 +1940,7 @@ section {
 	}
 
 	.contact-me {
+		margin-bottom: 50px;
 
 		.google_map_wrapper {
 		    height: 100%;
@@ -2072,6 +2090,10 @@ section {
 
 	.mbm-20 {
 		margin-bottom: -20px;
+	}
+
+	.project {
+		margin-bottom: 50px;
 	}
 
 	&__item {
@@ -2243,38 +2265,202 @@ section {
 
 .footer {
 	padding: 50px 0;
-    background: linear-gradient(to bottom, #d8edff 0%, #e5d5ff 100%);
+    background: var(--primary-color);
 
-	&__logo {
-		height: auto;
-		max-width: 150px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 10px;
-	}
+    &___logo {
+    	margin-bottom: 20px;
+    }
 
-	&__copyright {
+    .content {
+    	margin-bottom: 20px;
 
-		p {
-			margin: 0 !important;
-		}
+    	.description {
+    		margin-bottom: 0;
 
-		span {
-			margin-top: 10px;
+    		p {
+    			color: var(--white-color);
+    		}
+    	}
+
+    	.socail-media {
+    		margin-top: 30px;
+			margin-left: -3px;
+			margin-right: -3px;
+
+    		li {
+				padding-left: 3px;
+				padding-right: 3px;
+    			display: inline-block;
+
+    			a {
+    				width: 40px;
+    				height: 40px;
+					display: flex;
+					font-size: 14px;
+					line-height: 40px;
+					align-items: center;
+					justify-content: center;
+    				color: var(--white-color);
+					@include border-radius(0px);
+					background: var(--gray-color);
+					@include transition(all 0.3s ease);
+
+					@each $name, $color in $social-colors {
+
+						&.icon-#{$name} {
+							background: $color;
+
+							&:hover, &:focus {
+								@include transform(translateY(-5px));
+							}
+						}
+					}
+    			}
+    		}
+    	}
+    }
+
+    .mbm-20 {
+    	margin-bottom: -30px;
+    }
+
+    .widget {
+    	margin-bottom: 30px;
+
+    	&__title {
+			position: relative;
+			padding-bottom: 10px;
+			color: var(--white-color);
 			text-transform: capitalize;
+			border-bottom: 1px solid #626a8a;
 
-			a {
-				color: var(--blue-color);
-				@include transition(all 0.3s ease);
+			&:before {
+				height: 3px;
+				content: "";
+				width: 100px;
+				bottom: -1.5px;
+				position: absolute;
+				background: var(--blue-color);
+			}
+    	}
 
-				&:any-link {
+    	&-nav {
+    		margin-top: 20px;
 
-					&:hover, &:focus {
-						color: var(--orange-color);
-						text-decoration: underline;
+    		li {
+
+    			&:not(:last-child) {
+    				margin-bottom: 5px;
+    			}
+
+    			a {
+    				display: block;
+    				font-size: 16px;
+    				font-weight: 400;
+    				overflow: hidden;
+    				line-height: 24px;
+    				padding: 7px 13px;
+    				position: relative;
+    				color: var(--white-color);
+    				@include letter-spacing(30, 16);
+    				@include transition(all 0.3s ease);
+    				background: var(--secondary-color);
+
+    				&:before {
+						top: 0;
+						left: 0;
+						width: 2px;
+						content: "";
+						height: 100%;
+						position: absolute;
+						background: var(--orange-color);
+    				}
+
+    				&:any-link {
+
+    					&:hover, &:focus {
+    						color: var(--orange-color);
+    						background: darken(#252c48, 5%);
+    					}
+    				}
+    			}
+    		}
+
+    		&.recent-news {
+
+    			li {
+
+	    			&:not(:last-child) {
+	    				margin-bottom: 10px;
+	    			}
+
+    				.icon {
+    					width: 55px;
+    					height: 55px;
+    					font-size: 20px;
+    					margin-right: 8px;
+    					line-height: 55px;
+    					text-align: center;
+    					color: var(--white-color);
+    					background: var(--orange-color);
+    				}
+
+    				.text {
+
+    					.title {
+
+    						a {
+    							padding: 0;
+    							font-weight: 700;
+    							letter-spacing: 0;
+    							font-size: inherit;
+    							background: transparent;
+
+    							&:before {
+    								content: none;
+    							}
+    						}
+    					}
+
+    					.post-date {
+    						font-size: 16px;
+    						line-height: 24px;
+    						color: var(--blue-color);
+    					}
+    				}
+    			}
+    		}
+    	}
+    }
+
+    &__bottom {
+    	margin-top: 50px;
+
+		&__copyright {
+
+			p {
+				margin: 0 !important;
+				color: var(--white-color);
+			}
+
+			span {
+				margin-top: 10px;
+				color: var(--white-color);
+				text-transform: capitalize;
+
+				a {
+					color: var(--blue-color);
+					@include transition(all 0.3s ease);
+
+					&:any-link {
+
+						&:hover, &:focus {
+							color: var(--orange-color);
+							text-decoration: underline;
+						}
 					}
 				}
-			}
+		    }
 		}
 	}
 }
@@ -2366,7 +2552,7 @@ SEARCH-BOX STYLES
 
 	.search-form {
 		width: 100%;
-		padding: 150px 0;
+		padding: 150px 0 0;
 		position: relative;
 
 		.form-group{

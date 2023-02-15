@@ -4,6 +4,16 @@
 
 @media only screen and (max-width: 1366px) {
 	
+	.search-popup {
+
+		.search-form {
+		    max-width: 900px;
+		    margin-left: auto;
+			padding-top: 200px;
+		    margin-right: auto;
+		}
+	}
+
 }/* 1366 */
 
 @media only screen and (max-width: 1199px) {
@@ -16,6 +26,11 @@
 }/* 1199 */
 
 @media only screen and (max-width: 991px) {
+
+	.container-fluid {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 
 	/***********************************
 	ABOUT-AREA STYLE
@@ -99,6 +114,13 @@
 		}
 	}
 
+	.search-popup {
+
+		.search-form {
+		    max-width: 700px;
+		}
+	}
+
 }/* 991 */
 
 @media only screen and (max-width: 767px) {
@@ -129,12 +151,14 @@
 		padding: 80px 0;
 		display: inherit !important;
 
-		.main-profile-image {
-    		padding: 25px;
-			margin-bottom: 50px;
+		&__slider {
 
-			&:before {
-			    @include transform(rotate(-34deg));
+			.modal-slider {
+				margin-bottom: 40px !important;
+
+				&:before {
+			    	@include transform(rotate(-34deg));
+				}
 			}
 		}
 	}
@@ -282,6 +306,27 @@
 		}
 	}
 
+	.search-popup {
+
+		.search-form {
+		    max-width: 500px;
+
+		    .form-group {
+
+		    	fieldset {
+
+		    		button {
+
+		    			&[type=submit] {
+						    top: 16px;
+						    font-size: 14px;
+						}
+		    		}
+		    	}
+		    }
+		}
+	}
+
 }/* 767 */
 
 @media only screen and (max-width: 575px) {
@@ -330,15 +375,23 @@
 	    right: 15px;
 	}
 
+	.search-box-outer {
+		top: 10px;
+		right: 60px;
+	}
+
 	/***********************************
 	HOME STYLE
 	***********************************/
 	.home {
 		padding: 60px 0;
 
-		.main-profile-image {
-			padding: 20px;
-			margin-bottom: 40px;
+		&__slider {
+
+			.modal-slider {
+				padding: 20px;
+				margin-bottom: 40px !important;
+			}
 		}
 
 		.hero-box {
@@ -531,6 +584,23 @@
 		}
 	}
 
+	.search-popup {
+
+		.search-form {
+		    max-width: 400px;
+		}
+	}
+
+	.footer {
+
+		.content {
+
+			.socail-media {
+			    margin-top: 20px;
+			}
+		}
+	}
+
 }/* 575 */
 
 @media only screen and (max-width: 480px) {
@@ -544,6 +614,14 @@
 		.main-profile-image {
 			padding: 15px;
 			margin-bottom: 30px;
+		}
+
+		&__slider {
+
+			.modal-slider {
+				padding: 15px;
+				margin-bottom: 30px !important;
+			}
 		}
 	}
 
@@ -730,8 +808,11 @@
 	***********************************/
 	.home {
 
-		.main-profile-image {
-			padding: 10px;
+		&__slider {
+
+			.modal-slider {
+				padding: 10px;
+			}
 		}
 	}
 

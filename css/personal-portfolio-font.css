@@ -1,12 +1,12 @@
 /*** Icon */
 @font-face {
 	font-family: 'personal-portfolio';
-	src: url('../fonts/personal-portfolio.eot?48814039');
-	src: url('../fonts/personal-portfolio.eot?48814039#iefix') format('embedded-opentype'),
-		url('../fonts/personal-portfolio.woff2?48814039') format('woff2'),
-		url('../fonts/personal-portfolio.woff?48814039') format('woff'),
-		url('../fonts/personal-portfolio.ttf?48814039') format('truetype'),
-		url('../fonts/personal-portfolio.svg?48814039#personal-portfolio') format('svg');
+	src: url('../fonts/personal-portfolio.eot?39541494');
+	src: url('../fonts/personal-portfolio.eot?39541494#iefix') format('embedded-opentype'),
+		url('../fonts/personal-portfolio.woff2?39541494') format('woff2'),
+		url('../fonts/personal-portfolio.woff?39541494') format('woff'),
+		url('../fonts/personal-portfolio.ttf?39541494') format('truetype'),
+		url('../fonts/personal-portfolio.svg?39541494#personal-portfolio') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -56,6 +56,7 @@
 .icon-arrow-left:before { content: '\e812'; }
 .icon-arrow-right:before { content: '\e813'; }
 .icon-calendar:before { content: '\e814'; }
+.icon-pencil:before { content: '\e815'; }
 .icon-download-cloud:before { content: '\f0ed'; }
 .icon-rocket:before { content: '\f135'; }
 .icon-skype:before { content: '\f30b'; }
