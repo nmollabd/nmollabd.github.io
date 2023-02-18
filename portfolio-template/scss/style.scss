@@ -363,7 +363,7 @@ canvas {
 		content: "";
 		height: 100%;
 		position: absolute;
-	    background-image: url(../images/all-page-header-overly.png);
+	    background-image: url(../portfolio-template/images/all-page-header-overly.png);
     }
 
     img {
@@ -882,7 +882,7 @@ SERVICES STYLE
 		z-index: -3;
 		height: 100%;
 		position: absolute;
-		background: url(../images/pexels-fox-1595385.jpg) no-repeat center / cover;
+		background: url(../portfolio-template/images/pexels-fox-1595385.jpg) no-repeat center / cover;
 	}
 
 	&:after {
@@ -920,7 +920,7 @@ SERVICES STYLE
 			z-index: -3;
 			height: 100%;
 			position: absolute;
-			background: url(../images/photo-1557426272-fc759fdf7a8d.avif) no-repeat center / cover;
+			background: url(../portfolio-template/images/photo-1557426272-fc759fdf7a8d.avif) no-repeat center / cover;
 		}
 	}
 
@@ -1140,7 +1140,7 @@ SERVICES STYLE
 		height: 100%;
 		content: '';
 		position: absolute;
-		background: url(../images/latetest-post.png) no-repeat center / cover;
+		background: url(../portfolio-template/images/latetest-post.png) no-repeat center / cover;
 	}
 
 	.entry-title {
@@ -1435,7 +1435,7 @@ SERVICES STYLE
 		background-size: cover !important;
 		background-repeat: no-repeat !important;
 		background-position: left top !important;
-		background-image: url(../images/map.png);
+		background-image: url(../portfolio-template/images/map.png);
 	}
 
 	&__content {
@@ -1722,7 +1722,7 @@ BANNER STYLES
 		position: absolute;
 		filter: brightness(0.8);
 	    animation: pulse 10s ease-in-out infinite;
-		background: url(../images/footer_vector.png) no-repeat center / cover;
+		background: url(../portfolio-template/images/footer_vector.png) no-repeat center / cover;
     }
 
     &:after {
@@ -1730,7 +1730,7 @@ BANNER STYLES
 		left: 0;
 		position: absolute;
 	    filter: grayscale(1);
-		content: url(../images/line.png);
+		content: url(../portfolio-template/images/line.png);
     }
 
     .media {
@@ -1865,16 +1865,6 @@ BANNER STYLES
 	padding: 90px 0;
 	overflow: hidden;
 	position: relative;
-
-	&:before {
-		top: 0;
-		left: 0;
-		width: 100%;
-		content: '';
-		height: 100%;
-		position: absolute;
-		background: url(../images/head9_back.png) no-repeat center / cover;
-	}
 
 	&__media {
 		width: 100%;
@@ -2128,7 +2118,7 @@ BANNER STYLES
 		min-height: 801px;
 		position: absolute;
 	    animation: our_development 10s ease-in-out infinite;
-		background: url(../images/lines-waves1.png) no-repeat center / cover;
+		background: url(../portfolio-template/images/lines-waves1.png) no-repeat center / cover;
     }
 
     .entry-title {
@@ -3079,8 +3069,8 @@ POPUP VIDEO STYLE
 		    height: 100%;
 		    position: absolute;
 		    background-size: cover !important;
-		    background: #F1C142 url(../images/page-banner-overly.png);
-		    // background-image: url(../images/page-banner-overly.png);
+		    background: #F1C142 url(../portfolio-template/images/page-banner-overly.png);
+		    // background-image: url(../portfolio-template/images/page-banner-overly.png);
 		}
     }
 }
