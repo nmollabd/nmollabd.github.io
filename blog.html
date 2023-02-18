@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="../images/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog | Personal Portfolio</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link href="https://use.typekit.net/svn8axe.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/personal-portfolio-font.css">
+	<link rel="stylesheet" href="../css/plugins.css">
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+	<div id="theme-open" class="theme-open">
+	    <i class="fa fa-cog fa-spin"></i>
+	</div>
+
+	<div class="switcher-themes">
+		<div class="switcher-header">
+			<div class="top d-flex align-items-center justify-content-between">
+				<div class="text">
+					<h6 class="title">Personal Portfolio switcher theme</h6>
+				</div>
+
+				<div id="theme-close" class="close">
+					<i class="icon-cancel"></i>
+				</div>
+			</div>
+
+		    <div class="theme-toggler">
+		        <span>light</span>
+		        <span class="toggler"></span>
+		        <span>Dark</span>
+		    </div>
+
+		    <div class="primary">
+		    	<span>Theme Primary:</span>
+			    <ul class="theme-colors list-inline">
+			        <li class="color" style="background: #F535AA;" title="Neon Pink"></li>
+			        <li class="color" style="background: #F8B88B;" title="Pastel orange"></li>
+			        <li class="color" style="background: #E2F516;" title="Yellow Green"></li>
+			        <li class="color" style="background: #A52A2A;" title="Brown"></li>
+			        <li class="color" style="background: #000000;" title="black"></li>
+			        <li class="color" style="background: #ffa500;" title="orange"></li>
+			        <li class="color" style="background: #17a2b8;" title="info"></li>
+			        <li class="color" style="background: #28a745;" title="success"></li>
+			        <li class="color" style="background: #dc3545;" title="danger"></li>
+			        <li class="color" style="background: #ffc107;" title="warning"></li>
+			        <li class="color" style="background: #4c84ff;" title="primary"></li>
+			    </ul>
+		    </div>
+	    </div>
+	</div>
+
+    <div id="sidr">
+        <div class="mobile-header d-none">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle in">
+                    <i class="icon-cancel"></i>
+                </button>
+            </div>
+
+            <div class="navigation">
+                <div class="remi-mobile-navbar">
+                    <ul class="nav navbar-nav navbar-mobile">
+                        <li class="dropdown col-lg-2 col-md-3">
+                            <a href="about.html">About Us <span class="dropdown-toggle" data-toggle="dropdown"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="sscroll">Core Values</a></li>
+                                <li><a href="#" class="sscroll">Management Team</a></li>
+                                <li><a href="#" class="sscroll">Testimonials</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown col-lg-2 col-md-3">
+                            <a href="#">Our Services <span class="dropdown-toggle" data-toggle="dropdown"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="sscroll">Managed Services</a></li>
+                                <li><a href="solutions.html" class="sscroll">Business Solutions</a></li>
+                                <li><a href="#" class="sscroll">Cybersecurity</a></li>
+                                <li><a href="#" class="sscroll">Network Architecture</a></li>
+                                <li><a href="#" class="sscroll">IT Support</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown col-lg-3 col-md-3">
+                            <a href="contact.html">Contact Us <span class="dropdown-toggle" data-toggle="dropdown"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="sscroll">Submit a New Support Request</a></li>
+                                <li><a href="#" class="sscroll">Start a Remote Session</a></li>
+                                <li><a href="#" class="sscroll">Book Your Free Assessment</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="col-lg-5 col-md-3 has-description has-image has-button">
+                            <a href="blog.html">
+                                <span class="media">
+                                    <img src="../images/b3.jpg" class="img-fluid" alt="">
+                                </span>
+                                <span class="sub-title">Free Consultation</span><span class="title">Book a free 30 minute virtual consult</span><span class="description"><p>This is where the description text goes right here</p> </span>
+                                <span class="btn">Book My Consultation</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<header class="header transparent sticky">
+	    <nav class="navbar navbar-expand">
+	        <div class="container">
+	            <div class="navbar-header">
+	                <a class="navbar-brand" href="index.html">
+	                    <img src="../images/footer-logo.png" class="img-fluid" alt="">
+	                </a>
+	            </div>
+
+	            <div class="collapse navbar-collapse">
+	                <ul class="navbar-nav ml-auto">
+	                    <li class="menu-btn"><a href="index.html">Home</a></li>
+	                </ul>
+
+	                <ul class="navbar-nav navbar-nav--right">
+	                    <li class="mobile-navbar-toggler d-lg-none">
+	                        <a href="#sidr" class="navbar-toggle" data-title="Menu">
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+	                        </a>
+	                    </li>
+
+	                    <li class="dropdown personal-desktop-menu d-none d-lg-block">
+	                        <a href="#" class="navbar-toggle" data-title="Menu">
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+	                        </a>
+
+	                        <ul class="dropdown-menu">
+	                            <div class="container">
+	                                <div class="row">
+	                                    <li class="dropdown col-lg-2 col-md-3">
+	                                        <a href="about.html">About Us 
+	                                            <span class="dropdown-toggle" data-toggle="dropdown"></span>
+	                                        </a>
+
+	                                        <ul class="dropdown-menu">
+	                                            <li><a href="#" class="sscroll">Core Values</a></li>
+	                                            <li><a href="#" class="sscroll">Management Team</a></li>
+	                                            <li><a href="#" class="sscroll">Testimonials</a></li>
+	                                        </ul>
+	                                    </li>
+
+	                                    <li class="dropdown col-lg-2 col-md-3">
+	                                        <a href="#">Our Services 
+	                                            <span class="dropdown-toggle" data-toggle="dropdown"></span>
+	                                        </a>
+
+	                                        <ul class="dropdown-menu">
+	                                            <li><a href="#" class="sscroll">Managed Services</a></li>
+	                                            <li><a href="solutions.html" class="sscroll">Business Solutions</a></li>
+	                                            <li><a href="#" class="sscroll">Cybersecurity</a></li>
+	                                            <li><a href="#" class="sscroll">Network Architecture</a></li>
+	                                            <li><a href="#" class="sscroll">IT Support</a></li>
+	                                        </ul>
+	                                    </li>
+	                                    <li class="dropdown col-lg-3 col-md-3">
+	                                        <a href="contact.html">Contact Us 
+	                                            <span class="dropdown-toggle" data-toggle="dropdown"></span>
+	                                        </a>
+	                                        
+	                                        <ul class="dropdown-menu">
+	                                            <li><a href="#" class="sscroll">Submit a New Support Request</a></li>
+	                                            <li><a href="#" class="sscroll">Start a Remote Session</a></li>
+	                                            <li><a href="#" class="sscroll">Book Your Free Assessment</a></li>
+	                                        </ul>
+	                                    </li>
+
+	                                    <li class="col-lg-5 col-md-3 has-description has-image has-button">
+	                                        <a href="blog.html">
+	                                            <span class="media">
+	                                                <img src="../images/b3.jpg" class="img-fluid" alt="">
+	                                            </span>
+	                                            <span class="sub-title">Free Consultation</span>
+	                                            <span class="title">Book a free 30 minute virtual consult</span>
+	                                            <span class="description">
+	                                                <p>This is where the description text goes right here</p>
+	                                            </span>
+	                                            <span class="btn">Book My Consultation</span>
+	                                        </a>
+	                                    </li>
+	                                </div>
+	                            </div>
+	                        </ul>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </nav><!-- /nav -->
+	</header>
+
+	<div class="page-header" style="background: url(../images/b1.jpg);">
+
+		<section class="solutions-blog">
+		    <div class="container">
+		        <div class="row align-items-center">
+		            <div class="col-lg-6">
+		                <div class="solutions-blog__content">
+		                    <h1 class="sub-title text-capitalize">the Personal Portfolio Solutions Blog</h1>
+
+		                    <div class="description">
+		                    	<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate rerum consequatur recusandae beatae temporibus minima impedit quaerat veritatis deleniti voluptates possimus eveniet vero incidunt, rem, ipsa delectus! Dolore, eaque, ab.</p>
+		                    </div>
+		                </div>
+		            </div>
+
+		            <div class="col-lg-6">
+                        <div class="solutions-blog__slider">
+						    <div class="modal-slider">
+						        <div class="slick-list draggable" cursor-class="drag">
+						            <div class="slick-track">
+						                <div class="testimonial-item">
+
+						                </div>
+						            </div>
+						        </div>
+
+						        <div class="slick-list draggable" cursor-class="drag">
+						            <div class="slick-track">
+						                <div class="testimonial-item">
+
+						                </div>
+						            </div>
+						        </div>
+						    </div>
+						</div>
+
+		                <article class="solutions-blog__post has--overlay video">
+		                    <a href="blog-detail.html" class="link"></a>
+		                    <figure class="media">
+		                        <img src="../images/b1.jpg" class="img-fluid" alt="">
+		                    </figure>
+
+		                    <div class="text">
+		                        <div class="bottom">
+		                            <h4 class="title">How Personal Portfolios can stay ahead in 2023</h4>
+		                            <div class="excerpt">
+		                            	<p>We have some tips to help you out!</p>
+		                            </div>
+
+		                            <ul class="post-meta list-inline">
+		                                <li>Posted in: <a href="#" class="category">Tech</a></li>
+		                            </ul>
+		                        </div>
+		                    </div>
+		                </article>
+		            </div>
+		        </div>
+		    </div>
+		</section>
+
+	</div>
+
+	<div id="primary" class="content-area overflow-hidden">
+
+	    <section class="latest-post pb-0">
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-12">
+                    	<div class="entry-title">
+                    		<h3 class="title">The Personal Portfolio latest in IT</h3>
+
+                    		<div class="description text-sm">
+                    			<p>The latest news and updates in the world of IT.</p>
+                    		</div>
+                    	</div>
+	    			</div>
+	    		</div>
+
+			    <div class="break-room-slider-wrapper overflow-inherit">
+			        <div class="break-room-slider">
+			            <div class="slider-item">
+			            	<div class="blog-post">
+							    <div class="box-post">
+							        <div class="media">
+						                <img src="../images/b1.jpg" class="img-fluid" alt="">
+							        </div>
+
+	                                <div class="text d-flex flex-column justify-content-end">
+	                                	<a href="#">
+                                        	<h4 class="title">How Personal Portfolios can stay ahead in 2023</h4>
+	                                	</a>
+                                        <div class="description text-sm">
+                                        	<p>We have some tips to help you out!</p>
+                                        </div>
+
+                                    	<ul class="post-meta list-inline">
+                                        	<li>Posted in: <a href="#" class="category">Tech</a></li>
+                                        </ul>
+	                                </div>
+	                                <a href="blog-detail.html" class="link" target="_self"></a>
+							    </div>
+							</div>
+			            </div>
+
+			            <div class="slider-item">
+			            	<div class="blog-post">
+							    <div class="box-post">
+							        <div class="media">
+						                <img src="../images/b2.jpg" class="img-fluid" alt="">
+							        </div>
+	                                
+	                                <div class="text d-flex flex-column justify-content-end">
+                                        <h4 class="title">How Personal Portfolios can stay ahead in 2023</h4>
+
+                                        <div class="description text-sm">
+                                        	<p>We have some tips to help you out!</p>
+                                        </div>
+
+                                    	<ul class="post-meta list-inline">
+                                        	<li>Posted in: <a href="#" class="category">Tech</a></li>
+                                        </ul>
+	                                </div>
+	                                <a href="blog-detail.html" class="link" target="_self"></a>
+							    </div>
+							</div>
+			            </div>
+
+			            <div class="slider-item">
+			            	<div class="blog-post">
+							    <div class="box-post">
+							        <div class="media">
+						                <img src="../images/b3.jpg" class="img-fluid" alt="">
+							        </div>
+	                               
+	                                <div class="text d-flex flex-column justify-content-end">
+                                        <h4 class="title">How Personal Portfolios can stay ahead in 2023</h4>
+
+                                        <div class="description text-sm">
+                                        	<p>We have some tips to help you out!</p>
+                                        </div>
+
+                                    	<ul class="post-meta list-inline">
+                                        	<li>Posted in: <a href="#" class="category">Tech</a></li>
+                                        </ul>
+	                                </div>
+	                                <a href="blog-detail.html" class="link" target="_self"></a>
+							    </div>
+							</div>
+			            </div>
+			            
+			            <div class="slider-item">
+			            	<div class="blog-post">
+							    <div class="box-post">
+							        <div class="media">
+						                <img src="../images/b4.jpg" class="img-fluid" alt="">
+							        </div>
+
+	                                <div class="text d-flex flex-column justify-content-end">
+	                                	<a href="#">
+                                        	<h4 class="title">How Personal Portfolios can stay ahead in 2023</h4>
+	                                	</a>
+                                        <div class="description text-sm">
+                                        	<p>We have some tips to help you out!</p>
+                                        </div>
+
+                                    	<ul class="post-meta list-inline">
+                                        	<li>Posted in: <a href="#" class="category">Tech</a></li>
+                                        </ul>
+	                                </div>
+	                                <a href="blog-detail.html" class="link" target="_self"></a>
+							    </div>
+							</div>
+			            </div>
+
+			            <div class="slider-item">
+			            	<div class="blog-post">
+							    <div class="box-post">
+							        <div class="media">
+						                <img src="../images/b5.jpg" class="img-fluid" alt="">
+							        </div>
+	                                
+	                                <div class="text d-flex flex-column justify-content-end">
+                                        <h4 class="title">How Personal Portfolios can stay ahead in 2023</h4>
+
+                                        <div class="description text-sm">
+                                        	<p>We have some tips to help you out!</p>
+                                        </div>
+
+                                    	<ul class="post-meta list-inline">
+                                        	<li>Posted in: <a href="#" class="category">Tech</a></li>
+                                        </ul>
+	                                </div>
+	                                <a href="blog-detail.html" class="link" target="_self"></a>
+							    </div>
+							</div>
+			            </div>
+
+			            <div class="slider-item">
+			            	<div class="blog-post">
+							    <div class="box-post">
+							        <div class="media">
+						                <img src="../images/b6.jpg" class="img-fluid" alt="">
+							        </div>
+	                               
+	                                <div class="text d-flex flex-column justify-content-end">
+                                        <h4 class="title">How Personal Portfolios can stay ahead in 2023</h4>
+
+                                        <div class="description text-sm">
+                                        	<p>We have some tips to help you out!</p>
+                                        </div>
+
+                                    	<ul class="post-meta list-inline">
+                                        	<li>Posted in: <a href="#" class="category">Tech</a></li>
+                                        </ul>
+	                                </div>
+	                                <a href="blog-detail.html" class="link" target="_self"></a>
+							    </div>
+							</div>
+			            </div>
+			        </div>
+			    </div>
+
+				<div class="row">
+					<div class="col-12">
+					    <div class="slyslider__scrollbar">
+					        <div class="handle">
+					            <div class="mousearea"></div>
+					        </div>
+					    </div>
+					</div>
+				</div>
+	    	</div>
+	    </section>
+
+        <section class="blog-page">
+            <div class="container">
+                <div class="row lr-10" data-sticky_parent>
+                    <div class="col-lg-9" data-sticky_column>
+                        <main class="content-area">
+                            <h6 class="main-title">all posts</h6>
+
+                            <div class="blog-posts">
+                                <article class="blog-post d-flex align-items-center">
+                                    <figure class="blog-posts__media">
+                                        <a href="blog-detail.html">
+                                            <img src="../images/b1.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </figure>
+
+                                    <div class="blog-post__text">
+                                        <a href="#">
+                                            <h4 class="title">How Personal Portfolios can stay ahead in 2023</h4>
+                                        </a>
+
+                                        <div class="excerpt">
+                                            <p>We have some tips to help you out!</p>
+                                        </div>
+
+                                        <a href="#" class="btn">Get started</a>
+                                    </div>
+                                </article>
+
+                                <article class="blog-post d-flex align-items-center">
+                                    <figure class="blog-posts__media">
+                                        <a href="blog-detail.html">
+                                            <img src="../images/b2.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </figure>
+
+                                    <div class="blog-post__text">
+                                        <a href="#">
+                                            <h4 class="title">How Personal Portfolios can stay ahead in 2023</h4>
+                                        </a>
+
+                                        <div class="excerpt">
+                                            <p>We have some tips to help you out!</p>
+                                        </div>
+                                        <a href="#" class="btn">Get started</a>
+                                    </div>
+                                </article>
+
+                                <article class="blog-post d-flex align-items-center">
+                                    <figure class="blog-posts__media">
+                                        <a href="blog-detail.html">
+                                            <img src="../images/b3.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </figure>
+
+                                    <div class="blog-post__text">
+                                        <a href="#">
+                                            <h4 class="title">How Personal Portfolios can stay ahead in 2023</h4>
+                                        </a>
+
+                                        <div class="excerpt">
+                                            <p>We have some tips to help you out!</p>
+                                        </div>
+                                        <a href="#" class="btn">Get started</a>
+                                    </div>
+                                </article>
+
+                                <article class="blog-post d-flex align-items-center">
+                                    <figure class="blog-posts__media">
+                                        <a href="blog-detail.html">
+                                            <img src="../images/b4.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </figure>
+
+                                    <div class="blog-post__text">
+                                        <a href="#">
+                                            <h4 class="title">How Personal Portfolios can stay ahead in 2023</h4>
+                                        </a>
+
+                                        <div class="excerpt">
+                                            <p>We have some tips to help you out!</p>
+                                        </div>
+                                        <a href="#" class="btn">Get started</a>
+                                    </div>
+                                </article>
+
+                                <article class="blog-post d-flex align-items-center">
+                                    <figure class="blog-posts__media">
+                                        <a href="blog-detail.html">
+                                            <img src="../images/b5.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </figure>
+
+                                    <div class="blog-post__text">
+                                        <a href="#">
+                                            <h4 class="title">How Personal Portfolios can stay ahead in 2023</h4>
+                                        </a>
+
+                                        <div class="excerpt">
+                                            <p>We have some tips to help you out!</p>
+                                        </div>
+
+                                        <a href="#" class="btn">Get started</a>
+                                    </div>
+                                </article>
+
+                                <article class="blog-post d-flex align-items-center">
+                                    <figure class="blog-posts__media">
+                                        <a href="blog-detail.html">
+                                            <img src="../images/b6.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </figure>
+
+                                    <div class="blog-post__text">
+                                        <a href="#">
+                                            <h4 class="title">How Personal Portfolios can stay ahead in 2023</h4>
+                                        </a>
+
+                                        <div class="excerpt">
+                                            <p>We have some tips to help you out!</p>
+                                        </div>
+                                        <a href="#" class="btn">Get started</a>
+                                    </div>
+                                </article>
+
+                                <article class="blog-post d-flex align-items-center">
+                                    <figure class="blog-posts__media">
+                                        <a href="blog-detail.html">
+                                            <img src="../images/b1.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </figure>
+
+                                    <div class="blog-post__text">
+                                        <a href="#">
+                                            <h4 class="title">How Personal Portfolios can stay ahead in 2023</h4>
+                                        </a>
+
+                                        <div class="excerpt">
+                                            <p>We have some tips to help you out!</p>
+                                        </div>
+                                        <a href="#" class="btn">Get started</a>
+                                    </div>
+                                </article>
+
+                                <article class="blog-post d-flex align-items-center">
+                                    <figure class="blog-posts__media">
+                                        <a href="blog-detail.html">
+                                            <img src="../images/b2.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </figure>
+
+                                    <div class="blog-post__text">
+                                        <a href="#">
+                                            <h4 class="title">How Personal Portfolios can stay ahead in 2023</h4>
+                                        </a>
+
+                                        <div class="excerpt">
+                                            <p>We have some tips to help you out!</p>
+                                        </div>
+
+                                        <a href="#" class="btn">Get started</a>
+                                    </div>
+                                </article>
+
+                                <article class="blog-post d-flex align-items-center">
+                                    <figure class="blog-posts__media">
+                                        <a href="blog-detail.html">
+                                            <img src="../images/b3.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </figure>
+
+                                    <div class="blog-post__text">
+                                        <a href="#">
+                                            <h4 class="title">How Personal Portfolios can stay ahead in 2023</h4>
+                                        </a>
+
+                                        <div class="excerpt">
+                                            <p>We have some tips to help you out!</p>
+                                        </div>
+                                        <a href="#" class="btn">Get started</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="pagination">
+                                <div class="float-right">
+                                    <a href="#">Next Posts<i class="icon-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <sidebar class="sidebar" data-sticky_column>
+                            <div class="widget">
+                                <h6 class="widget__title">search</h6>
+
+                                <form action="#" method="get" class="search-form">
+                                    <div class="form-group">
+                                        <input type="search" name="s" value="" class="search" placeholder="Search">
+                                        <button type="submit">
+                                            <i class="icon-search"></i>
+                                        </button> 
+                                    </div> 
+                                </form>
+                            </div>
+
+                            <div class="widget">
+                                <h5 class="widget-title">Popular</h5>
+
+                                <div class="recommended-posts">
+                                	<article class="recommended-post">
+									    <div class="media float-left">
+									        <a href="#">
+									            <img src="../images/recommended-posts-1.png" class="img-fluid" alt="">
+									        </a>
+									    </div>
+
+									    <div class="text">
+									        <a href="#">
+									        	<h5 c4ass="title">Top Front-end Developer</h5>
+									        </a>
+
+									        <span class="date">29 Mar, 2020</span>
+									    </div>
+									</article>
+
+                                	<article class="recommended-post">
+									    <div class="media float-left">
+									        <a href="#">
+									            <img src="../images/recommended-posts-2.png" class="img-fluid" alt="">
+									        </a>
+									    </div>
+
+									    <div class="text">
+									        <a href="#">
+									        	<h5 c4ass="title">Top web Design Topics</h5>
+									        </a>
+
+									        <span class="date">29 Mar, 2020</span>
+									    </div>
+									</article>
+
+                                	<article class="recommended-post">
+									    <div class="media float-left">
+									        <a href="#">
+									            <img src="../images/recommended-posts-3.png" class="img-fluid" alt="">
+									        </a>
+									    </div>
+
+									    <div class="text">
+									        <a href="#">
+									        	<h5 c4ass="title">How to become a successful freelancer</h5>
+									        </a>
+
+									        <span class="date">29 Mar, 2020</span>
+									    </div>
+									</article>
+                                </div>	
+                            </div>
+
+                            <div class="widget">
+                                <h5 class="widget-title">Categories</h5>
+
+                                <ul class="categories list-unstyled mb-0">
+                                	<li class="categories__item">
+                                		<a href="#" class="d-flex align-items-center justify-content-between">
+                                			<div class="text">
+                                				<span>Tech</span>
+                                			</div>
+
+                                			<div class="icon">
+                                				<i class="icon-arrow-right"></i>
+                                			</div>
+                                		</a>
+                                	</li>
+
+                                	<li class="categories__item">
+                                		<a href="#" class="d-flex align-items-center justify-content-between">
+                                			<div class="text">
+                                				<span>Company News</span>
+                                			</div>
+
+                                			<div class="icon">
+                                				<i class="icon-arrow-right"></i>
+                                			</div>
+                                		</a>
+                                	</li>
+
+                                	<li class="categories__item">
+                                		<a href="#" class="d-flex align-items-center justify-content-between">
+                                			<div class="text">
+                                				<span>VoIP</span>
+                                			</div>
+
+                                			<div class="icon">
+                                				<i class="icon-arrow-right"></i>
+                                			</div>
+                                		</a>
+                                	</li>
+
+                                	<li class="categories__item">
+                                		<a href="#" class="d-flex align-items-center justify-content-between">
+                                			<div class="text">
+                                				<span>Cybersecurity</span>
+                                			</div>
+
+                                			<div class="icon">
+                                				<i class="icon-arrow-right"></i>
+                                			</div>
+                                		</a>
+                                	</li>
+
+                                	<li class="categories__item">
+                                		<a href="#" class="d-flex align-items-center justify-content-between">
+                                			<div class="text">
+                                				<span>Another Category</span>
+                                			</div>
+
+                                			<div class="icon">
+                                				<i class="icon-arrow-right"></i>
+                                			</div>
+                                		</a>
+                                	</li>
+
+                                	<li class="categories__item">
+                                		<a href="#" class="d-flex align-items-center justify-content-between">
+                                			<div class="text">
+                                				<span>This is one</span>
+                                			</div>
+
+                                			<div class="icon">
+                                				<i class="icon-arrow-right"></i>
+                                			</div>
+                                		</a>
+                                	</li>
+                                </ul>
+                            </div>
+                        </sidebar>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+        	<div class="row">
+        		<div class="col-12">
+        			<hr class="black">
+        		</div>
+        	</div>
+        </div>
+
+		<section class="call-action pb">
+			<div class="container">
+				<div class="background" style="background: url(../images/coll-action.png);">
+					<div class="row">
+						<div class="col-12">
+							<div class="call-action__content">
+								<h4 class="sub-title">Personal Portfolio Solutions</h4>
+								<h2 class="title">How Personal Portfolios can stay ahead in 2023</h2>
+
+								<div class="description">
+									<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Dolores, fuga!</p>
+								</div>
+
+								<a href="#" class="btn">View Our Solutions</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<hr>
+				</div>
+			</div>
+		</div>
+
+	</div><!-- /primary -->
+
+    <footer class="footer">
+		<div class="container">
+			<div class="row lr-10 mbm-20">
+				<div class="col-lg-4 col-sm-6">
+					<div class="footer___logo">
+						<a href="#">
+							<img src="../images/footer-logo.png" class="img-fluid" alt="">
+						</a>
+					</div>
+
+					<div class="content">
+						<div class="description">
+							<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, nobis. Ab, magnam sed quas minus?</p>
+						</div>
+
+						<ul class="socail-media list-inline mb-0">
+							<li><a href="#" class="icon-facebook"></a></li>
+							<li><a href="#" class="icon-linkedin"></a></li>
+							<li><a href="#" class="icon-skype"></a></li>
+							<li><a href="#" class="icon-instagram"></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-sm-6">
+					<div class="widget">
+						<h4 class="widget__title text-capitalize">quick links</h4>
+
+						<ul class="widget-nav list-unstyled mb-0">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Objectives</a></li>
+							<li><a href="#">Area of focus</a></li>
+							<li><a href="#">Activities</a></li>
+							<li><a href="#">Gallery</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-sm-6">
+					<div class="widget mb-0">
+						<h4 class="widget__title text-capitalize">recent posts</h4>
+
+						<ul class="widget-nav recent-news clearfix list-unstyled mb-0">
+							<li class="clearfix d-flex align-items-start">
+							    <div class="icon">
+							        <i class="icon-pencil"></i>
+							    </div>
+
+							    <div class="text">
+							        <h5 class="title text-capitalize">
+							        	<a href="#" style="">teenage single mothers intervention.</a>
+							        </h5>
+
+							        <span class="post-date">September 23, 2021</span>
+							    </div>
+							</li>
+
+							<li class="clearfix d-flex align-items-start">
+							    <div class="icon">
+							        <i class="icon-pencil"></i>
+							    </div>
+
+							    <div class="text">
+							        <h5 class="title text-capitalize">
+							        	<a href="#" style="">teenage single mothers intervention.</a>
+							        </h5>
+
+							        <span class="post-date">September 21, 2022</span>
+							    </div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer__bottom">
+				<div class="row">
+					<div class="col-12">
+						<div class="footer__bottom__copyright">
+							<p>Copyright ©2023 Personal Portfolio</p>
+							<!-- <span>Web Design <a href="#">naim islam</a></span> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

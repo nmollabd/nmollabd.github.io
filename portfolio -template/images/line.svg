@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="7" viewBox="0 0 26 7">
+    <style>
+        @keyframes floating-left {
+            from {
+                -webkit-transform: translate(0, 0px);
+                transform: translate(0, 0px);
+            }
+            65% {
+                -webkit-transform: translate(-5px, 0);
+                transform: translate(-5px, 0);
+            }
+            to {
+                -webkit-transform: translate(0, 0px);
+                transform: translate(0, 0px);
+            }
+        }
+
+        @keyframes floating-right {
+            from {
+                -webkit-transform: translate(0, 0px);
+                transform: translate(0, 0px);
+            }
+            65% {
+                -webkit-transform: translate(5px, 0);
+                transform: translate(5px, 0);
+            }
+            to {
+                -webkit-transform: translate(0, 0px);
+                transform: translate(0, 0px);
+            }
+        }
+
+        #bar-first {
+            animation-duration: 2s;
+            animation-name: floating-right;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        #bar-last {
+            animation-duration: 2s;
+            animation-name: floating-left;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+    </style>
+
+    <g id="line" transform="translate(2349 17021)">
+        <g id="bar-first" data-name="Group 18083">
+            <path
+                id="Path_53346"
+                data-name="Path 53346"
+                d="M26,1c0,.552-.783,1-1.751,1H7.75a2.541,2.541,0,0,1-1.237-.293A.866.866,0,0,1,6,1c0-.552.783-1,1.751-1h16.5C25.217,0,26,.448,26,1Z"
+                transform="translate(-2349 -17021)"
+                fill="#ef0548"
+            />
+        </g>
+
+        <g id="bar-last" data-name="Group 18084">
+            <path
+                id="Path_53347"
+                data-name="Path 53347"
+                d="M20,6c0,.552-.783,1-1.751,1H1.75A2.541,2.541,0,0,1,.512,6.707.866.866,0,0,1,0,6c0-.552.783-1,1.751-1h16.5C19.217,5,20,5.448,20,6Z"
+                transform="translate(-2349 -17021)"
+                fill="#ef0548"
+            />
+        </g>
+    </g>
+</svg>

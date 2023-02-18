@@ -18,8 +18,8 @@ $(function ($) {
             var nthChild = tabNum + 2;
             $(".my-navbar .mynav-item").removeClass("active");
             $(this).addClass("active");
-            $("#main > section.active").removeClass("active");
-            $("#main > section:nth-child(" + nthChild + ")").addClass("active");
+            $("#main > .section.active").removeClass("active");
+            $("#main > .section:nth-child(" + nthChild + ")").addClass("active");
         }
         e.preventDefault();
     });

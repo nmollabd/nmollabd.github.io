@@ -11,7 +11,7 @@ BASE STYLES
 ***********************************/
 $secondary: #1D2A45;
 
-$black: #71768e;
+$black: #000000;
 $white: #FFFFFF;
 $danger: #CB633D;
 $success: #51BC70;
@@ -44,6 +44,8 @@ $brandon: 'brandon-grotesque', sans-serif;
 // MIXIN
 @import 'mixin';
 @import 'mix';
+@import 'blog';
+@import 'header';
 
 body {
 	margin: 0;
@@ -113,6 +115,11 @@ p {
 	}
 }
 
+.text-md {
+	font-size: 20px;
+	line-height: 28px;
+}
+
 .btn {
 	border: 0;
 	color: #FFFFFF;
@@ -121,12 +128,13 @@ p {
 	line-height: 19px;
 	position: relative;
 	padding: 12px 18px 12px;
-	background-color: $primary;
 	@include border-radius(500px);
 	@include transition(all 0.3s ease);
+	background-color: var(--main-color);
 
 	&:hover, &:focus {
 		color: $white;
+		box-shadow: none !important;
 		background-color: var(--orange-color);
 	}
 }
@@ -504,6 +512,27 @@ textarea {
 	}
 }
 
+.page-header {
+	overflow: hidden;
+	padding-top: 102px;
+	position: relative;
+	background: #F5F5F5;
+	border-radius: 0px 0px 36px 36px;
+	background-size: cover !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+
+	&:before {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		content: '';
+		position: absolute;
+		background: linear-gradient(62.6deg, $white 0.72%, rgba(255, 255, 255, 0.95) 40.99%, rgba(255, 255, 255, 0.44) 100%);
+	}
+}
+
 /***********************************
 BANNER STYLES
 ***********************************/
@@ -698,7 +727,7 @@ BANNER STYLES
 			margin-bottom: 0;
 			text-align: right;
 
-			.mynav-item {
+			li {
 				height: 100%;
 				display: inline-block;
 
@@ -737,7 +766,7 @@ BANNER STYLES
 	}
 }
 
-section {
+.section {
     top: 0;
     left: 0;
     z-index: 0;
@@ -1765,6 +1794,7 @@ section {
 	&__item {
 		width: 100%;
 		overflow: hidden;
+		position: relative;
 		margin-bottom: 20px;
 		height: calc(100% - 20px);
 		@include border-radius(16px);
@@ -1837,6 +1867,14 @@ section {
 					}
 				}
 			}
+		}
+
+		.link {
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			position: absolute;
 		}
 
 		&:hover, &:focus {
@@ -2339,7 +2377,7 @@ section {
 
     	.socail-media {
     		margin-top: 30px;
-			margin-left: -3px;
+			margin-left: 5px;
 			margin-right: -3px;
 
     		li {
@@ -2793,7 +2831,7 @@ SEARCH-BOX STYLES
 				margin-bottom: 0;
 
 				.color {
-				    width: 45px;
+				    width: 44px;
 				    height: 35px;
 					cursor: pointer;
 					display: inline-block;

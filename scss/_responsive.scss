@@ -327,6 +327,63 @@
 		}
 	}
 
+	.my-resume {
+
+		.time {
+
+			.timeline {
+
+				&:before {
+				    top: -30px;
+				}
+
+				&__list {
+
+					li {
+
+						&:not(:last-child) {
+							margin-bottom: 40px;
+						}
+
+						&:before {
+						    top: -32px;
+						}
+
+						&:nth-child(odd) {
+
+							.timeline-content {
+							    float: none;
+							    width: 100%;
+
+							    &:before {
+							    	top: -19px;
+								    right: 50%;
+    								margin-right: -12px;
+								    border-color: transparent transparent #252c48 transparent;
+								}
+							}
+						}
+
+						&:nth-child(even) {
+
+							.timeline-content {
+								font: none;
+								width: 100%;
+
+								&:before {
+								    left: 50%;
+									top: -19px;
+								    margin-left: -12px;
+								    border-color: transparent transparent #252c48 transparent;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 }/* 767 */
 
 @media only screen and (max-width: 575px) {
@@ -353,8 +410,9 @@
 	    .my-navbar {
 
 	    	.navbar-links {
+	    		margin-top: 20px;
 
-	    		.mynav-item {
+	    		li {
 				    height: auto;
 				    display: block;
 
@@ -784,6 +842,25 @@
 						    height: 40px;
 						    line-height: 40px;
 						    font-size: 14px !important;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.my-resume {
+
+		.time {
+
+			.timeline {
+
+				&__list {
+
+					li {
+
+						.timeline-content {
+						    padding: 15px;
 						}
 					}
 				}
