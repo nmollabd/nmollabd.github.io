@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="../images/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog Detail | Personal Portfolio</title>
+
+	<!-- Bootstrap -->
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../jewellery-retouching/css/personal-portfolio-font.css">
+	<link rel="stylesheet" href="../jewellery-retouching/css/plugins.css">
+	<link rel="stylesheet" href="../jewellery-retouching/style.css">
+</head>
+<body>
+
+    <div id="cursor">
+        <div class="cursor__circle"></div>
+    </div>
+
+    <div id="sidr">
+        <div class="mobile-header d-none">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle in">
+                    <i class="icon-cancel"></i>
+                </button>
+            </div>
+
+            <div class="navigation">
+                <div class="remi-mobile-navbar">
+                    <ul class="nav navbar-nav navbar-mobile">
+                        <li class="dropdown col-lg-2 col-md-3">
+                            <a href="about.html">About Us <span class="dropdown-toggle" data-toggle="dropdown"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="sscroll">Core Values</a></li>
+                                <li><a href="#" class="sscroll">Management Team</a></li>
+                                <li><a href="#" class="sscroll">Testimonials</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown col-lg-2 col-md-3">
+                            <a href="#">Our Services <span class="dropdown-toggle" data-toggle="dropdown"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="sscroll">Managed Services</a></li>
+                                <li><a href="solutions.html" class="sscroll">Business Solutions</a></li>
+                                <li><a href="#" class="sscroll">Cybersecurity</a></li>
+                                <li><a href="#" class="sscroll">Network Architecture</a></li>
+                                <li><a href="#" class="sscroll">IT Support</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown col-lg-3 col-md-3">
+                            <a href="contact.html">Contact Us <span class="dropdown-toggle" data-toggle="dropdown"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="sscroll">Submit a New Support Request</a></li>
+                                <li><a href="#" class="sscroll">Start a Remote Session</a></li>
+                                <li><a href="#" class="sscroll">Book Your Free Assessment</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="col-lg-5 col-md-3 has-description has-image has-button">
+                            <a href="blog.html">
+                                <span class="media">
+                                    <img src="../jewellery-retouching/images/popular-post-item-4.png" class="img-fluid" alt="">
+                                </span>
+                                <span class="sub-title">Free Consultation</span><span class="title">Book a free 30 minute virtual consult</span><span class="description"><p>This is where the description text goes right here</p> </span>
+                                <span class="btn">Book My Consultation</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<header class="header transparent sticky">
+	    <nav class="navbar navbar-expand">
+	        <div class="container">
+	            <div class="navbar-header">
+	                <a class="navbar-brand" href="index.html">
+	                    <img src="../jewellery-retouching/images/logo.png" class="img-fluid" alt="">
+	                </a>
+	            </div>
+
+	            <div class="collapse navbar-collapse">
+	                <ul class="navbar-nav ml-auto"></ul>
+	                <ul class="navbar-nav navbar-nav--right">
+	                    <li class="mobile-navbar-toggler d-lg-none">
+	                        <a href="#sidr" class="navbar-toggle" data-title="Menu">
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+	                        </a>
+	                    </li>
+
+	                    <li class="dropdown personal-desktop-menu d-none d-lg-block">
+	                        <a href="#" class="navbar-toggle" data-title="Menu">
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+	                        </a>
+
+	                        <ul class="dropdown-menu">
+	                            <div class="container">
+	                                <div class="row">
+	                                    <li class="dropdown col-lg-2 col-md-3">
+	                                        <a href="about.html">About Us 
+	                                            <span class="dropdown-toggle" data-toggle="dropdown"></span>
+	                                        </a>
+
+	                                        <ul class="dropdown-menu">
+	                                            <li><a href="#" class="sscroll">Core Values</a></li>
+	                                            <li><a href="#" class="sscroll">Management Team</a></li>
+	                                            <li><a href="#" class="sscroll">Testimonials</a></li>
+	                                        </ul>
+	                                    </li>
+
+	                                    <li class="dropdown col-lg-2 col-md-3">
+	                                        <a href="#">Our Services 
+	                                            <span class="dropdown-toggle" data-toggle="dropdown"></span>
+	                                        </a>
+
+	                                        <ul class="dropdown-menu">
+	                                            <li><a href="#" class="sscroll">Managed Services</a></li>
+	                                            <li><a href="solutions.html" class="sscroll">Business Solutions</a></li>
+	                                            <li><a href="#" class="sscroll">Cybersecurity</a></li>
+	                                            <li><a href="#" class="sscroll">Network Architecture</a></li>
+	                                            <li><a href="#" class="sscroll">IT Support</a></li>
+	                                        </ul>
+	                                    </li>
+	                                    <li class="dropdown col-lg-3 col-md-3">
+	                                        <a href="contact.html">Contact Us 
+	                                            <span class="dropdown-toggle" data-toggle="dropdown"></span>
+	                                        </a>
+	                                        
+	                                        <ul class="dropdown-menu">
+	                                            <li><a href="#" class="sscroll">Submit a New Support Request</a></li>
+	                                            <li><a href="#" class="sscroll">Start a Remote Session</a></li>
+	                                            <li><a href="#" class="sscroll">Book Your Free Assessment</a></li>
+	                                        </ul>
+	                                    </li>
+
+	                                    <li class="col-lg-5 col-md-3 has-description has-image has-button">
+	                                        <a href="blog.html">
+                                                <span class="media">
+                                                    <img src="../jewellery-retouching/images/popular-post-item-4.png" class="img-fluid" alt="">
+                                                </span>
+                                                <span class="sub-title">latest blog posts</span>
+                                                <span class="title">Book a free 30 minute virtual consult</span>
+                                                <span class="description">
+                                                    <p>This is where the description text goes right here</p>
+                                                </span>
+                                                <span class="btn">order now</span>
+                                            </a>
+	                                    </li>
+	                                </div>
+	                            </div>
+	                        </ul>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </nav><!-- /nav -->
+	</header>
+
+	<div class="page-header" style="background: url(../jewellery-retouching/images/popular-post-item-3.png);">
+
+		<section class="blog-detail-page-banner">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<div class="blog-detail-page-banner__content">
+							<h1 class="title h2">How Personal Portfolios can stay ahead in 2023</h1>
+
+							<div class="excerpt">
+								<p>jewelry image editing services If you want to edit any kind of jewelry image/photo? please Contact us for any kind of your jewelry image editing services</p>
+							</div>
+
+							<ul class="socail-media list-inline mb-0">
+								<li><a href="#" class="icon-facebook"></a></li>
+								<li><a href="#" class="icon-twitter"></a></li>
+								<li><a href="#" class="icon-instagram"></a></li>
+								<li><a href="#" class="icon-mail"></a></li>
+								<li><a href="#" class="icon-linkedin"></a></li>
+								<li><a href="#" class="icon-skype"></a></li>
+								<li><a href="#" class="icon-upwork"></a></li>
+								<li><a href="#" class="icon-behance"></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="blog-detail-page-banner__media">
+							<img src="../jewellery-retouching/images/still-life-aesthetic-earrings.png" class="img-fluid" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<div id="primary" class="content-area overflow-hidden">
+
+        <section class="blog-page">
+            <div class="container">
+            	<div class="row">
+					<div class="col-12">
+						<form action="https://nmollabd.github.io/" class="blog-page__search-form">
+							<div class="form-group">
+								<input type="search" name="s" value="" placeholder="Search the Blog">
+								<button type="submit"><i class="icon-search"></i></button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+                <div class="row lr-10" data-sticky_parent>
+                    <div class="col-lg-9" data-sticky_column>
+                        <main class="content-area">
+                        	<article class="blog-post">
+							    <div class="content__editor text-md">
+							    	<h2 class="title h1">How Personal Portfolios can stay ahead in 2023</h2>
+
+							    	<p><img src="../jewellery-retouching/images/blog-post-media.jpg" class="img-fluid radius w-100" alt=""></p>
+
+							    	<p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Voluptate rem consequatur ipsa tenetur consequuntur! Amet nulla dolores nisi, dolore temporibus possimus consequuntur esse, blanditiis. Suscipit eum nobis dignissimos aperiam ex.</p>
+
+							    	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit rem quo voluptatibus tempore vel, enim aspernatur amet sapiente, mollitia ullam aliquid atque quidem iure, laboriosam officiis odit quibusdam molestiae animi.</p>
+
+							    	<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Corporis explicabo modi, labore quisquam consequatur quam molestiae laborum reiciendis voluptatem! Tempora ipsa unde nulla, pariatur voluptatem ex obcaecati, id. Facere, excepturi.</p>
+
+							    	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur eum, architecto aut sunt velit cupiditate nemo vel maiores repellendus accusantium eligendi dolorem, illum animi impedit quod quo at nobis.</p>
+
+							    	<p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. A hic ea adipisci dolorem dolor fugiat in modi tempora suscipit, numquam explicabo vitae veritatis, sapiente corrupti odio ad qui amet? Accusantium!</p>
+
+							    	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, sequi deleniti, est magnam, quis, corrupti asperiores voluptas odit dicta pariatur quaerat libero ullam eaque iste. Voluptatibus eos, similique numquam id.</p>
+
+							    	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, architecto eligendi earum, sint ducimus aliquid iste, explicabo sapiente velit omnis sunt. Sint tempora animi praesentium voluptates accusantium, et porro ipsum.</p>
+
+							    	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid eveniet necessitatibus illo blanditiis quisquam adipisci delectus iusto nisi, quaerat unde eos, ipsa amet eligendi natus cumque dolore est architecto incidunt.</p>
+
+							    	<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Neque aperiam dicta, repudiandae totam esse omnis voluptate corporis quod in quisquam modi impedit adipisci quas error inventore voluptatibus, cum, delectus tempora.</p>
+
+							    	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quam qui labore nesciunt accusamus commodi accusantium minus, molestias incidunt ipsum itaque voluptate eos ipsam atque aperiam quas tenetur officiis non.</p>
+
+							    	<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Aspernatur, nobis dolor. Sunt iure recusandae quod ipsa, harum id suscipit consequatur nemo accusantium ullam, pariatur doloremque reprehenderit accusamus eos voluptatibus cupiditate.</p>
+							    </div>
+							</article>
+
+                            <div class="pagination d-flex flex-wrap align-items-center justify-content-between">
+                                <div class="float-right">
+                                    <a href="blog.html"><i class="icon-arrow-left"></i> Back to Solutions blog</a>
+                                </div>
+
+    							<ul class="socail-media list-inline mb-0">
+									<li><a href="#" class="icon-facebook"></a></li>
+									<li><a href="#" class="icon-twitter"></a></li>
+									<li><a href="#" class="icon-instagram"></a></li>
+									<li><a href="#" class="icon-mail"></a></li>
+								</ul>
+                            </div>
+                        </main>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <sidebar class="sidebar" data-sticky_column>
+                            <div class="widget">
+                                <h5 class="widget-title">Popular</h5>
+
+                                <div class="recommended-posts">
+                                	<article class="recommended-post">
+									    <div class="media float-left">
+									        <a href="#">
+									            <img src="../jewellery-retouching/images/recommended-posts-3.png" class="img-fluid" alt="">
+									        </a>
+									    </div>
+
+									    <div class="text">
+									        <a href="#">
+									        	<h6 class="title">Graphic Designer</h6>
+									        </a>
+
+									        <span class="date">29 Mar, 2020</span>
+									    </div>
+									</article>
+
+                                	<article class="recommended-post">
+									    <div class="media float-left">
+									        <a href="#">
+									            <img src="../jewellery-retouching/images/recommended-posts-3.png" class="img-fluid" alt="">
+									        </a>
+									    </div>
+
+									    <div class="text">
+									        <a href="#">
+									        	<h6 class="title">Juaylary Retach</h6>
+									        </a>
+
+									        <span class="date">29 Mar, 2020</span>
+									    </div>
+									</article>
+
+                                	<article class="recommended-post">
+									    <div class="media float-left">
+									        <a href="#">
+									            <img src="../jewellery-retouching/images/recommended-posts-3.png" class="img-fluid" alt="">
+									        </a>
+									    </div>
+
+									    <div class="text">
+									        <a href="#">
+									        	<h6 class="title">Digital Marketing</h6>
+									        </a>
+
+									        <span class="date">29 Mar, 2020</span>
+									    </div>
+									</article>
+
+                                	<article class="recommended-post">
+									    <div class="media float-left">
+									        <a href="#">
+									            <img src="../jewellery-retouching/images/recommended-posts-4.png" class="img-fluid" alt="">
+									        </a>
+									    </div>
+
+									    <div class="text">
+									        <a href="#">
+									        	<h6 class="title">Front-end Developer</h6>
+									        </a>
+
+									        <span class="date">29 Mar, 2020</span>
+									    </div>
+									</article>
+                                </div>	
+                            </div>
+
+                            <div class="widget">
+                                <h5 class="widget-title">Categories</h5>
+
+                                <ul class="categories list-unstyled mb-0">
+                                	<li class="categories__item">
+                                		<a href="#" class="d-flex align-items-center justify-content-between">
+                                			<div class="text">
+                                				<span>Tech</span>
+                                			</div>
+
+                                			<div class="icon">
+                                				<i class="icon-arrow-right"></i>
+                                			</div>
+                                		</a>
+                                	</li>
+
+                                	<li class="categories__item">
+                                		<a href="#" class="d-flex align-items-center justify-content-between">
+                                			<div class="text">
+                                				<span>Company News</span>
+                                			</div>
+
+                                			<div class="icon">
+                                				<i class="icon-arrow-right"></i>
+                                			</div>
+                                		</a>
+                                	</li>
+
+                                	<li class="categories__item">
+                                		<a href="#" class="d-flex align-items-center justify-content-between">
+                                			<div class="text">
+                                				<span>VoIP</span>
+                                			</div>
+
+                                			<div class="icon">
+                                				<i class="icon-arrow-right"></i>
+                                			</div>
+                                		</a>
+                                	</li>
+
+                                	<li class="categories__item">
+                                		<a href="#" class="d-flex align-items-center justify-content-between">
+                                			<div class="text">
+                                				<span>Cybersecurity</span>
+                                			</div>
+
+                                			<div class="icon">
+                                				<i class="icon-arrow-right"></i>
+                                			</div>
+                                		</a>
+                                	</li>
+
+                                	<li class="categories__item">
+                                		<a href="#" class="d-flex align-items-center justify-content-between">
+                                			<div class="text">
+                                				<span>Another Category</span>
+                                			</div>
+
+                                			<div class="icon">
+                                				<i class="icon-arrow-right"></i>
+                                			</div>
+                                		</a>
+                                	</li>
+
+                                	<li class="categories__item">
+                                		<a href="#" class="d-flex align-items-center justify-content-between">
+                                			<div class="text">
+                                				<span>This is one</span>
+                                			</div>
+
+                                			<div class="icon">
+                                				<i class="icon-arrow-right"></i>
+                                			</div>
+                                		</a>
+                                	</li>
+                                </ul>
+                            </div>
+                        </sidebar>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		<section class="call-action pt-0">
+			<div class="container">
+				<div class="background" style="background: url(../jewellery-retouching/images/solutions-blog-bg-media.jpg);">
+					<div class="row">
+						<div class="col-12">
+							<div class="call-action__content">
+								<h2 class="title">How Personal Portfolios can stay ahead in 2023</h2>
+
+								<div class="description">
+									<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Dolores, fuga!</p>
+								</div>
+
+								<a href="#" class="btn">View Our Solutions</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div><!-- /primary -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer__logo">
+                        <a href="#">
+                            <img src="../jewellery-retouching/images/logo.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-9">
+                    <div class="footer__widget mb-0">
+                        <ul class="footer__widget-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Collection</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <hr class="horizontal-linebar">
+
+                    <div class="row masonry lr-10">
+                        <div class="col-md-4 col-sm-6 col">
+                            <div class="footer__widget">
+                                <ul class="footer__widget-nav list-unstyled">
+                                    <li class="bold"><a href="#" class="scroll-trigger">Quick Links</a></li>
+                                    <li><a href="#" class="scroll-trigger">Home</a></li>
+                                    <li><a href="#" class="scroll-trigger">Shop</a></li>
+                                    <li><a href="#" class="scroll-trigger">Collection</a></li>
+                                    <li><a href="#" class="scroll-trigger">About</a></li>
+                                    <li><a href="#" class="scroll-trigger">Blog</a></li>
+                                    <li><a href="#" class="scroll-trigger">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div><!-- /footer__widget -->
+
+                        <div class="col-md-4 col-sm-6 col">
+                            <div class="footer__widget">
+                                <ul class="footer__widget-nav list-unstyled">
+                                    <li class="bold"><a href="#" class="scroll-trigger">Other Links</a></li>
+                                    <li><a href="#" class="scroll-trigger">My Account</a></li>
+                                    <li><a href="#" class="scroll-trigger">My Orders</a></li>
+                                    <li><a href="#" class="scroll-trigger">Privacy Policy</a></li>
+                                    <li><a href="#" class="scroll-trigger">terms of Use</a></li>
+                                    <li><a href="#" class="scroll-trigger">Cookie policy</a></li>
+                                    <li><a href="#" class="scroll-trigger">Help & FAQ</a></li>
+                                    <li><a href="#" class="scroll-trigger">3D Point Cloud Annotation (LIDAR)</a></li>
+                                </ul>
+                            </div>
+                        </div><!-- /footer__widget -->
+
+                        <div class="col-md-4 col-sm-6 col">
+                            <div class="footer__widget">
+                                <ul class="footer__widget-nav list-unstyled">
+                                    <li class="bold"><a class="scroll-trigger">Contact</a></li>
+                                    <form action="#" method="#" class="form">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Full Name">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Email Address">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Phone Number">
+                                        </div>
+                                    </form>
+                                </ul>
+                            </div>
+                        </div><!-- /footer__widget -->
+                    </div>
+
+                    <div class="row align-items-center">
+                        <div class="col-md-4 col-sm-12">
+                            <ul class="footer__social-media list-inline">
+                                <li><a href="#" class="icon-facebook"></a></li>
+                                <li><a href="#" class="icon-instagram"></a></li>
+                                <li><a href="#" class="icon-twitter"></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-8 col-sm-12">
+                            <div class="footer__widget-wrapper">
+                                <div class="footer__copyright wrapped">
+                                    <p>© 2023 Jewels. All Rights Reserved.</p>
+                                </div>
+
+                                <div class="footer__menu">
+                                    <ul class="footer__menu-nav list-unstyled last_no_bullet">
+                                        <li><a href="#" class="scroll-trigger">Privacy Policy</a></li>
+                                        <li><a href="#" class="scroll-trigger">Terms of Service</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://nmollabd.github.io/" target="_blank" class="nmollabd" style="color: #ffffff; text-decoration: underline; font-size: 9px;">Web Design</a> <span style="font-size: 9px;">by Naim Islam</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../jewellery-retouching/js/jquery.min.js"></script>
+    <script src="../jewellery-retouching/js/plugins.js"></script>
+    <script src="../jewellery-retouching/js/scripts.js"></script>
+    <script src="../jewellery-retouching/js/ks.js"></script>
+</body>
+</html>
