@@ -91,7 +91,7 @@ $(function ($) {
 
     /*** typed */
     new Typed('#typed',{
-        strings : ['Front-end Developer', 'Designer'],
+        strings : ['Designer', 'Frontend Developer',],
         typeSpeed : 100,
         delaySpeed : 150,
         loop : true

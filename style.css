@@ -3021,6 +3021,10 @@ BANNER STYLES
   color: var(--light-color);
   text-transform: capitalize;
   letter-spacing: 0.9px;
+  margin: 0 0 20px !important;
+}
+.home .hero-box .short-info p:last-child {
+  margin: 0 !important;
 }
 .home .hero-box .socail {
   margin-top: 20px;

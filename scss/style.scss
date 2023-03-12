@@ -908,6 +908,12 @@ BANNER STYLES
 				color: var(--light-color);
 				text-transform: capitalize;
 				@include letter-spacing(50, 18);
+
+				margin: 0 0 20px !important;
+
+				&:last-child {
+					margin: 0 !important;
+				}
 			}
 		}
 
