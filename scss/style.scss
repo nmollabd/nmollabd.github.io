@@ -900,6 +900,7 @@ BANNER STYLES
 		}
 
 		.short-info {
+			margin-top: 10px;
 			margin-bottom: 0;
 
 			p {
@@ -910,34 +911,141 @@ BANNER STYLES
 			}
 		}
 
-		.mybtn {
-		    z-index: 3;
-		    cursor: pointer;
-		    font-size: 18px;
-		    overflow: hidden;
+		.socail {
 			margin-top: 20px;
-		    padding: 5px 20px;
-		    line-height: 28px;
-		    position: relative;
-		    display: inline-block;
-		    outline: none !important;
-			color: var(--white-color);
-		    @include border-radius(0);
-		    border: 1px solid transparent;
-		    background: var(--blue-color);
-		    @include transition(all 0.3s ease);
-		    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
 
-		    span {
+			&__media {
+				margin-left: -2px;
+            	margin-bottom: 0;
+            	margin-right: -2px;
 
-		    	i {
-		    		font-size: 16px;
-		    		margin-right: 6px;
-		    	}
-		    }
+				li {
+					padding-left: 2px;
+					padding-right: 2px;
+					display: inline-block;
+
+					a {
+						width: 36px;
+						height: 36px;
+						display: flex;
+						font-size: 14px;
+						color: var(--bg);
+						line-height: 36px;
+						align-items: center;
+						justify-content: center;
+						background: var(--main-color);
+						@include border-radius(500px);
+						@include transition(all 0.3s ease);
+
+						 @each $name, $color in $social-colors {
+
+	                        &.icon-#{$name} {
+	                            background: $color;
+
+	                            &:hover, &:focus {
+	                                color: $white;
+	                                @include transform(translateY(-5px));
+	                            }
+	                        }
+	                    }
+					}
+				}
+			}
 		}
 	}
 }
+
+// .fixed-form-container {
+// 	right: 0;
+// 	margin: 0;
+// 	width: 25%;
+// 	z-index: 1;
+// 	bottom: 6px;
+// 	position: fixed;
+// 	text-align: center;
+
+// 	.image {
+
+// 		.media {
+// 			z-index: 1;
+// 			right: 90px;
+// 			bottom: 64px;
+// 			position: absolute;
+// 			@include transition(all 0.3s ease-in-out);
+// 		}
+// 	}
+
+// 	.fixed-form-body {
+// 		width: 60%;
+// 		left: 110px;
+// 		top: -215px;
+// 		display: none;
+// 		text-align: center;
+// 		border-radius: 30px;
+// 		position: relative;
+// 		padding: 20px 20px 30px;
+// 		background-color: var(--bg);
+// 		border: 1px solid var(--main-color);
+// 		box-shadow: 1px 1px 57px rgb(95 208 243 / 30%);
+
+// 		input {
+// 		    font-family: 'Manrope', sans-serif;
+// 		    font-weight: 400;
+// 		    font-size: 16px;
+// 		    line-height: 22px;
+// 		    box-shadow: 1px 1px 57px rgb(95 208 243 / 7%);
+// 		    // background-color: var(--e-global-color-white);
+// 		    // color: var(--e-global-color-text);
+// 		    border: 1px solid #dae7fb;
+// 		    border-radius: 10px;
+// 		    padding: 4px 14px;
+// 		    margin-bottom: 17px;
+// 		    width: 100%;
+// 		    overflow: visible;
+// 		    outline: none;
+// 		}
+
+// 		textarea {
+// 		    font-family: 'Manrope', sans-serif;
+// 		    font-weight: 400;
+// 		    font-size: 16px;
+// 		    line-height: 22px;
+// 		    box-shadow: 1px 1px 57px rgb(95 208 243 / 7%);
+// 		    // background-color: var(--e-global-color-white);
+// 		    // color: var(--e-global-color-text);
+// 		    border: 1px solid #dae7fb;
+// 		    border-radius: 10px;
+// 		    padding: 4px 14px;
+// 		    width: 100%;
+// 		    height: 118px;
+// 		    margin-bottom: 8px;
+// 		    resize: none;
+// 		    outline: none;
+// 		    overflow: auto;
+// 		}
+
+
+// 		.submit_now {
+// 		    font-size: 18px;
+// 		    line-height: 22px;
+// 		    font-weight: 600;
+// 		    font-family: 'Manrope', sans-serif;
+// 		    padding: 12px 25px;
+// 		    text-align: center;
+// 		    display: inline-block;
+// 		    border-radius: 30px 30px 30px 0;
+// 		    // color: var(--e-global-color-white);
+// 		    transition: all 0.3s ease-in-out;
+// 		    border: 0px solid #082e45;
+// 		    // background-image: linear-gradient(to right, var(--e-gradient-1) 0%, var(--e-gradient-2) 100%);
+
+// 		    &:hover {
+// 			    color: var(--e-global-color-white);
+// 			    background-image: linear-gradient(to right, #052b45 0%, #052b45 51%, #052b45 100%);
+// 			}
+// 		}
+// 	}
+// }
 
 .entry-title {
 	margin-bottom: 50px;

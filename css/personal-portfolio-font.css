@@ -1,12 +1,12 @@
 /*** Icon */
 @font-face {
 	font-family: 'personal-portfolio';
-	src: url('../fonts/personal-portfolio.eot?37243368');
-	src: url('../fonts/personal-portfolio.eot?37243368#iefix') format('embedded-opentype'),
-		url('../fonts/personal-portfolio.woff2?37243368') format('woff2'),
-		url('../fonts/personal-portfolio.woff?37243368') format('woff'),
-		url('../fonts/personal-portfolio.ttf?37243368') format('truetype'),
-		url('../fonts/personal-portfolio.svg?37243368#personal-portfolio') format('svg');
+	src: url('../fonts/personal-portfolio.eot?d91169021');
+	src: url('../fonts/personal-portfolio.eot?d91169021#iefix') format('embedded-opentype'),
+		url('../fonts/personal-portfolio.woff2?d91169021') format('woff2'),
+		url('../fonts/personal-portfolio.woff?d91169021') format('woff'),
+		url('../fonts/personal-portfolio.ttf?d91169021') format('truetype'),
+		url('../fonts/personal-portfolio.svg?d91169021#personal-portfolio') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -60,4 +60,5 @@
 .icon-arrows-cw:before { content: '\e816'; }
 .icon-download-cloud:before { content: '\f0ed'; }
 .icon-rocket:before { content: '\f135'; }
+.icon-whatsapp:before { content: '\f232'; }
 .icon-skype:before { content: '\f30b'; }
