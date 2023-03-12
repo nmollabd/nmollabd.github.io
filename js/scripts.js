@@ -188,24 +188,6 @@ $(function ($) {
         closeMarkup: '<button title="Close (Esc)" type="button" class="mfp-close">Close<span class="icon-cancel"></span></button>',
     });
 
-    //Search Popup
-    if($('.search-popup').length){
-        
-        $('.search-toggler').on('click', function() {
-            $('.search-popup').addClass('popup-visible');
-        });
-
-        $(document).keydown(function(e){
-            if(e.keyCode === 27) {
-                $('.search-popup').removeClass('popup-visible');
-            }
-        });
-
-        $('.close-search,.search-popup .overlay-layer').on('click', function() {
-            $('.search-popup').removeClass('popup-visible');
-        });
-    }
-
     let themeToggler = document.querySelector('.theme-toggler');
     themeToggler.onclick = () =>{
         themeToggler.classList.toggle('active');
