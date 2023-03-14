@@ -170,6 +170,67 @@
         }
     });
 
+    /*** enable lightbox */
+    $('.popup-video').magnificPopup({
+        type: 'iframe',
+        preloader: false,
+        fixedBgPos: true,
+        removalDelay: 500,
+        closeBtnInside: true,
+        fixedContentPos: true,
+        callbacks: {
+            beforeOpen: function() {
+                // console.log(this.st.iframe.markup);
+                this.st.iframe.markup = this.st.iframe.markup.replace('mfp-iframe-scaler', 'mfp-iframe-scaler mfp-with-anim');
+                this.st.mainClass = this.st.el.attr('data-effect');
+            }
+        },
+        closeMarkup: '<button title="Close (Esc)" type="button" class="mfp-close">Close<span class="icon-cancel"></span></button>',
+    });
+
+    $('.enable_lightbox').magnificPopup({
+        type: 'image',
+        midClick: true,
+        fixedBgPos: true,
+        removalDelay: 500,
+        fixedContentPos: true,
+        tLoading: 'Loading image #%curr%...',
+        image: {
+            verticalFit: true,
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function(item) {
+                return item.el.find('img').attr('alt');
+            }
+        },
+        callbacks: {
+            beforeOpen: function() {
+                this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
+                this.st.mainClass = 'mfp-move-from-top vertical-middle enable-lightbox-wrapper';
+            },
+            buildControls: function() {
+              // re-appends controls inside the main container
+              // this.contentContaine.append(this.arrowLeft.add(this.arrowRight));
+            }
+        },
+        closeOnContentClick: true,
+        midClick: true,
+        closeMarkup: '<button title="Close (Esc)" type="button" class="mfp-close">Close<span class="icon-cancel"></span></button>',
+    });
+
+    /*** progressbar */
+    var bars = document.querySelectorAll('.progressbar-wrap > .progressbar');
+    console.clear();
+
+    setInterval(function(){
+      bars.forEach(function(bar){
+        var getWidth = parseFloat(bar.dataset.progress);
+        
+        for(var i = 0; i < getWidth; i++) {
+          bar.style.width = i + '%';
+        }
+      });
+    }, 500);
+
     /*** Number Counter */
     $('.counter').counterUp({
         delay: 10,
@@ -226,6 +287,19 @@
                 return false;
             }
         }
+    });
+
+    /*** initial slick slider */
+    $('.testimonial-slider' ).slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        slidesToShow: 1,
+        fadeSpeed: 1000,
+        slidesToScroll: 1,
+        autoplaySpeed: 3000,
+        // appendDots: $('.slider-controls'),
     });
 
     /*** lastNobullet */

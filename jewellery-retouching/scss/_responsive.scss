@@ -10,6 +10,10 @@
 		line-height: 66px;
 	}
 
+	.border-right {
+	    border-bottom-right-radius: 90px !important;
+	}
+
 	/***********************************
 	HEADER STYLE
 	***********************************/
@@ -104,7 +108,38 @@
 		}
 	}
 
+	.about-page-banner {
+	    padding-bottom: 80px;
+	}
+
+	.happy-customers {
+	    padding: 80px 0;
+	}
+
+	.my-services {
+		padding: 80px 0;
+	}
+
+	.skills {
+	    padding: 80px 0;
+	}
+
 }/* 1199 */
+
+@media only screen and (max-width: 1100px) {
+
+	.banner {
+		min-height: 650px;
+
+		&__media {
+		    top: -250px;
+		}
+
+		&__content {
+			margin-top: 30px;
+		}
+	}
+}
 
 @media only screen and (max-width: 991px) {
 	h1, .h1 {
@@ -119,6 +154,10 @@
 
 	.page-header {
 		padding-top: 102px;
+	}
+
+	.border-right {
+	    border-bottom-right-radius: 70px !important;
 	}
 
 	/***********************************
@@ -152,6 +191,23 @@
 	.header-gutter {
 		height: 102px;
 		min-height: 102px;
+	}
+
+	.banner {
+
+		&__content {
+			max-width: 650px;
+			margin-top: 50px;
+
+			.description {
+				margin-top: 10px;
+			}
+		}
+
+		&__media {
+		    top: -554px;
+		    right: -30px;
+		}
 	}
 
 	/***********************************
@@ -255,9 +311,115 @@
 		}
 	}
 
+	.single-team-member {
+		padding: 70px 0;
+
+		&__media {
+			@include border-radius(16px);
+		}
+
+		&__content {
+
+			.content__editor {
+
+				P {
+				    margin: 0 0 25px !important;
+				}
+			}
+		}
+	}
+
+	.about-page-banner {
+	    padding-bottom: 70px;
+
+	    .entry-title {
+		    max-width: 100%;
+		}
+	}
+
+	.happy-customers {
+	    padding: 70px 0;
+	}
+
+	.about {
+		padding: 70px 0;
+
+		&__content {
+			margin-bottom: 30px;
+		}
+	}
+
+	.video-box {
+		padding: 70px 0;
+
+		&__content {
+			margin-top: 30px;
+		}
+	}
+
+	.latest-post {
+	    padding: 70px 0;
+
+	    &__item {
+
+	    	.text {
+	    		padding: 10px;
+
+	    		.title {
+	    			margin-bottom: 0;
+	    		}
+	    	}
+	    }
+	}
+
+	.team-members {
+	    padding: 70px 0;	}
+
 	/***********************************
 	CONTACT STYLE
 	***********************************/
+	.my-services {
+		padding: 70px 0;
+
+		.row {
+
+			[class^=col] {
+			    
+			    &:last-child {
+			    	flex: 0 0 100%;
+			    	max-width: 100%;
+			    }
+			}
+		}
+
+		&__item {
+			padding: 40px 25px;
+
+			.icon {
+				top: -15%;
+			}
+
+			.content {
+			    margin-top: 0;
+			}
+		}
+
+		.entry-title {
+			margin-bottom: 50px;
+		}
+	}
+
+	.skills {
+		padding: 70px 0;
+
+		&__content {
+			margin-bottom: 30px;
+		}
+	}
+
+	.services {
+		padding: 70px 0;
+	}
 
 	.contact-us {
 		padding-bottom: 70px;
@@ -447,6 +609,114 @@
 		}
 	}
 
+	.about-page-banner {
+	    padding-bottom: 60px;
+	}
+
+	.happy-customers {
+	    padding: 60px 0;
+
+	    .entry-title {
+	    	margin-bottom: 40px;
+	    }
+
+	    .happy-customers-slider {
+
+	    	.swiper-wrapper {
+
+	    		.swiper-slide {
+
+	    			&__item {
+					    padding: 20px;
+					    min-height: 350px;
+					    border: 6px solid currentColor;
+					}
+	    		}
+	    	}
+
+	    	.swiper-pagination {
+
+	    		&-bullet {
+				    width: 16px;
+				    height: 16px;
+				}
+	    	}
+	    }
+	}
+
+	.about {
+		padding: 60px 0;
+
+		&__content {
+			margin-bottom: 30px;
+		}
+
+		.slick-dots {
+
+			li {
+    			width: 16px;
+			    height: 16px;
+			}
+		}
+	}
+
+	.video-box {
+		padding: 60px 0;
+	}
+
+	.latest-post {
+	    padding: 60px 0;
+	}
+
+	.team-members {
+	    padding: 60px 0;
+
+	    &__item {
+
+	    	.media {
+	    		@include border-radius(16px);
+	    	}
+	    }
+	}
+
+	.banner {
+		padding-top: 88px;
+
+		&__content {
+			max-width: 100%;
+		}
+
+		&__media {
+			top: 0;
+			right: 0;
+		    position: inherit;
+		}
+	}
+
+	.my-services {
+		padding: 60px 0;
+
+		&__item {
+			padding: 25px;
+
+			.icon {
+				top: -9%;
+			}
+		}
+
+		.entry-title {
+			margin-bottom: 40px;
+		}
+	}
+
+	.skills {
+		padding: 60px 0;
+	}
+
+	.services {
+		padding: 60px 0;
+	}
+
 	/***********************************
 	CONTACT STYLE
 	***********************************/
@@ -499,6 +769,22 @@
 	    		}
 	    	}
 	    }
+	}
+
+	.single-team-member {
+		padding: 60px 0;
+
+		&__media {
+			margin-bottom: 30px;
+		}
+
+		&__content {
+			max-width: 100%;
+		}
+
+		.pagination {
+			margin-top: 40px;
+		}
 	}
 
 	/***********************************
@@ -622,6 +908,21 @@
 		}
 	}
 
+	.banner {
+		padding-top: 78px;
+
+		&__content {
+
+			.description {
+
+				p {
+					font-size: 16px;
+					line-height: 24px;
+				}
+			}
+		}
+	}
+
 	/***********************************
 	BLOG STYLE
 	***********************************/
@@ -710,6 +1011,97 @@
 		}
 	}
 
+	.about-page-banner {
+	    padding-bottom: 50px;
+	}
+
+	.happy-customers {
+	    padding: 50px 0;
+
+	    .happy-customers-slider {
+
+	    	.swiper-wrapper {
+
+	    		.swiper-slide {
+
+	    			&__item {
+					    min-height: 300px;
+					}
+	    		}
+	    	}
+
+	    	.swiper-pagination {
+
+	    		&-bullet {
+				    width: 14px;
+				    height: 14px;
+				}
+	    	}
+	    }
+	}
+
+	.about {
+		padding: 50px 0;
+
+		.slick-dots {
+
+			li {
+    			width: 14px;
+			    height: 14px;
+			}
+		}
+	}
+
+	.video-box {
+		padding: 50px 0;
+	}
+
+	.latest-post {
+	    padding: 50px 0;
+	}
+
+	.team-members {
+	    padding: 50px 0;
+	}
+
+	.Portfolio-video {
+	    min-height: 380px;
+	    @include border-radius(16px);
+
+	    &.popup-video {
+
+	    	&:before {
+			    width: 80px;
+			    height: 80px;
+			    font-size: 22px;
+			    line-height: 80px;
+			    top: calc(50% - 40px);
+			    left: calc(50% - 40px);
+			}
+	    }
+	}
+
+	.my-services {
+		padding: 50px 0;
+
+		&__item {
+			padding: 20px;
+			@include border-radius(16px);
+
+			.icon {
+				top: -8%;
+			}
+		}
+	}
+
+	.skills {
+		padding: 50px 0;
+	}
+
+	.services {
+		padding: 50px 0;
+	}
+
 	/***********************************
 	CONTACT STYLE
 	***********************************/
@@ -790,6 +1182,14 @@
 	    		}
 	    	}
 	    }
+	}
+
+	.single-team-member {
+		padding: 50px 0;
+
+		.pagination {
+			margin-top: 40px;
+		}
 	}
 
 	/***********************************
@@ -885,6 +1285,22 @@
 	.header-gutter {
 		height: 75px;
 		min-height: 75px;
+	}
+
+	.banner {
+		padding-top: 75px;
+
+		&__content {
+			margin-top: 30px;
+
+			.description {
+
+				p {
+					font-size: 16px;
+					line-height: 24px;
+				}
+			}
+		}
 	}
 
 	/***********************************
@@ -1065,6 +1481,66 @@
 	            }
 			}
 		}
+	}
+
+	.single-team-member {
+		padding: 40px 0;
+
+		&__content {
+
+			.socail-media {
+
+				li {
+
+					a {
+					    width: 40px;
+					    height: 40px;
+					    font-size: 12px;
+					    line-height: 40px;
+
+					    &.icon-skype, &.icon-whatsapp {
+	                        font-size: 18px;
+	                    }
+					}
+				}
+			}
+		}
+
+		.pagination {
+
+			.float-right {
+
+				a {
+
+					i {
+						width: 40px;
+						height: 40px;
+						font-size: 10px;
+						line-height: 40px;
+					}
+
+					.icon-arrow-left {
+					    margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+
+	.Portfolio-video {
+	    min-height: 320px;
+
+	    &.popup-video {
+
+	    	&:before {
+			    width: 70px;
+			    height: 70px;
+			    font-size: 20px;
+			    line-height: 70px;
+			    top: calc(50% - 35px);
+			    left: calc(50% - 35px);
+			}
+	    }
 	}
 
 }/* 480 */
