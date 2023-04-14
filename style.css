@@ -1422,7 +1422,6 @@ HEADER STYLES
   padding: 0;
 }
 .header .navbar .navbar-header .navbar-brand img, .header .navbar .navbar-header .navbar-brand svg {
-  max-width: 130px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
