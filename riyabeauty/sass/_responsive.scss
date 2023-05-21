@@ -1,0 +1,1054 @@
+/**********************************
+MEDIA QUERIES
+***********************************/
+@media only screen and (max-width: 1199px) {
+
+    h1, .h1 { font-size: 60px; line-height: 66px; }
+
+    /***********************************
+    HEADER STYLES
+    ***********************************/
+    .header {
+
+        .navbar {
+
+            .navbar-collapse {
+
+                .navbar-nav {
+                    margin-left: -13px;
+                    margin-right: -13px;
+
+                    > li {
+                        margin-left: 13px;
+                        margin-right: 13px;
+                    }
+
+                    &:not(.navbar-nav-right) {
+
+                        > li {
+
+                            &:nth-last-child(1) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***********************************
+    HOME STYLES
+    ***********************************/
+    .service {
+        padding: 70px 0;
+
+        &__item {
+            padding: 20px;
+        }
+    }
+
+    .professionals {
+        padding: 70px 0;
+    }
+
+    .topoffers {
+        padding: 70px 0;
+    }
+
+    .ourgallery {
+        padding-top: 70px;
+    }
+
+    .happycustomer {
+        padding: 70px 0;
+    }
+
+    .spaexperience {
+        padding: 70px 0;
+
+        .spaexperience-video {
+            min-height: 600px;
+        }
+    }
+
+    .hotstone {
+        margin-top: -380px;
+        padding: 380px 0 50px;
+    }
+
+    /***********************************
+    FOOTER STYLES
+    ***********************************/
+
+    .footer {
+        padding: 70px 0;
+    }
+    
+}/* 1199 */
+
+@media only screen and (max-width: 991px) {
+    h1, .h1 { font-size: 48px; line-height: 58px; }
+    h2, .h2 { font-size: 40px; line-height: 50px; }
+
+
+    /***********************************
+    HEADER STYLES
+    ***********************************/
+    .header {
+
+        .navbar {
+
+            .navbar-header {
+
+                .logo {
+
+                    .navbar-brand {
+                        
+                        img {
+                            max-width: 170px;
+                        }
+                    }
+                }
+            }
+
+            .navbar-collapse {
+
+                .navbar-nav {
+                    margin-left: -11px;
+                    margin-right: -11px;
+
+                    > li {
+                        margin-left: 11px;
+                        margin-right: 11px;
+
+                        a {
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+
+                        &.menu-btn {
+
+                            a {
+                                font-size: 13px;
+                                line-height: 23px;
+                                padding: 11px 25px 11px;
+                            }
+                        }
+                    }
+
+                    &:not(.navbar-nav-right) {
+
+                        > li {
+
+                            &:nth-last-child(2), &:nth-last-child(3) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-toggle {;
+        width: 45px;
+        height: 45px;
+        padding: 13px;
+
+        &.in {
+
+            .icon-bar {
+
+                &:nth-child(1) {
+                    @include transform(translateY(7px) rotate(45deg));
+                }
+
+                &:nth-child(3) {    
+                    @include transform(translateY(-7px) rotate(-45deg));
+                }
+            }
+        }
+
+        .icon-bar {
+            height: 3px;
+
+            &:not(:last-child) {
+                margin-bottom: 4px;
+            }
+        }
+    }
+
+    /***********************************
+    HOME STYLES
+    ***********************************/
+    .banner {
+
+        &__content {
+            max-width: 100%;
+            padding-top: 150px;
+
+            .title {
+                margin-bottom: 10px;
+            }
+
+            &-media {
+                margin-bottom: 20px;
+            }
+
+            .description {
+                margin-bottom: 15px;
+            }
+        }
+
+        &__media {
+            height: 600px;
+
+            &:after {
+                background-position: 22% 59% !important;
+            }
+        }
+    }
+
+    .service {
+        padding: 60px 0;
+
+        &__item {
+
+            .text {
+                max-width: 100%;
+            }
+        }
+
+        .flex-auto {
+
+            [class^="col"] {
+                max-width: 100%;
+                flex: 1 1 310px;
+            }
+        }
+    }
+
+    .professionals {
+        padding: 60px 0;
+    }
+
+    .topoffers {
+        padding: 60px 0;
+
+        .flex-auto {
+
+            [class^="col"] {
+                max-width: 100%;
+                flex: 1 1 310px;
+            }
+        }
+    }
+
+    .ourgallery {
+        padding-top: 60px;
+
+        .slyslider__item {
+            max-width: 380px;
+        }
+    }
+
+    .happycustomer {
+        padding: 60px 0;
+
+        &__testimonials {
+
+            .testimonial-slider {
+
+                .slick-next, .slick-prev {
+
+                    &:before {
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+    }
+
+    .spaexperience {
+        padding: 60px 0;
+
+        .spaexperience-video {
+            min-height: 500px;
+        }
+    }
+
+    .hotstone {
+        margin-top: -340px;
+        padding: 340px 0 50px;
+
+        .flex-auto {
+
+            [class^="col"] {
+                max-width: 100%;
+                flex: 1 1 310px;
+            }
+        }
+
+        &__item {
+            padding: 20px;
+        }
+    }
+
+    /***********************************
+    FOOTER STYLES
+    ***********************************/
+
+    .footer {
+        padding: 60px 0;
+
+        &__widget {
+
+            &-nav {
+                margin-left: -12px;
+                margin-right: -12px;
+
+                li {
+                    padding-left: 12px;
+                    padding-right: 12px;
+
+                    a {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+
+        &__form {
+            max-width: 880px;
+
+            .form-group {
+                padding: 10px 20px!important;
+                padding-right: 170px!important;
+            }
+        }
+    }
+    
+}/* 991 */
+
+@media only screen and (max-width: 767px) {
+    h1, .h1 { font-size: 40px; line-height: 50px; }
+    h2, .h2 { font-size: 36px; line-height: 46px; }
+    h3, .h3 { font-size: 30px; line-height: 36px; }
+    h4, .h4 { font-size: 24px; line-height: 32px; }
+    h5, .h5 { font-size: 20px; line-height: 28px; }
+
+    .entry-title {
+        margin-bottom: 30px;
+    }
+    
+    /***********************************
+    HEADER STYLES
+    ***********************************/
+    .header {
+
+        .navbar {
+            padding: 10px 0;
+
+            .navbar-header {
+
+                .logo {
+
+                    .navbar-brand {
+                        
+                        img {
+                            max-width: 150px;
+                        }
+                    }
+                }
+            }
+
+            .navbar-collapse {
+
+                .navbar-nav {
+                    margin-left: -10px;
+                    margin-right: -10px;
+
+                    > li {
+                        margin-left: 10px;
+                        margin-right: 10px;
+
+                        a {
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+
+                        &.menu-btn {
+
+                            a {
+                                font-size: 12px;
+                                padding: 9px 20px;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+
+                    &:not(.navbar-nav-right) {
+
+                        > li {
+
+                            &:nth-last-child(4) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.stop {
+
+            .navbar {
+                padding: 8px 0;
+
+                .navbar-header {
+
+                    .logo {
+
+                        .navbar-brand {
+                            
+                            img {
+                                max-width: 130px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-toggle {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+    }
+
+    /***********************************
+    HOME STYLES
+    ***********************************/
+    .banner {
+
+        &__content {
+            padding-top: 140px;
+
+            .btn {
+                font-size: 14px;
+                line-height: 24px;
+                padding: 11px 30px 10px;
+            }
+        }
+
+        &__media {
+            height: 550px;
+
+            &:after {
+                background-position: 22% 59% !important;
+            }
+        }
+    }
+
+    .service {
+        padding: 50px 0;
+
+        &__item {
+            min-height: inherit;
+        }
+    }
+
+    .professionals {
+        padding: 50px 0;
+    }
+
+    .topoffers {
+        padding: 50px 0;
+    }
+
+    .ourgallery {
+        padding-top: 50px;
+
+        .slyslider__item {
+            max-width: 350px;
+        }
+    }
+
+    .happycustomer {
+        padding: 50px 0;
+
+        &__testimonials {
+
+            .testimonial-slider {
+
+                .slick-next, .slick-prev {
+
+                    &:before {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .spaexperience {
+        padding: 50px 0;
+
+        .spaexperience-video {
+            min-height: 450px;
+
+            &.popup-video {
+
+                &:before {
+                    width: 90px;
+                    height: 90px;
+                    font-size: 35px;
+                    line-height: 90px;
+                    top: calc(50% - 45px);
+                    left: calc(50% - 45px);
+                }
+            }
+
+            .text {
+
+                .title {
+                    font-size: 36px;
+                    line-height: 46px;
+                }
+            }
+        }
+    }
+
+    .hotstone {
+        margin-top: -300px;
+        padding: 300px 0 50px;
+
+        &__item {
+            padding: 15px;
+        }
+    }
+
+    /***********************************
+    FOOTER STYLES
+    ***********************************/
+    .footer {
+        padding: 50px 0;
+
+        &__logo {
+            margin-bottom: 20px;
+            display: block !important;
+        }
+
+        &__widget {
+
+            &-nav {
+                margin-left: -10px;
+                margin-right: -10px;
+
+                li {
+                    padding-left: 10px;
+                    padding-right: 10px;
+
+                    &.widget-nav-logo {
+                        display: none;
+                    }
+
+                    a {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+
+        &__form {
+            max-width: 880px;
+
+            .form-group {
+                padding: 8px 15px!important;
+                padding-right: 160px!important;
+
+                input[type=email] {
+                    font-size: 14px!important;
+                    line-height: 24px!important;
+                    @include placeholder($black, 14px, 600);
+                }
+
+                button {
+                    right: 3px;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .social-media {
+
+            li {
+
+                a {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 14px;
+                    line-height: 40px;
+                }
+            }
+        }
+
+        &__copyright {
+            margin-top: 20px;
+        }
+    }
+
+}/* 767 */
+
+@media only screen and (max-width: 575px) {
+    h1, .h1 { font-size: 36px; line-height: 46px; }
+    h2, .h2 { font-size: 30px; line-height: 36px; }
+    h3, .h3 { font-size: 24px; line-height: 32px; }
+    h4, .h4 { font-size: 20px; line-height: 28px; }
+    h5, .h5 { font-size: 18px; line-height: 24px; }
+    h6, .h6 { font-size: 16px; line-height: 22px; }
+
+    .btn {
+        padding: 11px 21px 10px;
+    }
+
+    /***********************************
+    HEADER STYLES
+    ***********************************/
+    .header {
+
+        .navbar {
+            padding: 10px 0;
+
+            .navbar-header {
+
+                .logo {
+
+                    .navbar-brand {
+                        
+                        img {
+                            max-width: 140px;
+                            filter: invert(1);
+                        }
+                    }
+                }
+            }
+
+            .navbar-collapse {
+
+                .navbar-nav {
+
+                    &:not(.navbar-nav-right) {
+
+                        > li {
+
+                            &:nth-last-child(5), &:nth-last-child(6) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.stop {
+
+            .navbar {
+                padding: 8px 0;
+
+                .navbar-header {
+
+                    .logo {
+
+                        .navbar-brand {
+                            
+                            img {
+                                max-width: 120px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***********************************
+    HOME STYLES
+    ***********************************/
+    .banner {
+        position: relative;
+
+        .line-overlay {
+            display: none;
+        }
+
+        &__content {
+            z-index: 1;
+            padding-top: 100px;
+            position: relative;
+            padding-bottom: 40px;
+
+            .title {
+                color: $white;
+            }
+
+            .description {
+
+                p {
+                    color: $base;
+                }
+            }
+
+            &-media {
+                filter: drop-shadow(2px 4px 6px black);
+            }
+        }
+
+        .col-sm-7 {
+            position: absolute;
+        }
+
+        &__media {
+            height: 400px;
+            margin-left: -20px;
+            @include border-radius(0);
+
+            &:after {
+                background-position: 22% 59% !important;
+            }
+        }
+    }
+
+    .clear {
+        display: none;
+    }
+
+    .professionals {
+        padding: 40px 0;
+    }
+
+    .topoffers {
+        padding: 40px 0;
+    }
+
+    .service {
+        padding: 40px 0;
+    }
+
+    .ourgallery {
+        padding: 40px 0;
+
+        .slyslider__item {
+            max-width: 320px;
+        }
+    }
+
+    .happycustomer {
+        padding: 40px 0;
+
+        .entry-title {
+
+            .description {
+
+                p {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        &__testimonials {
+
+            .media {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 15px;
+            }
+
+            .testimonial-slider {
+
+                .slick-next, .slick-prev {
+
+                    &:before {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .spaexperience {
+        padding: 40px 0;
+
+        .spaexperience-video {
+            min-height: 370px;
+            @include border-radius(24px);
+
+            &.popup-video {
+
+                &:before {
+                    width: 80px;
+                    height: 80px;
+                    font-size: 30px;
+                    line-height: 80px;
+                    top: calc(50% - 40px);
+                    left: calc(50% - 40px);
+                }
+            }
+
+            .text {
+                padding: 20px;
+
+                .title {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+
+    .hotstone {
+        margin-top: -250px;
+        padding: 250px 0 40px;
+
+        &__item {
+            min-height: inherit;
+            @include border-radius(16px);
+        }
+    }
+
+    /***********************************
+    FOOTER STYLES
+    ***********************************/
+    .footer {
+        padding: 40px 0;
+
+        &__widget {
+
+            &-nav {
+                margin-left: -8px;
+                margin-right: -8px;
+
+                li {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                }
+            }
+        }
+
+        &__form {
+            max-width: 880px;
+
+            .form-group {
+                padding: 5px 13px!important;
+                padding-right: 115px!important;
+
+                input[type=email] {
+                    font-size: 12px!important;
+                    line-height: 22px!important;
+                    @include placeholder($black, 12px, 600);
+                }
+
+                button {
+                    right: 3px;
+                    font-size: 12px;
+                    line-height: 22px;
+                    padding: 8px 15px;
+                }
+            }
+        }
+    }
+    
+}/* 575 */
+
+@media only screen and (max-width: 480px) {
+    
+
+    /***********************************
+    HEADER STYLES
+    ***********************************/
+    .header {
+
+        .navbar {
+            padding: 10px 0;
+
+            .navbar-header {
+
+                .logo {
+
+                    .navbar-brand {
+                        
+                        img {
+                            max-width: 130px;
+                        }
+                    }
+                }
+            }
+
+            .navbar-collapse {
+
+                .navbar-nav {
+
+                    &:not(.navbar-nav-right) {
+                        display: none;
+                    }
+
+                    &.navbar-nav-right {
+
+                        > li {
+
+                            &:not(.mobile-navbar-toggler) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        &.stop {
+
+            .navbar {
+                padding: 8px 0;
+
+                .navbar-header {
+
+                    .logo {
+
+                        .navbar-brand {
+                            
+                            img {
+                                max-width: 110px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***********************************
+    HOME STYLES
+    ***********************************/
+    .ourgallery {
+
+        .slyslider__item {
+            max-width: 280px;
+        }
+
+        &__gallery {
+            @include border-radius(16px);
+        }
+    }
+
+    .happycustomer {
+
+        &__testimonials {
+
+            .media {
+                width: 90px;
+                height: 90px;
+                margin-bottom: 10px;
+            }
+
+            .testimonial-slider {
+
+                .slick-next, .slick-prev {
+
+                    &:before {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .spaexperience {
+
+        .spaexperience-video {
+            min-height: 280px;
+            @include border-radius(16px);
+
+            &.popup-video {
+
+                &:before {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 25px;
+                    line-height: 70px;
+                    top: calc(50% - 35px);
+                    left: calc(50% - 35px);
+                }
+            }
+
+            .text {
+                padding: 15px;
+            }
+        }
+    }
+
+    .hotstone {
+        margin-top: -170px;
+        padding: 170px 0 40px;
+
+        &__item {
+            min-height: inherit;
+        }
+    }
+
+    /***********************************
+    FOOTER STYLES
+    ***********************************/
+    
+}/* 480 */
+
+@media only screen and (max-width: 380px) {
+    
+    /***********************************
+    HOME STYLES
+    ***********************************/
+
+    .spaexperience {
+
+        .spaexperience-video {
+            min-height: 220px;
+
+            &.popup-video {
+
+                &:before {
+                    width: 60px;
+                    height: 60px;
+                    font-size: 25px;
+                    line-height: 60px;
+                    top: calc(50% - 30px);
+                    left: calc(50% - 30px);
+                }
+            }
+
+            .text {
+                padding: 10px;
+
+                .title {
+                    font-size: 24px;
+                    line-height: 34px;
+                }
+            }
+        }
+    }
+
+    .hotstone {
+        margin-top: -130px;
+        padding: 130px 0 40px;
+    }
+
+    /***********************************
+    FOOTER STYLES
+    ***********************************/
+    
+}/* 380 */

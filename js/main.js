@@ -78,7 +78,7 @@
     });
 
     /** Sidr submenu */
-    function goingClearMobileMenu() {
+    function portfolioMobileMenu() {
         var $nav = $(".navbar-mobile"),
             $back_btn = $nav.find(" > li.dropdown > ul.dropdown-menu").prepend("<li class='dropdown-back'><div class='control'>Back<span class='icon-arrow-right'></span></div></li>");
 
@@ -130,7 +130,7 @@
         });
     }
 
-    goingClearMobileMenu();
+    portfolioMobileMenu();
 
 
     /*** Hover Nav menu */
