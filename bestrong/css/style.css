@@ -1,7 +1,7 @@
 /*
 Theme Name: bestrong Updated Design
-Author: bestrong Interactive
-Author URI: https://nmollabd.github.io/
+Author: GoingClear Interactive
+Author URI: https://www.goingclear.com/
 Version: 1.0.0
 Text Domain: bestrong
 */
@@ -9,16 +9,16 @@ Text Domain: bestrong
 BASE STYLES
 ***********************************/
 @font-face {
-  font-family: "riyabeauty";
-  src: url("fonts/riyabeauty.eot?14997632");
-  src: url("fonts/riyabeauty.eot?14997632#iefix") format("embedded-opentype"), url("fonts/riyabeauty.woff2?14997632") format("woff2"), url("fonts/riyabeauty.woff?14997632") format("woff"), url("fonts/riyabeauty.ttf?14997632") format("truetype"), url("fonts/riyabeauty.svg?14997632#riyabeauty") format("svg");
+  font-family: "bestrong";
+  src: url("fonts/bestrong.eot?30527542");
+  src: url("fonts/bestrong.eot?30527542#iefix") format("embedded-opentype"), url("fonts/bestrong.woff2?30527542") format("woff2"), url("fonts/bestrong.woff?30527542") format("woff"), url("fonts/bestrong.ttf?30527542") format("truetype"), url("fonts/bestrong.svg?30527542#bestrong") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 [data-icon]:before {
   speak: none;
   line-height: 1;
-  font-family: "riyabeauty";
+  font-family: "bestrong";
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -30,7 +30,7 @@ BASE STYLES
 [class^=icon-]:before, [class*=" icon-"]:before {
   speak: none;
   line-height: 1;
-  font-family: "riyabeauty";
+  font-family: "bestrong";
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -51,71 +51,67 @@ BASE STYLES
   content: "\e802";
 }
 
-.icon-arrow-left:before {
+.icon-arrow-right:before {
   content: "\e803";
 }
 
-.icon-arrow-right:before {
+.icon-carret-down:before {
   content: "\e804";
 }
 
-.icon-arrow-up:before {
+.icon-carret-up:before {
   content: "\e805";
 }
 
-.icon-call:before {
+.icon-clock:before {
   content: "\e806";
 }
 
-.icon-camera:before {
+.icon-phone:before {
   content: "\e807";
 }
 
-.icon-carret-down:before {
+.icon-play:before {
   content: "\e808";
 }
 
-.icon-carret-up:before {
+.icon-quote:before {
   content: "\e809";
 }
 
-.icon-clock:before {
+.icon-scroll-down:before {
   content: "\e80a";
 }
 
-.icon-facebook:before {
+.icon-angle-down:before {
   content: "\e80b";
 }
 
-.icon-global:before {
+.icon-angle-left:before {
   content: "\e80c";
 }
 
-.icon-global-alt:before {
+.icon-angle-right:before {
   content: "\e80d";
 }
 
-.icon-home:before {
+.icon-angle-up:before {
   content: "\e80e";
 }
 
-.icon-hot-stone:before {
+.icon-arrow-left:before {
   content: "\e80f";
 }
 
-.icon-hydro-power:before {
+.icon-location:before {
   content: "\e810";
 }
 
-.icon-instagram:before {
+.icon-arrow-up:before {
   content: "\e811";
 }
 
-.icon-location:before {
-  content: "\e812";
-}
-
-.icon-mail:before {
+.icon-arrow-down:before {
   content: "\e813";
 }
 
@@ -123,76 +119,36 @@ BASE STYLES
   content: "\e814";
 }
 
-.icon-padmasana:before {
+.icon-home:before {
   content: "\e815";
 }
 
-.icon-phone:before {
+.icon-mail:before {
   content: "\e816";
 }
 
-.icon-play:before {
+.icon-global:before {
   content: "\e817";
 }
 
-.icon-play-alt:before {
+.icon-twitter:before {
   content: "\e818";
 }
 
-.icon-quote:before {
+.icon-instagram:before {
   content: "\e819";
 }
 
-.icon-scroll-down:before {
+.icon-facebook:before {
   content: "\e81a";
-}
-
-.icon-spa:before {
-  content: "\e81b";
-}
-
-.icon-star:before {
-  content: "\e81c";
-}
-
-.icon-twitter:before {
-  content: "\e81d";
-}
-
-.icon-angle-down:before {
-  content: "\e81e";
-}
-
-.icon-angle-left:before {
-  content: "\e81f";
-}
-
-.icon-angle-right:before {
-  content: "\e820";
-}
-
-.icon-angle-up:before {
-  content: "\e821";
-}
-
-.icon-arrow-down:before {
-  content: "\e822";
 }
 
 .icon-share:before {
   content: "\e823";
 }
 
-.icon-whatsapp:before {
-  content: "\f232";
-}
-
 .icon-linkedin:before {
   content: "\f31a";
-}
-
-.icon-skype:before {
-  content: "\f339";
 }
 
 *:not(ul):not(ol):not(blockquote) {
@@ -2368,13 +2324,308 @@ BASIC TEMPLATE STYLES
     left: -5%;
   }
 }
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 /**********************************
 MEDIA QUERIES
 ***********************************/
+@media only screen and (max-width: 1480px) {
+  /***********************************
+  BANNER STYLES
+  ***********************************/
+  .banner {
+    padding: 130px 0;
+    background-position: 100% 0% !important;
+  }
+} /* 1480 */
+@media only screen and (max-width: 1366px) {
+  /***********************************
+  BANNER STYLES
+  ***********************************/
+  .banner {
+    padding: 130px 0;
+  }
+} /* 1366 */
 @media only screen and (max-width: 1199px) {
   h1, .h1 {
+    font-size: 65px;
+    line-height: 75px;
+  }
+  /***********************************
+  HEADER STYLES
+  ***********************************/
+  .header .navbar .navbar-collapse .navbar-nav {
+    margin-left: -18px;
+    margin-right: -18px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav > li {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+  /***********************************
+  BANNER STYLES
+  ***********************************/
+  .banner {
+    padding: 100px 0;
+  }
+  .ourteam {
+    padding: 70px 0;
+  }
+  .recentnews {
+    padding: 70px 0;
+  }
+  .buildingstandard {
+    padding: 70px 0;
+  }
+  .aboutus {
+    padding: 70px 0;
+  }
+  .testmonial {
+    padding: 70px 0;
+  }
+  .ourteam {
+    padding: 80px 0;
+  }
+  .footer__top {
+    padding: 70px 0;
+  }
+  .footer__widget-nav li.location a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+} /* 1199 */
+@media only screen and (max-width: 991px) {
+  h1, .h1 {
     font-size: 60px;
-    line-height: 66px;
+    line-height: 70px;
+  }
+  h2, .h2 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  h3, .h3 {
+    font-size: 44px;
+    line-height: 54px;
+  }
+  .btn {
+    font-size: 25px;
+    line-height: 35px;
+    padding: 8px 25px 9px;
+    letter-spacing: 0.5px;
+  }
+  input[type=text]:not(.select2-input),
+input[type=number],
+input[type=email],
+input[type=tel],
+input[type=search],
+input[type=password],
+input[type=file],
+select, textarea {
+    padding: 8px 20px !important;
+  }
+  input[type=text]:not(.select2-input)::-webkit-input-placeholder,
+input[type=number]::-webkit-input-placeholder,
+input[type=email]::-webkit-input-placeholder,
+input[type=tel]::-webkit-input-placeholder,
+input[type=search]::-webkit-input-placeholder,
+input[type=password]::-webkit-input-placeholder,
+input[type=file]::-webkit-input-placeholder,
+select::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #BBBBBB;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  input[type=text]:not(.select2-input)::-moz-placeholder,
+input[type=number]::-moz-placeholder,
+input[type=email]::-moz-placeholder,
+input[type=tel]::-moz-placeholder,
+input[type=search]::-moz-placeholder,
+input[type=password]::-moz-placeholder,
+input[type=file]::-moz-placeholder,
+select::-moz-placeholder, textarea::-moz-placeholder {
+    color: #BBBBBB;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  input[type=text]:not(.select2-input):-ms-input-placeholder,
+input[type=number]:-ms-input-placeholder,
+input[type=email]:-ms-input-placeholder,
+input[type=tel]:-ms-input-placeholder,
+input[type=search]:-ms-input-placeholder,
+input[type=password]:-ms-input-placeholder,
+input[type=file]:-ms-input-placeholder,
+select:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #BBBBBB;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  input[type=text]:not(.select2-input):-moz-placeholder,
+input[type=number]:-moz-placeholder,
+input[type=email]:-moz-placeholder,
+input[type=tel]:-moz-placeholder,
+input[type=search]:-moz-placeholder,
+input[type=password]:-moz-placeholder,
+input[type=file]:-moz-placeholder,
+select:-moz-placeholder, textarea:-moz-placeholder {
+    color: #BBBBBB;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  /***********************************
+  HEADER STYLES
+  ***********************************/
+  .header .navbar {
+    padding: 20px 0;
+  }
+  .header .navbar .navbar-collapse {
+    -webkit-box-flex: initial;
+        -ms-flex-positive: initial;
+            flex-grow: initial;
+  }
+  .header .navbar .navbar-collapse .navbar-nav {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav > li {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav > li.contact a {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav > li a {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.09px;
+  }
+  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav-right) > li:nth-last-child(1) {
+    display: none;
+  }
+  .header .navbar .navbar-collapse .navbar-nav.navbar-nav-right {
+    margin-left: 10px;
+  }
+  .header-gutter {
+    height: 76px;
+    min-height: 76px;
+  }
+  /***********************************
+  BANNER STYLES
+  ***********************************/
+  .banner {
+    padding: 70px 0;
+    background-position: 90% 0% !important;
+  }
+  .ourteam .flex-auto [class^=col] {
+    max-width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 310px;
+            flex: 1 1 310px;
+  }
+  .recentnews {
+    padding: 60px 0;
+  }
+  .recentnews__item {
+    min-height: inherit;
+  }
+  .aboutus {
+    padding: 60px 0;
+  }
+  .aboutus__content {
+    margin-bottom: 30px;
+  }
+  .contactus__form .form-control {
+    padding: 8px 20px !important;
+  }
+  .contactus__media {
+    height: 600px;
+  }
+  .testmonial {
+    padding: 60px 0;
+  }
+  .testmonial__testimonials .text .title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .testmonial__testimonials .media {
+    width: 120px;
+    height: 120px;
+  }
+  .ourteam {
+    padding: 70px 0;
+  }
+  .ourteam__member {
+    border-radius: 24px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+  }
+  .ourteam__member .media {
+    border-radius: 24px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+  }
+  /***********************************
+  FOOTER STYLES
+  ***********************************/
+  .footer__logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer__top {
+    padding: 60px 0;
+  }
+  .footer__widget-nav li.location {
+    max-width: 100%;
+  }
+} /* 991 */
+@media only screen and (max-width: 767px) {
+  h1, .h1 {
+    font-size: 46px;
+    line-height: 56px;
+  }
+  h2, .h2 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+  h3, .h3 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  h4, .h4 {
+    font-size: 34px;
+    line-height: 44px;
+  }
+  h5, .h5 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .btn {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 8px 20px 9px;
+    letter-spacing: 0.4px;
   }
   /***********************************
   HEADER STYLES
@@ -2387,205 +2638,97 @@ MEDIA QUERIES
     margin-left: 13px;
     margin-right: 13px;
   }
-  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav-right) > li:nth-last-child(1) {
-    display: none;
-  }
-  /***********************************
-  HOME STYLES
-  ***********************************/
-  .service {
-    padding: 70px 0;
-  }
-  .service__item {
-    padding: 20px;
-  }
-  .professionals {
-    padding: 70px 0;
-  }
-  .topoffers {
-    padding: 70px 0;
-  }
-  .ourgallery {
-    padding-top: 70px;
-  }
-  .happycustomer {
-    padding: 70px 0;
-  }
-  .spaexperience {
-    padding: 70px 0;
-  }
-  .spaexperience .spaexperience-video {
-    min-height: 600px;
-  }
-  .hotstone {
-    margin-top: -380px;
-    padding: 380px 0 50px;
-  }
-  /***********************************
-  FOOTER STYLES
-  ***********************************/
-  .footer {
-    padding: 70px 0;
-  }
-} /* 1199 */
-@media only screen and (max-width: 991px) {
-  h1, .h1 {
-    font-size: 48px;
-    line-height: 58px;
-  }
-  h2, .h2 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  /***********************************
-  HEADER STYLES
-  ***********************************/
-  .header .navbar .navbar-header .logo .navbar-brand img {
-    max-width: 170px;
-  }
-  .header .navbar .navbar-collapse .navbar-nav {
-    margin-left: -11px;
-    margin-right: -11px;
-  }
-  .header .navbar .navbar-collapse .navbar-nav > li {
-    margin-left: 11px;
-    margin-right: 11px;
-  }
-  .header .navbar .navbar-collapse .navbar-nav > li a {
-    font-size: 14px;
-    line-height: 14px;
-  }
-  .header .navbar .navbar-collapse .navbar-nav > li.menu-btn a {
-    font-size: 13px;
-    line-height: 23px;
-    padding: 11px 25px 11px;
-  }
   .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav-right) > li:nth-last-child(2), .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav-right) > li:nth-last-child(3) {
     display: none;
   }
-  .navbar-toggle {
-    width: 45px;
-    height: 45px;
-    padding: 13px;
-  }
-  .navbar-toggle.in .icon-bar:nth-child(1) {
-    -webkit-transform: translateY(7px) rotate(45deg);
-    transform: translateY(7px) rotate(45deg);
-  }
-  .navbar-toggle.in .icon-bar:nth-child(3) {
-    -webkit-transform: translateY(-7px) rotate(-45deg);
-    transform: translateY(-7px) rotate(-45deg);
-  }
-  .navbar-toggle .icon-bar {
-    height: 3px;
-  }
-  .navbar-toggle .icon-bar:not(:last-child) {
-    margin-bottom: 4px;
+  .header .navbar .navbar-collapse .navbar-nav.navbar-nav-right {
+    margin-left: 8px;
   }
   /***********************************
-  HOME STYLES
+  BANNER STYLES
   ***********************************/
-  .banner__content {
-    max-width: 100%;
-    padding-top: 150px;
+  .banner {
+    padding: 50px 0;
+    background-position: 90% 0% !important;
   }
-  .banner__content .title {
-    margin-bottom: 10px;
+  .aboutus {
+    padding: 50px 0;
   }
-  .banner__content-media {
-    margin-bottom: 20px;
+  .aboutus__item-gallery {
+    border-radius: 16px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
   }
-  .banner__content .description {
-    margin-bottom: 15px;
+  .aboutus__content .sub-title {
+    letter-spacing: 7.2px;
   }
-  .banner__media {
-    height: 600px;
+  .contactus__media {
+    height: 550px;
   }
-  .banner__media:after {
-    background-position: 22% 59% !important;
+  .recentnews {
+    padding: 50px 0;
   }
-  .service {
-    padding: 60px 0;
+  .recentnews__item {
+    padding: 15px;
   }
-  .service__item .text {
-    max-width: 100%;
-  }
-  .service .flex-auto [class^=col] {
-    max-width: 100%;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 310px;
-            flex: 1 1 310px;
-  }
-  .professionals {
-    padding: 60px 0;
-  }
-  .topoffers {
-    padding: 60px 0;
-  }
-  .topoffers .flex-auto [class^=col] {
+  .recentnews .flex-auto [class^=col] {
     max-width: 100%;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 310px;
             flex: 1 1 310px;
   }
-  .ourgallery {
-    padding-top: 60px;
+  .testmonial {
+    padding: 50px 0;
   }
-  .ourgallery .slyslider__item {
-    max-width: 380px;
+  .testmonial__testimonials .text .title {
+    font-size: 24px;
+    line-height: 34px;
   }
-  .happycustomer {
+  .testmonial__testimonials .media {
+    width: 110px;
+    height: 110px;
+  }
+  .ourteam {
     padding: 60px 0;
   }
-  .happycustomer__testimonials .testimonial-slider .slick-next:before, .happycustomer__testimonials .testimonial-slider .slick-prev:before {
-    font-size: 35px;
+  .ourteam__member {
+    border-radius: 16px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
   }
-  .spaexperience {
-    padding: 60px 0;
-  }
-  .spaexperience .spaexperience-video {
-    min-height: 500px;
-  }
-  .hotstone {
-    margin-top: -340px;
-    padding: 340px 0 50px;
-  }
-  .hotstone .flex-auto [class^=col] {
-    max-width: 100%;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 310px;
-            flex: 1 1 310px;
-  }
-  .hotstone__item {
-    padding: 20px;
+  .ourteam__member .media {
+    border-radius: 16px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
   }
   /***********************************
   FOOTER STYLES
   ***********************************/
-  .footer {
-    padding: 60px 0;
+  .footer__middle {
+    padding: 15px 0;
   }
-  .footer__widget-nav {
-    margin-left: -12px;
-    margin-right: -12px;
+  .footer__middle__widget-menu {
+    margin-left: -20px;
+    margin-right: -20px;
   }
-  .footer__widget-nav li {
-    padding-left: 12px;
-    padding-right: 12px;
+  .footer__middle__widget-menu li {
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .footer__widget-nav li a {
-    font-size: 14px;
-    line-height: 24px;
+  .footer__bottom {
+    padding: 15px 0;
   }
-  .footer__form {
-    max-width: 880px;
+  .footer__top {
+    padding: 50px 0;
   }
-  .footer__form .form-group {
-    padding: 10px 20px !important;
-    padding-right: 170px !important;
-  }
-} /* 991 */
-@media only screen and (max-width: 767px) {
+} /* 767 */
+@media only screen and (max-width: 575px) {
   h1, .h1 {
     font-size: 40px;
     line-height: 50px;
@@ -2596,28 +2739,33 @@ MEDIA QUERIES
   }
   h3, .h3 {
     font-size: 30px;
-    line-height: 36px;
+    line-height: 40px;
   }
   h4, .h4 {
     font-size: 24px;
-    line-height: 32px;
+    line-height: 34px;
   }
   h5, .h5 {
     font-size: 20px;
+    line-height: 30px;
+  }
+  h6, .h6 {
+    font-size: 18px;
     line-height: 28px;
   }
-  .entry-title {
-    margin-bottom: 30px;
+  .des-big {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .btn {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 6px 18px 7px;
+    letter-spacing: 0.36px;
   }
   /***********************************
   HEADER STYLES
   ***********************************/
-  .header .navbar {
-    padding: 10px 0;
-  }
-  .header .navbar .navbar-header .logo .navbar-brand img {
-    max-width: 150px;
-  }
   .header .navbar .navbar-collapse .navbar-nav {
     margin-left: -10px;
     margin-right: -10px;
@@ -2626,477 +2774,191 @@ MEDIA QUERIES
     margin-left: 10px;
     margin-right: 10px;
   }
-  .header .navbar .navbar-collapse .navbar-nav > li a {
-    font-size: 14px;
-    line-height: 14px;
+  .header .navbar .navbar-collapse .navbar-nav > li.contact a:before {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+    margin-right: 5px;
+    line-height: 30px;
   }
-  .header .navbar .navbar-collapse .navbar-nav > li.menu-btn a {
-    font-size: 12px;
-    padding: 9px 20px;
-    line-height: 22px;
-  }
-  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav-right) > li:nth-last-child(4) {
+  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav-right) > li:nth-last-child(4), .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav-right) > li:nth-last-child(5) {
     display: none;
   }
-  .header.stop .navbar {
-    padding: 8px 0;
-  }
-  .header.stop .navbar .navbar-header .logo .navbar-brand img {
-    max-width: 130px;
-  }
-  .navbar-toggle {
-    width: 40px;
-    height: 40px;
-    padding: 10px;
+  .header .navbar .navbar-collapse .navbar-nav.navbar-nav-right {
+    margin-left: 5px;
   }
   /***********************************
-  HOME STYLES
-  ***********************************/
-  .banner__content {
-    padding-top: 140px;
-  }
-  .banner__content .btn {
-    font-size: 14px;
-    line-height: 24px;
-    padding: 11px 30px 10px;
-  }
-  .banner__media {
-    height: 550px;
-  }
-  .banner__media:after {
-    background-position: 22% 59% !important;
-  }
-  .service {
-    padding: 50px 0;
-  }
-  .service__item {
-    min-height: inherit;
-  }
-  .professionals {
-    padding: 50px 0;
-  }
-  .topoffers {
-    padding: 50px 0;
-  }
-  .ourgallery {
-    padding-top: 50px;
-  }
-  .ourgallery .slyslider__item {
-    max-width: 350px;
-  }
-  .happycustomer {
-    padding: 50px 0;
-  }
-  .happycustomer__testimonials .testimonial-slider .slick-next:before, .happycustomer__testimonials .testimonial-slider .slick-prev:before {
-    font-size: 30px;
-  }
-  .spaexperience {
-    padding: 50px 0;
-  }
-  .spaexperience .spaexperience-video {
-    min-height: 450px;
-  }
-  .spaexperience .spaexperience-video.popup-video:before {
-    width: 90px;
-    height: 90px;
-    font-size: 35px;
-    line-height: 90px;
-    top: calc(50% - 45px);
-    left: calc(50% - 45px);
-  }
-  .spaexperience .spaexperience-video .text .title {
-    font-size: 36px;
-    line-height: 46px;
-  }
-  .hotstone {
-    margin-top: -300px;
-    padding: 300px 0 50px;
-  }
-  .hotstone__item {
-    padding: 15px;
-  }
-  /***********************************
-  FOOTER STYLES
-  ***********************************/
-  .footer {
-    padding: 50px 0;
-  }
-  .footer__logo {
-    margin-bottom: 20px;
-    display: block !important;
-  }
-  .footer__widget-nav {
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-  .footer__widget-nav li {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .footer__widget-nav li.widget-nav-logo {
-    display: none;
-  }
-  .footer__widget-nav li a {
-    font-size: 14px;
-    line-height: 24px;
-  }
-  .footer__form {
-    max-width: 880px;
-  }
-  .footer__form .form-group {
-    padding: 8px 15px !important;
-    padding-right: 160px !important;
-  }
-  .footer__form .form-group input[type=email] {
-    font-size: 14px !important;
-    line-height: 24px !important;
-  }
-  .footer__form .form-group input[type=email]::-webkit-input-placeholder {
-    color: #000000;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  .footer__form .form-group input[type=email]::-moz-placeholder {
-    color: #000000;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  .footer__form .form-group input[type=email]:-ms-input-placeholder {
-    color: #000000;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  .footer__form .form-group input[type=email]:-moz-placeholder {
-    color: #000000;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  .footer__form .form-group button {
-    right: 3px;
-    font-size: 14px;
-    line-height: 24px;
-  }
-  .footer .social-media li a {
-    width: 40px;
-    height: 40px;
-    font-size: 14px;
-    line-height: 40px;
-  }
-  .footer__copyright {
-    margin-top: 20px;
-  }
-} /* 767 */
-@media only screen and (max-width: 575px) {
-  h1, .h1 {
-    font-size: 36px;
-    line-height: 46px;
-  }
-  h2, .h2 {
-    font-size: 30px;
-    line-height: 36px;
-  }
-  h3, .h3 {
-    font-size: 24px;
-    line-height: 32px;
-  }
-  h4, .h4 {
-    font-size: 20px;
-    line-height: 28px;
-  }
-  h5, .h5 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  h6, .h6 {
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .btn {
-    padding: 11px 21px 10px;
-  }
-  /***********************************
-  HEADER STYLES
-  ***********************************/
-  .header .navbar {
-    padding: 10px 0;
-  }
-  .header .navbar .navbar-header .logo .navbar-brand img {
-    max-width: 140px;
-    -webkit-filter: invert(1);
-            filter: invert(1);
-  }
-  .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav-right) > li:nth-last-child(5), .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav-right) > li:nth-last-child(6) {
-    display: none;
-  }
-  .header.stop .navbar {
-    padding: 8px 0;
-  }
-  .header.stop .navbar .navbar-header .logo .navbar-brand img {
-    max-width: 120px;
-  }
-  /***********************************
-  HOME STYLES
+  BANNER STYLES
   ***********************************/
   .banner {
+    padding: 40px 0;
+    background-position: 80% 0% !important;
+  }
+  .banner .scrollDown {
+    margin-top: 40px;
+    margin-left: 11px;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  .aboutus {
+    padding: 40px 0;
+  }
+  .contactus {
     position: relative;
   }
-  .banner .line-overlay {
-    display: none;
-  }
-  .banner__content {
+  .contactus__content {
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 40px;
     position: relative;
     padding-bottom: 40px;
   }
-  .banner__content .title {
+  .contactus__form {
+    max-width: 100%;
+  }
+  .contactus__form .form-control {
+    color: #FFFFFF !important;
+  }
+  .contactus__form .form-control::-webkit-input-placeholder {
     color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
   }
-  .banner__content .description p {
-    color: #292F39;
+  .contactus__form .form-control::-moz-placeholder {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
   }
-  .banner__content-media {
-    -webkit-filter: drop-shadow(2px 4px 6px black);
-            filter: drop-shadow(2px 4px 6px black);
+  .contactus__form .form-control:-ms-input-placeholder {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
   }
-  .banner .col-sm-7 {
+  .contactus__form .form-control:-moz-placeholder {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .contactus .col-lg-7 {
     position: absolute;
   }
-  .banner__media {
-    height: 400px;
-    margin-left: -20px;
-    border-radius: 0;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
+  .contactus__media {
+    height: 600px;
+    margin-left: -15px;
   }
-  .banner__media:after {
-    background-position: 22% 59% !important;
+  .contactus__media:before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    background: rgba(41, 47, 57, 0.8);
   }
-  .clear {
-    display: none;
-  }
-  .professionals {
+  .recentnews {
     padding: 40px 0;
   }
-  .topoffers {
+  .recentnews__item {
+    padding: 15px;
+  }
+  .recentnews .flex-auto [class^=col] {
+    max-width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 310px;
+            flex: 1 1 310px;
+  }
+  .testmonial {
     padding: 40px 0;
   }
-  .service {
-    padding: 40px 0;
+  .testmonial__testimonials .text .title {
+    font-size: 18px;
+    line-height: 28px;
   }
-  .ourgallery {
-    padding: 40px 0;
+  .testmonial__testimonials .media {
+    width: 100px;
+    height: 100px;
   }
-  .ourgallery .slyslider__item {
-    max-width: 320px;
-  }
-  .happycustomer {
-    padding: 40px 0;
-  }
-  .happycustomer .entry-title .description p {
-    font-size: 14px;
-    line-height: 24px;
-  }
-  .happycustomer__testimonials .media {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 15px;
-  }
-  .happycustomer__testimonials .testimonial-slider .slick-next:before, .happycustomer__testimonials .testimonial-slider .slick-prev:before {
-    font-size: 25px;
-  }
-  .spaexperience {
-    padding: 40px 0;
-  }
-  .spaexperience .spaexperience-video {
-    min-height: 370px;
-    border-radius: 24px;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-  }
-  .spaexperience .spaexperience-video.popup-video:before {
-    width: 80px;
-    height: 80px;
-    font-size: 30px;
-    line-height: 80px;
-    top: calc(50% - 40px);
-    left: calc(50% - 40px);
-  }
-  .spaexperience .spaexperience-video .text {
-    padding: 20px;
-  }
-  .spaexperience .spaexperience-video .text .title {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  .hotstone {
-    margin-top: -250px;
-    padding: 250px 0 40px;
-  }
-  .hotstone__item {
-    min-height: inherit;
-    border-radius: 16px;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
+  .ourteam {
+    padding: 50px 0;
   }
   /***********************************
   FOOTER STYLES
   ***********************************/
-  .footer {
+  .footer__middle__widget-menu {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .footer__middle__widget-menu li {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .footer__middle__widget-menu li a {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.09px;
+  }
+  .footer__logo {
+    text-align: left;
+  }
+  .footer .mbm-30 {
+    margin-bottom: -30px;
+  }
+  .footer__widget {
+    margin-bottom: 30px;
+  }
+  .footer__top {
     padding: 40px 0;
   }
-  .footer__widget-nav {
-    margin-left: -8px;
-    margin-right: -8px;
-  }
-  .footer__widget-nav li {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-  .footer__form {
-    max-width: 880px;
-  }
-  .footer__form .form-group {
-    padding: 5px 13px !important;
-    padding-right: 115px !important;
-  }
-  .footer__form .form-group input[type=email] {
-    font-size: 12px !important;
-    line-height: 22px !important;
-  }
-  .footer__form .form-group input[type=email]::-webkit-input-placeholder {
-    color: #000000;
-    font-size: 12px;
-    font-weight: 600;
-  }
-  .footer__form .form-group input[type=email]::-moz-placeholder {
-    color: #000000;
-    font-size: 12px;
-    font-weight: 600;
-  }
-  .footer__form .form-group input[type=email]:-ms-input-placeholder {
-    color: #000000;
-    font-size: 12px;
-    font-weight: 600;
-  }
-  .footer__form .form-group input[type=email]:-moz-placeholder {
-    color: #000000;
-    font-size: 12px;
-    font-weight: 600;
-  }
-  .footer__form .form-group button {
-    right: 3px;
-    font-size: 12px;
-    line-height: 22px;
-    padding: 8px 15px;
+  .footer__copyright {
+    font-size: 14px;
+    line-height: 24px;
   }
 } /* 575 */
 @media only screen and (max-width: 480px) {
   /***********************************
   HEADER STYLES
   ***********************************/
-  .header .navbar {
-    padding: 10px 0;
-  }
-  .header .navbar .navbar-header .logo .navbar-brand img {
-    max-width: 130px;
-  }
   .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav-right) {
     display: none;
   }
   .header .navbar .navbar-collapse .navbar-nav.navbar-nav-right > li:not(.mobile-navbar-toggler) {
     display: none;
   }
-  .header.stop .navbar {
-    padding: 8px 0;
-  }
-  .header.stop .navbar .navbar-header .logo .navbar-brand img {
-    max-width: 110px;
-  }
   /***********************************
-  HOME STYLES
+  BANNER STYLES
   ***********************************/
-  .ourgallery .slyslider__item {
-    max-width: 280px;
+  .banner {
+    background-position: 70% 0% !important;
   }
-  .ourgallery__gallery {
-    border-radius: 16px;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
+  .banner .scrollDown {
+    margin-top: 30px;
+    margin-left: 5px;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
   }
-  .happycustomer__testimonials .media {
+  .aboutus .flex-auto [class^=col] {
+    max-width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 310px;
+            flex: 1 1 310px;
+  }
+  .testmonial__testimonials .media {
     width: 90px;
     height: 90px;
-    margin-bottom: 10px;
-  }
-  .happycustomer__testimonials .testimonial-slider .slick-next:before, .happycustomer__testimonials .testimonial-slider .slick-prev:before {
-    font-size: 20px;
-  }
-  .spaexperience .spaexperience-video {
-    min-height: 280px;
-    border-radius: 16px;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-  }
-  .spaexperience .spaexperience-video.popup-video:before {
-    width: 70px;
-    height: 70px;
-    font-size: 25px;
-    line-height: 70px;
-    top: calc(50% - 35px);
-    left: calc(50% - 35px);
-  }
-  .spaexperience .spaexperience-video .text {
-    padding: 15px;
-  }
-  .hotstone {
-    margin-top: -170px;
-    padding: 170px 0 40px;
-  }
-  .hotstone__item {
-    min-height: inherit;
   }
   /***********************************
   FOOTER STYLES
   ***********************************/
+  .footer__middle__widget-menu {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .footer__middle__widget-menu li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .footer__middle__widget-menu li a {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.08px;
+  }
 } /* 480 */
-@media only screen and (max-width: 380px) {
-  /***********************************
-  HOME STYLES
-  ***********************************/
-  .spaexperience .spaexperience-video {
-    min-height: 220px;
-  }
-  .spaexperience .spaexperience-video.popup-video:before {
-    width: 60px;
-    height: 60px;
-    font-size: 25px;
-    line-height: 60px;
-    top: calc(50% - 30px);
-    left: calc(50% - 30px);
-  }
-  .spaexperience .spaexperience-video .text {
-    padding: 10px;
-  }
-  .spaexperience .spaexperience-video .text .title {
-    font-size: 24px;
-    line-height: 34px;
-  }
-  .hotstone {
-    margin-top: -130px;
-    padding: 130px 0 40px;
-  }
-  /***********************************
-  FOOTER STYLES
-  ***********************************/
-} /* 380 */

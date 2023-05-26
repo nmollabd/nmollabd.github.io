@@ -87,7 +87,7 @@
 	        $(this).parents().find( '.navbar-mobile' ).addClass("is-parent");
 
 	        var header = $(this).parent().parent().find('ul.dropdown-menu').height(),
-	            gutter = $('.gc-mobile-nav');
+	            gutter = $('.mobile-nav');
 
 	        if ( gutter ) 
 	        {

@@ -376,89 +376,6 @@ HEADER STYLES
     					}
     				}
 
-    				&.dropdown {
-
-    					> a {
-
-    						.dropdown-toggle {
-    							margin-left: 3px;
-    						}
-    					}
-
-    					.dropdown-menu {
-    						margin: 0;
-    						border: 0;
-    						padding: 0;
-    						opacity: 0;
-    						display: block;
-    						min-width: 240px;
-    						visibility: hidden;
-    						border-radius: 6px;
-    						top: calc(100% + 20px);
-    						@include transition(all 0.5s ease);
-    						box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.12);
-
-    						&:after {
-    							top: -3px;
-    							left: 47px;
-    							width: 6px;
-    							content: "";
-    							height: 6px;
-    							z-index: -1;
-    							background: #FFFFFF;
-    							position: absolute;
-    							transform: rotate(45deg);
-    						}
-
-    						li {
-
-    							&:first-child {
-    								
-    								a {
-    									border-top-left-radius: 6px;
-    									border-top-right-radius: 6px;
-    								}
-    							}
-
-    							&:last-child {
-    								
-    								a {
-    									border-bottom-left-radius: 6px;
-    									border-bottom-right-radius: 6px;
-    								}
-    							}
-
-    							a {
-    								width: 100%;
-    								color: #2A2C30;
-    								display: block;
-    								font-size: 14px;
-    								font-weight: 500;
-    								line-height: 14px;
-    								padding: 7.5px 12px;
-    								@include transition(all 0.3s ease);
-    							}
-
-    							&.active, &:hover, &:focus {
-
-    								a {
-    									color: $white;
-    									background: $primary;
-    								}
-    							}
-    						}
-    					}
-
-    					&.show, &:hover, &:focus {
-
-    						.dropdown-menu {
-    							opacity: 1;
-    							visibility: visible;
-    							top: calc(100% + 5px);
-    						}
-    					}
-    				}
-
     				&.current-menu-ancestor, &.active, &:hover, &:focus {
 
     					> a {
@@ -500,7 +417,7 @@ HEADER STYLES
     max-width: 300px;
     overflow-y: auto;
     overflow-x: hidden;
-    background: #F0F8FF;
+    background: $white;
     box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.12);
 
     &.right {
@@ -521,8 +438,8 @@ HEADER STYLES
 
 	    .navbar-header {
 	    	padding: 12px 15px 11px;
-	    	@include align-center('vertical');
 	    	border-bottom: 1px solid rgba($base, 0.1);
+	    	@include align-center('vertical');
 
 	    	.logo {
 	    		padding-right: 15px;
@@ -531,10 +448,6 @@ HEADER STYLES
 	    			margin: 0;
 	    			padding-top: 0;
 	    			padding-bottom: 0;
-
-	    			img {
-	    				max-width: 140px;
-	    			}
 	    		}
 	    	}
 
@@ -545,7 +458,7 @@ HEADER STYLES
 
 		.navigation {
 
-			.gc-mobile-nav {
+			.mobile-nav {
 				overflow: hidden;
 				@include transition(all 500ms ease);
 			}
@@ -559,37 +472,37 @@ HEADER STYLES
 					border-bottom: 1px solid rgba($base, 0.1);
 
 					> a {
-						color: $base;
+						color: $black;
     					display: block;
-    					font-size: 16px;
+    					font-size: 20px;
     					font-weight: 700;
-    					line-height: 16px;
-    					text-transform: uppercase;
+    					line-height: 30px;
+    					text-transform: capitalize;
+    					@include letter-spacing(-5, 20);
     					@include transition(all 0.3s ease);
-					}
+    				}
 
-					&.menu-btn {
-						
-						a {
-    						color: $white;
-    						font-size: 14px;
-    						font-weight: 700;
-    						line-height: 24px;
-    						background: $yellow;
-    						text-align: center;
-    						padding: 14px 30px 12px;
-    						@include border-radius(500px);
-    						box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12), 0px 12px 24px rgba(0, 0, 0, 0.12);
-						}
+    				&.contact {
 
-						&.current-menu-ancestor, &.active, &:hover, &:focus {
+    					a {
+    						line-height: 1;
+    						font-size: 20px;
 
-							a {
-								color: $white;
-								background: $base;
-							}
-						}
-					}
+    						&:before {
+    							width: 32px;
+    							height: 32px;
+    							font-size: 13px;
+    							color: $primary;
+    							text-indent: 2px;
+    							line-height: 32px;
+    							margin-right: 10px;
+    							text-align: center;
+    							display: inline-block;
+    							border: 2px solid $primary;
+    							@include border-radius(500px);
+    						}
+    					}
+    				}
 
 					&.current-menu-ancestor, &.current-menu-item, &.current-menu-parent, &:hover, &:focus {
 
