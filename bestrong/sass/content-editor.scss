@@ -1,0 +1,312 @@
+/*
+Theme Name: MWRA Content Editor Style
+Author: GoingClear Interactive
+Author URI: https://www.goingclear.com/
+Version: 1.0.0
+Text Domain: mwra
+*/
+
+@import "bootstrap";
+
+/***********************************
+BASE STYLES
+***********************************/
+
+// COLORS
+$red: #EF4136;
+$base: #08215D;
+$blue: #1C45A8;
+$white: #FFFFFF;
+$black: #000000;
+$primary: #2097EF;
+$secondary: #31DD9F;
+
+// FONTS 
+@import url("https://use.typekit.net/svn8axe.css");
+
+$nuni: "nunito", sans-serif; // 400 - normal
+$gcf: "greycliff-cf", sans-serif; // 400 - normal
+$bg: "brandon-grotesque", sans-serif; // 400 - normal
+
+// MIXIN
+@import 'mixin';
+
+*:not(ul):not(ol) {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body, div, span, img, a, p, h1, h2, h3, 
+h4, h5, h6, option, legend, label, 
+table, th, td, tr, article, aside, 
+caption, figure, footer, header, hgroup, 
+mark, nav, section, time, audio, video {
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    outline: 0;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+ul, ol {
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	color: $black;
+	background: #F0F8FF;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	font: 500 16px/22px $gcf;
+}
+
+h1, .h1 { font-size: 64px; line-height: 70px; }
+h2, .h2 { font-size: 48px; line-height: 58px; }
+h3, .h3 { font-size: 36px; line-height: 46px; }
+h4, .h4 { font-size: 30px; line-height: 36px; }
+h5, .h5 { font-size: 24px; line-height: 32px; }
+h6, .h6 { font-size: 16px; line-height: 26px; }
+
+h1, h2, h3, h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	color: $base;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+}
+
+a, button {
+
+	&:hover, &:focus {
+		outline: 0;
+		text-decoration: none;
+	}
+}
+
+p {
+	margin: 0 0 30px;
+}
+
+hr {
+	margin: 0;
+	padding: 0;
+	border-color: #BDDEFF;
+}
+
+section {
+	padding: 50px 0;
+}
+
+input[type="text"]:not(.select2-input),
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="password"],
+input[type="file"],
+select, textarea {
+	@include appearance;
+	width: 100% !important;
+	color: $black !important;
+	font-size: 16px !important;
+	font-weight: 500 !important;
+	box-shadow: none !important;
+	line-height: 22px !important;
+	border-radius: 8px !important;
+	padding: 15px 18px !important;
+	background: #F0F8FF !important;
+	letter-spacing: -0.02em !important;
+	border: 1px solid #D1E1F1 !important;
+	@include transition(all 0.3s ease);
+	-webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+	@include placeholder($black, 16px, 500);
+
+	&:hover, &:focus {
+		outline: 0;
+	}
+}
+
+.btn {
+	border: 0;
+	outline: 0;
+	color: $white;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 22px;
+	background: $base;
+	border-radius: 500px;
+	padding: 11px 16px 10px;
+	letter-spacing: -0.02em;
+	@include transition(all 0.3s ease);
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12), 0px 12px 24px rgba(0, 0, 0, 0.12);
+
+	&.btn-lg {
+		padding: 15px 20px 14px;
+	}
+
+	&.btn-sm {
+		font-size: 14px;
+		line-height: 20px;
+		padding: 10px 16px 8px;
+	}
+
+	&.btn-black {
+		background: $black;
+	}
+
+	&.btn-white {
+		color: $blue;
+		background: $white;
+	}
+
+	&.btn-red {
+		background: $red;
+	}
+
+	&.btn-blue {
+		background: $blue;
+	}
+
+	&.btn-secondary {
+		color: $base;
+		background: $secondary;
+	}
+
+	&.btn-primary {
+		background: $primary;
+
+		&:hover, &:focus, &:active {
+			background: $base;
+		}
+	}
+
+	&:hover, &:focus, &:active {
+		outline: 0;
+		color: $white;
+		background: $primary;
+		box-shadow: none !important;
+	}
+}
+
+.entry-title {
+
+	.red { color: $red; }
+	.blue { color: $blue; }
+	.base { color: $base; }
+	.gray { color: #CFD7DD; }
+	.white { color: $white; }
+	.black { color: $black; }
+	.secondary { color: $base; }
+	.primary { color: $primary; }
+
+	.sub-title {
+		display: block;
+	}
+
+	.title {
+		margin: 0;
+	}
+
+	p {
+		margin: 0;
+		color: $base;
+	}
+}
+
+.desc-big {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: -0.02em;
+}
+
+.font-weight-bolder {
+    font-weight: 900 !important;
+}
+
+.font-family-bg {
+	font-family: $bg;
+}
+
+.font-family-gfc {
+	font-family: $gcf;
+}
+
+.font-family-nunito {
+	font-family: $nuni;
+}
+
+.container {
+	width: 100%;
+	max-width: 1240px;
+	padding-left: 30px;
+	padding-right: 30px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.container-fluid {
+	padding-left: 50px;
+	padding-right: 50px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.lr-10 {
+	margin-left: -10px;
+	margin-right: -10px;
+
+	>[class*="col"] {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+.list-inline {
+	margin-left: -5px;
+	margin-right: -5px;
+
+	li {
+		padding-left: 5px;
+		padding-right: 5px;
+		display: inline-block;
+	}
+}
+
+.fluid {
+	max-width: 100% !important;
+
+	br {
+		display: none;
+	}
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6, p, 
+	.entry-title, .description, .block-content, 
+	.content, .testi-item {
+		max-width: 100% !important;
+	}
+}
+
+.content-area {
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+@import "default_template";

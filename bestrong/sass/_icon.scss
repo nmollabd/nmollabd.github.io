@@ -1,0 +1,64 @@
+@font-face {
+	font-family: 'bestrong';
+	src: url('fonts/bestrong.eot?30527542');
+	src: url('fonts/bestrong.eot?30527542#iefix') format('embedded-opentype'),
+	 	url('fonts/bestrong.woff2?30527542') format('woff2'),
+		url('fonts/bestrong.woff?30527542') format('woff'),
+	 	url('fonts/bestrong.ttf?30527542') format('truetype'),
+	 	url('fonts/bestrong.svg?30527542#bestrong') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[data-icon]:before {
+	speak: none;
+	line-height: 1;
+	font-family: 'bestrong';
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+ 
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	speak: none;
+	line-height: 1;
+	font-family: 'bestrong';
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-plus:before { content: '\e800'; }
+.icon-minus:before { content: '\e801'; }
+.icon-search:before { content: '\e802'; }
+.icon-arrow-right:before { content: '\e803'; }
+.icon-carret-down:before { content: '\e804'; }
+.icon-carret-up:before { content: '\e805'; }
+.icon-clock:before { content: '\e806'; }
+.icon-phone:before { content: '\e807'; }
+.icon-play:before { content: '\e808'; }
+.icon-quote:before { content: '\e809'; }
+.icon-scroll-down:before { content: '\e80a'; }
+.icon-angle-down:before { content: '\e80b'; }
+.icon-angle-left:before { content: '\e80c'; }
+.icon-angle-right:before { content: '\e80d'; }
+.icon-angle-up:before { content: '\e80e'; }
+.icon-arrow-left:before { content: '\e80f'; }
+.icon-location:before { content: '\e810'; }
+.icon-arrow-up:before { content: '\e811'; }
+.icon-arrow-down:before { content: '\e813'; }
+.icon-cancel:before { content: '\e814'; }
+.icon-home:before { content: '\e815'; }
+.icon-mail:before { content: '\e816'; }
+.icon-global:before { content: '\e817'; }
+.icon-twitter:before { content: '\e818'; }
+.icon-instagram:before { content: '\e819'; }
+.icon-facebook:before { content: '\e81a'; }
+.icon-share:before { content: '\e823'; }
+.icon-linkedin:before { content: '\f31a'; }
