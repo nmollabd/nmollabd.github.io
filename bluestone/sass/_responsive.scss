@@ -1,0 +1,1086 @@
+/**********************************
+MEDIA QUERIES
+***********************************/
+@media only screen and (max-width: 1199px) {
+    .h1, h1 { font-size: 58px; line-height: 68px; @include letter-spacing(-25, 58); }
+
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /***********************************
+    HEADER STYLES
+    ***********************************/
+    .header {
+
+        .navbar {
+
+            .container {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+    }
+
+    /***********************************
+    BANNER STYLES
+    ***********************************/
+
+    .banner {
+
+        &__content {
+            padding-top: 110px;
+
+            .title {
+                max-width: 100%
+            }
+
+            .description {
+                max-width: 100%;
+            }
+        }
+
+        &__slider {
+
+            .slider-item {
+                height: 650px;
+
+                .media {
+                    height: 650px;
+                }
+            }
+        }
+    }
+
+    .design {
+        padding: 70px 0;
+
+        &__text {
+
+            .title {
+                max-width: 100%;
+            }
+        }
+
+        .logo {
+            margin-bottom: 10px;
+        }
+    }
+
+    .ourclients {
+
+        .carouselTicker {
+
+            &__list {
+
+                .customers-item {
+                    width: 240px;
+                }
+            }
+        }
+    }
+
+    .designfabrications {
+        padding: 70px 0;
+    }
+
+    .ourwork {
+        padding: 70px 0;
+
+        .slyslider__item {
+            max-width: 540px;
+        }
+
+        .slyslider__controls {
+
+            .slyslider__control {
+                width: 70px;
+                height: 70px;
+                font-size: 14px;
+                line-height: 70px;
+            }
+        }
+    }
+
+    .latestblogpost {
+        padding: 70px 0;
+    }
+
+    .testmonial {
+        padding: 70px 0;
+    }
+
+    .newsletter {
+        padding: 70px 0;
+    }
+
+    /***********************************
+    SEARCH-POPUP STYLES
+    ***********************************/
+
+    .search-popup {
+        height: 140px;
+
+        .search-form {
+            max-width: 780px;
+            padding: 40px 15px 0px;
+        }
+    }
+    
+}/* 1199 */
+
+@media only screen and (max-width: 991px) {
+    h1, .h1 { font-size: 48px; line-height: 58px; @include letter-spacing(-25, 48); }
+    h2, .h2 { font-size: 40px; line-height: 50px; @include letter-spacing(-25, 40); }
+
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    body {
+
+        &:before, &:after {
+            width: 8px;
+        }
+    }
+
+    /***********************************
+    HEADER STYLES
+    ***********************************/
+    .header {
+
+        .navbar {
+
+            .container {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .navbar-collapse {
+                flex-grow: initial;
+
+                .navbar-nav {
+                    margin-left: -12px;
+                    margin-right: -12px;
+
+                    li {
+                        margin-left: 12px;
+                        margin-right: 12px;
+                    }
+
+                    &:not(.navbar-nav-right) {
+
+                        > li {
+
+                            &:nth-last-child(1), &:nth-last-child(2) {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    &.navbar-nav-right {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    /***********************************
+    BANNER STYLES
+    ***********************************/
+
+    .banner {
+
+        &__content {
+            padding-top: 100px;
+        }
+
+        &__slider {
+
+            .slider-item {
+                height: 580px;
+
+                .media {
+                    height: 580px;
+                }
+            }
+
+            .slick-dots {
+
+                li {
+                    width: 16px;
+                    height: 16px;
+                    margin: 0 4px;
+
+                    &.slick-active {
+                        width: 40px;
+                        height: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .design {
+        padding: 60px 0;
+    }
+
+    .ourclients {
+
+        .carouselTicker {
+
+            &__list {
+
+                .customers-item {
+                    width: 180px;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    min-height: 110px;
+                    margin-bottom: 5px;
+
+                    img {
+                        width: 100px;
+
+                        &.big-img {
+                            width: 70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .designfabrications {
+        padding: 60px 0;
+
+        &__item {
+            min-height: 300px;
+        }
+    }
+
+    .ourwork {
+        padding: 60px 0;
+
+        .slyslider__item {
+            max-width: 460px;
+        }
+
+        .stories-item {
+            padding: 25px;
+            min-height: 300px;
+            @include border-radius(24px);
+        }
+
+        .slyslider__controls {
+
+            .slyslider__control {
+                width: 60px;
+                height: 60px;
+                font-size: 12px;
+                line-height: 60px;
+            }
+        }
+    }
+
+    .latestblogpost {
+        padding: 60px 0;
+    }
+
+    .testmonial {
+        padding: 60px 0;
+
+        &__testimonials {
+
+            .text {
+
+                .icon {
+                    margin-bottom: 10px;
+                }
+
+                .title {
+                    max-width: 482px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                .description {
+                    max-width: 582px;
+                }
+            }
+        }
+
+        .testimonial-slider {
+
+            .slick-next, .slick-prev {
+
+                &:before {
+                    width: 50px;
+                    height: 50px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .newsletter {
+        padding: 60px 0;
+
+        &__content {
+            margin-bottom: 20px;
+
+            &__quick-contact {
+                margin-bottom: -5px;
+
+                li {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        // &__form {
+
+        //     .form-group {
+        //         margin-bottom: 20px;
+
+        //         .form-control {
+        //             padding-bottom: 10px !important;
+        //         }
+        //     }
+
+        //     .btn {
+        //         padding: 14px 25px;
+        //     }
+        // }
+    }
+
+    /***********************************
+    SEARCH-POPUP STYLES
+    ***********************************/
+
+    .search-popup {
+        height: 110px;
+
+        .close-search {
+            top: 15px;
+            right: 15px;
+        }
+
+        .search-form {
+            max-width: 600px;
+            padding-top: 30px;
+
+            form {
+
+                .form-group {
+
+                    input[type=search] {
+                        font-size: 14px !important;
+                        line-height: 24px !important;
+                        padding: 10px 20px !important;
+                        padding-right: 140px !important;
+                        @include placeholder($base, 14px, 900);
+                    }
+
+                    button {
+                        right: 1px;
+                        font-size: 14px;
+                        line-height: 24px;
+                        border-left: 1px solid #ebebeb;
+                        @include letter-spacing(-25, 14);
+                    } 
+                } 
+            }
+        }
+    }
+
+    /***********************************
+    FOOTER STYLES
+    ***********************************/
+
+    .footer {
+
+        &__quick-contact {
+            margin-bottom: 20px !important;
+        }
+    }
+    
+}/* 991 */
+
+@media only screen and (max-width: 767px) {
+    h1, .h1 { font-size: 40px; line-height: 50px; @include letter-spacing(-25, 40); }
+    h2, .h2 { font-size: 36px; line-height: 46px; @include letter-spacing(-25, 36); }
+    h3, .h3 { font-size: 30px; line-height: 36px; @include letter-spacing(-25, 30); }
+    h4, .h4 { font-size: 24px; line-height: 32px; @include letter-spacing(-25, 24); }
+    h5, .h5 { font-size: 20px; line-height: 28px; @include letter-spacing(-25, 20); }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    body {
+
+        &:before, &:after {
+            width: 5px;
+        }
+    }
+
+    .btn {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 9px 13px 9px;
+    }
+
+    /***********************************
+    HEADER STYLES
+    ***********************************/
+    .header {
+
+        .navbar {
+
+            .container {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .navbar-collapse {
+
+                .navbar-nav {
+
+                    &:not(.navbar-nav-right) {
+
+                        > li {
+
+                            &:nth-last-child(3), &:nth-last-child(4), &:nth-last-child(5) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***********************************
+    BANNER STYLES
+    ***********************************/
+
+    .banner {
+
+        &__content {
+            z-index: 1;
+            padding-top: 100px;
+            position: relative;
+            padding-bottom: 100px;
+            background: transparent;
+
+            &:before {
+                content: none;
+            }
+        }
+
+        .col-md-8 {
+            position: absolute;
+        }
+
+        &__slider {
+            margin-left: -20px;
+
+            .slider-item {
+                height: 432px;
+                position: relative;
+
+                &:after {
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    width: 100%;
+                    content: '';
+                    height: 100%;
+                    opacity: 0.6;
+                    background: $black;
+                    position: absolute;
+                }
+
+                .media {
+                    height: 432px;
+                }
+            }
+
+            .slick-dots {
+                display: none !important;
+            }
+        }
+    }
+
+    .design {
+        padding: 50px 0;
+
+        &__text {
+            margin-bottom: 20px;
+        }
+    }
+
+    .ourclients {
+
+        .carouselTicker {
+
+            &__list {
+
+                .customers-item {
+                    width: 160px;
+                    min-height: 100px;
+                    @include border-radius(16px);
+
+                    img {
+                        width: 90px;
+
+                        &.big-img {
+                            width: 65px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .designfabrications {
+        padding: 50px 0;
+
+        &__item {
+            min-height: 270px;
+
+            &.popup-video {
+
+                &:before {
+                    width: 60px;
+                    height: 60px;
+                    font-size: 20px;
+                    line-height: 60px;
+                }
+            }
+        }
+    }
+
+    .ourwork {
+        padding: 50px 0;
+
+        .slyslider__item {
+            max-width: 360px;
+        }
+
+        .stories-item {
+            padding: 20px;
+            min-height: 270px;
+            @include border-radius(16px);
+        }
+
+        .slyslider__controls {
+
+            .slyslider__control {
+                width: 50px;
+                height: 50px;
+                font-size: 10px;
+                line-height: 50px;
+            }
+        }
+    }
+
+    .latestblogpost {
+        padding: 50px 0;
+
+        .flex-auto {
+
+            [class^="col"] {
+                max-width: 100%;
+                flex: 1 1 310px;
+            }
+        }
+    }
+
+    .testmonial {
+        padding: 50px 0;
+
+        &__testimonials {
+
+            .text {
+
+                .title {
+                    max-width: 320px;
+                }
+
+                .description {
+                    max-width: 391px;
+                }
+            }
+        }
+
+        .testimonial-slider {
+
+            .slick-next, .slick-prev {
+
+                &:before {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .newsletter {
+        padding: 50px 0;
+
+        &__form {
+
+            button {
+                padding: 14px 20px;
+            }
+        }
+    }
+
+    /***********************************
+    SEARCH-POPUP STYLES
+    ***********************************/
+
+    .search-popup {
+        height: 90px;
+
+        .close-search {
+            top: 10px;
+            right: 10px;
+            font-size: 16px;
+
+            i {
+                font-size: 11px;
+            }
+        }
+
+        .search-form {
+            max-width: 450px;
+            padding-top: 20px;
+
+            form {
+
+                .form-group {
+
+                    input[type=search] {
+                        font-size: 12px !important;
+                        line-height: 20px !important;
+                        padding: 8px 20px !important;
+                        padding-right: 85px !important;
+                        @include placeholder($base, 12px, 900);
+                    }
+
+                    button {
+                        right: 1px;
+                        font-size: 12px;
+                        line-height: 20px;
+                        padding: 7px 20px;
+                        @include letter-spacing(-25, 14);
+                    }
+                }
+            }
+        }
+    }
+
+    /***********************************
+    FOOTER STYLES
+    ***********************************/
+
+    .footer {
+
+        &__quick-contact {
+            margin-bottom: 20px !important;
+        }
+
+        &__top {
+            padding-bottom: 20px;
+        }
+
+        &__bottom {
+
+            .d-flex {
+                display: block !important;
+
+                .right {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &__widget {
+            margin-bottom: 30px;
+
+            &-nav {
+
+                li {
+
+                    &.bold {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+    
+}/* 767 */
+
+@media only screen and (max-width: 575px) {
+    h1, .h1 { font-size: 36px; line-height: 46px; @include letter-spacing(-25, 36); }
+    h2, .h2 { font-size: 30px; line-height: 36px; @include letter-spacing(-25, 30); }
+    h3, .h3 { font-size: 24px; line-height: 32px; @include letter-spacing(-25, 24); }
+    h4, .h4 { font-size: 20px; line-height: 28px; @include letter-spacing(-25, 20); }
+    h5, .h5 { font-size: 18px; line-height: 24px; @include letter-spacing(-25, 18); }
+    h6, .h6 { font-size: 16px; line-height: 22px; @include letter-spacing(-25, 16); }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    body {
+
+        &:before, &:after {
+            width: 3px;
+        }
+    }
+
+    /***********************************
+    HEADER STYLES
+    ***********************************/
+    .header {
+
+        .navbar {
+
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .navbar-collapse {
+
+                .navbar-nav {
+
+                    &:not(.navbar-nav-right) {
+
+                        > li {
+
+                            &:nth-last-child(6) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***********************************
+    BANNER STYLES
+    ***********************************/
+
+    .banner {
+
+        &__content {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    }
+
+    .design {
+        padding: 40px 0;
+    }
+
+    .ourclients {
+        padding: 40px 0;
+
+        .carouselTicker {
+
+            &__list {
+
+                .customers-item {
+                    width: 140px;
+                    min-height: 90px;
+
+                    img {
+                        width: 80px;
+
+                        &.big-img {
+                            width: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .designfabrications {
+        padding: 40px 0;
+
+        &__item {
+            min-height: 300px;
+        }
+    }
+
+    .ourwork {
+        padding: 40px 0;
+
+        .slyslider__item {
+            max-width: 280px;
+        }
+
+        .stories-item {
+            padding: 15px;
+            min-height: 230px;
+        }
+
+        .slyslider {
+
+            &__controls {
+                margin-top: 20px;
+
+                .arrows {
+                    margin-left: -5px;
+                    margin-right: -5px;
+                    padding-right: 10px;
+                }
+
+                .slyslider__control {
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    .latestblogpost {
+        padding: 40px 0;
+    }
+
+    .testmonial {
+        padding: 40px 0;
+
+        &__testimonials {
+
+            .text {
+
+                .title {
+                    max-width: 229px;
+                }
+
+                .description {
+                    max-width: 302px;
+                }
+            }
+        }
+    }
+
+    .newsletter {
+        padding: 40px 0;
+    }
+
+    /***********************************
+    SEARCH-POPUP STYLES
+    ***********************************/
+
+    .search-popup {
+        height: 75px;
+
+        .search-form {
+            max-width: 350px;
+            padding-top: 20px;
+
+            form {
+
+                .form-group {
+
+                    input[type=search] {
+                        padding-right: 90px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    /***********************************
+    FOOTER STYLES
+    ***********************************/
+
+    .footer {
+
+        &__top {
+            padding-top: 40px;
+        }
+    }
+    
+}/* 575 */
+
+@media only screen and (max-width: 480px) {
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /***********************************
+    HEADER STYLES
+    ***********************************/
+    .header {
+
+        .navbar {
+            padding: 20px 0;
+
+            .navbar-collapse {
+
+                .navbar-nav {
+
+                    &:not(.navbar-nav-right) {
+                        display: none;
+                    }
+
+                    &.navbar-nav-right {
+
+                        > li {
+
+                            &:nth-child(1) {
+
+                                &:not(.mobile-navbar-toggler) {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .header-gutter {
+        height: 78px;
+        min-height: 78px;
+    }
+
+    /***********************************
+    BANNER STYLES
+    ***********************************/
+
+    .banner {
+
+        &__content {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    }
+
+    .ourclients {
+
+        .carouselTicker {
+
+            &__list {
+
+                .customers-item {
+                    width: 120px;
+                    min-height: 90px;
+
+                    img {
+
+                        &.big-img {
+                            width: 55px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .designfabrications {
+
+        &__item {
+            min-height: 240px;
+        }
+    }
+
+    .testmonial {
+
+        &__testimonials {
+
+            .text {
+
+                .title {
+                    max-width: 100%;
+                }
+
+                .description {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .testimonial-slider {
+
+            .slick-next, .slick-prev {
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    /***********************************
+    SEARCH-POPUP STYLES
+    ***********************************/
+
+    .search-popup {
+
+        .search-form {
+            max-width: 280px;
+        }
+    }
+    
+}/* 480 */
+
+@media only screen and (max-width: 380px) {
+
+    /***********************************
+    BANNER STYLES
+    ***********************************/
+
+    .banner {
+
+        &__content {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        &__slider {
+
+            .slider-item {
+                height: 400px;
+
+                .media {
+                    height: 400px;
+                }
+            }
+        }
+    }
+
+    /***********************************
+    SEARCH-POPUP STYLES
+    ***********************************/
+
+    .search-popup {
+
+        .search-form {
+            max-width: 240px;
+        }
+    }
+    
+}/* 380 */
