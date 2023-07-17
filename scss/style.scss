@@ -140,8 +140,8 @@ p {
 }
 
 [class$=__media] {
-    display: flex;
-    align-items: flex-start;
+	display: flex;
+	align-items: flex-start;
 }
 
 .lr-10 {
@@ -205,27 +205,27 @@ textarea {
 }
 
 #cursor {
-    top: 0;
-    left: 0;
-    z-index: 99999;
-    position: fixed;
-    pointer-events: none;
-    pointer-events: none;
-    will-change: transform;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	position: fixed;
+	pointer-events: none;
+	pointer-events: none;
+	will-change: transform;
 
-    .cursor__circle {
-    	width: 70px;
-	    height: 70px;
-	    margin-top: -50%;
-	    margin-left: -50%;
-	    border-radius: 50%;
-	    will-change: transform;
-	    @include transform(scale(0.24));
-	    border: 5px solid var(--orange-color);
-	    transition: background-color 0.2s ease, -webkit-transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-	    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.2s ease;
-	    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.2s ease, -webkit-transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-    }
+	.cursor__circle {
+		width: 70px;
+		height: 70px;
+		margin-top: -50%;
+		margin-left: -50%;
+		border-radius: 50%;
+		will-change: transform;
+		@include transform(scale(0.24));
+		border: 5px solid var(--orange-color);
+		transition: background-color 0.2s ease, -webkit-transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+		transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.2s ease;
+		transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.2s ease, -webkit-transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+	}
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -338,27 +338,27 @@ textarea {
 	&.mfp-removing {
 
 		.mfp-with-anim {
-		  	transform: translateY(100px);
-		  	opacity: 0;
+			transform: translateY(100px);
+			opacity: 0;
 		}
 
 		&.mfp-bg {
-		  	opacity: 0;
+			opacity: 0;
 		}
 	}
 
 	.mfp-close { 
-	    top: 10px;
-	    right: 10px;
-	    width: auto;
-	    height: auto;
-	    color: $white;
-	    font-size: 24px;
-	    cursor: pointer;
-	    font-weight: 700;
-	    line-height: 34px;
-	    opacity: 1 !important;
-	    text-transform: capitalize;
+		top: 10px;
+		right: 10px;
+		width: auto;
+		height: auto;
+		color: $white;
+		font-size: 24px;
+		cursor: pointer;
+		font-weight: 700;
+		line-height: 34px;
+		opacity: 1 !important;
+		text-transform: capitalize;
 		@include transition(all 0.3s ease);
 		font-family: 'brandon-grotesque', sans-serif;
 
@@ -428,8 +428,8 @@ textarea {
 				border: 0;
 				margin: 0;
 				opacity: 1;	
-			    width: 100%;
-			    height: 100%;
+				width: 100%;
+				height: 100%;
 				color: $white;
 				font-size: 16px;	
 				line-height: 68px;
@@ -595,109 +595,109 @@ BANNER STYLES
 
 @keyframes loader-1-outter {
 
-    0% {
-        @include transform(rotate(0deg));
-    }
+	0% {
+		@include transform(rotate(0deg));
+	}
 
-    100% {
-        @include transform(rotate(360deg));
-    }
+	100% {
+		@include transform(rotate(360deg));
+	}
 }
 
 @keyframes loader-1-inner {
 
-    0% {
-        @include transform(rotate(0deg));
-    }
+	0% {
+		@include transform(rotate(0deg));
+	}
 
-    100% {
-        @include transform(rotate(-360deg));
-    }
+	100% {
+		@include transform(rotate(-360deg));
+	}
 }
 
 
 .toggle-icon {
-    top: 15px;
-    width: 40px;
-    right: 20px;
-    height: 40px;
-    z-index: 1000;
-    position: fixed;
-    cursor: pointer;
-    margin-right: 0px;
-    text-align: center;
-    text-align: center;
-    @include border-radius(500px);
-    background: var(--secondary-color);
+	top: 15px;
+	width: 40px;
+	right: 20px;
+	height: 40px;
+	z-index: 1000;
+	position: fixed;
+	cursor: pointer;
+	margin-right: 0px;
+	text-align: center;
+	text-align: center;
+	@include border-radius(500px);
+	background: var(--secondary-color);
 
 	#nav-icon3 {
-	    top: 0px;
-	    left: 0px;
-	    width: 100%;
-	    height: 100%;
-	    cursor: pointer;
-	    padding: 0px 10px;
-	    position: relative;
-	    @include transition(all .5s ease-in-out);
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		padding: 0px 10px;
+		position: relative;
+		@include transition(all .5s ease-in-out);
 
-	    &.open {
+		&.open {
 
-	    	span {
+			span {
 
-	    		&:nth-child(1) {
-				    top: 27px;
-				    width: 0%;
-				    left: 50%;
+				&:nth-child(1) {
+					top: 27px;
+					width: 0%;
+					left: 50%;
 				}
 
 				&:nth-child(2) {
-				    @include transform(rotate(45deg));
+					@include transform(rotate(45deg));
 				}
 
 				&:nth-child(3) {
-				    @include transform(rotate(-45deg));
+					@include transform(rotate(-45deg));
 				}
 
 				&:nth-child(4) {
-				    top: 27px;
-				    width: 0%;
-				    left: 50%;
+					top: 27px;
+					width: 0%;
+					left: 50%;
 				}
-	    	}
-	    }
+			}
+		}
 
-	    span {
-		    left: 12px;
-		    opacity: 1;
-		    width: 18px;
-		    height: 2px;
-		    display: block;
-		    position: absolute;
-		    @include border-radius(9px);
-		    background: var(--white-color);
-		    @include transform(rotate(0deg));
-		    @include transition(.25s ease-in-out);
+		span {
+			left: 12px;
+			opacity: 1;
+			width: 18px;
+			height: 2px;
+			display: block;
+			position: absolute;
+			@include border-radius(9px);
+			background: var(--white-color);
+			@include transform(rotate(0deg));
+			@include transition(.25s ease-in-out);
 
-		    &:nth-child(1) {
-		    	top: 13px;
-		    }
+			&:nth-child(1) {
+				top: 13px;
+			}
 
-		    &:nth-child(2), &:nth-child(3) {
-		    	top: 19px;
-		    }
+			&:nth-child(2), &:nth-child(3) {
+				top: 19px;
+			}
 
-		    &:nth-child(4) {
-		    	top: 25px;
-		    }
+			&:nth-child(4) {
+				top: 25px;
+			}
 		}
 	}
 }
 
 #main {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
 }
 
 .mainmenu-area {
@@ -734,7 +734,7 @@ BANNER STYLES
 				&.active {
 
 					a {
-					    color: var(--blue-color);
+						color: var(--blue-color);
 					}
 				}
 
@@ -767,28 +767,28 @@ BANNER STYLES
 }
 
 .section {
-    top: 0;
-    left: 0;
-    z-index: 0;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    position: absolute;
-    transform: translate3d(100%, 0, 0);
-    transition: opacity 0s ease .6s, -webkit-transform .6s ease .6s;
-    transition: transform .6s ease .6s, opacity 0s ease .6s;
-    transition: transform .6s ease .6s, opacity 0s ease .6s, -webkit-transform .6s ease .6s;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	position: absolute;
+	transform: translate3d(100%, 0, 0);
+	transition: opacity 0s ease .6s, -webkit-transform .6s ease .6s;
+	transition: transform .6s ease .6s, opacity 0s ease .6s;
+	transition: transform .6s ease .6s, opacity 0s ease .6s, -webkit-transform .6s ease .6s;
 
-    &.active {
-	    z-index: 1;
-	    opacity: 1;
-	    transition: transform .6s ease;
-	    transform: translate3d(0, 0, 0);
-	    transition: -webkit-transform .6s ease;
-	    transition: transform .6s ease, -webkit-transform .6s ease;
-	    transition: transform .6s ease, -webkit-transform .6s ease;
+	&.active {
+		z-index: 1;
+		opacity: 1;
+		transition: transform .6s ease;
+		transform: translate3d(0, 0, 0);
+		transition: -webkit-transform .6s ease;
+		transition: transform .6s ease, -webkit-transform .6s ease;
+		transition: transform .6s ease, -webkit-transform .6s ease;
 	}
 }
 
@@ -807,15 +807,15 @@ BANNER STYLES
 			@include border-radius(10px);
 			background: var(--secondary-color);
 
-		    &:before {
-			    content: '';
-			    width: 100%;
-			    height: 200%;
-			    top: -100px;
-			    left: -100px;
-			    position: absolute;
-			    transform: rotate(-30deg);
-			    background: var(--blue-color);
+			&:before {
+				content: '';
+				width: 100%;
+				height: 200%;
+				top: -100px;
+				left: -100px;
+				position: absolute;
+				transform: rotate(-30deg);
+				background: var(--blue-color);
 			}
 
 			.slick-list {
@@ -857,14 +857,14 @@ BANNER STYLES
 	.hero-box {
 
 		.greeting {
-		    font-size: 24px;
-		    font-weight: 600;
-		    line-height: 34px;
-		    position: relative;
-		    color: var(--orange-color);
-		    text-transform: capitalize;
+			font-size: 24px;
+			font-weight: 600;
+			line-height: 34px;
+			position: relative;
+			color: var(--orange-color);
+			text-transform: capitalize;
 
-		    // &:before {
+			// &:before {
 			// 	width: 0;
 			// 	height: 0;
 			// 	left: 5px;
@@ -874,19 +874,19 @@ BANNER STYLES
 			// 	border-top: 0px solid transparent;
 			// 	border-bottom: 10px solid transparent;
 			// 	border-left: 10px solid var(--blue-color);
-		    // }
+			// }
 		}
 
 		.name {
-		    margin-top: 10px;
-		    font-weight: 700;
-		    margin-bottom: 0px;
-		    color: var(--light-color);
-		    text-shadow: 3px -3px 10px rgb(0 0 0 / 30%);
+			margin-top: 10px;
+			font-weight: 700;
+			margin-bottom: 0px;
+			color: var(--light-color);
+			text-shadow: 3px -3px 10px rgb(0 0 0 / 30%);
 
-		    span {
-		    	color: var(--blue-color);
-		    }
+			span {
+				color: var(--blue-color);
+			}
 		}
 
 		.typed-title {
@@ -920,8 +920,8 @@ BANNER STYLES
 
 			&__media {
 				margin-left: -2px;
-            	margin-bottom: 0;
-            	margin-right: -2px;
+				margin-bottom: 0;
+				margin-right: -2px;
 
 				li {
 					padding-left: 2px;
@@ -943,15 +943,15 @@ BANNER STYLES
 
 						 @each $name, $color in $social-colors {
 
-	                        &.icon-#{$name} {
-	                            background: $color;
+							&.icon-#{$name} {
+								background: $color;
 
-	                            &:hover, &:focus {
-	                                color: $white;
-	                                @include transform(translateY(-5px));
-	                            }
-	                        }
-	                    }
+								&:hover, &:focus {
+									color: $white;
+									@include transform(translateY(-5px));
+								}
+							}
+						}
 					}
 				}
 			}
@@ -1065,20 +1065,20 @@ BANNER STYLES
 }
 
 .about-area {
-    padding: 80px 0;
-    background: var(--bg);
+	padding: 80px 0;
+	background: var(--bg);
 
-    &__info {
+	&__info {
 
-    	.about-box {
-		    margin-bottom: 30px;
-		    padding: 33px 30px 34px;
-		    @include border-radius(16px);
-    		background: var(--secondary-color);
+		.about-box {
+			margin-bottom: 30px;
+			padding: 33px 30px 34px;
+			@include border-radius(16px);
+			background: var(--secondary-color);
 
-    		&__info {
+			&__info {
 
-    			.info-list {
+				.info-list {
 					display: flex;
 					flex-wrap: wrap;
 					margin-left: -10px;
@@ -1112,93 +1112,93 @@ BANNER STYLES
 							text-transform: capitalize;
 						}
 					}
-    			}
-    		}
+				}
+			}
 
-    		.mbm-10 {
-    			margin-bottom: -10px;
-    		}
+			.mbm-10 {
+				margin-bottom: -10px;
+			}
 
-    		&__item {
-    			margin-bottom: 10px;
+			&__item {
+				margin-bottom: 10px;
 
-    			.top {
-    				margin-bottom: 2px;
+				.top {
+					margin-bottom: 2px;
 
-    				.icon {
+					.icon {
 						width: 50px;
 						height: 50px;
 						font-size: 20px;
 						line-height: 50px;
-    					margin-right: 10px;
+						margin-right: 10px;
 						text-align: center;
 						display: inline-block;
 						color: var(--white-color);
 						@include border-radius(5px);
 						background-color: rgba(66, 133, 244, 0.1);
-    				}
+					}
 
-    				.number {
-    					color: var(--white-color);
+					.number {
+						color: var(--white-color);
 
-    					span {
-    						color: var(--blue-color);
-    					}
-    				}
-    			}
+						span {
+							color: var(--blue-color);
+						}
+					}
+				}
 
-    			.text {
+				.text {
 
-    				.title {
-    					margin-bottom: 0;
-    					color: var(--white-color);
-    				}
+					.title {
+						margin-bottom: 0;
+						color: var(--white-color);
+					}
 
-    				.number {
-    					display: none;
-    					margin-bottom: 0;
-    					line-height: 24px;
-    					color: var(--white-color);
+					.number {
+						display: none;
+						margin-bottom: 0;
+						line-height: 24px;
+						color: var(--white-color);
 
-    					span {
-    						color: var(--blue-color);
-    					}
-    				}
-    			}
-    		}
-    	}
-    }
+						span {
+							color: var(--blue-color);
+						}
+					}
+				}
+			}
+		}
+	}
 
-    .mbm-20 {
-    	margin-bottom: -20px;
-    }
+	.mbm-20 {
+		margin-bottom: -20px;
+	}
 
-    .service {
-    	margin-bottom: 50px;
+	.service {
+		margin-bottom: 50px;
 
-    	.entry-title {
-    		margin-bottom: 30px;
+		.entry-title {
+			margin-bottom: 30px;
 
-    		.title {
-    			margin-bottom: 0;
-    			color: var(--light-color);
+			.title {
+				margin-bottom: 0;
+				color: var(--light-color);
 
-    			span {
-    				color: var(--blue-color);
-    			}
-    		}
-    	}
+				span {
+					color: var(--blue-color);
+				}
+			}
+		}
 
-    	&__item {
-    		width: 100%;
+		&__item {
+			width: 100%;
 			display: block;
-    		min-height: 300px;
+			min-height: 300px;
 			text-align: center;
 			margin-bottom: 30px;
 			margin-bottom: 20px;
 			position: relative;
 			padding: 30px 30px 30px;
-    		height: calc(100% - 20px);
+			height: calc(100% - 20px);
 			@include border-radius(16px);
 			background: var(--secondary-color);
 			@include transition(all 0.3s ease);
@@ -1251,51 +1251,51 @@ BANNER STYLES
 					.text {
 
 						.title {
-						    color: var(--blue-color);
+							color: var(--blue-color);
 						}
 					}
 				}
 			}
-    	}
-    }
+		}
+	}
 
-    .testimonial {
-    	margin-bottom: 50px;
+	.testimonial {
+		margin-bottom: 50px;
 
-    	.entry-title {
-    		margin-bottom: 30px;
+		.entry-title {
+			margin-bottom: 30px;
 
-    		.title {
-    			margin-bottom: 0;
-    			color: var(--light-color);
+			.title {
+				margin-bottom: 0;
+				color: var(--light-color);
 
-    			span {
-    				color: var(--blue-color);
-    			}
-    		}
-    	}
+				span {
+					color: var(--blue-color);
+				}
+			}
+		}
 
-    	&__content {
+		&__content {
 
-    		.title {
-    			margin-bottom: 5px;
-    			color: var(--light-color);
-    			text-transform: capitalize;
-    		}
+			.title {
+				margin-bottom: 5px;
+				color: var(--light-color);
+				text-transform: capitalize;
+			}
 
-    		.content__editor {
-    			margin-bottom: 0;
+			.content__editor {
+				margin-bottom: 0;
 
-    			p {
-    				color: var(--light-color);
-    				margin: 0 0 15px !important;
+				p {
+					color: var(--light-color);
+					margin: 0 0 15px !important;
 
-    				&:last-child {
-    					margin: 0 !important;
-    				}
-    			}
-    		}
-    	}
+					&:last-child {
+						margin: 0 !important;
+					}
+				}
+			}
+		}
 
 		&__slider {
 			padding: 30px;
@@ -1392,13 +1392,13 @@ BANNER STYLES
 				}
 			}
 		}
-    }
+	}
 }
 
 .slick-dotted {
 
 	&.slick-slider {
-	    margin-bottom: 0 !important;
+		margin-bottom: 0 !important;
 	}
 }
 
@@ -1407,9 +1407,9 @@ BANNER STYLES
 	background: var(--bg);
 
 	.cv-box {
-	    padding: 30px;
-	    margin-bottom: 30px;
-	    @include border-radius(16px);
+		padding: 30px;
+		margin-bottom: 30px;
+		@include border-radius(16px);
 		background: var(--secondary-color);
 
 		.btn {
@@ -1451,20 +1451,20 @@ BANNER STYLES
 					position: relative;
 					padding-bottom: 10px;
 					color: var(--white-color);
-				    border-bottom: 1px solid #626a8a;
+					border-bottom: 1px solid #626a8a;
 
-				    &:before {
+					&:before {
 						height: 3px;
 						content: "";
 						bottom: -2px;
 						width: 110px;
 						position: absolute;
 						background: var(--orange-color);
-				    }
+					}
 				}
 			}
 
-		    .skill-bars {
+			.skill-bars {
 
 				.skill-progress {
 
@@ -1488,13 +1488,13 @@ BANNER STYLES
 					}
 
 					.progressbar-wrap {
-					    width: 100%;
-					    height: 15px;
-					    overflow: hidden;
-					    position: relative;
-					    background: var(--dsecondary-color);
+						width: 100%;
+						height: 15px;
+						overflow: hidden;
+						position: relative;
+						background: var(--dsecondary-color);
 
-					    .progressbar {
+						.progressbar {
 							left: 0;
 							width: 0;
 							top: 50%;
@@ -1505,8 +1505,8 @@ BANNER STYLES
 							@include transition(width 3s ease-in-out);
 							background-image: linear-gradient(45deg, rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
 							background-size: 1rem 1rem;
-						    animation: progress-bar-stripes 1s linear infinite;
-					    }
+							animation: progress-bar-stripes 1s linear infinite;
+						}
 					}
 				}
 			}
@@ -1533,16 +1533,16 @@ BANNER STYLES
 						padding-bottom: 10px;
 						color: var(--white-color);
 						text-transform: capitalize;
-					    border-bottom: 1px solid #626a8a;
+						border-bottom: 1px solid #626a8a;
 
-					    &:before {
+						&:before {
 							height: 5px;
 							content: "";
 							width: 150px;
 							bottom: -2.5px;
 							position: absolute;
 							background: var(--blue-color);
-					    }
+						}
 					}
 				}
 
@@ -1560,27 +1560,27 @@ BANNER STYLES
 					@include transition(all 0.3s ease);
 
 					&:before, &:after {
-					    content: "";
+						content: "";
 						position: absolute;
-					    @include border-radius(500px);
-					    background: var(--white-color);
-					    border: 2px solid var(--blue-color);
-					    animation: white infinite 2s linear;
+						@include border-radius(500px);
+						background: var(--white-color);
+						border: 2px solid var(--blue-color);
+						animation: white infinite 2s linear;
 					}
 
 					&:before {
-					    top: -1px;
-					    left: -9px;
-					    width: 15px;
-					    height: 15px;
+						top: -1px;
+						left: -9px;
+						width: 15px;
+						height: 15px;
 					}
 
 					&:after {
-					    left: -9px;
-					    content: "";
-					    width: 15px;
-					    height: 15px;
-					    bottom: -1px;
+						left: -9px;
+						content: "";
+						width: 15px;
+						height: 15px;
+						bottom: -1px;
 					}
 
 					.text {
@@ -1594,13 +1594,13 @@ BANNER STYLES
 
 						.degree {
 
-						    p {
-						    	color: #94a2c6;
-							    font-weight: 600;
-							    margin-bottom: 7px;
-							    text-transform: capitalize;
+							p {
+								color: #94a2c6;
+								font-weight: 600;
+								margin-bottom: 7px;
+								text-transform: capitalize;
 
-							    .year {
+								.year {
 									margin-left: 20px;
 									position: relative;
 
@@ -1609,8 +1609,8 @@ BANNER STYLES
 										content: "|";
 										position: absolute;
 									}
-							    }
-						    }
+								}
+							}
 						}
 
 						.description {
@@ -1628,79 +1628,79 @@ BANNER STYLES
 	}
 
 	.video-section {
-	    margin-top: 50px;
-	    margin-bottom: 50px;
+		margin-top: 50px;
+		margin-bottom: 50px;
 
-	    .resume-video {
-		    width: 100%;
-		    overflow: hidden;
-		    min-height: 429px;
-		    position: relative;
-		    border-radius: 24px;
+		.resume-video {
+			width: 100%;
+			overflow: hidden;
+			min-height: 429px;
+			position: relative;
+			border-radius: 24px;
 
-		    &:before {
-			    z-index: 1;
-			    width: 80px;
-			    content: "";
-			    height: 80px;
-			    font-size: 25px;
-			    text-indent: 5px;
-			    line-height: 80px;
-			    position: absolute;
-			    text-align: center;
-			    top: calc(50% - 40px);
-			    left: calc(50% - 40px);
-			    color: var(--white-color);
-			    background: var(--blue-color);
-			    @include border-radius(500px);
-			    @include transform(scale(1.2));
-			    font-family: "personal-portfolio";
-			    @include transition(all 0.3s ease);
-			    animation: white infinite 2s linear;
-			    filter: drop-shadow(0px 66px 6px rgba(0, 0, 0, 0.47));
+			&:before {
+				z-index: 1;
+				width: 80px;
+				content: "";
+				height: 80px;
+				font-size: 25px;
+				text-indent: 5px;
+				line-height: 80px;
+				position: absolute;
+				text-align: center;
+				top: calc(50% - 40px);
+				left: calc(50% - 40px);
+				color: var(--white-color);
+				background: var(--blue-color);
+				@include border-radius(500px);
+				@include transform(scale(1.2));
+				font-family: "personal-portfolio";
+				@include transition(all 0.3s ease);
+				animation: white infinite 2s linear;
+				filter: drop-shadow(0px 66px 6px rgba(0, 0, 0, 0.47));
 			}
 
 			.media {
-			    top: 0;
-			    left: 0;
-			    width: 100%;
-			    height: 100%;
-			    position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				position: absolute;
 
-			    img {
-				    width: 100%;
-				    height: 100%;
-				    object-fit: cover;
-				    @include transition(all 0.3s ease);
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					@include transition(all 0.3s ease);
 				}
 			}
 
-		    .text {
-			    z-index: 1;
-			    width: 100%;
-			    padding: 20px;
-			    position: relative;
+			.text {
+				z-index: 1;
+				width: 100%;
+				padding: 20px;
+				position: relative;
 
-			    .title {
-				    font-size: 12px;
-				    font-weight: 700;
-				    padding: 4px 9px;
-				    line-height: 16px;
-				    display: inline-block;
-				    color: var(--primary-color);
-				    @include border-radius(500px);
-				    background: var(--orange-color);
+				.title {
+					font-size: 12px;
+					font-weight: 700;
+					padding: 4px 9px;
+					line-height: 16px;
+					display: inline-block;
+					color: var(--primary-color);
+					@include border-radius(500px);
+					background: var(--orange-color);
 				}
 
 				.runtime {
-				    font-size: 12px;
-				    font-weight: 700;
-				    padding: 4px 9px;
-				    line-height: 16px;
-				    display: inline-block;
-				    color: var(--white-color);
-				    background: var(--blue-color);
-				    @include border-radius(500px);
+					font-size: 12px;
+					font-weight: 700;
+					padding: 4px 9px;
+					line-height: 16px;
+					display: inline-block;
+					color: var(--white-color);
+					background: var(--blue-color);
+					@include border-radius(500px);
 				}
 			}
 
@@ -1775,27 +1775,27 @@ BANNER STYLES
 					position: relative;
 
 					&:before {
-					    top: 9px;
-					    left: 50%;
-					    width: 9px;
-					    height: 9px;
-					    content: '';
-					    z-index: 9999;
-					    display: block;
-					    margin-left: -9px;
-					    position: absolute;
-					    box-sizing: content-box;
-					    @include border-radius(500px);
-					    background: var(--white-color);
-					    border: 5px solid var(--blue-color);
-					    animation: white infinite 2s linear;
-					    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+						top: 9px;
+						left: 50%;
+						width: 9px;
+						height: 9px;
+						content: '';
+						z-index: 9999;
+						display: block;
+						margin-left: -9px;
+						position: absolute;
+						box-sizing: content-box;
+						@include border-radius(500px);
+						background: var(--white-color);
+						border: 5px solid var(--blue-color);
+						animation: white infinite 2s linear;
+						box-shadow: 0 0 10px rgb(0 0 0 / 20%);
 					}
 
 					&:after {
-					    content: '';
-					    clear: both;
-					    display: table;
+						content: '';
+						clear: both;
+						display: table;
 					}
 
 					.timeline-content {
@@ -1811,7 +1811,7 @@ BANNER STYLES
 							font-weight: 900;
 							line-height: 24px;
 							margin-bottom: 5px;
-						    color: var(--white-color);
+							color: var(--white-color);
 						}
 
 						.title {
@@ -1823,12 +1823,12 @@ BANNER STYLES
 
 							&:before {
 								left: 0;
-							    height: 5px;
-							    content: "";
-							    width: 90px;
-							    bottom: -2.5px;
-							    position: absolute;
-							    background: var(--blue-color);
+								height: 5px;
+								content: "";
+								width: 90px;
+								bottom: -2.5px;
+								position: absolute;
+								background: var(--blue-color);
 							}
 						}
 
@@ -1850,18 +1850,18 @@ BANNER STYLES
 
 						.timeline-content {
 							float: left;
-						    clear: both;
+							clear: both;
 
 							&:before {
-							    top: 9px;
-							    content: '';
-							    z-index: 999;
-							    right: -22px;
-							    display: block;
-							    position: absolute;
-							    border-style: solid;
-							    border-width: 10px 12px;
-							    border-color: transparent transparent transparent #252c48;
+								top: 9px;
+								content: '';
+								z-index: 999;
+								right: -22px;
+								display: block;
+								position: absolute;
+								border-style: solid;
+								border-width: 10px 12px;
+								border-color: transparent transparent transparent #252c48;
 							}
 						}
 					}
@@ -1869,19 +1869,19 @@ BANNER STYLES
 					&:nth-child(even) {
 
 						.timeline-content {
-						    float: right;
-						    clear: both;
+							float: right;
+							clear: both;
 
-						    &:before {
-							    top: 9px;
-							    content: '';
-							    left: -22px;
-							    z-index: 999;
-							    display: block;
-							    position: absolute;
-							    border-style: solid;
-							    border-width: 10px 12px;
-							    border-color: transparent #252c48 transparent transparent;
+							&:before {
+								top: 9px;
+								content: '';
+								left: -22px;
+								z-index: 999;
+								display: block;
+								position: absolute;
+								border-style: solid;
+								border-width: 10px 12px;
+								border-color: transparent #252c48 transparent transparent;
 							}
 						}
 					}
@@ -2002,41 +2002,41 @@ BANNER STYLES
 }
 
 .modal {
-    top: 0;
-    left: 0;
-    outline: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    z-index: 1050;
-    position: fixed;
-    overflow: hidden;
+	top: 0;
+	left: 0;
+	outline: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 1050;
+	position: fixed;
+	overflow: hidden;
 
-    .modal-dialog-centered {
-    	max-width: 600px;
-	    transition: transform .5s ease-out,-webkit-transform .5s ease-out;
-    }
+	.modal-dialog-centered {
+		max-width: 600px;
+		transition: transform .5s ease-out,-webkit-transform .5s ease-out;
+	}
 
-    .modal-content {
-	    background: var(--secondary-color);
-    	@include border-radius(16px !important);
+	.modal-content {
+		background: var(--secondary-color);
+		@include border-radius(16px !important);
 
-	    .modal-body {
-		    position: relative;
-		    padding: 30px !important;
+		.modal-body {
+			position: relative;
+			padding: 30px !important;
 
-		    .close {
-			    top: 10px;
-			    opacity: 1;
-			    right: 20px;
-			    text-shadow: none;
-			    position: absolute;
-			    color: var(--white-color);
-			    font-size: 18px !important;
+			.close {
+				top: 10px;
+				opacity: 1;
+				right: 20px;
+				text-shadow: none;
+				position: absolute;
+				color: var(--white-color);
+				font-size: 18px !important;
 
-			    .icon-cancel {
-			    	vertical-align: -3px;
-			    }
+				.icon-cancel {
+					vertical-align: -3px;
+				}
 			}
 
 			.blog-details {
@@ -2128,12 +2128,12 @@ BANNER STYLES
 		.modal-slider-controls {
 
 			.slick-dots {
-			    bottom: 30px;
-			    margin: 0;
-			    right: 15px;
-			    line-height: 0;
-			    text-align: right;
-			    position: relative;
+				bottom: 30px;
+				margin: 0;
+				right: 15px;
+				line-height: 0;
+				text-align: right;
+				position: relative;
 
 				li {
 					width: 12px;
@@ -2155,12 +2155,12 @@ BANNER STYLES
 		.portfoliomodal-slider-controls {
 
 			.slick-dots {
-			    bottom: 30px;
-			    margin: 0;
-			    right: 15px;
-			    line-height: 0;
-			    text-align: right;
-			    position: relative;
+				bottom: 30px;
+				margin: 0;
+				right: 15px;
+				line-height: 0;
+				text-align: right;
+				position: relative;
 
 				li {
 					width: 12px;
@@ -2260,11 +2260,11 @@ BANNER STYLES
 		margin-bottom: 50px;
 
 		.google_map_wrapper {
-		    height: 100%;
-		    display: flex;
-		    border: 20px solid #252c48;
-		    @include border-radius(16px);
-		    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+			height: 100%;
+			display: flex;
+			border: 20px solid #252c48;
+			@include border-radius(16px);
+			box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
 		}
 
 		.contact-bg {
@@ -2338,29 +2338,29 @@ BANNER STYLES
 }
 
 .ab-page-banner {
-    z-index: 1;
-    overflow: hidden;
-    position: relative;
-    background-color: #0E1E36;
+	z-index: 1;
+	overflow: hidden;
+	position: relative;
+	background-color: #0E1E36;
 
-    &__content {
-	    position: relative;
+	&__content {
+		position: relative;
 
-	    .transparent-text {
-		    left: 0;
-		    top: -34px;
-		    z-index: -1;
-		    opacity: 0.3;
-		    font-size: 128px;
-		    font-weight: 700;
-		    line-height: 100px;
-		    position: absolute;
-		    white-space: nowrap;
-		    text-transform: capitalize;
-		    -webkit-text-stroke: transparent;
-		    -webkit-text-stroke-width: 1.5px;
-		    -webkit-text-fill-color: transparent;
-		    -webkit-text-stroke-color: var(--orange-color);
+		.transparent-text {
+			left: 0;
+			top: -34px;
+			z-index: -1;
+			opacity: 0.3;
+			font-size: 128px;
+			font-weight: 700;
+			line-height: 100px;
+			position: absolute;
+			white-space: nowrap;
+			text-transform: capitalize;
+			-webkit-text-stroke: transparent;
+			-webkit-text-stroke-width: 1.5px;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-color: var(--orange-color);
 		}
 
 		.title {
@@ -2377,28 +2377,28 @@ BANNER STYLES
 		}
 	}
 
-    &__media {
-    	max-height: 450px;
-   	 	position: relative;
-    	margin-right: calc(-50vw + 50%) !important;
+	&__media {
+		max-height: 450px;
+		position: relative;
+		margin-right: calc(-50vw + 50%) !important;
 
-    	img {
-    		z-index: 2;
-    		position: relative;
-    	}
+		img {
+			z-index: 2;
+			position: relative;
+		}
 
 		&:after {
-		    top: 0;
-		    width: 100%;
-		    left: -1px;
-		    content: "";
-		    z-index: 1;
-		    height: 100%;
-		    position: absolute;
-		    background-size: cover !important;
-		    background: #F1C142 url(../images/page-banner-overly.png);
+			top: 0;
+			width: 100%;
+			left: -1px;
+			content: "";
+			z-index: 1;
+			height: 100%;
+			position: absolute;
+			background-size: cover !important;
+			background: #F1C142 url(../images/page-banner-overly.png);
 		}
-    }
+	}
 }
 
 .portfolio {
@@ -2469,43 +2469,43 @@ BANNER STYLES
 
 .footer {
 	padding: 50px 0;
-    background: var(--bg);
+	background: var(--bg);
 
-    &___logo {
-    	max-width: 150px;
-    	margin-bottom: 20px;
-    }
+	&___logo {
+		max-width: 150px;
+		margin-bottom: 20px;
+	}
 
-    .content {
-    	margin-bottom: 20px;
+	.content {
+		margin-bottom: 20px;
 
-    	.description {
-    		margin-bottom: 0;
+		.description {
+			margin-bottom: 0;
 
-    		p {
-    			color: var(--light-color);
-    		}
-    	}
+			p {
+				color: var(--light-color);
+			}
+		}
 
-    	.socail-media {
-    		margin-top: 30px;
+		.socail-media {
+			margin-top: 30px;
 			margin-left: 5px;
 			margin-right: -3px;
 
-    		li {
+			li {
 				padding-left: 3px;
 				padding-right: 3px;
-    			display: inline-block;
+				display: inline-block;
 
-    			a {
-    				width: 40px;
-    				height: 40px;
+				a {
+					width: 40px;
+					height: 40px;
 					display: flex;
 					font-size: 14px;
 					line-height: 40px;
 					align-items: center;
 					justify-content: center;
-    				color: var(--white-color);
+					color: var(--white-color);
 					@include border-radius(0px);
 					background: var(--gray-color);
 					@include transform(rotate(45deg));
@@ -2525,19 +2525,19 @@ BANNER STYLES
 							}
 						}
 					}
-    			}
-    		}
-    	}
-    }
+				}
+			}
+		}
+	}
 
-    .mbm-20 {
-    	margin-bottom: -30px;
-    }
+	.mbm-20 {
+		margin-bottom: -30px;
+	}
 
-    .widget {
-    	margin-bottom: 30px;
+	.widget {
+		margin-bottom: 30px;
 
-    	&__title {
+		&__title {
 			position: relative;
 			padding-bottom: 10px;
 			color: var(--light-color);
@@ -2552,31 +2552,31 @@ BANNER STYLES
 				position: absolute;
 				background: var(--blue-color);
 			}
-    	}
+		}
 
-    	&-nav {
-    		margin-top: 20px;
+		&-nav {
+			margin-top: 20px;
 
-    		li {
+			li {
 
-    			&:not(:last-child) {
-    				margin-bottom: 5px;
-    			}
+				&:not(:last-child) {
+					margin-bottom: 5px;
+				}
 
-    			a {
-    				display: block;
-    				font-size: 16px;
-    				font-weight: 400;
-    				overflow: hidden;
-    				line-height: 24px;
-    				padding: 7px 13px;
-    				position: relative;
-    				color: var(--white-color);
-    				@include letter-spacing(30, 16);
-    				@include transition(all 0.3s ease);
-    				background: var(--secondary-color);
+				a {
+					display: block;
+					font-size: 16px;
+					font-weight: 400;
+					overflow: hidden;
+					line-height: 24px;
+					padding: 7px 13px;
+					position: relative;
+					color: var(--white-color);
+					@include letter-spacing(30, 16);
+					@include transition(all 0.3s ease);
+					background: var(--secondary-color);
 
-    				&:before {
+					&:before {
 						top: 0;
 						left: 0;
 						width: 2px;
@@ -2584,68 +2584,68 @@ BANNER STYLES
 						height: 100%;
 						position: absolute;
 						background: var(--orange-color);
-    				}
+					}
 
-    				&:any-link {
+					&:any-link {
 
-    					&:hover, &:focus {
-    						color: var(--orange-color);
-    						background: darken(#252c48, 5%);
-    					}
-    				}
-    			}
-    		}
+						&:hover, &:focus {
+							color: var(--orange-color);
+							background: darken(#252c48, 5%);
+						}
+					}
+				}
+			}
 
-    		&.recent-news {
+			&.recent-news {
 
-    			li {
+				li {
 
-	    			&:not(:last-child) {
-	    				margin-bottom: 10px;
-	    			}
+					&:not(:last-child) {
+						margin-bottom: 10px;
+					}
 
-    				.icon {
-    					width: 55px;
-    					height: 55px;
-    					font-size: 20px;
-    					margin-right: 8px;
-    					line-height: 55px;
-    					text-align: center;
-    					color: var(--white-color);
-    					background: var(--orange-color);
-    				}
+					.icon {
+						width: 55px;
+						height: 55px;
+						font-size: 20px;
+						margin-right: 8px;
+						line-height: 55px;
+						text-align: center;
+						color: var(--white-color);
+						background: var(--orange-color);
+					}
 
-    				.text {
+					.text {
 
-    					.title {
+						.title {
 
-    						a {
-    							padding: 0;
-    							font-weight: 700;
-    							letter-spacing: 0;
-    							font-size: inherit;
-    							background: transparent;
-    							color: var(--light-color);
+							a {
+								padding: 0;
+								font-weight: 700;
+								letter-spacing: 0;
+								font-size: inherit;
+								background: transparent;
+								color: var(--light-color);
 
-    							&:before {
-    								content: none;
-    							}
-    						}
-    					}
+								&:before {
+									content: none;
+								}
+							}
+						}
 
-    					.post-date {
-    						font-size: 16px;
-    						line-height: 24px;
-    						color: var(--blue-color);
-    					}
-    				}
-    			}
-    		}
-    	}
-    }
+						.post-date {
+							font-size: 16px;
+							line-height: 24px;
+							color: var(--blue-color);
+						}
+					}
+				}
+			}
+		}
+	}
 
-    &__bottom {
-    	margin-top: 50px;
+	&__bottom {
+		margin-top: 50px;
 
 		&__copyright {
 
@@ -2671,7 +2671,7 @@ BANNER STYLES
 						}
 					}
 				}
-		    }
+			}
 		}
 	}
 }
@@ -2680,26 +2680,26 @@ BANNER STYLES
 SEARCH-BOX STYLES
 ***********************************/
 .search-box-outer {
-    top: 15px;
-    right: 65px;
-    width: 40px;
-    height: 40px;
-    z-index: 999;
+	top: 15px;
+	right: 65px;
+	width: 40px;
+	height: 40px;
+	z-index: 999;
 	display: flex;
-    position: fixed;
-    cursor: pointer;
-    margin-right: 0px;
-    text-align: center;
-    text-align: center;
+	position: fixed;
+	cursor: pointer;
+	margin-right: 0px;
+	text-align: center;
+	text-align: center;
 	align-items: center;
 	justify-content: center;
-    @include border-radius(500px);
-    background: var(--secondary-color);
+	@include border-radius(500px);
+	background: var(--secondary-color);
 
-    .icon-search {
-    	font-size: 12px;
-    	color: var(--white-color);
-    }
+	.icon-search {
+		font-size: 12px;
+		color: var(--white-color);
+	}
 }
 
 .search-popup {
@@ -2725,15 +2725,15 @@ SEARCH-BOX STYLES
 	.popup-inner {
 		width: 100%;
 		height: 100%;
-    	background: var(--primary-color);
+		background: var(--primary-color);
 
 		.overlay-layer {
-		    top: 0px;
-		    left: 0px;
-		    right: 0px;
-		    bottom: 0px;
-		    display: block;
-		    position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			display: block;
+			position: absolute;
 		}
 
 		.upper-box {
@@ -2787,7 +2787,7 @@ SEARCH-BOX STYLES
 						border-bottom: 1px solid var(--white-color) !important;
 
 						&:focus{
-						  	border-color: var(--orange-color)!important;
+							border-color: var(--orange-color)!important;
 						}
 					}
 				}
@@ -2817,8 +2817,8 @@ SEARCH-BOX STYLES
 }
 
 .theme-open{
-    top: 50%;
-    left: 0;
+	top: 50%;
+	left: 0;
 	width: 45px;
 	z-index: 99;
 	height: 45px;
@@ -2836,17 +2836,17 @@ SEARCH-BOX STYLES
 }
 
 .switcher-themes {
-    top: 0;
-    width: 100%;
-    height: 100%;
-    left:-100%;
-    display: block;
-    z-index: 999999;
-    position: fixed;
-    max-width: 320px;
-    overflow-y: auto;
-    text-align: right;
-    overflow-x: hidden;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	left:-100%;
+	display: block;
+	z-index: 999999;
+	position: fixed;
+	max-width: 320px;
+	overflow-y: auto;
+	text-align: right;
+	overflow-x: hidden;
 	background: var(--bg);
 	@include transition(all 0.5s ease);
 	box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.25);
@@ -2871,7 +2871,7 @@ SEARCH-BOX STYLES
 			}
 
 			.close {
-			    opacity: 1;
+				opacity: 1;
 				font-size: 20px;
 				cursor: pointer;
 				color: var(--light-color);
@@ -2882,7 +2882,7 @@ SEARCH-BOX STYLES
 			display:flex;
 			align-items: center;
 			padding: 23px 15px 23px;
-		    justify-content: space-between;
+			justify-content: space-between;
 			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
 			.toggler {
@@ -2943,8 +2943,8 @@ SEARCH-BOX STYLES
 				margin-bottom: 0;
 
 				.color {
-				    width: 44px;
-				    height: 35px;
+					width: 44px;
+					height: 35px;
 					cursor: pointer;
 					display: inline-block;
 					@include border-radius(14px 0);
