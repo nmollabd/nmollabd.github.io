@@ -542,7 +542,7 @@ HEADER STYLES
 .sidr .sidr-inner .navbar-header .navbar-brand svg, .sidr .sidr-inner .navbar-header .navbar-brand img {
   max-width: 180px;
 }
-.sidr .navigation .gc-mobile-nav {
+.sidr .navigation .mobile-nav {
   overflow: hidden;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;

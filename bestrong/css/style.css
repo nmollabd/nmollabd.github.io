@@ -1,9 +1,9 @@
 /*
-Theme Name: bestrong Updated Design
-Author: GoingClear Interactive
-Author URI: https://www.goingclear.com/
+Theme Name: NAim
+Author: Naim Molla
+Author URI: https://github.com/nmollabd
 Version: 1.0.0
-Text Domain: bestrong
+Text Domain: Naim
 */
 /***********************************
 BASE STYLES
@@ -2432,59 +2432,59 @@ MEDIA QUERIES
     letter-spacing: 0.5px;
   }
   input[type=text]:not(.select2-input),
-input[type=number],
-input[type=email],
-input[type=tel],
-input[type=search],
-input[type=password],
-input[type=file],
-select, textarea {
+  input[type=number],
+  input[type=email],
+  input[type=tel],
+  input[type=search],
+  input[type=password],
+  input[type=file],
+  select, textarea {
     padding: 8px 20px !important;
   }
   input[type=text]:not(.select2-input)::-webkit-input-placeholder,
-input[type=number]::-webkit-input-placeholder,
-input[type=email]::-webkit-input-placeholder,
-input[type=tel]::-webkit-input-placeholder,
-input[type=search]::-webkit-input-placeholder,
-input[type=password]::-webkit-input-placeholder,
-input[type=file]::-webkit-input-placeholder,
-select::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  input[type=number]::-webkit-input-placeholder,
+  input[type=email]::-webkit-input-placeholder,
+  input[type=tel]::-webkit-input-placeholder,
+  input[type=search]::-webkit-input-placeholder,
+  input[type=password]::-webkit-input-placeholder,
+  input[type=file]::-webkit-input-placeholder,
+  select::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: #BBBBBB;
     font-size: 18px;
     font-weight: 500;
   }
   input[type=text]:not(.select2-input)::-moz-placeholder,
-input[type=number]::-moz-placeholder,
-input[type=email]::-moz-placeholder,
-input[type=tel]::-moz-placeholder,
-input[type=search]::-moz-placeholder,
-input[type=password]::-moz-placeholder,
-input[type=file]::-moz-placeholder,
-select::-moz-placeholder, textarea::-moz-placeholder {
+  input[type=number]::-moz-placeholder,
+  input[type=email]::-moz-placeholder,
+  input[type=tel]::-moz-placeholder,
+  input[type=search]::-moz-placeholder,
+  input[type=password]::-moz-placeholder,
+  input[type=file]::-moz-placeholder,
+  select::-moz-placeholder, textarea::-moz-placeholder {
     color: #BBBBBB;
     font-size: 18px;
     font-weight: 500;
   }
   input[type=text]:not(.select2-input):-ms-input-placeholder,
-input[type=number]:-ms-input-placeholder,
-input[type=email]:-ms-input-placeholder,
-input[type=tel]:-ms-input-placeholder,
-input[type=search]:-ms-input-placeholder,
-input[type=password]:-ms-input-placeholder,
-input[type=file]:-ms-input-placeholder,
-select:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  input[type=number]:-ms-input-placeholder,
+  input[type=email]:-ms-input-placeholder,
+  input[type=tel]:-ms-input-placeholder,
+  input[type=search]:-ms-input-placeholder,
+  input[type=password]:-ms-input-placeholder,
+  input[type=file]:-ms-input-placeholder,
+  select:-ms-input-placeholder, textarea:-ms-input-placeholder {
     color: #BBBBBB;
     font-size: 18px;
     font-weight: 500;
   }
   input[type=text]:not(.select2-input):-moz-placeholder,
-input[type=number]:-moz-placeholder,
-input[type=email]:-moz-placeholder,
-input[type=tel]:-moz-placeholder,
-input[type=search]:-moz-placeholder,
-input[type=password]:-moz-placeholder,
-input[type=file]:-moz-placeholder,
-select:-moz-placeholder, textarea:-moz-placeholder {
+  input[type=number]:-moz-placeholder,
+  input[type=email]:-moz-placeholder,
+  input[type=tel]:-moz-placeholder,
+  input[type=search]:-moz-placeholder,
+  input[type=password]:-moz-placeholder,
+  input[type=file]:-moz-placeholder,
+  select:-moz-placeholder, textarea:-moz-placeholder {
     color: #BBBBBB;
     font-size: 18px;
     font-weight: 500;
