@@ -110,21 +110,8 @@ $(function ($) {
         appendDots: $('.slider-controls'),
     });
 
-    /*** initial slick slider */
-    $('.modal-slider' ).slick({
-        dots: true,
-        arrows: false,
-        infinite: true,
-        autoplay: true,
-        slidesToShow: 1,
-        fadeSpeed: 1000,
-        slidesToScroll: 1,
-        autoplaySpeed: 3000,
-        appendDots: $('.modal-slider-controls'),
-    });
-
     /*** inspire-brands-slider */
-    $('.inspire-banner-slider').slick({
+    $('.inspire-banner-slider, .modal-slider').slick({
         speed: 500,
         fade: true,
         dots: true,
