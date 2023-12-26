@@ -799,6 +799,10 @@ BANNER STYLES
 	background-position: center bottom !important;
 
 	&__slider {
+		box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05),
+		25px 35px 20px rgba(0,0,0,0.05),
+		25px 20px 20px rgba(0,0,0,0.05),
+		inset 25px 30px 30px rgba(255,255,255,0.9);
 
 		.modal-slider {
 			padding: 30px;
