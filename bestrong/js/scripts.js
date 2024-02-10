@@ -69,7 +69,7 @@
 		}
 	});
 
-	function RiyaBeautyMobileMenu() {
+	function bestrongMobileMenu() {
 	    var $nav = $(".navbar-mobile"),
 	        $back_btn = $nav.find(" > li.dropdown > ul.dropdown-menu").prepend("<li class='dropdown-back'><div class='control'>Back<span class='icon-arrow-right'></span></div></li>");
 
@@ -110,7 +110,7 @@
 	        .first()
 	        .removeClass("is-parent");
 
-	        var gutter = $('.gc-mobile-nav');
+	        var gutter = $('.mobile-nav');
 
 	        setTimeout(function() {
 	            if (gutter) {
@@ -120,7 +120,7 @@
 	    });
 	}
 
-	RiyaBeautyMobileMenu();
+	bestrongMobileMenu();
 
     /*** ScrollDown */
 	$('.scrollDown').click(function() {
@@ -580,7 +580,7 @@
 
     wowjs.init();
 
-    Disable right-click
+    // Disable right-click
     document.addEventListener('contextmenu', (e) => e.preventDefault());
     function ctrlShiftKey(e, keyCode) {
         return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
